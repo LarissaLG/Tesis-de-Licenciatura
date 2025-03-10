@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: 0-2-Declaration/1-Declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: 0-3-Quote/1-Quote.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: 0-4-Resumen/1-Resumen.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: tesis-blx.bib
+Database file #2: 4-References/references.bib
+Biblatex version: 3.20
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 7 entries,
+            6402 wiz_defined-function locations,
+            1255 strings with 10636 characters,
+and the built_in function-call counts, 75615 in all, are:
+= -- 6571
+> -- 1162
+< -- 206
++ -- 2171
+- -- 626
+* -- 5836
+:= -- 9164
+add.period$ -- 0
+call.type$ -- 7
+change.case$ -- 100
+chr.to.int$ -- 50
+cite$ -- 12
+duplicate$ -- 6219
+empty$ -- 6590
+format.name$ -- 614
+if$ -- 15179
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 0
+newline$ -- 252
+num.names$ -- 284
+pop$ -- 2385
+preamble$ -- 1
+purify$ -- 152
+quote$ -- 0
+skip$ -- 1346
+stack$ -- 0
+substring$ -- 14097
+swap$ -- 999
+text.length$ -- 198
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 226
+warning$ -- 0
+while$ -- 906
+width$ -- 0
+write$ -- 246
