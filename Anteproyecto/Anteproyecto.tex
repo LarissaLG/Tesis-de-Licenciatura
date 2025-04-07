@@ -1,4 +1,4 @@
-\documentclass[9pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel} 
 \decimalpoint
@@ -31,7 +31,7 @@
 citestyle = numeric-comp,
 backend = bibtex, 
 sorting = none, % Sort as they appear
-backref=true]{biblatex} %style = trad-abbrv 
+backref=false]{biblatex} %style = trad-abbrv 
 \AtEveryBibitem{\clearfield{urldate}}
 \AtEveryBibitem{\clearfield{url}}
 \AtEveryBibitem{\clearfield{isbn}}
@@ -62,9 +62,9 @@ backref=true]{biblatex} %style = trad-abbrv
 	\rule{17cm}{0.1mm}
 	
 	%------ Fin de encabezado -------- %
-	\hspace{0cm}
+	\vspace{0.5cm}
 	
-	\parbox{\textwidth}{\raggedleft Ciudad Universitaria, 10 de abril de 2025.}
+	\hspace{10cm}{\raggedleft Ciudad Universitaria, 10 de abril de 2025.}
 	
 	\hspace{1cm}
 	
@@ -76,26 +76,26 @@ backref=true]{biblatex} %style = trad-abbrv
 	
 	Universidad Nacional Autónoma de México\\
 	
-	Por medio de la presente, comunico a ustedes el plan de actividades para la titulación en modalidad de tesis de la alumna Dana Larissa Luna González, con número de cuenta 421122680, quien realizará su tesis con título ``Propiedades'' bajo mi asesoría en mi grupo de investigación en Nanoplasmónica, Departamento de Física, Facultad de Ciencias, UNAM.\\
+	Por medio de la presente, comunico a ustedes el plan de actividades para la titulación en la modalidad de tesis de la alumna Dana Larissa Luna González, con número de cuenta 421122680, quien desarrollará el proyecto titulado ``Cálculo numérico de propiedades ópticas de eritrocitos sanos y enfermos'' bajo mi asesoría en el grupo de investigación en Nanoplasmónica del Departamento de Física, Facultad de Ciencias, UNAM.\\
 	
-	El estudio de las propiedades ópticas de las células biológicas como los osteoblastos \cite{Osteoblastos}, los linfocitos \cite{Linfocitos}, y los eritrocitos \cite{Blood}, es de importancia para el área médica. A partir de las propiedades ópticas de las células, se obtiene información de su composición y estado morfológico, lo cual tiene potenciales aplicaciones en el diagnóstico y la detección temprana de diversas enfermedades, incluidos cánceres e infecciones virales \cite{Linfocitos}. En particular, el estudio de los eritrocitos tiene un papel importante en el diagnóstico de la anemia en sus diferentes tipos y el diseño de nuevas terapias ópticas, como el tratamiento de las venas varicosas \cite{Blood}. \\
+	El estudio de las propiedades ópticas de las células biológicas como los osteoblastos \cite{Osteoblastos}, los linfocitos \cite{Linfocitos}, y los eritrocitos \cite{Blood}, es de importancia para el área médica. A partir del análisis de las propiedades ópticas, se obtiene información sobre la composición y el estado morfológico celular, lo que tiene aplicaciones potenciales en el diagnóstico y la detección temprana de diversas enfermedades, incluyendo ciertos tipos de cáncer e infecciones virales \cite{Linfocitos}. En particular, el estudio de los eritrocitos tiene un papel importante en el diagnóstico de distintas formas de anemia, así como en el diseño de terapias ópticas emergentes, como el tratamiento de venas varicosas \cite{Blood}. \\
 	
-	Los eritrocitos sanos presentan forma de discoides cóncavos con longitudes de entre 4 a 9 $\mu$m de diámetro. Estos no poseen núcleo, por lo que pueden modelarse como un objeto homogéneo \cite{Cassini}. Debido a su forma, para simplificar el proceso de modelado, se han empleado diferentes opciones como los óvalos de Cassini \cite{Cassini} o funciones en términos de coordenadas esféricas \cite{Esferico}. Dado que los glóbulos rojos son los principales responsables de las propiedades ópticas de la sangre, su hematocrito, la concentración de hemoglobina y la saturación de oxígeno influyen directamente en las propiedades de absorción y dispersión de la sangre a través de cambios en su índice de refracción y en su forma. El objetivo de esta tesis de licenciatura es el de estudiar propiedades ópticas de eritrocitos sanos y enfermos mediante el método de elementos finitos (FEM por sus siglas en inglés) y contrastar los resultados con resultados reportados en la literatura donde se emplearon técnicas alternativas.\\
+	En este contexto, los eritrocitos, los principales responsables de las propiedades ópticas de la sangre, juegan un papel clave. Factores como el hematocrito, la concentración de hemoglobina y el nivel de saturación de oxígeno influyen directamente en los mecanismos de absorción y esparcimiento de la luz de los eritrocitos \cite{Blood}, al modificar tanto su índice de refracción como su morfología celular. Por ello, el objetivo de esta tesis de licenciatura es estudiar las propiedades ópticas de eritrocitos sanos y enfermos, considerando variaciones en su índice de refracción y forma, para cuantificar los efectos en las secciones transversales de extinción, esparcimiento y absorción. Se propone utilizar el método de elementos finitos (FEM, por sus siglas en inglés) y comparar los resultados obtenidos con aquellos reportados en la literatura que emplean métodos alternativos.\\
 	
+	Durante el desarrollo de la tesis, la alumna estudiará el método de elementos finitos y las principales enfermedades que afectan a los eritrocitos. Posteriormente, se familiarizará con el uso del software SolidWorks para el diseño de las distintas morfologías celulares, las cuales serán implementadas en COMSOL Multiphysics con el fin de analizar casos con diferentes índices de refracción asociados a diversas patologías. Asimismo, se realizará la validación del modelo numérico mediante casos analíticos, como la teoría de Mie. Con base en las etapas mencionadas, se propone el siguiente cronograma de actividades:
 	
-	 El proyecto lo realicé bajo la supervisión del Dr. Alejandro Reyes Coronado, en el Departamento de Física, cubículo 407 de la Facultad de Ciencias de la UNAM. Realicé las actividades en el periodo comprendido entre el 23 de febrero de 2024 al 23 de septiembre del 2024. \\
-	
-	
-	El estudio de las propiedades ópticas de células biológicas, como los osteoblastos \cite{Osteoblastos}, los linfocitos \cite{Linfocitos} y los eritrocitos \cite{Blood}, es fundamental para aplicaciones médicas, incluyendo el diagnóstico de enfermedades y el desarrollo de terapias ópticas. En particular, los eritrocitos, debido a su forma discoide cóncava y la ausencia de núcleo, pueden modelarse como estructuras homogéneas \cite{Cassini}. Para su análisis, se han utilizado modelos como óvalos de Cassini \cite{Cassini} o funciones en coordenadas esféricas \cite{Esferico}. El objetivo de esta tesis es el de estudiar propiedades ópticas de eritrocitos sanos y enfermos mediante el método de elementos finitos (FEM por sus siglas en inglés) y contrastar los resultados con resultados reportados en la literatura donde se emplearon técnicas alternativas. Para corroborar la convergencia numérica, se compará el resultado con Comsol y la solución analítica en el régimen cuasiestático de las propiedades ópticas de un elipsoide de con una función dieléctrica tipo Drude y un material dieléctrico.\\
-	
-	Durante el tiempo en el que se desarrollará la tesis, la alumna estudiará el método de elementos finitos y las diferentes enfermedades de eritrocitos. Posteriormente, se familiarizará con el uso de software SolidWorks para el diseño de las diferentes formas de eritrocitos y se implementarán las diferentes geometrías en COMSOL y se estudiarpan casos con diferentes índices de refracción segun diferentes enfermedades. Se realizará la validación del modelo numérico con casos analíticos como el de teoría de Mie. Con ello, se propone el siguiente cronograma de actividades:
-	\begin{itemize}
-		\item \textbf{De abril a mayo:} La alumna realizará una revisión de la literatura sobre propiedades ópticas de eritrocitos sanos y enfermos, así como la clasificación de sus diferentes enfermedades. 
-		\item \textbf{De junio a julio:} La alumna estudiará el método de elementos finitos y se familiarizará con el uso de COMSOL y SolidWorks. De manera paralela, redactará los capítulos iniciales de la tesis escrita.
-		\item \textbf{De agosto a septiembre:} La alumna validará el modelo numérico con casos analíticos como el de teoría de Mie.
-		\item \textbf{De septiembre a octubre:} La alumna realizará el cálculo de las secciones transversales de absorción, extinción y esparcimiento para eritrocitos sanos y para dos casos de eritrocitos enfermos y contrastará los resultados.
-		\item \textbf{De octubre a diciembre:} La alumna redactará los resultados y conclusiones obtenidos.
+	\begin{itemize} 
+		\item \textbf{Abril – mayo:} Revisión de la literatura sobre las propiedades ópticas de eritrocitos sanos y enfermos, así como la clasificación de sus principales alteraciones morfológicas y fisiológicas.
+		\item \textbf{Junio – julio:} Estudio del método de elementos finitos y familiarización con los programas COMSOL Multiphysics y SolidWorks. Paralelamente, se iniciará la redacción de los capítulos introductorios de la tesis escrita.
+		
+		\item \textbf{Agosto – septiembre:} Validación del modelo numérico mediante comparación con casos analíticos conocidos, como la teoría de Mie.
+		
+		\item \textbf{Septiembre – octubre:} Cálculo de las secciones transversales de absorción, extinción y esparcimiento para eritrocitos sanos y para al menos dos casos de eritrocitos patológicos. Análisis y contraste de los resultados obtenidos.
+		
+		\item \textbf{Octubre – diciembre:} Redacción del análisis de resultados y de las conclusiones finales de la tesis escrita.
 	\end{itemize}
+	
+	
 	
 	\bigskip
 	
@@ -113,7 +113,7 @@ backref=true]{biblatex} %style = trad-abbrv
 		\end{tabular}
 	}
 	
-	{\vspace{-2.53cm}\hspace{7cm}\begin{tabular} { c}
+	{\vspace{-2.85cm}\hspace{7cm}\begin{tabular} { c}
 			\setlength{\tabcolsep}{15pt}
 			\renewcommand{\arraystretch}{1}
 			\noindent\rule{5.5cm}{0.4pt}\qquad \\
