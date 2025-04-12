@@ -38,8 +38,9 @@ backref=false]{biblatex} %style = trad-abbrv
 \AtEveryBibitem{\clearfield{month}}
 \AtEveryBibitem{\clearfield{day}}
 \AtEveryBibitem{\clearfield{issn}}
+\AtEveryBibitem{\clearfield{serie}}
 \DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
-\addbibresource{Referencias.bib}
+\addbibresource{Tesis.bib}
 
 
 \begin{document}
@@ -64,25 +65,34 @@ backref=false]{biblatex} %style = trad-abbrv
 	%------ Fin de encabezado -------- %
 	\vspace{0.5cm}
 	
-	\hspace{10cm}{\raggedleft Ciudad Universitaria, 10 de abril de 2025.}
+	\hspace{10cm}{\raggedleft Ciudad Universitaria, 22 de abril de 2025}
 	
 	\hspace{1cm}
 	
 	\vspace{0.5cm}
 	
-	A la Coordinación de Física Biomédica
+	\textsc{Universidad Nacional Autónoma de México}
 	
-	Facultad de Ciencias
+	\textsc{Facultad de Ciencias
+	}
 	
-	Universidad Nacional Autónoma de México\\
+	\textsc{Comité Académico de Titulación
+	}
 	
-	Por medio de la presente, comunico a ustedes el plan de actividades para la titulación en la modalidad de tesis de la alumna Dana Larissa Luna González, con número de cuenta 421122680, quien desarrollará el proyecto titulado ``Cálculo numérico de propiedades ópticas de eritrocitos sanos y enfermos'' bajo mi asesoría en el grupo de investigación en Nanoplasmónica del Departamento de Física, Facultad de Ciencias, UNAM.\\
+	\textsc{PRESENTE}\\
 	
-	El estudio de las propiedades ópticas de las células biológicas como los osteoblastos \cite{Osteoblastos}, los linfocitos \cite{Linfocitos}, y los eritrocitos \cite{Blood}, es de importancia para el área médica. A partir del análisis de las propiedades ópticas, se obtiene información sobre la composición y el estado morfológico celular, lo que tiene aplicaciones potenciales en el diagnóstico y la detección temprana de diversas enfermedades, incluyendo ciertos tipos de cáncer e infecciones virales \cite{Linfocitos}. En particular, el estudio de los eritrocitos tiene un papel importante en el diagnóstico de distintas formas de anemia, así como en el diseño de terapias ópticas emergentes, como el tratamiento de venas varicosas \cite{Blood}. \\
+	\noindent
+	% 
+	Por medio de la presente, comunico a ustedes el plan de actividades de la alumna Dana Larissa Luna González, con número de cuenta 421122680, para  iniciar el trámite de titulación en la modalidad de tesis quien desarrollará el proyecto titulado ``Cálculo numérico de propiedades ópticas de eritrocitos sanos y enfermos'' bajo mi asesoría en el grupo de Nanoplasmónica adscrito al Departamento de Física, Facultad de Ciencias, UNAM.\\
 	
-	En este contexto, los eritrocitos, los principales responsables de las propiedades ópticas de la sangre, juegan un papel clave. Factores como el hematocrito, la concentración de hemoglobina y el nivel de saturación de oxígeno influyen directamente en los mecanismos de absorción y esparcimiento de la luz de los eritrocitos \cite{Blood}, al modificar tanto su índice de refracción como su morfología celular. Por ello, el objetivo de esta tesis de licenciatura es estudiar las propiedades ópticas de eritrocitos sanos y enfermos, considerando variaciones en su índice de refracción y forma, para cuantificar los efectos en las secciones transversales de extinción, esparcimiento y absorción. Se propone utilizar el método de elementos finitos (FEM, por sus siglas en inglés) y comparar los resultados obtenidos con aquellos reportados en la literatura que emplean métodos alternativos.\\
+	El estudio de las propiedades ópticas de las células biológicas como los osteoblastos \cite{antunesOpticalPropertiesBone2019}, los linfocitos \cite{yoonIdentificationNonactivatedLymphocytes2017}, y los eritrocitos \cite{bosschaartLiteratureReviewNovel2014}, es de importancia para el área médica por sus potenciales aplicaciones en el diagnóstico y la detección temprana de enfermedades.  En particular, se ha reportado que  los eritocitos  presentan un cambio en su composición y estado morfológico  ante distitntas formas de anemia \cite{bosschaartLiteratureReviewNovel2014}. En este contexto, los eritrocitos, los principales responsables de las propiedades ópticas de la sangre, juegan un papel clave.\\
 	
-	Durante el desarrollo de la tesis, la alumna estudiará el método de elementos finitos y las principales enfermedades que afectan a los eritrocitos. Posteriormente, se familiarizará con el uso del software SolidWorks para el diseño de las distintas morfologías celulares, las cuales serán implementadas en COMSOL Multiphysics con el fin de analizar casos con diferentes índices de refracción asociados a diversas patologías. Asimismo, se realizará la validación del modelo numérico mediante casos analíticos, como la teoría de Mie. Con base en las etapas mencionadas, se propone el siguiente cronograma de actividades:
+	La respuesta óptica de los eritrocitos se modifica por factores como el hematocrito, la concentración de hemoglobina y el nivel de saturación de oxígeno, los cuales modifican directamente los mecanismos de absorción y esparcimiento de la luz de los eritrocitos \cite{bosschaartLiteratureReviewNovel2014}, al modificar tanto su índice de refracción como su morfología celular. Por ello, el objetivo de esta tesis de licenciatura es caracterizar las propiedades ópticas de eritrocitos tanto sanos como enfermos, considerando variaciones en su índice de refracción y morfología, para cuantificar la respuesta espectral de los eritocitos mediante el cálculo de las secciones transversales de extinción, esparcimiento y absorción. Para el cálculo de las secciones transversales, se propone utilizar el método de elemento finito (FEM, por sus siglas en inglés) y comparar los resultados obtenidos con los obtenidos con otras metodologías \cite{ergulComputationalStudyScattering2010,wriedtLightScatteringSingle2006}.\\
+	
+	Durante el desarrollo de la tesis, la alumna
+	incursionará en temas de interés médico sobre eritrositos, en teorías analíticas de esparcimiento de luz y métodos numéricos para la solución de la ecuación de Helmholtz. En el primer rubro se estudiarán las enfermedades más comunes que afectan eritrositos. En el segundo, la solucioón analítica de teoría de Mie, y el uso de las relaciones de Kramers Kronig \cite{lucariniKramersKronigRelationsOptical2005} para determinar la respuesta óptica de los eritrocitos considerados. Finalmente, la alumna se familirizará con el FEM implementado en el software comercial COMSOL Multiphysics con el fin de analizar casos con diferentes índices de refracción asociados a diversas patologías y en la construcción de  geometrías complejas mediante SolidWorks para realizar los cálculos de eritrositos. Ambos softwares requieren de una licencia ya en uso por el grupo de Nanoplasmónica.\\
+	
+	Con base en las etapas mencionadas, se propone el siguiente cronograma de actividades:
 	
 	\begin{itemize} 
 		\item \textbf{Abril – mayo:} Revisión de la literatura sobre las propiedades ópticas de eritrocitos sanos y enfermos, así como la clasificación de sus principales alteraciones morfológicas y fisiológicas.
@@ -95,6 +105,36 @@ backref=false]{biblatex} %style = trad-abbrv
 		\item \textbf{Octubre – diciembre:} Redacción del análisis de resultados y de las conclusiones finales de la tesis escrita.
 	\end{itemize}
 	
+
+	Para el trabajo escrito, se propone el siguiente índice:
+	\begin{itemize}
+		\item [] Agradecimientos
+		\item [] Resumen
+		\item [] Introducción: Justificación y antecedentes del trabajo
+		\begin{enumerate}
+			\item Esparcimiento de ondas EM
+			\begin{enumerate}
+				\item Fundamentos
+				\item FEM
+				\item Kramers-Kronig
+			\end{enumerate}
+			\item Eritrocitos y enfermedades sanguíneas
+			\begin{enumerate}
+				\item Funciones dieléctricas
+			\end{enumerate}
+			\item Resultados
+			\begin{enumerate}
+				\item Convergencia
+				\item Propiedades de un eritrocito snao
+				\item  Contraste con eritrocitos enfermos
+			\end{enumerate}
+			\item Conclusiones
+			\item Trabajo a futuro	
+		\end{enumerate}
+		\item[] Apéndice
+	\end{itemize}
+	
+	Atentamente,
 	
 	
 	\bigskip
@@ -118,7 +158,7 @@ backref=false]{biblatex} %style = trad-abbrv
 			\renewcommand{\arraystretch}{1}
 			\noindent\rule{5.5cm}{0.4pt}\qquad \\
 			
-			\qquad  \textbf{Alejandro Reyes Coronado} \qquad \\
+			\qquad  \textbf{Dr. Alejandro Reyes Coronado} \qquad \\
 			\qquad Profesor Titular C de Tiempo Completo  \qquad \\  
 			\qquad Departamento de Física, Facultad de Ciencias, UNAM\qquad \\ 
 			\qquad  Tel.: (55) 5622 4968 \qquad \\

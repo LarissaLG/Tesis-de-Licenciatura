@@ -17,7 +17,7 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global/global}
-  \entry{Osteoblastos}{article}{}{}
+  \entry{antunesOpticalPropertiesBone2019}{article}{}{}
     \name{author}{5}{}{%
       {{hash=AA}{%
          family={Antunes},
@@ -31,11 +31,12 @@
          given={José\bibnamedelima HL},
          giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
-      {{hash=MAF}{%
+      {{hash=MAFG}{%
          family={Monte},
          familyi={M\bibinitperiod},
-         given={Adamo\bibnamedelima FG},
-         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={Adamo F.\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
       }}%
       {{hash=BA}{%
          family={Barbosa},
@@ -43,40 +44,42 @@
          given={Alcimar},
          giveni={A\bibinitperiod},
       }}%
-      {{hash=FNM}{%
+      {{hash=FNMF}{%
          family={Ferreira},
          familyi={F\bibinitperiod},
-         given={Nuno\bibnamedelima MF},
-         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Nuno M.\bibnamedelima F.},
+         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  F\bibinitperiod},
       }}%
     }
-    \strng{namehash}{AAPJHMAFBAFNM1}
-    \strng{fullhash}{AAPJHMAFBAFNM1}
+    \keyw{biomaterials, bone tissue, complex structure, integrator sphere}
+    \strng{namehash}{AAPJHMAFGBAFNMF1}
+    \strng{fullhash}{AAPJHMAFGBAFNMF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \verb{doi}
     \verb 10.3390/proceedings2019027036
     \endverb
+    \field{issn}{2504-3900}
     \field{number}{1}
     \field{pages}{36}
-    \field{shorttitle}{Optical properties on bone analysis}
-    \field{title}{Optical properties on bone analysis: an approach to
-  biomaterials}
+    \field{shorttitle}{Optical {Properties} on {Bone} {Analysis}}
+    \field{title}{Optical {Properties} on {Bone} {Analysis}: {An} {Approach} to
+  {Biomaterials}}
     \verb{url}
-    \verb https://pdfs.semanticscholar.org/a7b5/68be4f6c5f35cb12740ceaea5219dbe
-    \verb 0ebfd.pdf
+    \verb https://www.mdpi.com/2504-3900/27/1/36
     \endverb
     \field{volume}{27}
     \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
-    \verb ge\\T2P569H5\\Antunes et al. - 2019 - Optical properties on bone anal
-    \verb ysis an approach to biomaterials.pdf:application/pdf
+    \verb Full Text PDF:C\:\\Users\\Poh\\Zotero\\storage\\7E5HRGUN\\Antunes et
+    \verb al. - 2019 - Optical Properties on Bone Analysis An Approach to Bioma
+    \verb terials.pdf:application/pdf
     \endverb
     \field{journaltitle}{Proceedings}
     \field{year}{2019}
   \endentry
 
-  \entry{Linfocitos}{article}{}{}
+  \entry{yoonIdentificationNonactivatedLymphocytes2017}{article}{}{}
     \name{author}{7}{}{%
       {{hash=YJ}{%
          family={Yoon},
@@ -121,10 +124,38 @@
          giveni={Y\bibinitperiod},
       }}%
     }
+    \keyw{Biomedical engineering, Biophotonics, Interference microscopy,
+  Lymphocytes, Machine learning}
     \strng{namehash}{YJJYKMhKKLSKSJPY1}
     \strng{fullhash}{YJJYKMhKKLSKSJPY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Identification of lymphocyte cell types are crucial for understanding their
+  pathophysiological roles in human diseases. Current methods for
+  discriminating lymphocyte cell types primarily rely on labelling techniques
+  with magnetic beads or fluorescence agents, which take time and have costs
+  for sample preparation and may also have a potential risk of altering
+  cellular functions. Here, we present the identification of non-activated
+  lymphocyte cell types at the single-cell level using refractive index (RI)
+  tomography and machine learning. From the measurements of three-dimensional
+  RI maps of individual lymphocytes, the morphological and biochemical
+  properties of the cells are quantitatively retrieved. To construct cell type
+  classification models, various statistical classification algorithms are
+  compared, and the k-NN (k = 4) algorithm was selected. The algorithm
+  combines multiple quantitative characteristics of the lymphocyte to construct
+  the cell type classifiers. After optimizing the feature sets via
+  cross-validation, the trained classifiers enable identification of three
+  lymphocyte cell types (B, CD4+ T, and CD8+ T cells) with high sensitivity and
+  specificity. The present method, which combines RI tomography and machine
+  learning for the first time to our knowledge, could be a versatile tool for
+  investigating the pathophysiological roles of lymphocytes in various diseases
+  including cancers, autoimmune diseases, and virus infections.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41598-017-06311-y
+    \endverb
+    \field{issn}{2045-2322}
     \field{number}{1}
     \field{pages}{6654}
     \field{title}{Identification of non-activated lymphocytes using
@@ -134,16 +165,16 @@
     \endverb
     \field{volume}{7}
     \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
-    \verb ge\\9NZFLYXJ\\Yoon et al. - 2017 - Identification of non-activated ly
-    \verb mphocytes using three-dimensional refractive index tomography and.pdf
-    \verb :application/pdf
+    \verb Full Text PDF:C\:\\Users\\Poh\\Zotero\\storage\\7NRM8LG4\\Yoon et al.
+    \verb  - 2017 - Identification of non-activated lymphocytes using three-dim
+    \verb ensional refractive index tomography and.pdf:application/pdf
     \endverb
     \field{journaltitle}{Scientific Reports}
+    \field{month}{07}
     \field{year}{2017}
   \endentry
 
-  \entry{Blood}{article}{}{}
+  \entry{bosschaartLiteratureReviewNovel2014}{article}{}{}
     \name{author}{5}{}{%
       {{hash=BN}{%
          family={Bosschaart},
@@ -164,9 +195,11 @@
          giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
   G\bibinitperiod},
       }}%
-      {{hash=VLTG}{%
-         family={Van\bibnamedelima Leeuwen},
-         familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      {{hash=vLTG}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Leeuwen},
+         familyi={L\bibinitperiod},
          given={Ton\bibnamedelima G.},
          giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
@@ -177,31 +210,231 @@
          giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{BNEGJAMCGVLTGFDJ1}
-    \strng{fullhash}{BNEGJAMCGVLTGFDJ1}
+    \keyw{Anisotropy, Blood Physiological Phenomena, Erythrocytes, Hematocrit,
+  Humans, Optics and Photonics, Scattering, Radiation}
+    \strng{namehash}{BNEGJAMCGvLTGFDJ1}
+    \strng{fullhash}{BNEGJAMCGvLTGFDJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Optical property measurements on blood are influenced by a large variety of
+  factors of both physical and methodological origin. The aim of this review is
+  to list these factors of influence and to provide the reader with optical
+  property spectra (250–2,500 nm) for whole blood that can be used in the
+  practice of biomedical optics (tabulated in the appendix). Hereto, we perform
+  a critical examination and selection of the available optical property
+  spectra of blood in literature, from which we compile average spectra for the
+  absorption coefficient (μ(a)), scattering coefficient (μ(s)) and scattering
+  anisotropy (g). From this, we calculate the reduced scattering coefficient
+  (μ(s)′) and the effective attenuation coefficient (μ(eff)). In the
+  compilation of μ(a) and μ(s), we incorporate the influences of absorption
+  flattening and dependent scattering (i.e. spatial correlations between
+  positions of red blood cells), respectively. For the influence of dependent
+  scattering on μ(s), we present a novel, theoretically derived formula that
+  can be used for practical rescaling of μ(s) to other haematocrits. Since the
+  measurement of the scattering properties of blood has been proven to be
+  challenging, we apply an alternative, theoretical approach to calculate
+  spectra for μ(s) and g. Hereto, we combine Kramers–Kronig analysis with
+  analytical scattering theory, extended with Percus–Yevick structure factors
+  that take into account the effect of dependent scattering in whole blood. We
+  argue that our calculated spectra may provide a better estimation for μ(s)
+  and g (and hence μ(s)′ and μ(eff)) than the compiled spectra from
+  literature for wavelengths between 300 and 600 nm.%
+    }
     \verb{doi}
     \verb 10.1007/s10103-013-1446-7
     \endverb
-    \field{issn}{0268-8921, 1435-604X}
+    \field{issn}{1435-604X}
     \field{number}{2}
     \field{pages}{453\bibrangedash 479}
     \field{title}{A literature review and novel theoretical approach on the
   optical properties of whole blood}
-    \verb{url}
-    \verb https://link.springer.com/10.1007/s10103-013-1446-7
-    \endverb
     \field{volume}{29}
     \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
-    \verb ge\\A6JRQL6M\\Bosschaart et al. - 2014 - A literature review and nove
-    \verb l theoretical approach on the optical properties of whole blood.pdf:a
-    \verb pplication/pdf
+    \verb Texto completo:C\:\\Users\\Poh\\Zotero\\storage\\N287L7DY\\Bosschaart
+    \verb  et al. - 2014 - A literature review and novel theoretical approach o
+    \verb n the optical properties of whole blood.pdf:application/pdf
     \endverb
     \field{journaltitle}{Lasers in Medical Science}
     \field{month}{03}
     \field{year}{2014}
+  \endentry
+
+  \entry{ergulComputationalStudyScattering2010}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=EO}{%
+         family={Ergül},
+         familyi={E\bibinitperiod},
+         given={Ozgür},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=AEA}{%
+         family={Arslan-Ergül},
+         familyi={A\bibinithyphendelim E\bibinitperiod},
+         given={Ayça},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gürel},
+         familyi={G\bibinitperiod},
+         given={Levent},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Animals, Computer Simulation, Erythrocytes, Abnormal, Humans, Light,
+  Models, Cardiovascular, Nephelometry and Turbidimetry, Refractometry,
+  Scattering, Radiation}
+    \strng{namehash}{EOAEAGL1}
+    \strng{fullhash}{EOAEAGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We present a comparative study of scattering from healthy red blood cells
+  (RBCs) and diseased RBCs with deformed shapes. Scattering problems involving
+  three-dimensional RBCs are formulated accurately with the electric and
+  magnetic current combined-field integral equation and solved efficiently by
+  the multilevel fast multipole algorithm. We compare scattering cross section
+  values obtained for different RBC shapes and different orientations. In this
+  way, we determine strict guidelines to distinguish deformed RBCs from healthy
+  RBCs and to diagnose various diseases using scattering cross section values.
+  The results may be useful for designing new and improved flow cytometry
+  procedures.%
+    }
+    \verb{doi}
+    \verb 10.1117/1.3467493
+    \endverb
+    \field{issn}{1560-2281}
+    \field{number}{4}
+    \field{pages}{045004}
+    \field{title}{Computational study of scattering from healthy and diseased
+  red blood cells}
+    \field{volume}{15}
+    \verb{file}
+    \verb Texto completo:C\:\\Users\\Poh\\Zotero\\storage\\CD7JPPK7\\Ergül et
+    \verb al. - 2010 - Computational study of scattering from healthy and disea
+    \verb sed red blood cells.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Journal of Biomedical Optics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{wriedtLightScatteringSingle2006}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=WT}{%
+         family={Wriedt},
+         familyi={W\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hellmers},
+         familyi={H\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EE}{%
+         family={Eremina},
+         familyi={E\bibinitperiod},
+         given={Elena},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Schuh},
+         familyi={S\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Discrete dipole approximation, Discrete sources method,
+  Electromagnetic scattering, Erythrocyte, Finite integration technique,
+  Multiple multipole program, T-matrix}
+    \strng{namehash}{WTHJEESR1}
+    \strng{fullhash}{WTHJEESR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    In this paper we investigate the capabilities of different light scattering
+  programs for light scattering simulation of the single human red blood cell,
+  also known as erythrocyte. Knowledge of the scattering properties can help to
+  solve the inverse problem of classifying erythrocytes according to size and
+  shape using measured scattering diagrams. We compare the different programs
+  by presenting the corresponding scattering diagrams. Then we give an overview
+  of computation times and point out the different characteristics of the
+  methods.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jqsrt.2005.11.057
+    \endverb
+    \field{issn}{0022-4073}
+    \field{number}{1}
+    \field{pages}{444\bibrangedash 456}
+    \field{shorttitle}{Light scattering by single erythrocyte}
+    \field{title}{Light scattering by single erythrocyte: {Comparison} of
+  different methods}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0022407305004073
+    \endverb
+    \field{volume}{100}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Poh\\Zotero\\storage\\6I3PT2BL\\S0
+    \verb 022407305004073.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative
+  Transfer}
+    \field{month}{07}
+    \field{year}{2006}
+  \endentry
+
+  \entry{lucariniKramersKronigRelationsOptical2005}{book}{}{}
+    \name{author}{4}{}{%
+      {{hash=LV}{%
+         family={Lucarini},
+         familyi={L\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=PKE}{%
+         family={Peiponen},
+         familyi={P\bibinitperiod},
+         given={Kai-Erik},
+         giveni={K\bibinithyphendelim E\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Saarinen},
+         familyi={S\bibinitperiod},
+         given={Jarkko},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VE}{%
+         family={Vartiainen},
+         familyi={V\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \keyw{entropy, Linear optics, Nonlinear optics, Optical materials research
+  and development, Optical spectroscopy, optics, Physical chemistry,
+  spectroscopy}
+    \strng{namehash}{LVPKESJVE1}
+    \strng{fullhash}{LVPKESJVE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/b138913
+    \endverb
+    \field{isbn}{978-3-540-23673-3}
+    \field{title}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
+  {Research}}
+    \field{volume}{110}
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Poh\\Zotero\\storage\\LAUT9XXZ\\2005 - Kram
+    \verb ers-Kronig Relations in Optical Materials Research.pdf:application/pd
+    \verb f
+    \endverb
+    \field{year}{2005}
   \endentry
 \enddatalist
 \endinput

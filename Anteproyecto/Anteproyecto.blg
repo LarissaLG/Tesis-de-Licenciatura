@@ -4,7 +4,7 @@ The top-level auxiliary file: Anteproyecto.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
 Reallocating 'name_of_file' (item size: 1) to 17 items.
-Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -21,48 +21,48 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: Anteproyecto-blx.bib
-Database file #2: Referencias.bib
+Database file #2: Tesis.bib
 Biblatex version: 3.20
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 4 entries,
+You've used 7 entries,
             6402 wiz_defined-function locations,
-            1237 strings with 10667 characters,
-and the built_in function-call counts, 52984 in all, are:
-= -- 4587
-> -- 910
-< -- 112
-+ -- 1812
-- -- 585
-* -- 4159
-:= -- 6922
+            1283 strings with 17249 characters,
+and the built_in function-call counts, 85402 in all, are:
+= -- 7259
+> -- 1385
+< -- 218
++ -- 2857
+- -- 806
+* -- 6612
+:= -- 10796
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 21
-chr.to.int$ -- 56
-cite$ -- 6
-duplicate$ -- 4544
-empty$ -- 4330
-format.name$ -- 466
-if$ -- 10261
+call.type$ -- 7
+change.case$ -- 66
+chr.to.int$ -- 68
+cite$ -- 12
+duplicate$ -- 7970
+empty$ -- 7026
+format.name$ -- 796
+if$ -- 16602
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 13
 missing$ -- 0
-newline$ -- 203
-num.names$ -- 114
-pop$ -- 1361
+newline$ -- 365
+num.names$ -- 246
+pop$ -- 2524
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 142
 quote$ -- 0
-skip$ -- 764
+skip$ -- 1389
 stack$ -- 0
-substring$ -- 9813
-swap$ -- 665
-text.length$ -- 146
+substring$ -- 14909
+swap$ -- 1287
+text.length$ -- 244
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 124
+type$ -- 226
 warning$ -- 0
-while$ -- 739
+while$ -- 1216
 width$ -- 0
-write$ -- 200
+write$ -- 359
