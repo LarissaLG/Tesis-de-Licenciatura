@@ -210,8 +210,8 @@
          giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \keyw{Anisotropy, Blood Physiological Phenomena, Erythrocytes, Hematocrit,
-  Humans, Optics and Photonics, Scattering, Radiation}
+    \keyw{Humans, Scattering, Radiation, Anisotropy, Blood Physiological
+  Phenomena, Erythrocytes, Hematocrit, Optics and Photonics}
     \strng{namehash}{BNEGJAMCGvLTGFDJ1}
     \strng{fullhash}{BNEGJAMCGvLTGFDJ1}
     \field{labelnamesource}{author}
@@ -412,9 +412,6 @@
          giveni={E\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Springer-Verlag}%
-    }
     \keyw{entropy, Linear optics, Nonlinear optics, Optical materials research
   and development, Optical spectroscopy, optics, Physical chemistry,
   spectroscopy}
@@ -422,13 +419,9 @@
     \strng{fullhash}{LVPKESJVE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1007/b138913
-    \endverb
     \field{isbn}{978-3-540-23673-3}
     \field{title}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
   {Research}}
-    \field{volume}{110}
     \verb{file}
     \verb Full Text PDF:C\:\\Users\\Poh\\Zotero\\storage\\LAUT9XXZ\\2005 - Kram
     \verb ers-Kronig Relations in Optical Materials Research.pdf:application/pd
