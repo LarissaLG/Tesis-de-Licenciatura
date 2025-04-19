@@ -8,6 +8,7 @@
 \usepackage[left=2cm,right=2cm,top=1.8cm,bottom=2.3cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{tikz}
+\usepackage{enumitem} %cambiar el estilo de la numeración de las listas
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
@@ -72,36 +73,34 @@ backref=false]{biblatex} %style = trad-abbrv
 	
 	\vspace{0.5cm}
 	
-	\textsc{Universidad Nacional Autónoma de México}
+	\noindent\textsc{Universidad Nacional Autónoma de México}
 	
-	\textsc{Facultad de Ciencias
+	\noindent\textsc{Facultad de Ciencias
 	}
 	
-	\textsc{Coordinación de Física Biomédica
+	\noindent\textsc{Coordinación de Física Biomédica
 	}
 	
-	\textsc{Comité Académico de Titulación
+	\noindent\textsc{Comité Académico de Titulación
 	}
 	
-	\textsc{PRESENTE}\\
+	\noindent\textsc{PRESENTE}\\
 	
 	\noindent
 	% 
-	Por medio de la presente, comunico a ustedes el plan de actividades de la alumna Dana Larissa Luna González, con número de cuenta 421122680, para  iniciar el trámite de titulación en la modalidad de tesis. La alumna desarrollará el proyecto titulado ``Cálculo numérico de propiedades ópticas de eritrocitos sanos y enfermos'' bajo mi asesoría, en el grupo de Nanoplasmónica, adscrito al Departamento de Física, Facultad de Ciencias, UNAM.\\
+	Por medio de la presente, comunico a ustedes el plan de actividades de la alumna Dana Larissa Luna González, con número de cuenta 421122680, para  iniciar el trámite de titulación en la modalidad de tesis. La alumna desarrollará el proyecto titulado ``Cálculo numérico de propiedades ópticas de eritrocitos sanos y enfermos'' bajo mi asesoría, en el grupo de Nanoplasmónica del Departamento de Física, Facultad de Ciencias, UNAM.\\
 	
-	El estudio de las propiedades ópticas de las células biológicas como los osteoblastos \cite{antunesOpticalPropertiesBone2019}, los linfocitos~\cite{yoonIdentificationNonactivatedLymphocytes2017}, y los eritrocitos \cite{bosschaartLiteratureReviewNovel2014}, es de importancia para el área médica por sus potenciales aplicaciones en el diagnóstico y la detección temprana de enfermedades.  En particular, se ha reportado que los eritrocitos presentan alteraciones en su composición y morfología ante diversas formas de anemia \cite{bosschaartLiteratureReviewNovel2014}, lo que afecta directamente su respuesta óptica. Dado que estas células constituyen los principales moduladores de la respuesta óptica de la sangre \cite{bosschaartLiteratureReviewNovel2014}, su estudio resulta fundamental para comprender la interacción luz-tejido en contextos fisiológicos y patológicos.\\
+	El estudio de las propiedades ópticas de las células biológicas como los osteoblastos \cite{antunesOpticalPropertiesBone2019}, los linfocitos~\cite{yoonIdentificationNonactivatedLymphocytes2017}, y los eritrocitos \cite{bosschaartLiteratureReviewNovel2014}, es de importancia para el área médica por sus potenciales aplicaciones en el diagnóstico y la detección temprana de enfermedades.  En particular, se ha reportado que los eritrocitos presentan alteraciones en su composición y morfología ante diversas formas de anemia \cite{bosschaartLiteratureReviewNovel2014}, lo que afecta directamente su respuesta óptica \cite{wriedtLightScatteringSingle2006,meinkeOpticalPropertiesPlatelets2007}.\\
 	
-	La respuesta óptica de los eritrocitos se modifica por factores como el hematocrito, la concentración de hemoglobina y el nivel de saturación de oxígeno, los cuales afectan sus mecanismos de absorción y esparcimiento de la luz \cite{bosschaartLiteratureReviewNovel2014}, al modificar tanto su función dieléctrica como su morfología celular. En este contexto, el objetivo de la presente tesis de licenciatura es caracterizar las propiedades ópticas de eritrocitos tanto sanos como enfermos, considerando variaciones en su función dieléctrica y morfología. Para ello, se propone cuantificar la respuesta espectral de los eritrocitos mediante el cálculo de las secciones transversales de extinción, esparcimiento y absorción, empleando el método de elemento finito (FEM, por sus siglas en inglés) y comparar los resultados obtenidos con los reportados en la literatura, derivados de otras metodologías \cite{ergulComputationalStudyScattering2010,wriedtLightScatteringSingle2006}.\\
+	La respuesta óptica de los eritrocitos se modifica por factores como el hematocrito, la concentración de hemoglobina y el nivel de saturación de oxígeno, los cuales modifican su función dieléctrica y geometría, cambiando a su vez sus mecanismos de absorción y esparcimiento de luz. Por lo tanto, el objetivo principal de tesis de licenciatura de Dana Larissa Luna González es caracterizar las propiedades ópticas de eritrocitos tanto sanos como enfermos, considerando variaciones en su función dieléctrica y morfología. Para ello, se propone cuantificar la respuesta espectral de los eritrocitos mediante el cálculo de las secciones transversales de extinción, esparcimiento y absorción, empleando el método de elemento finito (FEM, por sus siglas en inglés) y comparar los resultados obtenidos con los reportados en la literatura, derivados de otras metodologías \cite{ergulComputationalStudyScattering2010,wriedtLightScatteringSingle2006}.\\
 	
-	Durante el desarrollo del trabajo, la alumna abordará tres ejes temáticos principales: temas de interés médico sobre eritrocitos,  teorías analíticas de esparcimiento de luz y métodos numéricos para resolver la ecuación de Helmholtz. En el primer apartado se estudiarán las patologías más comunes que afectan a los eritrocitos. En el segundo, se estudiará la solución analítica proporcionada por la teoría de Mie, así como la implementación de las relaciones de Kramers-Kronig \cite{lucariniKramersKronigRelationsOptical2005} para determinar la respuesta espectral de los eritrocitos considerados. Finalmente, se empleará el método de elemento finito a través del software comercial COMSOL Multiphysics y se realizará la construcción de diversas geometrías celulares mediante el software SolidWorks. Ambos programas, cuyas licencias ya están en uso por el grupo de Nanoplasmónica, permitirán simular distintos escenarios patológicos mediante la variación de la función dieléctrica y la morfología celular.\\
-	
-	Con base en las etapas mencionadas, se propone el siguiente cronograma de actividades:
+	Durante el desarrollo del trabajo, la alumna abordará tres ejes temáticos principales. En el primer eje se ahondará en las patologías más comunes que afectan a los eritrocitos. En el segundo, se estudiará la solución analítica de la teoría de Mie, así como las relaciones de Kramers-Kronig \cite{lucariniKramersKronigRelationsOptical2005} para determinar la respuesta espectral de los eritrocitos considerados. Finalmente, se empleará el FEM implementado en COMSOL Multiphysics\textsuperscript{\texttrademark}, en conjunto con el software SolidWorks con el que diseñarán las geometrías de los eritrocitos.  Ambos programas, cuyas licencias ya están en uso por el grupo de Nanoplasmónica, permitirán simular distintos escenarios patológicos mediante la variación de la función dieléctrica y la morfología celular. Para cumplir con el objetivo y con lo abordado en  los ejes temáticos, el cronograma de actividades es
 	
 	\begin{itemize} 
 		\item \textbf{Abril – mayo:} Revisión de la literatura sobre las propiedades ópticas de eritrocitos sanos y enfermos, así como la clasificación de sus principales alteraciones morfológicas y fisiológicas.
 		\item \textbf{Junio – julio:} Estudio del método de elemento finito y familiarización con los programas COMSOL Multiphysics y SolidWorks. Paralelamente, se iniciará la redacción de los capítulos introductorios de la tesis escrita.
 		
-		\item \textbf{Agosto – septiembre:} Validación del modelo numérico mediante su comparación con casos analíticos conocidos, como la teoría de Mie. Además, se emplearán las relaciones de Kramers-Kronig para determinar la respuesta espectral de los eritrocitos. 
+		\item \textbf{Agosto – septiembre:} Validación del modelo numérico mediante su comparación con casos analíticos mediante teoría de Mie. Además, se emplearán las relaciones de Kramers-Kronig para determinar la respuesta espectral de los eritrocitos. 
 		
 		\item \textbf{Septiembre – octubre:} Cálculo de las secciones transversales de absorción, extinción y esparcimiento para eritrocitos sanos y para al menos dos casos de eritrocitos patológicos. Análisis y contraste de los resultados obtenidos.
 		
@@ -109,24 +108,25 @@ backref=false]{biblatex} %style = trad-abbrv
 	\end{itemize}
 	
 
-	Para el trabajo escrito, se propone el siguiente índice:
+	Para el trabajo escrito, se propone el siguiente índice
 	\begin{itemize}
+		\setlength\itemsep{0.05em}
 		\item  Agradecimientos
 		\item  Resumen
 		\item  Introducción: Justificación y antecedentes del trabajo
 		\begin{enumerate}
 			\item Esparcimiento de ondas electromagnéticas
-			\begin{enumerate}
+			\begin{enumerate}[label=1.\arabic*]
 				\item Fundamentos
 				\item Método de elemento finito
 				\item Relaciones de Kramers-Kronig
 			\end{enumerate}
 			\item Eritrocitos y sus patologías
-			\begin{enumerate}
+			\begin{enumerate} [label=2.\arabic*]
 				\item Funciones dieléctricas
 			\end{enumerate}
 			\item Resultados
-			\begin{enumerate}
+			\begin{enumerate} [label=3.\arabic*]
 				\item Convergencia numérica
 				\item Comparación del método analítico y el método numérico
 				\item Propiedades ópticas de un eritrocito sano
@@ -153,7 +153,7 @@ backref=false]{biblatex} %style = trad-abbrv
 		dana.larissalg@ciencias.unam.mx \\
 	\end{tabular}}
 
-	{\vspace{-3.05cm}\hspace{7.5cm}\begin{tabular} { c}
+	{\vspace{-3.09cm}\hspace{7.5cm}\begin{tabular} { c}
 		\rule{5.5cm}{0.4pt} \\[0.2cm]
 		\textbf{Dr. Alejandro Reyes Coronado} \\
 		Profesor Titular C de Tiempo Completo \\
