@@ -392,64 +392,6 @@
     \field{year}{2007}
   \endentry
 
-  \entry{ergulComputationalStudyScattering2010}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=EO}{%
-         family={Ergül},
-         familyi={E\bibinitperiod},
-         given={Ozgür},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=AEA}{%
-         family={Arslan-Ergül},
-         familyi={A\bibinithyphendelim E\bibinitperiod},
-         given={Ayça},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=GL}{%
-         family={Gürel},
-         familyi={G\bibinitperiod},
-         given={Levent},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \keyw{Animals, Computer Simulation, Erythrocytes, Abnormal, Humans, Light,
-  Models, Cardiovascular, Nephelometry and Turbidimetry, Refractometry,
-  Scattering, Radiation}
-    \strng{namehash}{EOAEAGL1}
-    \strng{fullhash}{EOAEAGL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    We present a comparative study of scattering from healthy red blood cells
-  (RBCs) and diseased RBCs with deformed shapes. Scattering problems involving
-  three-dimensional RBCs are formulated accurately with the electric and
-  magnetic current combined-field integral equation and solved efficiently by
-  the multilevel fast multipole algorithm. We compare scattering cross section
-  values obtained for different RBC shapes and different orientations. In this
-  way, we determine strict guidelines to distinguish deformed RBCs from healthy
-  RBCs and to diagnose various diseases using scattering cross section values.
-  The results may be useful for designing new and improved flow cytometry
-  procedures.%
-    }
-    \verb{doi}
-    \verb 10.1117/1.3467493
-    \endverb
-    \field{issn}{1560-2281}
-    \field{number}{4}
-    \field{pages}{045004}
-    \field{title}{Computational study of scattering from healthy and diseased
-  red blood cells}
-    \field{volume}{15}
-    \verb{file}
-    \verb Texto completo:C\:\\Users\\Poh\\Zotero\\storage\\CD7JPPK7\\Ergül et
-    \verb al. - 2010 - Computational study of scattering from healthy and disea
-    \verb sed red blood cells.pdf:application/pdf
-    \endverb
-    \field{journaltitle}{Journal of Biomedical Optics}
-    \field{year}{2010}
-  \endentry
-
   \entry{lucariniKramersKronigRelationsOptical2005}{book}{}{}
     \name{author}{4}{}{%
       {{hash=LV}{%
