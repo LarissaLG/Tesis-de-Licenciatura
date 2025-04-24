@@ -1,0 +1,60 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1448,         50]
+NotebookOptionsPosition[       970,         33]
+NotebookOutlinePosition[      1375,         49]
+CellTagsIndexPosition[      1332,         46]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Relaciones de Kramers-Kronig", "Title",
+ CellChangeTimes->{{3.954425722202241*^9, 
+  3.954425730974608*^9}},ExpressionUUID->"bad2124a-60b5-436d-8bdd-\
+7f441c5776cb"],
+
+Cell["Las relaciones de Kramers-Kronig est\[AAcute]n dadas por", "Text",
+ CellChangeTimes->{{3.9544257478916407`*^9, 
+  3.954425764668589*^9}},ExpressionUUID->"7c0c14c7-badb-489b-8963-\
+6138d4f55fa7"]
+}, Open  ]]
+},
+WindowSize->{1024.5, 543.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.1 para Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"691d6649-74ae-4308-af61-565f7324f389"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 171, 3, 98, "Title",ExpressionUUID->"bad2124a-60b5-436d-8bdd-7f441c5776cb"],
+Cell[754, 27, 200, 3, 35, "Text",ExpressionUUID->"7c0c14c7-badb-489b-8963-6138d4f55fa7"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
