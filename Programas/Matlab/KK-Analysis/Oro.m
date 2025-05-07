@@ -47,8 +47,16 @@ hold on
 plot(lambda_interp,k_oro)
 hold on
 % plot(lambda_interp,n_oro)
-legend('k','kOroKK','nOroKK')
+legend('k','kOroKK')
 
+%%
+%Graficar datos obtenidos
+plot(lambda_interp,n_interp)
+hold on
+plot(lambda_interp,n_oro)
+hold on
+% plot(lambda_interp,n_oro)
+legend('k','kOroKK')
 %%
 [refin, imfin]= selfconsbook_refractive_index(omega, n_interp, k_interp, 100,1);
 %%
