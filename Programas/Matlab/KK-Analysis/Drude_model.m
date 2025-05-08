@@ -53,7 +53,7 @@ k = imag(n_complex);
 
 
 %%
-[refin, imfin]= selfconsbook_refractive_index(omega, n, k, 100,1);
+[refin, imfin]= selfconsbook_refractive_index(omega, n, k, 1);
 %%
 figure;
 subplot(2,1,1)

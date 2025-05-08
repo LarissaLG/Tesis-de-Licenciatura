@@ -15,7 +15,7 @@ k      = dataTable{51:99, 2}; % segunda columna, distinto rango
 
 %%
 %Hacer interpolacion de los datos
-lambda_interp = linspace(min(lambda_nm), max(lambda_nm), 5000);
+lambda_interp = linspace(min(lambda_nm), max(lambda_nm), 10000);
 n_interp = interp1(lambda_nm, n, lambda_interp, 'spline');
 k_interp = interp1(lambda_nm, k, lambda_interp, 'spline');
 
@@ -30,11 +30,6 @@ k_interp = interp1(lambda_nm, k, lambda_interp, 'spline');
 c = 2.9979e8;                          % velocidad de la luz en m/s
 lambda_m = lambda_interp * 1e-9;           % convertir nm a m
 omega = 2 * pi * c ./ lambda_m;        % calcular omega (rad/s)
-
-%% 
-% Definimos la susceptibilidad eléctrica
-% chiRe = n_interp.^ 2 - k_interp.^2 - 1;
-% chiIm = 2*n_interp.* k_interp;
 
 %%
 %Aplicar KK
@@ -58,7 +53,7 @@ hold on
 % plot(lambda_interp,n_oro)
 legend('k','kOroKK')
 %%
-[refin, imfin]= selfconsbook_refractive_index(omega, n_interp, k_interp, 100,1);
+[refin, imfin]= selfconsbook_refractive_index(omega, n_interp, k_oro, 100,1);
 %%
 figure;
 subplot(2,1,1)
