@@ -30,30 +30,7 @@ function [refin, imfin] = selfconsbook_refractive_index(omega, reN, imN, N,mu)
     max_iter = 100;  % Número máximo de iteraciones
     tol = 1e-6;  % tolerancia de convergencia
 
-    % for j = 1:max_iter
-    %     old1 = comodo1;
-    %     old2 = comodo2;
-    % 
-    %     % Actualiza parte real
-    %     comodo1 = kkrebook_refractive_index(omega, comodo2);
-    %     comodo1 = mu * reN + (1 - mu) * comodo1;
-    % 
-    %     % Actualiza parte imaginaria
-    %     comodo2 = kkimbook_refractive_index(omega, comodo1);
-    %     comodo2 = mu * imN + (1 - mu) * comodo2;
-    % 
-    %     % Verifica convergencia relativa
-    %     err1 = norm(comodo1 - old1) / norm(old1);
-    %     err2 = norm(comodo2 - old2) / norm(old2);
-    % 
-    %     if err1 < tol && err2 < tol
-    %         fprintf('Convergencia en %d iteraciones.\n', j);
-    %         break
-    %     end
-    % end
-
-
-
+ 
     % Bucle auto-consistente
     for j = 1:N
         % Calcula nueva parte real a partir de Re[N] anterior
