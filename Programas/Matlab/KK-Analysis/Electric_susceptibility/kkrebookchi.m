@@ -1,4 +1,4 @@
-function rechi = kkrebook(omega, imchi, alpha)
+function rechi = kkrebookchi(omega, imchi, alpha)
 % kkrebook - Calcula la parte real de la susceptibilidad a partir
 % de su parte imaginaria mediante las relaciones de Kramers-Kronig.
 %
@@ -62,31 +62,3 @@ function rechi = kkrebook(omega, imchi, alpha)
     end
 end
  
-%% 
-function rechi = drude_rechi(omega, wp, gamma)
-% DRUDE_RECHI - Real part of the susceptibility using the Drude model
-%
-% Inputs:
-%   omega - Frequency vector [rad/s]
-%   wp    - Plasma frequency [rad/s]
-%   gamma - Damping constant [rad/s]
-%
-% Output:
-%   rechi - Real part of the susceptibility χ'(ω)
-
-% Drude model: χ'(ω) = - (wp^2 * (omega.^2 - gamma^2)) / ((omega.^2 + gamma^2).^2)
-rechi = - (wp^2 .* (omega.^2 - gamma^2)) ./ ((omega.^2 + gamma^2).^2);
-
-end
-%% 
-
-omega = linspace(1e13, 1e16, 1000); % frecuencia en rad/s
-wp = 1e16;    % frecuencia de plasma
-gamma = 1e14; % tasa de amortiguamiento
-
-rechi = drude_rechi(omega, wp, gamma);
-plot(omega, rechi);
-xlabel('\omega [rad/s]');
-ylabel('Re[\chi(\omega)]');
-title('Susceptibilidad real - Modelo de Drude');
-grid on;

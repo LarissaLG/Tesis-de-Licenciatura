@@ -1,4 +1,4 @@
-function [refin, imfin] = selfconsbook(omega, rechi, imchi, N, mu)
+function [refin, imfin] = selfconsbookchi(omega, rechi, imchi, N, mu)
 % selfconsbook - Estimación auto-consistente de la susceptibilidad compleja
 % utilizando las relaciones de Kramers-Kronig.
 %

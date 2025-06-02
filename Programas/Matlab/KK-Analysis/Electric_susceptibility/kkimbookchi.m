@@ -1,4 +1,4 @@
-function imchi = kkimbook(omega, rechi, alpha)
+function imchi = kkimbookchi(omega, rechi, alpha)
 % kkimbook - Calcula la parte imaginaria de la susceptibilidad
 % a partir de la parte real mediante las relaciones de Kramers-Kronig.
 %
