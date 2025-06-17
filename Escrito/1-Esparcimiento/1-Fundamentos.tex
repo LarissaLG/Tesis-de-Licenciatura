@@ -7,15 +7,14 @@
 
 It is recommended to write a summary about the contents of this chapter as an introduction to them. 
 
-\blindtext
 
 \section{Fundamentos}
 \label{section:basics}
 
-If you want to frame some equations because you consider them important, use the \textbf{tcolorbox} command. Also, you may use the \textbf{subequations} command sometimes. Fot example with the Maxwell's equations \cite{griffiths2013electrodynamics}:\vspace*{-.75em}
+La electrodinámica clásica es descrita mediante la fuerza de Lorentz y las ecuaciones de Maxwell \cite{griffithsIntroductionElectrodynamics2023}. En el sistema internacional de unidades, las ecuaciones de Maxwell en su forma diferencial están dadas por \cite{griffithsIntroductionElectrodynamics2023}\vspace*{-.5em}
 %
 	\begin{subequations} \label{eqs:Maxwell}
-	\begin{tcolorbox}[title = Ecuaciones de Maxwell en el sistema internacional de unidades,
+	\begin{tcolorbox}[
 	ams align, breakable]
 	\nabla \cdot\vb{E} &= \frac{\rho_{tot}}{\varepsilon_0}, &\mbox{(Ley de Gauss eléctrica)}  
 	\label{seq:GE} \\
@@ -25,25 +24,26 @@ If you want to frame some equations because you consider them important, use the
 	\label{seq:FL}\\
 	\nabla \times\vb{B} &= \mu_0 \vb{J}_{tot} +\varepsilon_0\mu_0 \pdv{\vb{E}}{t}, &
 	\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM}
-	\end{tcolorbox}\end{subequations}\vspace*{-.75em}\noindent
+	\end{tcolorbox}\end{subequations}\vspace*{-.4em}\noindent
 %
-and if you want them to appear in the analytical index just use the \textbf{index} command \textbackslash index\{ \}.\index{Maxwell!ecuaciones de}
-
-If you want to show two equations in only one row, use the macros \textbf{\textbackslash eqhalf}, for example\cite{hecht1998optics} \index{Ecuación!de onda}, for the Fourier transform \footnote{\setstretch{1.0} $\mathcal{F}[f(\vb{r},\omega)] = \int_{-\infty}^\infty f(\vb{r},t) e^{i(\vb{k}\cdot\vb{r} -\omega t)} dt$, con $\vb{k}$ una función de $\omega$. La transformada de Fourier inversa es entonces $\mathcal{F}^{-1}[f(\vb{r},t)] =\frac{1}{2\pi} \int_{-\infty}^\infty f(\vb{r},\omega) e^{i(\vb{k}\cdot\vb{r} -\omega t)} d\omega$.\index{Fourier! Transform}} or the Helholtz equation \index{Equation! Helmholtz} for $\vb{E}$ y $\vb{B}$ \cite{griffiths2013electrodynamics}
+donde $\vb{E}$ representa al campo eléctrico y $\vb{B}$ al campo magnético; $\rho_{tot}$ representa a la densidad de carga volumétrica y $\vb{J}_{tot}$ a la densidad de corriente volumétrica; $\epsilon_0$ a la permitividad eléctrica en el vacío y $\mu_0$ a la permeabilidad magnética en el vacío. Las ecuaciones de Maxwell pueden desacoplarse para obtener ecuaciones de segundo orden separadas para $\vb{E}$ y $\vb{B}$. En particular, al emplear la transformada de Fourier y considerar un medio sin fuentes externas, es decir, $\rho_{tot}=0$ y $\vb{J}_{tot}=0$, se obtiene que los campos electromagnéticos satisfacen la ecuación de onda vectorial~\cite{jacksonClassicalElectrodynamics2021}
 
 	\begin{subequations}%
 	\eqhalf{\nabla^2\vb{E} + k^2 \vb{E}=\vb{0},}%
 	\eqhalf{\nabla^2\vb{B} + k^2 \vb{B}=\vb{0}.}\label{eq:Helmholtz}%
 	\end{subequations}\vspace*{-1em}
 
-\noindent leading to plane waves as follow
+\noindent Una de las posibles soluciones son las ondas planas expresadas como 
 
 	\begin{subequations}%
 	\eqhalf{\vb{E}(\vb{r},t) =\vb{E_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}%
 	\eqhalf{\vb{B}(\vb{r}, t) =\vb{B_0}e^{i(\vb{k}\cdot\vb{r} -\omega t),}}	
 	\label{eqs:ondasPlanas}\end{subequations}\vspace*{-1em}
 		
-\noindent \blindtext \vspace*{-.75em}
+\noindent Para que se satisfagan las Ecs. anteriores, se tiene que cumplir la relación entre el vector de onda y la frecuencia que se conoce como la relación de dispersión dada por
+
+
+\vspace*{-.75em}
 %
 	\begin{tcolorbox}[title = Índice de refracción, ams align]
 	n(\omega) = \sqrt{\frac{\mu\varepsilon(\omega)}{\varepsilon_0 \mu_0}}.

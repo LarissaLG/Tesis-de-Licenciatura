@@ -11,13 +11,12 @@ k      = dataTable{1:112, 2}; % segunda columna, distinto rango
 %%
 %Aplicar KK
 nKK = kkrebook(omega, k);
-nchiKK = kkrebookchi(omega, k,0);
+
 
 subplot(2,1,1);
 x = omega;
 y1 = nKK;
-y11= nchiKK;
-plot(x,y11,x,y1, "r--")
+plot(x,y1, "r--")
 
 subplot(2,1,2); 
 y2 = k;

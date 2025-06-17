@@ -16,5 +16,92 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}\enddatalist
+\datalist[entry]{none/global//global/global/global}
+  \entry{griffithsIntroductionElectrodynamics2023}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=GDJ}{%
+         family={Griffiths},
+         familyi={G\bibinitperiod},
+         given={David\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{GDJ1}
+    \strng{fullhash}{GDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Introduction to electrodynamics}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=I9jbEAAAQBAJ&oi=fnd&pg=PR
+    \verb 11&dq=introduction+to+electrodynamics&ots=x_UMGpsn_L&sig=Kxxn2ULfC6IE
+    \verb CHBpV6Mcp5HI7zw
+    \endverb
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
+    \verb ge\\HXNFTSNE\\Griffiths - 2023 - Introduction to electrodynamics.pdf:
+    \verb application/pdf
+    \endverb
+    \field{year}{2023}
+    \field{urlday}{16}
+    \field{urlmonth}{06}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{jacksonClassicalElectrodynamics2021}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=JJD}{%
+         family={Jackson},
+         familyi={J\bibinitperiod},
+         given={John\bibnamedelima David},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{JJD1}
+    \strng{fullhash}{JJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Classical electrodynamics}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=6VV-EAAAQBAJ&oi=fnd&pg=PP
+    \verb 1&dq=classical+electrodynamics&ots=7xC1kC1Sa4&sig=XJmMN-z1Wik0hd12UAi
+    \verb h8XckIbo
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{17}
+    \field{urlmonth}{06}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{bohrenAbsorptionScatteringLight2008}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=BCF}{%
+         family={Bohren},
+         familyi={B\bibinitperiod},
+         given={Craig\bibnamedelima F.},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=HDR}{%
+         family={Huffman},
+         familyi={H\bibinitperiod},
+         given={Donald\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{BCFHDR1}
+    \strng{fullhash}{BCFHDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Absorption and scattering of light by small particles}
+    \field{year}{2008}
+  \endentry
+\enddatalist
 \endinput

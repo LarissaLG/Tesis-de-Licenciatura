@@ -23,7 +23,8 @@
 %                                   PACKAGES 		                                    |
 %-------------------------------------------------------------------------------
 
-\usepackage{pslatex}						%Times New Roman font 
+\usepackage{lmodern}                                                        %Latin Modern font
+%\usepackage{pslatex}						%Times New Roman font 
 \usepackage{multicol}						% for pages with multiple text columns, e.g. References
 	\setlength{\columnsep}{20pt} 				% space between columns; default 10pt quite narrow
 \usepackage{multirow}
@@ -42,7 +43,9 @@
 \usepackage{imakeidx}%for indexes
 \makeindex[intoc]
 \usepackage{tocloft}
- 
+\usepackage{xcolor}
+\definecolor{myTurquoise}{HTML}{12B3C5} 
+
 \setlength\cftparskip{.6em}
 \setlength\cftbeforechapskip{0pt}
 	%---------------------- Figurbackref change legend latex bibtexes ----------------------------
@@ -71,8 +74,9 @@
 			\colorlet{myurlcolor}{Aquamarine}
 		\usepackage{empheq}
 		\usepackage[most]{tcolorbox}
-			\tcbset{colback= red!60!black,   colbacktitle = black, frame hidden , % colframe= lgray,
-			fonttitle=\bfseries , boxrule = 0pt, standard jigsaw,  opacityback=.3, opacitybacktitle = .5}% sharp corners = downhill, boxrule = .75mm }
+			\tcbset{colframe=myTurquoise!90!blue,  % color base para el marco
+    colback=myTurquoise!20!white,    colbacktitle = black, boxrule=1.5pt,  
+			fonttitle=\bfseries , standard jigsaw,  opacityback=0.95, opacitybacktitle = .5}% sharp corners = downhill, boxrule = .75mm }
 
 	%----------------------- Language and references ------------------------------
 		\usepackage[spanish,mexico]{babel}			% Comment for english
@@ -87,13 +91,19 @@
 					sorting = none,
 					backref=true]{biblatex} %style = trad-abbrv
 		\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+		\AtEveryBibitem{\clearfield{urldate}}
+		\AtEveryBibitem{\clearfield{url}}
+		\AtEveryBibitem{\clearfield{isbn}}
+		\AtEveryBibitem{\clearfield{month}}
+		\AtEveryBibitem{\clearfield{day}}
+		\AtEveryBibitem{\clearfield{issn}}
 
 		\DefineBibliographyStrings{spanish}{%
 			  backrefpage = {citado en la pág.},% originally "cited on page"
 			  backrefpages = {citado en las págs.},% originally "cited on pages"
 		}	
 	
-		\addbibresource{4-References/references.bib}
+		\addbibresource{6-References/references.bib}
 		\addto\captionsspanish{\renewcommand{\figurename}{Fig.}}
 
 	%------------------------- Maths --------------------------------------
@@ -391,7 +401,7 @@
 %---------------------------------------------------------------------------------
 
 	%------------------- lines commands
-		\newcommand{\colorvrule}[3]{   \begingroup\color{#1}\vrule width#2 height#3	\endgroup} 	%color, widht, height
+		\newcommand{\colorvrule}[3]{\begingroup\color{#1}\vrule width#2 height#3\endgroup}
 		\newcommand{\colorhrule}[2]{   \begingroup\color{#1}\hrule height#2		\endgroup}		 %color,  width
 
 \renewcommand{\maketitle}{

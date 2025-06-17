@@ -1,0 +1,243 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8256,        235]
+NotebookOptionsPosition[      7897,        221]
+NotebookOutlinePosition[      8302,        237]
+CellTagsIndexPosition[      8259,        234]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"kkrebook", "[", 
+    RowBox[{"omega_List", ",", "parteImag_List"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "g", ",", "parteRe", ",", "a", ",", "b", ",", "deltaomega", ",", "j", 
+       ",", "k"}], "}"}], ",", 
+     RowBox[{"(*", 
+      RowBox[{
+      "Asegura", " ", "que", " ", "omega", " ", "y", " ", "parteImag", " ", 
+       "sean", " ", "listas", " ", "horizontales"}], "*)"}], 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"MatrixQ", "[", 
+         RowBox[{"{", "omega", "}"}], "]"}], ",", 
+        RowBox[{"omega", "=", 
+         RowBox[{"Flatten", "[", "omega", "]"}]}]}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"MatrixQ", "[", 
+         RowBox[{"{", "parteImag", "}"}], "]"}], ",", 
+        RowBox[{"parteImag", "=", 
+         RowBox[{"Flatten", "[", "parteImag", "]"}]}]}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"g", "=", 
+       RowBox[{"Length", "[", "omega", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"parteRe", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"0.", ",", "g"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"a", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"0.", ",", "g"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"b", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"0.", ",", "g"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"deltaomega", "=", 
+       RowBox[{
+        RowBox[{"omega", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "-", 
+        RowBox[{"omega", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Primer", " ", "punto", " ", 
+        RowBox[{"(", 
+         RowBox[{"excluye", " ", 
+          RowBox[{"omega", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], "*)"}], 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"b", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "=", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"parteImag", "[", 
+           RowBox[{"[", "k", "]"}], "]"}], "*", 
+          RowBox[{
+           RowBox[{"omega", "[", 
+            RowBox[{"[", "k", "]"}], "]"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"omega", "[", 
+               RowBox[{"[", "k", "]"}], "]"}], "^", "2"}], "-", 
+             RowBox[{
+              RowBox[{"omega", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "^", "2"}]}], ")"}]}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "2", ",", "g"}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"parteRe", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "=", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "/", "Pi"}], ")"}], "*", "deltaomega", "*", 
+         RowBox[{"b", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "+", "1"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"\[CapitalUAcute]ltimo", " ", "punto", " ", 
+        RowBox[{"(", 
+         RowBox[{"excluye", " ", 
+          RowBox[{"omega", "[", 
+           RowBox[{"[", "g", "]"}], "]"}]}], ")"}]}], "*)"}], 
+      RowBox[{
+       RowBox[{"a", "[", 
+        RowBox[{"[", "g", "]"}], "]"}], "=", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"parteImag", "[", 
+           RowBox[{"[", "k", "]"}], "]"}], "*", 
+          RowBox[{
+           RowBox[{"omega", "[", 
+            RowBox[{"[", "k", "]"}], "]"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"omega", "[", 
+               RowBox[{"[", "k", "]"}], "]"}], "^", "2"}], "-", 
+             RowBox[{
+              RowBox[{"omega", "[", 
+               RowBox[{"[", "g", "]"}], "]"}], "^", "2"}]}], ")"}]}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "1", ",", 
+           RowBox[{"g", "-", "1"}]}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"parteRe", "[", 
+        RowBox[{"[", "g", "]"}], "]"}], "=", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "/", "Pi"}], ")"}], "*", "deltaomega", "*", 
+         RowBox[{"a", "[", 
+          RowBox[{"[", "g", "]"}], "]"}]}], "+", "1"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Puntos", " ", "intermedios"}], "*)"}], 
+      RowBox[{"For", "[", 
+       RowBox[{
+        RowBox[{"j", "=", "2"}], ",", 
+        RowBox[{"j", "<=", 
+         RowBox[{"g", "-", "1"}]}], ",", 
+        RowBox[{"j", "++"}], ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"a", "[", 
+           RowBox[{"[", "j", "]"}], "]"}], "=", 
+          RowBox[{"Sum", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"parteImag", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "*", 
+             RowBox[{
+              RowBox[{"omega", "[", 
+               RowBox[{"[", "k", "]"}], "]"}], "/", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"omega", "[", 
+                  RowBox[{"[", "k", "]"}], "]"}], "^", "2"}], "-", 
+                RowBox[{
+                 RowBox[{"omega", "[", 
+                  RowBox[{"[", "j", "]"}], "]"}], "^", "2"}]}], ")"}]}]}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{"k", ",", "1", ",", 
+              RowBox[{"j", "-", "1"}]}], "}"}]}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"b", "[", 
+           RowBox[{"[", "j", "]"}], "]"}], "=", 
+          RowBox[{"Sum", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"parteImag", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "*", 
+             RowBox[{
+              RowBox[{"omega", "[", 
+               RowBox[{"[", "k", "]"}], "]"}], "/", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"omega", "[", 
+                  RowBox[{"[", "k", "]"}], "]"}], "^", "2"}], "-", 
+                RowBox[{
+                 RowBox[{"omega", "[", 
+                  RowBox[{"[", "j", "]"}], "]"}], "^", "2"}]}], ")"}]}]}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{"k", ",", 
+              RowBox[{"j", "+", "1"}], ",", "g"}], "}"}]}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"parteRe", "[", 
+           RowBox[{"[", "j", "]"}], "]"}], "=", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"2", "/", "Pi"}], ")"}], "*", "deltaomega", "*", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"a", "[", 
+               RowBox[{"[", "j", "]"}], "]"}], "+", 
+              RowBox[{"b", "[", 
+               RowBox[{"[", "j", "]"}], "]"}]}], ")"}]}], "+", "1"}]}], 
+         ";"}]}], "]"}], ";", "\[IndentingNewLine]", "parteRe"}]}], "]"}]}], 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.9587638419844685`*^9, 3.9587638419844685`*^9}, {
+  3.9587649631829033`*^9, 3.9587649646736393`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"70570939-c77d-443a-9caa-2a7141e568ec"]
+},
+WindowSize->{1024.5, 513.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.1 para Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6e6cfee7-8b23-462a-b354-d758bfe391e1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 7335, 199, 670, "Input",ExpressionUUID->"70570939-c77d-443a-9caa-2a7141e568ec"]
+}
+]
+*)
+

@@ -22,7 +22,7 @@ end
 hbar = 6.582119569 * 1e-16; % (eV s)
 
 % Vector de energías
-omega = linspace(0.5, 5, 1000);
+omega = linspace(0.01, 5, 1000);
 
 % Parámetros de Drude 
 omega_p = 13.142; %eV
@@ -74,7 +74,7 @@ legend('Error parte real', 'Error parte imaginaria');
 
 %%
 [refin, imfin]= selfconsbook(omega, nKK, k, 1,0.5);
-[refin1, imfin1]= selfconsbook(omega, nKK, k, 1000,0.5);
+[refin1, imfin1]= selfconsbook(omega, nKK, k, 3,0.5);
 %%
 %Graficar datos obtenidos
 plot(omega,imfin, 'r:','LineWidth', 2)

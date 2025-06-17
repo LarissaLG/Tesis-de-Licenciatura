@@ -5,11 +5,6 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Reallocating 'name_of_file' (item size: 1) to 24 items.
-I couldn't open database file 4-References/references.bib
----line 7 of file tesis.aux
- : \bibdata{tesis-blx,4-References/references
- :                                           }
-I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: 0-2-Declaration/1-Declaration.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
@@ -32,9 +27,9 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: tesis-blx.bib
+Database file #2: 6-References/references.bib
 Warning--I didn't find a database entry for "griffiths2013electrodynamics"
 Warning--I didn't find a database entry for "hecht1998optics"
-Warning--I didn't find a database entry for "Bohren"
 Warning--I didn't find a database entry for "reyes2018analytical"
 Warning--I didn't find a database entry for "pena-gomar2006coherent"
 Warning--I didn't find a database entry for "barrera1991optical"
@@ -42,45 +37,45 @@ Warning--I didn't find a database entry for "garcia2012multiple"
 Biblatex version: 3.20
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 1 entry,
+You've used 4 entries,
             6402 wiz_defined-function locations,
-            1214 strings with 9209 characters,
-and the built_in function-call counts, 2494 in all, are:
-= -- 77
-> -- 294
-< -- 1
-+ -- 273
-- -- 248
-* -- 36
-:= -- 602
+            1234 strings with 10131 characters,
+and the built_in function-call counts, 26002 in all, are:
+= -- 1780
+> -- 1132
+< -- 144
++ -- 1180
+- -- 812
+* -- 1472
+:= -- 3138
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
-chr.to.int$ -- 50
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 108
-format.name$ -- 0
-if$ -- 341
+call.type$ -- 4
+change.case$ -- 82
+chr.to.int$ -- 98
+cite$ -- 6
+duplicate$ -- 2035
+empty$ -- 2162
+format.name$ -- 170
+if$ -- 4941
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 47
+newline$ -- 107
+num.names$ -- 181
+pop$ -- 1078
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 94
 quote$ -- 0
-skip$ -- 82
+skip$ -- 760
 stack$ -- 0
-substring$ -- 170
-swap$ -- 1
-text.length$ -- 20
+substring$ -- 3532
+swap$ -- 460
+text.length$ -- 99
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 22
+type$ -- 124
 warning$ -- 0
-while$ -- 68
+while$ -- 296
 width$ -- 0
-write$ -- 20
-(There was 1 error message)
+write$ -- 104
+(There were 6 warnings)
