@@ -78,6 +78,43 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{maierPlasmonicsFundamentalsApplications2007}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=MSA}{%
+         family={Maier},
+         familyi={M\bibinitperiod},
+         given={Stefan\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \strng{namehash}{MSA1}
+    \strng{fullhash}{MSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \verb{doi}
+    \verb 10.1007/0-387-37825-1
+    \endverb
+    \field{isbn}{978-0-387-33150-8 978-0-387-37825-1}
+    \field{shorttitle}{Plasmonics}
+    \field{title}{Plasmonics: {Fundamentals} and {Applications}}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/0-387-37825-1
+    \endverb
+    \list{location}{1}{%
+      {New York, NY}%
+    }
+    \field{year}{2007}
+    \field{urlday}{16}
+    \field{urlmonth}{06}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{bohrenAbsorptionScatteringLight2008}{book}{}{}
     \name{author}{2}{}{%
       {{hash=BCF}{%

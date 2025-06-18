@@ -76,7 +76,7 @@
 		\usepackage[most]{tcolorbox}
 			\tcbset{colframe=myTurquoise!90!blue,  % color base para el marco
     colback=myTurquoise!20!white,    colbacktitle = black, boxrule=1.5pt,  
-			fonttitle=\bfseries , standard jigsaw,  opacityback=0.95, opacitybacktitle = .5}% sharp corners = downhill, boxrule = .75mm }
+			fonttitle=\bfseries , standard jigsaw,  opacityback=0.95, opacitybacktitle = .5,center}% sharp corners = downhill, boxrule = .75mm }
 
 	%----------------------- Language and references ------------------------------
 		\usepackage[spanish,mexico]{babel}			% Comment for english
