@@ -51,10 +51,14 @@
 	%---------------------- Figurbackref change legend latex bibtexes ----------------------------
 		\usepackage[margin=10pt,font=scriptsize,labelfont=bf, ]{caption}  
 		\usepackage[labelformat=simple]{subcaption} % labelformat=simple   O brace
-%		\usepackage{subcaption}
+		\usepackage{caption}
+		\usepackage{floatrow}
+
+		\floatsetup[figure]{style=plain,subcapbesideposition=top}
+
 %			\captionsetup[subfigure]{labelformat=simple}
 		%\usepackage[bf,SL,BF]{subfigure}         
-                \usepackage{float}
+                     % \usepackage{float}
 		%	\floatsetup[subfigure]{style=plain,heightadjust=object,
 		%					capbesideposition={left,top},
 		%					capbesidesep=space}
@@ -62,6 +66,9 @@
 			%\captionsetup[subfigure]{labelformat=brace,justification=centerlast}
 		\usepackage[export]{adjustbox}
 		\usepackage{wrapfig}                    			% to include figure with text wrapping around it
+		\usepackage{subfig}
+		\captionsetup[subfigure]{labelformat=simple, labelsep=none}
+		\renewcommand{\thesubfigure}{\alph{subfigure})}
 
 	%--------------------- Color/equations -related stuff
 		\usepackage[dvipsnames]{xcolor}
@@ -78,6 +85,8 @@
     colback=myTurquoise!20!white,    colbacktitle = black, boxrule=1.5pt,  
 			fonttitle=\bfseries , standard jigsaw,  opacityback=0.95, opacitybacktitle = .5,center}% sharp corners = downhill, boxrule = .75mm }
 
+\newcommand{\coloredeq}[2]{\begin{empheq}[box= \fcolorbox{myTurquoise!90!blue}{myTurquoise!20!white},{\fboxsep=15pt\fbox}]{align}\label{#1}#2\end{empheq}}
+				
 	%----------------------- Language and references ------------------------------
 		\usepackage[spanish,mexico]{babel}			% Comment for english
 			\addto\captionsspanish{\renewcommand{\figurename}{Fig.}}		

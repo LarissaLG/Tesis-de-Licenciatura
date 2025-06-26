@@ -78,6 +78,42 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{novotnyPrinciplesNanooptics2012}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=NL}{%
+         family={Novotny},
+         familyi={N\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hecht},
+         familyi={H\bibinitperiod},
+         given={Bert},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge university press}%
+    }
+    \strng{namehash}{NLHB1}
+    \strng{fullhash}{NLHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Principles of nano-optics}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=RHC_AwAAQBAJ&oi=fnd&pg=PR
+    \verb 15&dq=principles+of+nano+optics&ots=X0UCOFsiyO&sig=mZhyHsZNrRD7Ag6KdV
+    \verb LjSvljjLg
+    \endverb
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
+    \verb ge\\F42HYIYQ\\Novotny y Hecht - 2012 - Principles of nano-optics.pdf:
+    \verb application/pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
   \entry{maierPlasmonicsFundamentalsApplications2007}{book}{}{}
     \name{author}{1}{}{%
       {{hash=MSA}{%
