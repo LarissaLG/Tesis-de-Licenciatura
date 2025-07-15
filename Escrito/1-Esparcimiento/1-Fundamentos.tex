@@ -56,7 +56,7 @@ donde $\vb{E}$ representa al campo eléctrico y $\vb{B}$ al campo magnético; $\
 
 \noindent donde $c=1/\sqrt{\epsilon_0\mu_0}$ es la velocidad de la luz en el vacío.
 
-Al analizar la energía total almacenada en los campos electromagnéticos y el trabajo que estos realizan sobre una distribución de cargas y corrientes, se establece el teorema del trabajo y la energía. A partir de este teorema, se introduce el concepto de energía transportada por los campos por unidad de tiempo y por unidad de área, el cual está representado por el vector de Poynting, $\vb{S}$ \cite{griffithsIntroductionElectrodynamics2023}
+Al analizar la energía total almacenada en los campos electromagnéticos y el trabajo que estos realizan sobre una distribución de cargas y corrientes, se establece el teorema del trabajo y la energía. A partir de este teorema, se introduce el concepto de energía transportada por los campos por unidad de tiempo y por unidad de área, el cual está representado por el vector de Poynting, $\vb{S}$, dado por \cite{griffithsIntroductionElectrodynamics2023}
 
 \begin{tcolorbox}[ams align]
 	\vb{S}=\frac{1}{\mu_0}(\vb{E}\times\vb{B}),
@@ -72,13 +72,15 @@ Las Ecs. \eqref{eqs:Maxwell} determinan los campos que surgen a partir de corrie
 		\label{seq:D} 
 		\vb{B} &= \mu \vb{H},\\
 		\label{seq:B} 
-		\vb{J} &= \sigma \vb{E}.
+		\vb{J} &= \sigma \vb{E},
 		\label{seq:J}\end{tcolorbox}\end{subequations}\noindent
+	
+donde $\vb{D}$ corresponde al vector de desplazamiento eléctrico, $H$ el campo, $J$ y $\sigma$ la conductividad eléctrica.
 
 A partir de la forma integral de las ecuaciones de Maxwell, se deducen las condiciones de frontera sobre los campos electromagnéticos al atravesar una interfaz entre dos medios distintos. Cada uno de los medios está caracterizado por una función dieléctrica y una permeabilidad magnética ($\epsilon_1, \mu_1$ para el medio 1 y $\epsilon_2, \mu_2$ para el medio 2). Para deducirlas, se considera un prisma de altura $\delta$ y área transversal $A$ [Fig. \ref{cond_perp}], y un circuito rectangular de altura $\delta$ y longitud $l$ [Fig. \ref{cond_par} ]. Bajo las suposiciones de medios lineales, homogéneos e isótropos, y en ausencia de fuentes externas ($\sigma_{\text{ext}} = 0$, $\vb{K}_{\text{ext}} = 0$), al emplear de las ecuaciones de Maxwell en su forma integral y las Ecs. \eqref{eqs:Constitutivas}, se obtienen a las siguientes condiciones de frontera:
 
 %
-\begin{subequations} \label{eqs:Constitutivas}
+\begin{subequations} \label{cond_frontera}
 	\begin{tcolorbox}[
 		ams align, breakable]
 		\eqhalf{\epsilon_1E_1^{\perp}-\epsilon_2E_2^{\perp}= 0,}%
@@ -92,7 +94,7 @@ A partir de la forma integral de las ecuaciones de Maxwell, se deducen las condi
 	\centering
 	\sidesubfloat[First image]{\includegraphics[width=0.4\textwidth]{../Figuras/condiciones_contorno_perp}\label{cond_perp}}
 	\sidesubfloat[Second image]{\includegraphics[width=0.4\textwidth]{../Figuras/condiciones_contorno_par}\label{cond_par}}
-	\caption{Esquema de una interfaz que separa dos medios distintos. El medio 1 se encuentra caracterizado por una función dieléctrica $\epsilon_1$ y una permeabilidad magnética $\mu_1$, mientras que el medio 2 se encuentra caracterizado por una función dieléctrica $\epsilon_2$ y una permeabilidad magnética $\mu_2$. \textbf{a)} Interfaz con una densidad superficial de carga $\rho_{tot}$ que es atravesada por un prisma rectangular de altura $\delta$ y área $A$. \textbf{b)} Interfaz con una densidad de superficial de corriente $\vb{K}_{tot}$. La densidad de corriente atraviesa una superficie rectangular de altura $\delta$ y longitud $l$.}
+	\caption{Esquema de una interfaz que separa dos medios distintos. El medio 1 se encuentra caracterizado por una función dieléctrica $\epsilon_1$ y una permeabilidad magnética $\mu_1$, mientras que el medio 2 se encuentra caracterizado por una función dieléctrica $\epsilon_2$ y una permeabilidad magnética $\mu_2$. \textbf{a)} Interfaz con una densidad superficial de carga $\sigma_{tot}$ que es atravesada por un prisma rectangular de altura $\delta$ y área $A$. \textbf{b)} Interfaz con una densidad de superficial de corriente $\vb{K}_{tot}$. La densidad de corriente atraviesa una superficie rectangular de altura $\delta$ y longitud $l$.}
 	\label{condiciones_frontera}
 \end{figure}
 %
@@ -119,8 +121,4 @@ La función dieléctrica y el índice de refracción del medio son en general, f
 		\label{seq:kappa}
 \end{align}
 donde $\kappa$ es llamado el coeficiente de extinción y determina la absorción óptica de las ondas electromagnéticas propagándose a través del medio \cite{maierPlasmonicsFundamentalsApplications2007}.  
-
-
-Como la respuesta óptica de los materiales depende en general de la frecuencia, se tiene que tomar en cuenta la no localidad en el tiempo y espacio al generalizar las Ecs. anteriores como:
-%
 
