@@ -12,10 +12,10 @@ En este capítulo
 \label{section:basics}
 Todos los fenómenos electromagnéticos tienen su origen en una única interacción fundamental: la fuerza de Lorentz. Esta fuerza describe cómo actúa un campo electromagnético sobre una partícula cargada en movimiento. Si una partícula de carga \( q \) se desplaza con velocidad \( \vb{v} \) en presencia de un campo eléctrico \( \vb{E} \) y un campo magnético \( \vb{B} \), la fuerza que experimenta está dada por:
 %
-\begin{tcolorbox}[ams align]
-	\vb{F}=q(\vb{E}+\vb{v}\times\vb{B})
+\begin{equation}
+	\vb{F}=q(\vb{E}+\vb{v}\times\vb{B}).
 	\label{eq:lorentzforce} 
-\end{tcolorbox}
+\end{equation}
 %
 La fuerza de Lorentz junto con las ecuaciones de Maxwell, describen a la electrodinámica clásica, que se centra en el origen y el comportamiento de los campos $\vb{E}$ y $\vb{B}$ \cite{griffithsIntroductionElectrodynamics2023}. En unidades del Sistema Internacional, dichas ecuaciones se expresan en forma diferencial como:
 \cite{griffithsIntroductionElectrodynamics2023}
@@ -35,46 +35,35 @@ La fuerza de Lorentz junto con las ecuaciones de Maxwell, describen a la electro
 %
 donde $\rho_{tot}$ representa a la densidad de carga volumétrica y $\vb{J}_{tot}$ a la densidad de corriente volumétrica; $\epsilon_0$ a la permitividad eléctrica en el vacío y $\mu_0$ a la permeabilidad magnética en el vacío. 
 
-En ausencia de fuentes externas (\( \rho_{\text{tot}} = 0 \), \( \vb{J}_{\text{tot}} = 0 \)), los campos electromagnéticos pueden desacoplarse y satisfacer la ecuación de onda de Helmholtz al aplicar la transformada de Fourier temporal ~\cite{jacksonClassicalElectrodynamics2021}
-
-%
-	\begin{subequations}%
-	\eqhalf{\nabla^2\vb{E} + k^2 \vb{E}=\vb{0},}%
-	\eqhalf{\nabla^2\vb{B} + k^2 \vb{B}=\vb{0}.}\label{eq:Helmholtz}%
-	\end{subequations}\vspace*{-1em}
-
-\noindent Una de las soluciones de esta ecuación son las ondas planas, que representan la propagación de una onda monocromática en una dirección definida
+En ausencia de fuentes externas (\( \rho_{\text{tot}} = 0 \), \( \vb{J}_{\text{tot}} = 0 \)), los campos electromagnéticos pueden desacoplarse y satisfacer la ecuación de onda de Helmholtz al aplicar la transformada de Fourier temporal ~\cite{jacksonClassicalElectrodynamics2021}. Una de las soluciones de esta ecuación son las ondas planas, que representan la propagación de una onda monocromática en una dirección definida
 
 	\begin{subequations}%
-	\eqhalf{\vb{E}(\vb{r},t) =\vb{E_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}%
-	\eqhalf{\vb{B}(\vb{r}, t) =\vb{B_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}	
+	\eqhalf{\vb{E}(\vb{r},t) =\vb{E_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}\label{seq:E_plana}% 
+	\eqhalf{\vb{B}(\vb{r}, t) =\vb{B_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}	\label{seq:B_plana}
 	\label{eqs:ondasPlanas}\end{subequations}\vspace*{-1em}
 		
-\noindent donde $\vb{E}_0$ y $\vb{B}_0$ corresponden a las amplitudes de los campos, $\omega$ la frecuencia angular de la onda y $\vb{k}$ el vector de onda. Para que se satisfagan las Ecs. \eqref{eqs:ondasPlanas}, se tiene que cumplir la relación de dispersión dada por $k=\sqrt{\mu\epsilon}\;\omega$, donde $\epsilon$ y $\mu$ corresponden a la permitividad eléctrica y la permeabilidad magnética del medio y son en general, funciones complejas de la frecuencia de la forma \cite{jacksonClassicalElectrodynamics2021}
-%
-\begin{subequations} \label{eqs:n_epsilon}
-	\begin{tcolorbox}[
-		ams align, breakable]
-		n(\omega) &= \eta + i\kappa,
-		\label{seq:n} \\
-		\epsilon(\omega) &= \epsilon_1 + i\epsilon_2. \label{seq:epsilon}
-\end{tcolorbox}\end{subequations}
-% 
-La relación de dispersión se puede reescribir en términos del índice de refracción del material dado por
+\noindent donde $\vb{E}_0$ y $\vb{B}_0$ corresponden a las amplitudes de los campos, $\omega$ la frecuencia angular de la onda y $\vb{k}$ el vector de onda. Para que se satisfagan las Ecs. \eqref{eqs:ondasPlanas}, se tiene que cumplir la relación de dispersión dada por el número de onda $k=\sqrt{\mu\varepsilon}\;\omega$, donde $\varepsilon$ y $\mu$ corresponden a la permitividad eléctrica y la permeabilidad magnética del medio y son en general, funciones complejas dependientes de $\omega$. \cite{jacksonClassicalElectrodynamics2021}. La relación de dispersión se puede reescribir en términos del índice de refracción del material dado por
 %
 \begin{tcolorbox}[ams align]
-	n(\omega) = \sqrt{\dfrac{\mu\varepsilon(\omega)}{\varepsilon_0\mu_0 }},
+	n(\omega) = \sqrt{\dfrac{\varepsilon\mu(\omega)}{\varepsilon_0\mu_0 }},
 	\label{eq:indice} 
 \end{tcolorbox}
 %	
 \noindent con lo que se obtiene,
 %
-\begin{tcolorbox}[ams align]
+\begin{equation}
 	k(\omega) =\dfrac{\omega n(\omega)}{c},
-	\label{eq:vector_onda} 
-\end{tcolorbox}
+	\label{eq:numero_onda} 
+\end{equation}
 
 \noindent donde $c=1/\sqrt{\epsilon_0\mu_0}$ es la velocidad de la luz en el vacío.
+
+Al analizar la energía total almacenada en los campos electromagnéticos y el trabajo que estos realizan sobre una distribución de cargas y corrientes, se establece el teorema del trabajo y la energía. A partir de este teorema, se introduce el concepto de energía transportada por los campos por unidad de tiempo y por unidad de área, el cual está representado por el vector de Poynting, $\vb{S}$, dado por \cite{griffithsIntroductionElectrodynamics2023}
+
+\begin{tcolorbox}[ams align]
+	\vb{S}=\frac{1}{\mu_0}(\vb{E}\times\vb{B}),
+	\label{eq:vect_Poynting} 
+\end{tcolorbox}
 
 
 Las Ecs. \eqref{eqs:Maxwell} determinan los campos que surgen a partir de corrientes y cargas presentes en la materia. No obstante, dichas ecuaciones no explican el origen de estas corrientes y cargas. Por ello, es necesario complementarlas con ecuaciones llamadas \textit{relaciones constitutivas}, que describen cómo responde la materia ante la acción de los campos. Para un medio lineal, homogéneo e isótropo, las relaciones constitutivas están dadas por \cite{novotnyPrinciplesNanooptics2012}
@@ -91,22 +80,63 @@ Las Ecs. \eqref{eqs:Maxwell} determinan los campos que surgen a partir de corrie
 %	
 donde $\vb{D}$ corresponde al vector de desplazamiento eléctrico, $\vb{H}$ al campo H, $\vb{J}$ a la densidad volumétrica de corriente  y $\sigma$ corresponde a la conductividad eléctrica.
 
-Dadas las relaciones anteriores, la parte temporal puede ser construida empleando la transformada de Fourier.\footnote{La transformada de Fourier $\mathcal{F}(\vb{r},\omega)$ de $F(\vb{r},t)$ se define como $1/\sqrt{2\pi}\int_{-\infty}^{\infty}F(\vb{r},t')e^{i\omega t'}dt'$. Mientras que la transformada de Fourier inversa está dada por $1/\sqrt{2\pi}\int_{-\infty}^{\infty}\mathcal{F}(\vb{r},\omega)e^{-i\omega t}d\omega$. } 
-A partir del teorema de convolución\footnote{El teorema de la convolución establece que para dos funciones $F(t)$ y $G(t)$ con transformadas de Fourier $\mathcal{F}(\omega)$ y $\mathcal{G}(\omega)$, la convolución de ambas sobre el intervalo $(-\infty,\infty)$ está dada por $F\ast G= 1/\sqrt{2\pi}\int_{-\infty}^{\infty}G(\tau)F(t-\tau)dy$}
+Dadas las relaciones anteriores, la parte temporal puede ser construida empleando la transformada de Fourier\footnote{Sea $F(t)$ una función real dependiente del tiempo, la transformada de Fourier $\mathcal{F}(\omega)$ de $F(t)$ se define como $1/\sqrt{2\pi}\int_{-\infty}^{\infty}F(t)e^{i\omega t} \text{d}t$. Mientras que la transformada de Fourier inversa $\mathcal{F}^{-1}$ es $1/\sqrt{2\pi}\int_{-\infty}^{\infty}\mathcal{F}(\omega)e^{-i\omega t} \text{d}\omega$ }. La transformada de Fourier para $\vb{D}$ está dada por
 %
-\begin{tcolorbox}[ams align]
-	\vb{D}(\vb{r},t)=\int_{-\infty}^{\infty}G(t-t')\;\vb{E}(\vb{r},t')dt',
-	\label{eq:D_tdependent} 
-\end{tcolorbox}
+\begin{equation}
+	\vb{D}(\vb{r},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vb{D}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega,\label{eq:TF}
+\end{equation}
 %
-\noindent donde
+mientras que la transformada de Fourier inversa está dada por
 %
-\begin{tcolorbox}[ams align]
-	\vb{G}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\epsilon(\omega)\;e^{-i\omega t}d\omega,
-	\label{eq:G_tdependent} 
-\end{tcolorbox}
+\begin{equation}
+	\vb{D}(\vb{r},\omega)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\vb{D}(\vb{r},t')e^{i\omega t'}\text{d}t'.\label{eq:TFI}
+\end{equation}
 %
-es decir, una permeabilidad dependiente de la frecuencia implica que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre D y E.
+Al sustituir la Ec. \eqref{seq:D} en la Ec. \eqref{eq:TF}, se obtiene
+%
+\begin{equation}
+	\vb{D}(\vb{r},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega,\label{eq:TF_D_intermedia_1}
+\end{equation}
+%
+y al sustituir la transformada de Fourier de $\vb{E}(\vb{r},t)$, se obtiene:
+%
+\begin{equation}
+	\vb{D}(\vb{r},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\varepsilon(\omega)e^{-i\omega t}\text{d}\omega\int_{-\infty}^{\infty}e^{i\omega t'}\vb{E}(\vb{r},t')\text{d}t'.\label{eq:TF_D_intermedia_2}
+\end{equation}
+%
+Considerando que los órdenes de integración se pueden intercambiar y realizando el cambio de variable $\tau=t-t'$, la Ec. \eqref{eq:TF_D_intermedia_2} se reescribe como
+%
+\begin{equation}
+	\vb{D}(\vb{r},t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},t') e^{i\omega \tau} \text{d}\omega \text{d}t'.\label{eq:TF_D_intermedia_2}
+\end{equation}
+%
+Al emplear la función constante
+\begin{equation}
+	\mathcal{F}[1]=\int_{-\infty}^{\infty}e^{-i\omega\tau}=\delta(\tau),
+\end{equation}
+donde $\delta(\tau)$ es la delta de Dirac, que cumple con
+\begin{equation}
+	\int_{-\infty}^{\infty}f(\tau)\delta(\tau)\text{d}\tau=f(0),
+\end{equation}
+entonces, se reescribe al campo eléctrico como
+\begin{equation}
+	\vb{E}(\vb{r},t)=\int_{-\infty}^{\infty}\vb{E}(\vb{r},t-\tau)\delta(\tau)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\vb{E}(\vb{r},t-\tau)\e^{-i\omega\tau}\text{d}\omega\text{d}\tau.
+\end{equation}
+%
+Al sumar $\vb{E}(\vb{r},t')-\vb{E}(\vb{r},t')$ y multiplicar por $\varepsilon_0/\varepsilon_0$ a la Ec. \eqref{eq:TF_D_intermedia_2}, simplificando se obtiene
+%
+\begin{equation}
+	\vb{D}(\vb{r},t)=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{-\infty}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\label{eq:TF_D_final}
+\end{equation}
+%
+donde $G(\tau)$ es la transformada de Fourier de la susceptibilidad eléctrica $\chi_e=\varepsilon(\omega)/\varepsilon_0-1$
+%
+\begin{equation}
+	G(\tau)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\left[\frac{\varepsilon(\omega)}{\varepsilon_0}-1\right]e^{-i\omega\tau}\tex{d}\omega
+	\label{eq:G_tdependent}
+\end{equation}
+%
+Las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:G_tdependent} muestran que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre $\vb{D}$ y $\vb{E}$. Si $\varepsilon(\omega)$ es independiente del \omega, $G(\tau)=\delta(\tau)$, por lo que se obtiene una respuesta instantánea, mientras que si sí depende de $\omega$, $G(\tau)$ es distinta de cero para todos los valores de $\tau$ distintos de cero.
 
 
 
@@ -132,9 +162,3 @@ A partir de la forma integral de las ecuaciones de Maxwell, se deducen las condi
 	\label{condiciones_frontera}
 \end{figure}
 %
-Al analizar la energía total almacenada en los campos electromagnéticos y el trabajo que estos realizan sobre una distribución de cargas y corrientes, se establece el teorema del trabajo y la energía. A partir de este teorema, se introduce el concepto de energía transportada por los campos por unidad de tiempo y por unidad de área, el cual está representado por el vector de Poynting, $\vb{S}$, dado por \cite{griffithsIntroductionElectrodynamics2023}
-
-\begin{tcolorbox}[ams align]
-	\vb{S}=\frac{1}{\mu_0}(\vb{E}\times\vb{B}),
-	\label{eq:vect_Poynting} 
-\end{tcolorbox}
