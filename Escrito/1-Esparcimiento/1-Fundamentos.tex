@@ -23,29 +23,29 @@ La fuerza de Lorentz junto con las ecuaciones de Maxwell, describen a la electro
 	\begin{subequations} \label{eqs:Maxwell}
 	\begin{tcolorbox}[
 	ams align, breakable]
-	\nabla \cdot\vb{E} &= \frac{\rho_{tot}}{\varepsilon_0}, &\mbox{(Ley de Gauss eléctrica)}  
+	\nabla \cdot\vb{E} &= \frac{\rho_{\text{tot}}}{\varepsilon_0}, &\mbox{(Ley de Gauss eléctrica)}  
 	\label{seq:GE} \\
 	\nabla \cdot\vb{B} &= 0,						&\mbox{(Ley de Gauss magnética)}   
 	\label{seq:GM} \\
 	\nabla \times\vb{E} &= -\pdv{\vb{B}}{t}, 	&\mbox{(Ley de Faraday-Lenz)}		
 	\label{seq:FL}\\
-	\nabla \times\vb{B} &= \mu_0 \vb{J}_{tot} +\varepsilon_0\mu_0 \pdv{\vb{E}}{t}, &
+	\nabla \times\vb{B} &= \mu_0 \vb{J}_{\text{tot}} +\varepsilon_0\mu_0 \pdv{\vb{E}}{t}, &
 	\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM}
 	\end{tcolorbox}\end{subequations}\noindent
 %
-donde $\rho_{tot}$ representa a la densidad de carga volumétrica y $\vb{J}_{tot}$ a la densidad de corriente volumétrica; $\epsilon_0$ a la permitividad eléctrica en el vacío y $\mu_0$ a la permeabilidad magnética en el vacío. 
+donde $\rho_{\text{tot}}$ representa a la densidad de carga volumétrica y $\vb{J}_{\text{tot}}$ a la densidad de corriente volumétrica; $\epsilon_0$ a la permitividad eléctrica en el vacío y $\mu_0$ a la permeabilidad magnética en el vacío. 
 
-En ausencia de fuentes externas (\( \rho_{\text{tot}} = 0 \), \( \vb{J}_{\text{tot}} = 0 \)), los campos electromagnéticos pueden desacoplarse y satisfacer la ecuación de onda de Helmholtz al aplicar la transformada de Fourier temporal\footnote{Sea $F(t)$ una función real dependiente del tiempo, la transformada de Fourier $\mathcal{F}(\omega)$ de $F(t)$ se define como $\int_{-\infty}^{\infty}F(t)e^{i\omega t} \text{d}t$. Mientras que la transformada de Fourier inversa $\mathcal{F}^{-1}(t)$ es $1/{2\pi}\int_{-\infty}^{\infty}\mathcal{F}(\omega)e^{-i\omega t} \text{d}\omega$ \cite{arfkenMathematicalMethodsPhysicists2011a} } ~\cite{jacksonClassicalElectrodynamics2021a}. Una de las soluciones de esta ecuación son las ondas planas, que representan la propagación de una onda monocromática en una dirección definida
+En ausencia de fuentes externas (\( \rho_{\text{tot}} = 0 \), \( \vb{J}_{\text{tot}} = \vb{0} \)), los campos electromagnéticos pueden desacoplarse y satisfacer la ecuación de onda de Helmholtz al aplicar la transformada de Fourier temporal\footnote{Sea $F(t)$ una función real dependiente del tiempo, la transformada de Fourier $\mathcal{F}(\omega)$ de $F(t)$ se define como $\int_{-\infty}^{\infty}F(t)e^{i\omega t} \text{d}t$. Mientras que la transformada de Fourier inversa $\mathcal{F}^{-1}(t)$ es $1/{2\pi}\int_{-\infty}^{\infty}\mathcal{F}(\omega)e^{-i\omega t} \text{d}\omega$ \cite{arfkenMathematicalMethodsPhysicists2011a} } ~\cite{jacksonClassicalElectrodynamics2021a}. Una de las soluciones de esta ecuación son las ondas planas, que representan la propagación de una onda monocromática en una dirección definida
 
 	\begin{subequations}%
-	\eqhalf{\vb{E}(\vb{r},t) =\vb{E_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}\label{seq:E_plana}% 
-	\eqhalf{\vb{B}(\vb{r}, t) =\vb{B_0}e^{i(\vb{k}\cdot\vb{r} -\omega t)},}	\label{seq:B_plana}
+	\eqhalf{\vb{E}(\vb{r},t) =\vb{E}_0 e^{i(\vb{k}\cdot\vb{r} -\omega t)},}\label{seq:E_plana}% 
+	\eqhalf{\vb{B}(\vb{r}, t) =\vb{B}_0 e^{i(\vb{k}\cdot\vb{r} -\omega t)},}	\label{seq:B_plana}
 	\label{eqs:ondasPlanas}\end{subequations}\vspace*{-1em}
 		
 \noindent donde $\vb{E}_0$ y $\vb{B}_0$ corresponden a las amplitudes de los campos, $\omega$ la frecuencia angular de la onda y $\vb{k}$ el vector de onda. Para que se satisfagan las Ecs. \eqref{eqs:ondasPlanas}, se tiene que cumplir la relación de dispersión dada por el número de onda $k=\sqrt{\mu\varepsilon}\;\omega$, donde $\varepsilon$ y $\mu$ corresponden a la permitividad eléctrica y la permeabilidad magnética del medio y son en general, funciones complejas dependientes de $\omega$ \cite{jacksonClassicalElectrodynamics2021a}. La relación de dispersión se puede reescribir en términos del índice de refracción del material dado por \cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{tcolorbox}[ams align]
-	n(\omega) = \sqrt{\dfrac{\varepsilon\mu(\omega)}{\varepsilon_0\mu_0 }},
+	n(\omega) = \sqrt{\dfrac{\varepsilon\mu(\omega)}{\varepsilon_0\mu_0 }}.
 	\label{eq:indice} 
 \end{tcolorbox}
 %	
@@ -56,7 +56,7 @@ En ausencia de fuentes externas (\( \rho_{\text{tot}} = 0 \), \( \vb{J}_{\text{t
 	\label{eq:numero_onda} 
 \end{equation}
 
-\noindent donde $c=1/\sqrt{\epsilon_0\mu_0}$ es la velocidad de la luz en el vacío.
+\noindent donde $c=1/\sqrt{\varepsilon_0\mu_0}$ es la velocidad de la luz en el vacío.
 
 Al analizar la energía total almacenada en los campos electromagnéticos y el trabajo que estos realizan sobre una distribución de cargas y corrientes, se establece el teorema del trabajo y la energía. A partir de este teorema, se introduce el concepto de energía transportada por los campos por unidad de tiempo y por unidad de área, el cual está representado por el vector de Poynting, $\vb{S}$, dado por \cite{griffithsIntroductionElectrodynamics2023b}
 
@@ -72,13 +72,11 @@ Las Ecs. \eqref{eqs:Maxwell} determinan los campos que surgen a partir de corrie
 	\begin{tcolorbox}[ams align, breakable]
 		\vb{D}(\vb{r},\omega) &= \epsilon(\omega)\; \vb{E}(\vb{r},\omega), \label{seq:D} \\
 		\vb{B}(\vb{r},\omega) &= \mu(\omega) \vb{H}(\vb{r},\omega), \label{seq:B} \\
-		\vb{J}(\vb{r},\omega) &= \sigma (\omega) \vb{E}(\vb{r},\omega) \label{seq:J}
+		\vb{J}(\vb{r},\omega) &= \sigma (\omega) \vb{E}(\vb{r},\omega), \label{seq:J}
 	\end{tcolorbox}
 \end{subequations}
-\noindent
-
 %	
-donde $\vb{D}$ corresponde al vector de desplazamiento eléctrico, $\vb{H}$ al campo H, $\vb{J}$ a la densidad volumétrica de corriente  y $\sigma$ corresponde a la conductividad eléctrica.
+\noindent donde $\vb{D}$ corresponde al vector de desplazamiento eléctrico, $\vb{H}$ al campo H, $\vb{J}$ a la densidad volumétrica de corriente  y $\sigma$ corresponde a la conductividad eléctrica.
 
 Dadas las relaciones anteriores, la parte temporal puede ser construida empleando la transformada de Fourier temporal. La transformada de Fourier temporal para $\vb{D}$ está dada por~\cite{jacksonClassicalElectrodynamics2021a}
 %
@@ -132,18 +130,18 @@ Al sumar $\vb{E}(\vb{r},t')-\vb{E}(\vb{r},t')$ y multiplicar por $\varepsilon_0/
 \noindent donde $G(\tau)$ es la transformada de Fourier de la susceptibilidad eléctrica $\chi_e=\varepsilon(\omega)/\varepsilon_0-1$ \cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{tcolorbox}[ams align]
-	G(\tau)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\left[\frac{\varepsilon(\omega)}{\varepsilon_0}-1\right]e^{-i\omega\tau}\tex{d}\omega,
+	G(\tau)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\left[\frac{\varepsilon(\omega)}{\varepsilon_0}-1\right]e^{-i\omega\tau}\text{d}\omega,
 	\label{eq:G_tdependent} 
 \end{tcolorbox}
 %
-\noindent con $\epsilon(\omega)/\epsilon_0$ la permitividad eléctrica relativa.
+\noindent con $\varepsilon(\omega)/\varepsilon_0$ la permitividad eléctrica relativa.
 
 \noindent Las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:G_tdependent} muestran que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre $\vb{D}$ y $\vb{E}$. Además, a partir de la Ec. \eqref{eq:G_tdependent}, se observa que si $\varepsilon(\omega)$ es independiente de $\omega$, $G(\tau)=\delta(\tau)$, por lo que se obtiene una respuesta instantánea, mientras que si sí depende de $\omega$, $G(\tau)$ es distinta de cero para todos los valores de $\tau$ distintos de cero.
 
 Al aplicar la transformada de Fourier a la Ec. \eqref{eq:G_tdependent}, se obtiene una expresión para la permitividad eléctrica relativa
 %
 \begin{tcolorbox}[ams align]
-	\frac{\epsilon(\omega)}{\epsilon_0}=1+\int_{-\infty}^{\infty}G(\tau) e^{-i\omega\tau}\tex{d}\tau,
+	\frac{\varepsilon(\omega)}{\varepsilon_0}=1+\int_{-\infty}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau,
 	\label{eq:epsrelativa} 
 \end{tcolorbox}
 %
@@ -151,7 +149,7 @@ De modo que las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} sean causale
 %
 \begin{align*}
 	\vb{D}(\vb{r},t)&=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{0}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\\ \label{eq:TF_D_final}
-	\frac{\epsilon(\omega)}{\epsilon_0}&=1+\int_{-\infty}^{\infty}G(\tau) e^{-i\omega\tau}\tex{d}\tau.
+	\frac{\varepsilon(\omega)}{\varepsilon_0}&=1+\int_{0}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau.
 \end{align*}
 	%
 
