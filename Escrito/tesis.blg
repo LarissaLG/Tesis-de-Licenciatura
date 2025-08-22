@@ -34,48 +34,48 @@ Warning--I didn't find a database entry for "reyes2018analytical"
 Warning--I didn't find a database entry for "pena-gomar2006coherent"
 Warning--I didn't find a database entry for "barrera1991optical"
 Warning--I didn't find a database entry for "garcia2012multiple"
-Biblatex version: 3.20
+Biblatex version: 3.21
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 6 entries,
+You've used 7 entries,
             6402 wiz_defined-function locations,
-            1254 strings with 10866 characters,
-and the built_in function-call counts, 40507 in all, are:
-= -- 2801
-> -- 1624
-< -- 247
-+ -- 1742
-- -- 1120
-* -- 2303
-:= -- 4641
+            1257 strings with 11573 characters,
+and the built_in function-call counts, 54075 in all, are:
+= -- 3754
+> -- 2302
+< -- 318
++ -- 2512
+- -- 1659
+* -- 3136
+:= -- 6386
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 150
-chr.to.int$ -- 122
-cite$ -- 10
-duplicate$ -- 3497
-empty$ -- 3394
-format.name$ -- 293
-if$ -- 7796
+call.type$ -- 7
+change.case$ -- 172
+chr.to.int$ -- 170
+cite$ -- 12
+duplicate$ -- 4614
+empty$ -- 4415
+format.name$ -- 386
+if$ -- 10167
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 18
 missing$ -- 0
-newline$ -- 180
-num.names$ -- 319
-pop$ -- 1762
+newline$ -- 224
+num.names$ -- 370
+pop$ -- 2144
 preamble$ -- 1
-purify$ -- 171
+purify$ -- 202
 quote$ -- 0
-skip$ -- 1249
+skip$ -- 1519
 stack$ -- 0
-substring$ -- 5281
-swap$ -- 805
-text.length$ -- 150
+substring$ -- 7301
+swap$ -- 1026
+text.length$ -- 198
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 192
+type$ -- 226
 warning$ -- 0
-while$ -- 458
+while$ -- 617
 width$ -- 0
-write$ -- 175
+write$ -- 218
 (There were 6 warnings)

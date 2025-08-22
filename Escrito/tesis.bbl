@@ -17,7 +17,40 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global/global}
-  \entry{griffithsIntroductionElectrodynamics2023}{book}{}{}
+  \entry{zangwillModernElectrodynamics2013}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=ZA}{%
+         family={Zangwill},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{ZA1}
+    \strng{fullhash}{ZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Modern electrodynamics}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=tEYSUegp9WYC&oi=fnd&pg=PR
+    \verb 19&dq=zangwill+electrodynamics&ots=MFE72ZX4iA&sig=dO-_7G-C4cRiF_nKwiU
+    \verb QSOO_H0I
+    \endverb
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\VZ4PFB3G\\Zangwill - 2013 - Modern electrodynamics.pdf
+    \verb :application/pdf
+    \endverb
+    \field{year}{2013}
+    \field{urlday}{14}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{griffithsIntroductionElectrodynamics2023b}{book}{}{}
     \name{author}{1}{}{%
       {{hash=GDJ}{%
          family={Griffiths},
@@ -36,21 +69,66 @@
     \field{title}{Introduction to electrodynamics}
     \verb{url}
     \verb https://books.google.com/books?hl=es&lr=&id=I9jbEAAAQBAJ&oi=fnd&pg=PR
-    \verb 11&dq=introduction+to+electrodynamics&ots=x_UMGpsn_L&sig=Kxxn2ULfC6IE
-    \verb CHBpV6Mcp5HI7zw
+    \verb 11&dq=introduction+to+electrodynamics&ots=x_URGwzp0J&sig=nJMnm-i-C5db
+    \verb GHct6Zx5PKw4-NU
     \endverb
     \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
-    \verb ge\\HXNFTSNE\\Griffiths - 2023 - Introduction to electrodynamics.pdf:
-    \verb application/pdf
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\AEMI2PDB\\Griffiths - 2023 - Introduction to electrody
+    \verb namics.pdf:application/pdf
     \endverb
     \field{year}{2023}
-    \field{urlday}{16}
-    \field{urlmonth}{06}
+    \field{urlday}{14}
+    \field{urlmonth}{08}
     \field{urlyear}{2025}
   \endentry
 
-  \entry{jacksonClassicalElectrodynamics2021}{book}{}{}
+  \entry{arfkenMathematicalMethodsPhysicists2011a}{book}{}{}
+    \name{author}{3}{}{%
+      {{hash=AGB}{%
+         family={Arfken},
+         familyi={A\bibinitperiod},
+         given={George\bibnamedelima B.},
+         giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=WHJ}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Hans\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HFE}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Frank\bibnamedelima E.},
+         giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic press}%
+    }
+    \strng{namehash}{AGBWHJHFE1}
+    \strng{fullhash}{AGBWHJHFE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{shorttitle}{Mathematical methods for physicists}
+    \field{title}{Mathematical methods for physicists: a comprehensive guide}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=JOpHkJF-qcwC&oi=fnd&pg=PP
+    \verb 1&dq=arfken&ots=UNSWpbUxMb&sig=zAAP8hyLNEBndRgMGa2oWr6ExJM
+    \endverb
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\BW8JJH3R\\Arfken et al. - 2011 - Mathematical methods
+    \verb for physicists a comprehensive guide.pdf:application/pdf
+    \endverb
+    \field{year}{2011}
+    \field{urlday}{14}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{jacksonClassicalElectrodynamics2021a}{book}{}{}
     \name{author}{1}{}{%
       {{hash=JJD}{%
          family={Jackson},
@@ -69,16 +147,16 @@
     \field{title}{Classical electrodynamics}
     \verb{url}
     \verb https://books.google.com/books?hl=es&lr=&id=6VV-EAAAQBAJ&oi=fnd&pg=PP
-    \verb 1&dq=classical+electrodynamics&ots=7xC1kC1Sa4&sig=XJmMN-z1Wik0hd12UAi
-    \verb h8XckIbo
+    \verb 1&dq=jackson+electrodynamics&ots=7xC6kI1Zb3&sig=b50U-WDYWQTZsAkspcl2M
+    \verb sPkCps
     \endverb
     \field{year}{2021}
-    \field{urlday}{17}
-    \field{urlmonth}{06}
+    \field{urlday}{14}
+    \field{urlmonth}{08}
     \field{urlyear}{2025}
   \endentry
 
-  \entry{novotnyPrinciplesNanooptics2012}{book}{}{}
+  \entry{novotnyPrinciplesNanooptics2012a}{book}{}{}
     \name{author}{2}{}{%
       {{hash=NL}{%
          family={Novotny},
@@ -103,51 +181,17 @@
     \field{title}{Principles of nano-optics}
     \verb{url}
     \verb https://books.google.com/books?hl=es&lr=&id=RHC_AwAAQBAJ&oi=fnd&pg=PR
-    \verb 15&dq=principles+of+nano+optics&ots=X0UCOFsiyO&sig=mZhyHsZNrRD7Ag6KdV
-    \verb LjSvljjLg
+    \verb 15&dq=principles+of+nano+optics&ots=X0UHHMwlyI&sig=QN4tcqJn4p8j4nu7Yw
+    \verb GxYwRYoLs
     \endverb
     \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Poh\\Zotero\\stora
-    \verb ge\\F42HYIYQ\\Novotny y Hecht - 2012 - Principles of nano-optics.pdf:
-    \verb application/pdf
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\LLASBIRI\\Novotny and Hecht - 2012 - Principles of nan
+    \verb o-optics.pdf:application/pdf
     \endverb
     \field{year}{2012}
-  \endentry
-
-  \entry{maierPlasmonicsFundamentalsApplications2007}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=MSA}{%
-         family={Maier},
-         familyi={M\bibinitperiod},
-         given={Stefan\bibnamedelima A.},
-         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {en}%
-    }
-    \list{publisher}{1}{%
-      {Springer US}%
-    }
-    \strng{namehash}{MSA1}
-    \strng{fullhash}{MSA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \verb{doi}
-    \verb 10.1007/0-387-37825-1
-    \endverb
-    \field{isbn}{978-0-387-33150-8 978-0-387-37825-1}
-    \field{shorttitle}{Plasmonics}
-    \field{title}{Plasmonics: {Fundamentals} and {Applications}}
-    \verb{url}
-    \verb http://link.springer.com/10.1007/0-387-37825-1
-    \endverb
-    \list{location}{1}{%
-      {New York, NY}%
-    }
-    \field{year}{2007}
-    \field{urlday}{16}
-    \field{urlmonth}{06}
+    \field{urlday}{14}
+    \field{urlmonth}{08}
     \field{urlyear}{2025}
   \endentry
 
