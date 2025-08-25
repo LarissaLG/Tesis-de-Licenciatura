@@ -134,18 +134,18 @@ Al sumar $\vb{E}(\vb{r},t')-\vb{E}(\vb{r},t')$ y multiplicar por $\varepsilon_0/
 	\label{eq:G_tdependent} 
 \end{tcolorbox}
 %
-\noindent con $\varepsilon(\omega)/\varepsilon_0$ la permitividad eléctrica relativa.
-
-\noindent Las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:G_tdependent} muestran que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre $\vb{D}$ y $\vb{E}$. Además, a partir de la Ec. \eqref{eq:G_tdependent}, se observa que si $\varepsilon(\omega)$ es independiente de $\omega$, $G(\tau)=\delta(\tau)$, por lo que se obtiene una respuesta instantánea, mientras que si sí depende de $\omega$, $G(\tau)$ es distinta de cero para todos los valores de $\tau$ distintos de cero.
-
-Al aplicar la transformada de Fourier a la Ec. \eqref{eq:G_tdependent}, se obtiene una expresión para la permitividad eléctrica relativa
+\noindent con $\varepsilon(\omega)/\varepsilon_0$ la permitividad eléctrica relativa. Al aplicar la transformada de Fourier a la Ec.~\eqref{eq:G_tdependent}, se obtiene una expresión para la permitividad eléctrica relativa
 %
 \begin{tcolorbox}[ams align]
-	\frac{\varepsilon(\omega)}{\varepsilon_0}=1+\int_{-\infty}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau,
+	\frac{\varepsilon(\omega)}{\varepsilon_0}=1+\int_{-\infty}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau.
 	\label{eq:epsrelativa} 
 \end{tcolorbox}
 %
-De modo que las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} sean causales, es necesario imponer condiciones que garanticen que la Ec. \eqref{eq:G_tdependent} se anule para $\tau<0$, lo que se traduce en que al tiempo $t$, únicamente valores del campo eléctrico previos a ese tiempo determinan el vector de desplazamiento eléctrico. De esta forma, las Ecs. \eqref{eq:epsrelativa} se reescriben como
+
+\noindent Las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:G_tdependent} muestran que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021a}. Además, a partir de la Ec. \eqref{eq:G_tdependent}, se observa que si $\varepsilon(\omega)$ es independiente de $\omega$, $G(\tau)=\delta(\tau)$, por lo que se obtiene una respuesta instantánea, mientras que si sí depende de $\omega$, $G(\tau)$ es distinta de cero para todos los valores de $\tau$ distintos de cero.
+
+
+De modo que las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} sean causales, es necesario imponer condiciones que garanticen que la Ec. \eqref{eq:G_tdependent} se anule para $\tau<0$, lo que se traduce en que al tiempo $t$, únicamente valores del campo eléctrico previos a ese tiempo determinan el vector de desplazamiento eléctrico \cite{jacksonClassicalElectrodynamics2021a}. De esta forma, las Ecs. \eqref{eq:epsrelativa} se reescriben como
 %
 \begin{align*}
 	\vb{D}(\vb{r},t)&=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{0}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\\ \label{eq:TF_D_final}
