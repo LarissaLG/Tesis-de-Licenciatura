@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5842,        164]
-NotebookOptionsPosition[      5391,        149]
-NotebookOutlinePosition[      5794,        165]
-CellTagsIndexPosition[      5751,        162]
+NotebookDataLength[      5393,        153]
+NotebookOptionsPosition[      4942,        138]
+NotebookOutlinePosition[      5345,        154]
+CellTagsIndexPosition[      5302,        151]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,7 @@ Cell[BoxData[
    RowBox[{"Module", "[", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"nreal", ",", "k", ",", "kkval"}], "}"}], ",", 
+      RowBox[{"nreal", ",", "k"}], "}"}], ",", 
      RowBox[{"(*", 
       RowBox[{
       "Encontrar", " ", "\[IAcute]ndice", " ", "m\[AAcute]s", " ", "cercano", 
@@ -61,66 +61,55 @@ Cell[BoxData[
        RowBox[{"kkrebook", "[", 
         RowBox[{"omega", ",", "kimag"}], "]"}]}], ";", 
       RowBox[{"(*", 
-       RowBox[{
-       "Aseg\[UAcute]rate", " ", "de", " ", "tener", " ", "esta", " ", 
-        "funci\[OAcute]n"}], "*)"}], 
-      RowBox[{"kkval", "=", 
-       RowBox[{"nreal", "[", 
-        RowBox[{"[", "k", "]"}], "]"}]}], ";", 
-      RowBox[{"(*", 
        RowBox[{"Valor", " ", "en", " ", "omega1"}], "*)"}], 
       RowBox[{"(*", 
        RowBox[{"Correcci\[OAcute]n", " ", "substractiva"}], "*)"}], 
       RowBox[{"nreal", "=", 
        RowBox[{"nreal", "+", 
-        RowBox[{
-         RowBox[{"(", 
-          RowBox[{"omega", "/", "omega1"}], ")"}], "*", 
-         RowBox[{"(", 
-          RowBox[{"nreal1", "-", "kkval"}], ")"}]}]}]}], ";", 
+        RowBox[{"(", 
+         RowBox[{"nreal1", "-", 
+          RowBox[{"nreal", "[", 
+           RowBox[{"[", "k", "]"}], "]"}]}], ")"}]}]}], ";", 
       "\[IndentingNewLine]", "nreal"}]}], "]"}]}], "\n", "\n", 
   "\n"}]], "Input",
  CellChangeTimes->{{3.958775178090164*^9, 3.958775245629305*^9}, {
    3.958775834030367*^9, 3.958775849316597*^9}, 3.958864298956538*^9, {
    3.958864660831274*^9, 3.9588646691247597`*^9}, {3.9588647614104867`*^9, 
-   3.958864804404563*^9}, 3.958864877819378*^9, 3.958864973448106*^9},
+   3.958864804404563*^9}, 3.958864877819378*^9, 3.958864973448106*^9, {
+   3.965694739624092*^9, 3.965694741510063*^9}, {3.965694782920067*^9, 
+   3.965694828143572*^9}},
  CellLabel->
-  "In[103]:=",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
+  "In[2375]:=",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
    RowBox[{"sskkimbook", "[", 
-    RowBox[{"omega_List", ",", "nreal_List", ",", 
-     RowBox[{"omega1_", "?", "NumericQ"}], ",", 
-     RowBox[{"kimag1_", "?", "NumericQ"}]}], "]"}], ":=", 
+    RowBox[{"omega_List", ",", "nreal_List", ",", "omega1_", ",", "kimag1_"}],
+     "]"}], ":=", 
    RowBox[{"Module", "[", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{
-      "omegaFlat", ",", "nrealFlat", ",", "g", ",", "x", ",", "kimag"}], 
-      "}"}], ",", 
+      RowBox[{"kimag", ",", "k"}], "}"}], ",", "\[IndentingNewLine]", 
      RowBox[{"(*", 
-      RowBox[{"Asegurar", " ", "vectores", " ", "planos"}], "*)"}], 
+      RowBox[{
+      "Encontrar", " ", "\[IAcute]ndice", " ", "m\[AAcute]s", " ", "cercano", 
+       " ", "a", " ", "omega1"}], "*)"}], 
      RowBox[{
-      RowBox[{"omegaFlat", "=", 
-       RowBox[{"Flatten", "[", "omega", "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"nrealFlat", "=", 
-       RowBox[{"Flatten", "[", "nreal", "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"g", "=", 
-       RowBox[{"Length", "[", "omegaFlat", "]"}]}], ";", 
-      "\[IndentingNewLine]", 
-      RowBox[{"(*", 
-       RowBox[{
-       "Encontrar", " ", "\[IAcute]ndice", " ", "m\[AAcute]s", " ", "cercano",
-         " ", "a", " ", "omega1"}], "*)"}], 
-      RowBox[{"x", "=", 
+      RowBox[{"k", "=", 
        RowBox[{"First", "@", 
-        RowBox[{"Ordering", "[", 
-         RowBox[{
-          RowBox[{"Abs", "[", 
-           RowBox[{"omegaFlat", "-", "omega1"}], "]"}], ",", "1"}], "]"}]}]}],
-       ";", "\[IndentingNewLine]", 
+        RowBox[{"FirstPosition", "[", 
+         RowBox[{"omega", ",", 
+          RowBox[{"_", "?", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Abs", "[", 
+               RowBox[{"#", "-", "omega1"}], "]"}], "<", 
+              RowBox[{"10", "^", 
+               RowBox[{"-", "6"}]}]}], "&"}], ")"}]}], ",", 
+          RowBox[{"Missing", "[", "\"\<NotFound\>\"", "]"}]}], "]"}]}]}], ";",
+       "\[IndentingNewLine]", 
       RowBox[{"(*", 
        RowBox[{
         RowBox[{
@@ -128,8 +117,7 @@ Cell[BoxData[
          "con", " ", "Kramers"}], "-", "Kronig"}], "*)"}], 
       RowBox[{"kimag", "=", 
        RowBox[{"kkimbook", "[", 
-        RowBox[{"omegaFlat", ",", "nrealFlat"}], "]"}]}], ";", 
-      "\[IndentingNewLine]", 
+        RowBox[{"omega", ",", "nreal"}], "]"}]}], ";", "\[IndentingNewLine]", 
       RowBox[{"(*", 
        RowBox[{"Aplicar", " ", "correcci\[OAcute]n", " ", "sustractiva"}], 
        "*)"}], 
@@ -137,19 +125,20 @@ Cell[BoxData[
        RowBox[{"kimag", "+", 
         RowBox[{
          RowBox[{"(", 
-          RowBox[{"omegaFlat", "/", "omega1"}], ")"}], "*", 
+          RowBox[{"omega", "/", "omega1"}], ")"}], "*", 
          RowBox[{"(", 
           RowBox[{"kimag1", "-", 
            RowBox[{"kimag", "[", 
-            RowBox[{"[", "x", "]"}], "]"}]}], ")"}]}]}]}], ";", 
+            RowBox[{"[", "k", "]"}], "]"}]}], ")"}]}]}]}], ";", 
       "\[IndentingNewLine]", "kimag"}]}], "]"}]}], "\n"}]], "Input",
- CellChangeTimes->{{3.9587755154696655`*^9, 3.958775515472607*^9}},
- CellLabel->
-  "In[425]:=",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
+ CellChangeTimes->{{3.9587755154696655`*^9, 3.958775515472607*^9}, {
+  3.965694709382702*^9, 
+  3.9656948203972664`*^9}},ExpressionUUID->"c5623eb5-8398-4f16-8db8-\
+0db69e02e701"]
 },
 WindowSize->{1012.5, 501.75},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.1 para Microsoft Windows (64-bit) (June 16, 2022)",
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (March 14, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"956b0596-5dc2-46c4-ae58-ac919b5b0154"
 ]
@@ -164,8 +153,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2589, 67, 284, "Input",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
-Cell[3150, 89, 2237, 58, 262, "Input",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
+Cell[558, 20, 2389, 61, 199, "Input",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
+Cell[2950, 83, 1988, 53, 142, "Input",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
 }
 ]
 *)
