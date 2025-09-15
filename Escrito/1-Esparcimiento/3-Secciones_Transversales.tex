@@ -3,7 +3,7 @@
 
 \section{Secciones transversales}
 \label{section:yth}
-La interacción luz–materia puede describirse clásicamente mediante dos procesos fundamentales: la absorción y el esparcimiento, cuyo efecto conjunto se denomina extinción del campo incidente. Experimentalmente, estos fenómenos se evidencian al comparar la potencia detectada con y sin la presencia de una partícula iluminada por un campo electromagnético incidente  ($\vb{E}_{\text{inc}}, \vb{H}_{\text{inc}}$) [ver Fig. \ref{scattering}] ~\cite{bohrenAbsorptionScatteringLight2008}.
+La interacción luz–materia puede describirse clásicamente mediante dos procesos fundamentales: la absorción y el esparcimiento, cuyo efecto conjunto se denomina extinción del campo incidente \cite{bohrenAbsorptionScatteringLight2008}. Experimentalmente, estos fenómenos se evidencian al comparar la potencia medida por un detector con y sin la presencia de una partícula iluminada por un campo electromagnético incidente  ($\vb{E}_{\text{inc}}, \vb{H}_{\text{inc}}$), la cual puede generar un campo electromagnético esparcido ($\vb{E}_{\text{sca}}, \vb{H}_{\text{sca}}$) como se muestra en la Fig. \ref{scattering} ~\cite{bohrenAbsorptionScatteringLight2008}.
 %
 \begin{figure}[h]
 	\centering
@@ -12,22 +12,22 @@ La interacción luz–materia puede describirse clásicamente mediante dos proce
 	\label{scattering}
 \end{figure}
 %
-Para cuantificar este efecto de manera macroscópica, en esta sección se introducen las secciones transversales de extinción, absorción y esparcimiento, las cuales son cantidades macroscópicas medibles que proporcionan información sobre el sistema \cite{bohrenAbsorptionScatteringLight2008}. Para esto, se considera a la partícula embebida en un medio no absorbente e iluminada por una onda plana armónica en el tiempo~\cite{bohrenAbsorptionScatteringLight2008}. Teniendo en cuenta lo anterior, la energía transportada por los campos electromagnéticos y que es absorbida por la partícula $W_{\text{abs}}$, se calcula al integrar el promedio temporal del vector de Poynting\footnote{El promedio temporal del vector de Poynting es $\langle\vb{S}\rangle_t = (1/\tau)\int_t^{t+\tau}\vb{S}(t')\text{d}t'$, y para campos electromagnéticos del tipo ondas planas es $\langle\vb{S}\rangle_t = (1/2) \text{Re}[\vb{E} \times (\vb{B}/\mu)^{*}]$, donde $*$ denota la operación complejo conjugado \cite{bohrenAbsorptionScatteringLight2008}. } $\langle\vb{S}\rangle_t$  sobre una superficie cerrada $A$, que por simplificidad puede considerarse una esfera de radio $r$ mayor al de la partícula [ver Fig. \ref{WA}], es decir, 
+Para cuantificar este efecto de manera macroscópica, en esta sección se introducen las secciones transversales de extinción, absorción y esparcimiento, las cuales son cantidades macroscópicas medibles que proporcionan información sobre el sistema~\cite{bohrenAbsorptionScatteringLight2008}. Para esto, se considera a la partícula embebida en un medio no absorbente e iluminada por una onda plana~\cite{bohrenAbsorptionScatteringLight2008}. Teniendo en cuenta lo anterior, la energía transportada por los campos electromagnéticos y que es absorbida por la partícula $W_{\text{abs}}$, se calcula al integrar el promedio temporal del vector de Poynting  $\langle\vb{S}\rangle_t$  sobre una superficie cerrada $A$, lo suficientemente grande para encontrarse en el campo lejano y que, por simplificidad, se considera una esfera de radio $r$ que encierra a la partícula, como se muestra en la Fig. \ref{WA}, es decir, 
 \begin{tcolorbox}[ams align]
 	W_{\text{abs}}=-\int_A \langle\vb{S}\rangle_t\cdot\vu{e}_r \text{ dA},
 	\label{flujopoynting}
 \end{tcolorbox}
-\noindent donde, debido a que $\langle\vb{S}\rangle_t$ y $\vu{e}_r$ están orientados en la misma dirección, el signo negativo convierte a $W_{\text{abs}}$ en una cantidad positiva, de lo contrario, significaría que se genera energía dentro de la esfera \cite{bohrenAbsorptionScatteringLight2008}.
+\noindent donde, debido a que $\langle\vb{S}\rangle_t$ y $\vu{e}_r$ están orientados en la misma dirección, el signo negativo asegura que $W_{\text{abs}}$ sea positiva, pues de otro modo el resultado indicaría generación neta de energía dentro de la esfera \cite{bohrenAbsorptionScatteringLight2008}.
 %
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=7cm]{../../Figuras/WA.pdf}
-	\caption{Esquema de la superficie de integración $A$ como una esfera de radio $r$ centrada en el origen y que contiene a la partícula de interés.}
+	\caption{Esquema de la superficie de integración $A$ como una esfera de radio $r$ centrada en el origen y que encierra a una partícula.}
 	\label{WA}
 \end{figure}
 \\
 
-\noindent Considerando la descomposición del vector de Poynting total en tres términos \cite{bohrenAbsorptionScatteringLight2008}
+\noindent Al descomponer el vector de Poynting total en tres contribuciones \cite{bohrenAbsorptionScatteringLight2008}
 %
 		
 \begin{subequations}%
@@ -40,14 +40,17 @@ Para cuantificar este efecto de manera macroscópica, en esta sección se introd
 \end{subequations}\vspace*{1em}
 %
 
-\noindent asociados al campo incidente, al campo esparcido y a la interacción entre los dos anteriores, respectivamente y donde Re$\{\cdot\}$ denota la parte real de un número complejo, se tiene que $W_{\text{abs}}=W_{\text{inc}}-W_{\text{sca}}+W_{\text{ext}}$, donde \cite{bohrenAbsorptionScatteringLight2008}
+\noindent donde los superíndices se refieren al campo incidente, al campo esparcido y a la interacción entre los dos anteriores, respectivamente, y $\Re{\cdot}$ denota la parte real de un número complejo, se obtiene al integrar que $W_{\text{abs}}=W_{\text{inc}}-W_{\text{sca}}+W_{\text{ext}}$, donde \cite{bohrenAbsorptionScatteringLight2008}
 %
-\begin{align} \label{eqs:W}
-	W_{\text{inc}}  &= -\int_{A}\langle\vb{S}^{\text{inc}}\rangle_t\cdot\vu{e}_r\text{ dA},\label{Wi}\\ W_{\text{sca}}&=\int_{A}\langle\vb{S^{\text{sca}}}\rangle_t\cdot\vu{e}_r\text{ dA}, \label{Ws} \\ 
-	W_{\text{ext}} &= -\int_{A}\langle\vb{S^{\text{ext}}}\rangle_t\cdot\vu{e}_r\text{ dA},\label{Wext} 
-\end{align}
+\begin{subequations}\label{eqs:W}
+	\begin{align} 
+		W_{\text{inc}}  &= -\int_{A}\langle\vb{S}^{\text{inc}}\rangle_t\cdot\vu{e}_r\text{ dA}, \label{Wi}\\
+		W_{\text{sca}} &= \int_{A}\langle\vb{S^{\text{sca}}}\rangle_t\cdot\vu{e}_r\text{ dA}, \label{Ws} \\ 
+		W_{\text{ext}} &= -\int_{A}\langle\vb{S^{\text{ext}}}\rangle_t\cdot\vu{e}_r\text{ dA}. \label{Wext}
+	\end{align}
+\end{subequations}
 %
-cuyos signos están colocados de forma que sean cantidades positivas considerando las direcciones de los vectores de Poynting y de $\vb{\hat{e}_r}$. En particular, para un medio no absorbente, la energía que cruza la esfera es la misma que la que entra, por lo que $W_{\text{inc}}$ se anula, entonces
+Los signos de las Ecs. \eqref{eqs:W} están colocados de forma que sean cantidades positivas considerando las direcciones de los vectores de Poynting y de $\vu{e}_r$. En particular, para un medio no absorbente, la energía que cruza la esfera es la misma que la que entra, por lo que $W_{\text{inc}}$ se anula, entonces
 %
 \begin{equation}
 	W_{\text{ext}}=W_{\text{abs}}+W_{\text{sca}}.
@@ -55,45 +58,48 @@ cuyos signos están colocados de forma que sean cantidades positivas considerand
 \end{equation}
 %%
 
-Al considerar el campo incidente $\vb{E}_{\text{inc}}=E\,\vu{e}_x$ y a $\vb{H}_{\text{inc}}=(1/\mu \omega)\: \vb{k} \times E\, \vu{e}_x$ en un medio no absorbente, $W_{\text{abs}}$ es independiente del radio $r$ de la superficie de integración, por lo que se puede considerar a $r$ lo suficientemente grande para estar en la región de campo lejano donde los campos se comportan como los generados por un dipolo inducido ($\vb{E}_p$, $\vb{H}_p$) al iluminar un sistema de cargas y corrientes con un onda electromagnética de frecuencia angular $\omega$ \cite{bohrenAbsorptionScatteringLight2008}
+En un medio no absorbente, $W_{\text{abs}}$ es independiente del radio $r$ de la superficie de integración. Por ello, puede elegirse $r$ suficientemente grande para situarse en la región de campo lejano, donde la contribución dominante del campo esparcido es la dipolar. En estas condiciones, una partícula iluminada por un campo incidente $\vb{E}_{\text{inc}}=E\,\vu{e}_x$, con $\vb{H}_{\text{inc}}=(1/\mu \omega)\: \vb{k} \times \vb{E}_{\text{inc}}$, se describe mediante un momento dipolar inducido $\vb{p}$ con polarizabilidad $\alpha$. Debido a lo anterior, el campo esparcido puede escribirse como una onda plana de frecuencia angular $\omega$ dada por \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{align}
-	\vb{E}_{p}&=\frac{e^{ik(r-z)}}{-ikr}\vb{X}\:E_0 e^{ikz}\qquad\text{y}\qquad
+	\vb{E}_{p}&=\frac{e^{ikr}}{-ikr}\vb{X}\:E_0 \qquad\text{y}\qquad
 	\vb{H}_{p}=\frac{k}{\omega\mu}\vu{e}_r\times\vb{E}_{p},
 	\label{EH_s}
 \end{align}
 %
-donde $\vb{X}$ es el vector de amplitud de esparcimiento dado por
+donde $\vb{X}$ es el vector de amplitud de esparcimiento
 \begin{equation}
-	\vb{X}=\frac{ik^3}{4\pi}\alpha \left[ \vu{e}_r\times(\vu{e}_r\times \vu{e}_x)\right]=\frac{ik^3}{4\pi}\alpha \left(-\cos\theta\cos\phi\, \vu{e}_{\theta}+\sin\phi\, \vu{e}_{\phi} \right),
+	\vb{X}=\frac{ik^3}{4\pi}\alpha \left[ \vu{e}_r\times(\vu{e}_r\times \vu{e}_x)\right]=\frac{ik^3}{4\pi}\alpha \left(-\cos\theta\cos\phi\, \vu{e}_{\theta}+\sin\phi\, \vu{e}_{\phi} \right)\footnote{Donde se reescribió a $\vu{e}_x$ en términos de la base de vectores esféricos como $\vu{e}_x=\sin\theta\cos\phi\,\vu{e}_r+\cos\theta\cos\phi\, \vu{e}_{\theta}-\sin\phi\,\vu{e}_{\phi}$}.
 	\label{eq:Xvec}
 \end{equation}
 %
-por lo cual, $W_{\text{ext}}$ está dado por \cite{bohrenAbsorptionScatteringLight2008}
+Con lo anterior, $W_{\text{ext}}$ es \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{equation*}
-	W_{\text{ext}}=I_i\frac{4\pi}{k^2}\:\text{Re}\{(\vb{X}\cdot\vu{e}_x)_{\theta=0}\}
+	W_{\text{ext}}=I_{\text{inc}}\frac{4\pi}{k^2}\:\text{Re}\{(\vb{X}\cdot\vu{e}_x)_{\theta=0}\}
 \end{equation*}
 %
 y además, $I_{\text{inc}}$ es la irradiancia de la onda incidente, que corresponde a la magnitud del vector de Poynting, y por consiguiente\footnote{Debido al teorema óptico, la extinción sólo depende de la amplitud de esparcimiento en la dirección de propagación y es el efecto combinado de la absorción en la partícula y el esparcimiento por la partícula en todas las direcciones \cite{bohrenAbsorptionScatteringLight2008}.},
 %
 \begin{equation}
-	C_{\text{ext}}=\frac{W_{\text{ext}}}{I_i}=\frac{4\pi}{k^2}\:\text{Re}\{(\vb{X}\cdot\vu{e}_x)_{\theta=0}\}, \label{C_ext}
+	C_{\text{ext}}=\frac{W_{\text{ext}}}{I_{\text{inc}}}=\frac{4\pi}{k^2}\:\text{Re}\{(\vb{X}\cdot\vu{e}_x)_{\theta=0}\}, \label{C_ext}
 \end{equation}
 %
-que es la sección transversal de extinción y que posee dimensiones de área. La Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
-%
-\begin{tcolorbox}[ams align]
-	C_{\text{ext}}=C_{\text{abs}}+C_{\text{sca}},
-	\label{C} 
-\end{tcolorbox}
-%
-\noindent donde $C_{\text{abs}}=W_{\text{abs}}/I_{\text{inc}}$ y $C_{\text{sca}}=W_{\text{sca}}/I_{\text{inc}}$ corresponden a las secciones transversales de absorción y esparcimiento, respectivamente. Al sustituir las Ecs. (\ref{EH_s}) en la Ec. (\ref{Ws}) se obtiene
+que es la sección transversal de extinción y que posee dimensiones de área.
+ Al sustituir las Ecs.~(\ref{EH_s}) en la Ec. (\ref{Ws}) se obtiene
 %
 \begin{equation}
 	C_{\text{sca}}=\int_0^{2\pi}\int_0^{\pi}\frac{|\vb{X}|^2}{k^2}\:\sin\theta\: \text{d}\theta\:\text{d}\phi.
 	\label{C_sca_general}
 \end{equation}
 %%
-Las Ecs. (\ref{C_ext})--(\ref{C_sca_general}) son propiedades macroscópicas y medibles que proveen información sobre la energía absorbida y esparcida por una partícula.  \\
+
+ \noindent Finalmente, la Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
+%
+\begin{tcolorbox}[ams align]
+	C_{\text{ext}}=C_{\text{abs}}+C_{\text{sca}},
+	\label{C} 
+\end{tcolorbox}
+%
+\noindent donde $C_{\text{abs}}=W_{\text{abs}}/I_{\text{inc}}$ y $C_{\text{sca}}=W_{\text{sca}}/I_{\text{inc}}$ corresponden a las secciones transversales de absorción y esparcimiento, respectivamente.
+Las Ecs. (\ref{C_ext})--(\ref{C}) son propiedades macroscópicas y medibles que proveen información sobre la energía absorbida y esparcida por una partícula \cite{bohrenAbsorptionScatteringLight2008}.  \\
 
