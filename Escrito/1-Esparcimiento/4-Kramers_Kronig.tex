@@ -4,39 +4,21 @@
 \section{Relaciones de Kramers-Kronig}
 \label{section:yth}
 
-El estudio experimental de las propiedades ópticas lineales no siempre permite obtener todas las propiedades ópticas de una muestra. Afortunadamente, el principio de causalidad en la respuesta óptica de cualquier material permite extraer información a partir de los datos experimentales medidos. En el caso de un sistema de esparcimiento, el principio de causalidad impone que ninguna onda esparcida puede existir antes de que la onda incidente haya alcanzado alguna parte de la partícula esparcidora, cuyo tamaño se supone finito.
+El estudio experimental de las propiedades ópticas lineales no siempre permite determinar por completo las características ópticas de una muestra. No obstante, el principio de causalidad en la respuesta óptica de cualquier material permite extraer información adicional a partir de los datos experimentales.  A partir de la aplicación del principio de causalidad y de la analiticidad de una función óptica lineal compleja, como la susceptibilidad, la función dieléctrica, el índice de refracción o la reflectividad, se deducen las relaciones de Kramers-Kronig (KK), las cuales describen la conexión entre las partes real e imaginaria de una función óptica lineal compleja. Para deducir las relaciones de KK se considera un material homogéneo e isótropo caracterizado por una función óptica lineal compleja, que en este caso será la función dieléctrica compleja, así como un espacio de frecuencias complejo.
 
-Las relaciones K-K describen una conexión entre las partes reales e imaginarias de funciones ópticas lineales complejas que describen fenómenos de interacción luz-materia, como la susceptibilidad, la función dieléctrica, el índice de refracción y la reflectividad. Las partes reales e imaginarias no son totalmente independientes, sino que están conectadas por una forma especial de transformadas de Hilbert, denominadas relaciones K-K.  Además, al aplicar las relaciones K-K, es posible realizar la llamada inversión de datos ópticos, es decir, adquirir conocimiento sobre los fenómenos dispersivos mediante mediciones de los fenómenos absortivos en todo el espectro (por ejemplo, con espectroscopia de transmisión) o viceversa. 
-
-En la espectroscopia óptica lineal, el análisis K-K tiene dos funciones típicas, según si la medición se basa en la transmisión o la reflexión de la luz. En el primer caso, se suele medir la parte imaginaria y la parte real se obtiene mediante una relación K-K, mientras que en el segundo, se mide la intensidad y se calcula la fase mediante la relación K-K adecuada.
-Sin embargo, al utilizar un elipsómetro, es posible obtener información experimental a partir de la función compleja obtenida mediante la medición. En tal caso, las relaciones K-K pueden utilizarse para comprobar la autoconsistencia de las partes reales e imaginarias medidas de los datos.
-
-Las relaciones de Kramers-Kronig, se obtienen a partir de la Ec. \eqref{eq:TF_D_final} 
-
-Por ello, es necesario complementar las Ecs. \eqref{eqs:Maxwell} con \textit{relaciones constitutivas}, que describen la respuesta de la materia ante la acción de los campos. Para un medio lineal, homogéneo e isótropo, las relaciones constitutivas están dadas por \cite{novotnyPrinciplesNanooptics2012a}
-%
-\begin{subequations}\label{eqs:Constitutivas}
-	\begin{tcolorbox}[ams align, breakable]
-		\vb{D}(\vb{r},\omega) &= \epsilon(\omega)\; \vb{E}(\vb{r},\omega), \label{seq:D} \\
-		\vb{B}(\vb{r},\omega) &= \mu(\omega) \vb{H}(\vb{r},\omega), \label{seq:B} \label{seq:J}
-	\end{tcolorbox}
-\end{subequations}
-%	
-\noindent donde $\vb{D}$ corresponde al vector de desplazamiento eléctrico, $\vb{H}$ al campo H, $\vb{J}$ a la densidad volumétrica de corriente  y $\sigma$ corresponde a la conductividad eléctrica.
-
-Dadas las relaciones anteriores, la parte temporal puede ser construida empleando la transformada de Fourier temporal. La transformada de Fourier temporal para $\vb{D}$ está dada por~\cite{jacksonClassicalElectrodynamics2021a}
+La transformada de Fourier temporal para $\vb{D}$ está dada por~\cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{equation}
 	\vb{D}(\vb{r},\omega)=\int_{-\infty}^{\infty}\vb{D}(\vb{r},t')e^{i\omega t'}\text{d}t',\label{eq:TFI}
 \end{equation}
 %
-mientras que la transformada de Fourier inversa está dada por
+mientras que la transformada de Fourier inversa es
 %
 \begin{equation}
 	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\vb{D}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega.\label{eq:TF}
 \end{equation}
 %
-Al sustituir la Ec. \eqref{seq:D} en la Ec. \eqref{eq:TF}, se obtiene
+Al sustituir la Ec. \eqref{eq:d3} en la Ec. \eqref{eq:TF}, se obtiene
 %
 \begin{equation}
 	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega,\label{eq:TF_D_intermedia_1}
@@ -54,48 +36,93 @@ Considerando que los órdenes de integración se pueden intercambiar, dado que l
 	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},t') e^{i\omega (t-t')} \text{d}\omega \text{d}t'.\label{eq:TF_D_intermedia_3} 
 \end{tcolorbox}
 %
-\noindent Al realizar el cambio de variable $\tau = t - t'$ y emplear la función constante \cite{arfkenMathematicalMethodsPhysicists2011a}
+\noindent Al realizar el cambio de variable $\tau = t - t'$ y emplear la función constante\footnote{$\delta(\tau)$ es la función delta de Dirac, que cumple con $\int_{-\infty}^{\infty}f(\tau)\delta(\tau)\text{d}\tau=f(0)$ \cite{arfkenMathematicalMethodsPhysicists2011a}.}
 \begin{equation}
 	\mathcal{F}[1]=\int_{-\infty}^{\infty}e^{-i\omega\tau}=\delta(\tau),
-\end{equation}
-donde $\delta(\tau)$ es la función delta de Dirac, que cumple con \cite{arfkenMathematicalMethodsPhysicists2011a}
-\begin{equation}
-	\int_{-\infty}^{\infty}f(\tau)\delta(\tau)\text{d}\tau=f(0),
 \end{equation}
 se reescribe al campo eléctrico como
 \begin{equation}
 	\vb{E}(\vb{r},t)=\int_{-\infty}^{\infty}\vb{E}(\vb{r},t-\tau)\delta(\tau)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\vb{E}(\vb{r},t-\tau)e^{-i\omega\tau}\text{d}\omega\text{d}\tau.
 \end{equation}
 %
-Al sumar $\vb{E}(\vb{r},t')-\vb{E}(\vb{r},t')$ y multiplicar por $\varepsilon_0/\varepsilon_0$ a la Ec. \eqref{eq:TF_D_intermedia_2}, simplificando se obtiene
+De forma que al sumar $\vb{E}(\vb{r},t')-\vb{E}(\vb{r},t')$ y multiplicar por $\varepsilon_0/\varepsilon_0$ a la Ec. \eqref{eq:TF_D_intermedia_2}, simplificando se obtiene
 %
-\begin{tcolorbox}[ams align]
+\begin{equation}
 	\vb{D}(\vb{r},t)=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{-\infty}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\label{eq:TF_D_final} 
-\end{tcolorbox}
+\end{equation}
 %
-\noindent donde $G(\tau)$ es la transformada de Fourier de la susceptibilidad eléctrica $\chi_e=\varepsilon(\omega)/\varepsilon_0-1$ \cite{jacksonClassicalElectrodynamics2021a}
+\noindent donde $G(\tau)$ es \cite{jacksonClassicalElectrodynamics2021a}
 %
-\begin{tcolorbox}[ams align]
+\begin{equation}
 	G(\tau)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\left[\frac{\varepsilon(\omega)}{\varepsilon_0}-1\right]e^{-i\omega\tau}\text{d}\omega,
 	\label{eq:G_tdependent} 
-\end{tcolorbox}
+\end{equation}
 %
 \noindent con $\varepsilon(\omega)/\varepsilon_0$ la permitividad eléctrica relativa. Al aplicar la transformada de Fourier a la Ec.~\eqref{eq:G_tdependent}, se obtiene una expresión para la permitividad eléctrica relativa
 %
-\begin{tcolorbox}[ams align]
+\begin{equation}
 	\frac{\varepsilon(\omega)}{\varepsilon_0}=1+\int_{-\infty}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau.
 	\label{eq:epsrelativa} 
-\end{tcolorbox}
+\end{equation}
 %
 
-\noindent Las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:G_tdependent} muestran que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021a}. Además, a partir de la Ec. \eqref{eq:G_tdependent}, se observa que si $\varepsilon(\omega)$ es independiente de $\omega$, $G(\tau)=\delta(\tau)$, por lo que se obtiene una respuesta instantánea, mientras que si sí depende de $\omega$, $G(\tau)$ es distinta de cero para todos los valores de $\tau$ distintos de cero.
+\noindent Las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:G_tdependent} muestran que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. A esta característica, se le conoce como la no localidad temporal entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021a}. 
+
+De modo que las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} sean causales, es necesario imponer condiciones que garanticen que la Ec. \eqref{eq:G_tdependent} se anule para $\tau<0$, lo que se traduce en que al tiempo $t$, únicamente valores del campo eléctrico previos a ese tiempo determinan el vector de desplazamiento eléctrico~\cite{jacksonClassicalElectrodynamics2021a}. De esta forma, las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} se reescriben como
+%
+\begin{subequations}%
+	\begin{tcolorbox}[
+		ams align, breakable]
+		\vb{D}(\vb{r},t)&=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{0}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\\ \label{seq:D_final}
+		\frac{\varepsilon(\omega)}{\varepsilon_0}-1&=\int_{0}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau.\label{seq:G}
+	\end{tcolorbox}
+\end{subequations}\vspace*{1em}
+%
+Dado que $\vb{E}$ y $\vb{D}$ son funciones reales, $G(\tau)$ también lo es. Si se considera a la Ec. \eqref{seq:G} como una representación de $	\varepsilon(\omega)/\varepsilon_0$ en el plano complejo, entonces la Ec. \eqref{seq:G} es analítica en el semiplano superior complejo siempre que $G(\tau)$ sea finita para toda $\tau$. De modo que la analiticidad se extienda sobre el eje real,  es necesario imponer la condición de que $G(\tau)\rightarrow 0$ si $\tau\rightarrow \infty$ \cite{jacksonClassicalElectrodynamics2021a} \footnote{Esto es únicamente cierto para dieléctricos, pues para conductores se tiene que $G(\tau)\rightarrow \sigma/\epsilon_0$ cuando $\tau\rightarrow \infty$~\cite{jacksonClassicalElectrodynamics2021a}. } .
 
 
-De modo que las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} sean causales, es necesario imponer condiciones que garanticen que la Ec. \eqref{eq:G_tdependent} se anule para $\tau<0$, lo que se traduce en que al tiempo $t$, únicamente valores del campo eléctrico previos a ese tiempo determinan el vector de desplazamiento eléctrico \cite{jacksonClassicalElectrodynamics2021a}. De esta forma, las Ecs. \eqref{eq:epsrelativa} se reescriben como
+Como $	\varepsilon(\omega)/\varepsilon_0-1$ es una función analítica en el semiplano superior complejo incluyendo el eje real, entonces $	[\varepsilon(\omega)/\varepsilon_0-1]/(\omega-\omega_0)$ también lo es, excepto en la singularidad de $\omega=\omega_0$. De acuerdo con el teorema integral de Cauchy\footnote{El teorema integral de Cauchy establece que si una función $f(z)$ es analítica en un contorno cerrado $C$ y dentro de la región interior delimitada por $C$, entonces $\oint_C f(z)/(z-z_0)\dd{z}= 0$ \cite{arfkenMathematicalMethodsPhysicists2011a}.} se tendrá entonces que para un contorno cerrado $C$ que no encierre a $\omega_0$ \cite{arfkenMathematicalMethodsPhysicists2011a}
+%
+\begin{equation}
+	\oint_C \frac{[\varepsilon(\omega)/\varepsilon_0-1]}{\omega-\omega_0}\dd{\omega}= 0.
+	\label{eq:Cauchy}
+\end{equation}
+%
+Para determinar el contorno apropiado de modo que se pueda emplear la Ec. \eqref{eq:Cauchy}, se considera a $\omega_0$ un punto sobre el eje real y a $C$ la unión de cuatro curvas con representaciones paramétricas dadas por
 %
 \begin{align*}
-	\vb{D}(\vb{r},t)&=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{0}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\\ \label{eq:TF_D_final}
-	\frac{\varepsilon(\omega)}{\varepsilon_0}&=1+\int_{0}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau.
+	C_1&: \; \omega=\Omega, & (-A\leq \Omega \leq \omega-a)\\
+	C_2&: \; \omega=\omega_0-ae^{-i\Omega}, & (0\leq\Omega\leq\pi)\\
+	C_3&: \;\omega=\Omega, & (\omeg\;a+a\leq\omega\leq A)\\
+	C_4&: \;\omega=Ae^{i\Omega}. & (0\leq\Omega\leq \pi)	
 \end{align*}
 %
+Entonces, la Ec. \eqref{eq:Cauchy} se reescribe como
+\begin{align*}
+	\int_A^{\omega-a}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\Omega-\omega_0}\dd{\Omega}&+	\int_{\omega+a}^{A}\frac{[\varepsilon(\Omega)/\varepsilon_0-1])}{\Omega-\omega_0}\dd{\Omega}+\\
+	&+	\int_0^{\pi}\frac{iA\;e^{i\Omega}\; [\varepsilon(A\;e^{i\Omega})/\varepsilon_0-1]}{A\;e^{i\Omega}-\omega_0}\dd{\Omega}-\int_0^{\pi}i\;[\varepsilon(\omega_0-ae^{i\Omega})/\varepsilon_0-1]\dd{\Omega}=0.
+\end{align*}
+Al integrar por partes la Ec. \eqref{seq:G}, se obtiene que 
+%
+\begin{equation*}
+	\frac{\varepsilon(\omega)}{\varepsilon_0}-1=\frac{i G(0)}{\omega}-\frac{ G'(0)}{\omega^2}+\frac{i G''(0)}{\omega^3}+...,
+\end{equation*}
+%
+donde se empleó que $G(\tau)\rightarrow 0$ si $\tau\rightarrow \infty$. Además, dado que $G(\tau)$ es causal, $G(0)=0$, por lo que el primer término no contribuye y los demás términos decaen muy rápido. Con ello, por el lema de Jordan, la integral sobre $C_4$ se desvanece conforme $A$ tiende a $\infty$ si $\lim_{\omega'\to\infty} \varepsilon(\omega')=0$. Al hacer $a\to 0$, la integral sobre $C_3$ es 0. Por otro lado, las integrales sobre $C_1$ y $C_3$ equivalen a 
+%
+\begin{equation}
+	\text{PV}\int_{-\infty}^{\infty}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\omega'-\omega_0} \dd{\Omega}=i\pi [\varepsilon(\omega)/\varepsilon_0-1]
+\end{equation}
+%
+donde PV denota el valor principal de la integral. Al separar sus contribuciones en parte real e imaginaria se obtienen
+
+
+
+
+
+
+
+
+
+
 

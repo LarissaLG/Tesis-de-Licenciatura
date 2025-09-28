@@ -49,15 +49,15 @@ donde $\vb{D}$ es el vector de desplazamiento eléctrico, $\vb{P}$ la polarizaci
 En un medio isótropo y homogéneo, $\stackrel{\leftrightarrow}{\varepsilon}$ se reduce a una función escalar compleja $\varepsilon$ \cite{jacksonClassicalElectrodynamics2021a}; en este caso, tanto $\varepsilon$ como $\vb{E}$ son independientes de la posición y dependen únicamente de la diferencia temporal, es decir \cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{tcolorbox}[ams align]
-	\vb{D}(t)=\int\varepsilon(t-t')\vb{E}(t')\dd{t'},
+	\vb{D}(t)=\int_{-\infty}^{\infty}\varepsilon(t-t')\vb{E}(t')\dd{t'},
 	\label{eq:d1} 
 \end{tcolorbox}
 %	
-\noindent de modo que la Ec. \eqref{eq:d1} es una convolución\footnote{La convolución de dos funciones $f(t), g(t)$ está dada por $f\ast g=\int_{-\infty}^{\infty}f(t-t')g(t)\dd{t}$ \cite{arfkenMathematicalMethodsPhysicists2011a}.} en el tiempo. Al aplicar el teorema de la convolución\footnote{El teorema de la convolución es $\mathscr{F}[f\ast g]=\mathscr{F}[f]\mathscr{F}[g]$, donde $\mathscr{F}$ es la transformada de Fourier de una función. En esta tesis se considera la convención de la transformada de Fourier como \cite{arfkenMathematicalMethodsPhysicists2011a}
+\noindent de modo que la Ec. \eqref{eq:d1} es una convolución\footnote{La convolución de dos funciones $f(t), g(t)$ está dada por $f\ast g=\int_{-\infty}^{\infty}f(t-t')g(t')\dd{t'}$ \cite{arfkenMathematicalMethodsPhysicists2011a}.} en el tiempo. Al aplicar el teorema de la convolución\footnote{El teorema de la convolución es $\mathscr{F}[f\ast g]=\mathscr{F}[f]\mathscr{F}[g]$, donde $\mathscr{F}$ es la transformada de Fourier de una función. En esta tesis se considera la convención de la transformada de Fourier como \cite{arfkenMathematicalMethodsPhysicists2011a}
 	\begin{align*}
 		 f(\omega)&=\mathscr{F}[f(t)]=\int_{-\infty}^{\infty}f(t)e^{i\omega t}\dd{t},\\ f(t)&=\mathscr{F}^{-1}[f(\omega)]=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(\omega)e^{i\omega t}\dd{\omega}.
 	\end{align*}}
- y transformarla al dominio de Fourier, se obtiene \cite{bohrenAbsorptionScatteringLight2008}
+ y aplicar la transformada de Fourier, se obtiene \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{tcolorbox}[ams align]
 		\vb{D}(\omega)=\varepsilon(\omega)\vb{E}(\omega).
