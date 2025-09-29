@@ -39,45 +39,45 @@ Warning--I didn't find a database entry for "garcia2012multiple"
 Biblatex version: 3.21
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 8 entries,
+You've used 9 entries,
             6402 wiz_defined-function locations,
-            1269 strings with 11970 characters,
-and the built_in function-call counts, 56152 in all, are:
-= -- 3829
-> -- 2322
-< -- 339
-+ -- 2525
-- -- 1667
-* -- 3242
-:= -- 6443
+            1283 strings with 12343 characters,
+and the built_in function-call counts, 59131 in all, are:
+= -- 4008
+> -- 2358
+< -- 381
++ -- 2559
+- -- 1671
+* -- 3372
+:= -- 6528
 add.period$ -- 0
-call.type$ -- 8
-change.case$ -- 184
+call.type$ -- 9
+change.case$ -- 223
 chr.to.int$ -- 176
-cite$ -- 14
-duplicate$ -- 4883
-empty$ -- 4719
-format.name$ -- 387
-if$ -- 10636
+cite$ -- 16
+duplicate$ -- 5237
+empty$ -- 5082
+format.name$ -- 390
+if$ -- 11338
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 24
 missing$ -- 0
-newline$ -- 245
-num.names$ -- 381
-pop$ -- 2452
+newline$ -- 271
+num.names$ -- 423
+pop$ -- 2756
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 253
 quote$ -- 0
-skip$ -- 1611
+skip$ -- 1778
 stack$ -- 0
-substring$ -- 7380
-swap$ -- 1138
-text.length$ -- 209
+substring$ -- 7582
+swap$ -- 1283
+text.length$ -- 218
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 260
+type$ -- 294
 warning$ -- 0
-while$ -- 628
+while$ -- 636
 width$ -- 0
-write$ -- 238
+write$ -- 263
 (There were 6 warnings)

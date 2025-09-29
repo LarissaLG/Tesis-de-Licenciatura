@@ -122,28 +122,6 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{GeneralPropertiesElectromagnetic1989}{incollection}{}{}
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
-    \verb{doi}
-    \verb 10.1016/B978-0-444-87366-8.50008-4
-    \endverb
-    \field{note}{ISSN: 0167-7837}
-    \field{pages}{41\bibrangedash 85}
-    \field{title}{General {Properties} of {Electromagnetic} {Response}
-  {Functions}}
-    \field{volume}{24}
-    \verb{file}
-    \verb Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\95AZZ9HL\\B9780
-    \verb 444873668500084.html:text/html
-    \endverb
-    \field{month}{01}
-    \field{year}{1989}
-  \endentry
-
   \entry{jacksonClassicalElectrodynamics2021a}{book}{}{}
     \name{author}{1}{}{%
       {{hash=JJD}{%
@@ -172,30 +150,26 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{bohrenAbsorptionScatteringLight2008}{book}{}{}
-    \name{author}{2}{}{%
-      {{hash=BCF}{%
-         family={Bohren},
-         familyi={B\bibinitperiod},
-         given={Craig\bibnamedelima F.},
-         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=HDR}{%
-         family={Huffman},
-         familyi={H\bibinitperiod},
-         given={Donald\bibnamedelima R.},
-         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
+  \entry{GeneralPropertiesElectromagnetic1989}{incollection}{}{}
     \list{publisher}{1}{%
-      {John Wiley \& Sons}%
+      {Elsevier}%
     }
-    \strng{namehash}{BCFHDR1}
-    \strng{fullhash}{BCFHDR1}
-    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Absorption and scattering of light by small particles}
-    \field{year}{2008}
+    \field{booktitle}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
+    \verb{doi}
+    \verb 10.1016/B978-0-444-87366-8.50008-4
+    \endverb
+    \field{note}{ISSN: 0167-7837}
+    \field{pages}{41\bibrangedash 85}
+    \field{title}{General {Properties} of {Electromagnetic} {Response}
+  {Functions}}
+    \field{volume}{24}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\95AZZ9HL\\B9780
+    \verb 444873668500084.html:text/html
+    \endverb
+    \field{month}{01}
+    \field{year}{1989}
   \endentry
 
   \entry{arfkenMathematicalMethodsPhysicists2011a}{book}{}{}
@@ -241,6 +215,60 @@
     \field{urlday}{14}
     \field{urlmonth}{08}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{bohrenAbsorptionScatteringLight2008}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=BCF}{%
+         family={Bohren},
+         familyi={B\bibinitperiod},
+         given={Craig\bibnamedelima F.},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=HDR}{%
+         family={Huffman},
+         familyi={H\bibinitperiod},
+         given={Donald\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{BCFHDR1}
+    \strng{fullhash}{BCFHDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Absorption and scattering of light by small particles}
+    \field{year}{2008}
+  \endentry
+
+  \entry{KramersKronigRelationsSum2005}{incollection}{}{}
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
+  {Research}}
+    \verb{doi}
+    \verb 10.1007/3-540-27316-6_4
+    \endverb
+    \field{isbn}{978-3-540-23673-3}
+    \field{note}{Series Title: Springer Series in Optical Sciences}
+    \field{pages}{27\bibrangedash 48}
+    \field{title}{Kramers-{Kronig} {Relations} and {Sum} {Rules} in {Linear}
+  {Optics}}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/3-540-27316-6_4
+    \endverb
+    \field{volume}{110}
+    \list{location}{1}{%
+      {Berlin/Heidelberg}%
+    }
+    \field{year}{2005}
   \endentry
 \enddatalist
 \endinput

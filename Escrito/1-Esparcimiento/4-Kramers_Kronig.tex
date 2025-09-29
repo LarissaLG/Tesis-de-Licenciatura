@@ -4,7 +4,7 @@
 \section{Relaciones de Kramers-Kronig}
 \label{section:yth}
 
-El estudio experimental de las propiedades ópticas lineales no siempre permite determinar por completo las características ópticas de una muestra. No obstante, el principio de causalidad en la respuesta óptica de cualquier material permite extraer información adicional a partir de los datos experimentales.  A partir de la aplicación del principio de causalidad y de la analiticidad de una función óptica lineal compleja, como la susceptibilidad, la función dieléctrica, el índice de refracción o la reflectividad, se deducen las relaciones de Kramers-Kronig (KK), las cuales describen la conexión entre las partes real e imaginaria de una función óptica lineal compleja. Para deducir las relaciones de KK se considera un material homogéneo e isótropo caracterizado por una función óptica lineal compleja, que en este caso será la función dieléctrica compleja, así como un espacio de frecuencias complejo.
+El estudio experimental de las propiedades ópticas lineales no siempre permite determinar por completo las características ópticas de una muestra \cite{KramersKronigRelationsSum2005}. No obstante, el principio de causalidad en la respuesta óptica de cualquier material permite extraer información adicional a partir de los datos experimentales \cite{KramersKronigRelationsSum2005}.  A partir de la aplicación del principio de causalidad y de la analiticidad de una función óptica lineal compleja, como la susceptibilidad, la función dieléctrica, el índice de refracción o la reflectividad, se deducen las relaciones de Kramers-Kronig (KK), las cuales describen la conexión entre las partes real e imaginaria de una función óptica lineal compleja \cite{KramersKronigRelationsSum2005}. Para deducir las relaciones de KK se considera un material homogéneo e isótropo caracterizado por una función óptica lineal compleja, que en este caso será la función dieléctrica, así como un espacio de frecuencias complejo.
 
 La transformada de Fourier temporal para $\vb{D}$ está dada por~\cite{jacksonClassicalElectrodynamics2021a}
 %
@@ -74,48 +74,73 @@ De modo que las Ecs. \eqref{eq:TF_D_final} y \eqref{eq:epsrelativa} sean causale
 	\begin{tcolorbox}[
 		ams align, breakable]
 		\vb{D}(\vb{r},t)&=\varepsilon_0\left[\vb{E}(\vb{r},t)+\int_{0}^{\infty}G(\tau)\vb{E}(\vb{r},t-\tau)\text{d}\tau\right],\\ \label{seq:D_final}
-		\frac{\varepsilon(\omega)}{\varepsilon_0}-1&=\int_{0}^{\infty}G(\tau) e^{-i\omega\tau}\text{d}\tau.\label{seq:G}
+		\frac{\varepsilon(\omega)}{\varepsilon_0}-1&=\int_{0}^{\infty}G(\tau) e^{-i \omega\tau}\text{d}\tau.\label{seq:G}
 	\end{tcolorbox}
 \end{subequations}\vspace*{1em}
 %
-Dado que $\vb{E}$ y $\vb{D}$ son funciones reales, $G(\tau)$ también lo es. Si se considera a la Ec. \eqref{seq:G} como una representación de $	\varepsilon(\omega)/\varepsilon_0$ en el plano complejo, entonces la Ec. \eqref{seq:G} es analítica en el semiplano superior complejo siempre que $G(\tau)$ sea finita para toda $\tau$. De modo que la analiticidad se extienda sobre el eje real,  es necesario imponer la condición de que $G(\tau)\rightarrow 0$ si $\tau\rightarrow \infty$ \cite{jacksonClassicalElectrodynamics2021a} \footnote{Esto es únicamente cierto para dieléctricos, pues para conductores se tiene que $G(\tau)\rightarrow \sigma/\epsilon_0$ cuando $\tau\rightarrow \infty$~\cite{jacksonClassicalElectrodynamics2021a}. } .
-
-
-Como $	\varepsilon(\omega)/\varepsilon_0-1$ es una función analítica en el semiplano superior complejo incluyendo el eje real, entonces $	[\varepsilon(\omega)/\varepsilon_0-1]/(\omega-\omega_0)$ también lo es, excepto en la singularidad de $\omega=\omega_0$. De acuerdo con el teorema integral de Cauchy\footnote{El teorema integral de Cauchy establece que si una función $f(z)$ es analítica en un contorno cerrado $C$ y dentro de la región interior delimitada por $C$, entonces $\oint_C f(z)/(z-z_0)\dd{z}= 0$ \cite{arfkenMathematicalMethodsPhysicists2011a}.} se tendrá entonces que para un contorno cerrado $C$ que no encierre a $\omega_0$ \cite{arfkenMathematicalMethodsPhysicists2011a}
+Dado que $\vb{E}$ y $\vb{D}$ son funciones reales, $G(\tau)$ también lo es. Si se considera a la Ec. \eqref{seq:G} como una representación de $	\varepsilon(\omega')/\varepsilon_0$ en el plano complejo, entonces la Ec. \eqref{seq:G} es analítica en el semiplano superior complejo siempre que $G(\tau)$ sea finita para toda $\tau$ \cite{jacksonClassicalElectrodynamics2021a}. Para que dicha analiticidad se extienda hasta el eje real, es necesario imponer la condición $G(\tau)\rightarrow 0$ cuando $\tau\rightarrow \infty$ \cite{jacksonClassicalElectrodynamics2021a} \footnote{Esto se cumple para dieléctricos; en conductores, en cambio, se tiene que $G(\tau)\rightarrow \sigma/\epsilon_0$ cuando $\tau\rightarrow \infty$~\cite{jacksonClassicalElectrodynamics2021a}. }. Como $\varepsilon(\omega')/\varepsilon_0-1$ es una función analítica en el semiplano superior complejo incluyendo el eje real, la función $	[\varepsilon(\omega')/\varepsilon_0-1]/(\omega'-\omega)$ también lo es, salvo por la singularidad en $\omega'=\omega$. De acuerdo con el teorema integral de Cauchy\footnote{El teorema integral de Cauchy establece que si una función $f(z)$ es analítica dentro y sobre un contorno cerrado $C$, entonces $\oint_C f(z)/(z-z_0)\dd{z}= 0$ \cite{arfkenMathematicalMethodsPhysicists2011a}.}, para un contorno cerrado $C$ que no encierre $\omega_0$ se cumple \cite{arfkenMathematicalMethodsPhysicists2011a}
 %
 \begin{equation}
-	\oint_C \frac{[\varepsilon(\omega)/\varepsilon_0-1]}{\omega-\omega_0}\dd{\omega}= 0.
+	\oint_C \frac{[\varepsilon(\omega')/\varepsilon_0-1]}{\omega'-\omega}\dd{\omega'}= 0.
 	\label{eq:Cauchy}
 \end{equation}
 %
-Para determinar el contorno apropiado de modo que se pueda emplear la Ec. \eqref{eq:Cauchy}, se considera a $\omega_0$ un punto sobre el eje real y a $C$ la unión de cuatro curvas con representaciones paramétricas dadas por
+Para determinar el contorno apropiado de modo que se pueda emplear la Ec. \eqref{eq:Cauchy}, se considera a $\omega$ un punto sobre el eje real y a $C$ la unión de cuatro curvas con representaciones paramétricas como se muestra en la Fig. \ref{integration_contour} y que están dadas por \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{align*}
-	C_1&: \; \omega=\Omega, & (-A\leq \Omega \leq \omega-a)\\
-	C_2&: \; \omega=\omega_0-ae^{-i\Omega}, & (0\leq\Omega\leq\pi)\\
-	C_3&: \;\omega=\Omega, & (\omeg\;a+a\leq\omega\leq A)\\
-	C_4&: \;\omega=Ae^{i\Omega}. & (0\leq\Omega\leq \pi)	
+	C_1&: \; \omega'=\Omega, & -A\leq \Omega \leq \omega-a,\\
+	C_2&: \; \omega'=\omega-ae^{-i\Omega}, & 0\leq\Omega\leq\pi,\\
+	C_3&: \;\omega'=\Omega, & \omega+a\leq\Omega\leq A,\\
+	C_4&: \;\omega'=Ae^{i\Omega}, & 0\leq\Omega\leq \pi.
 \end{align*}
 %
-Entonces, la Ec. \eqref{eq:Cauchy} se reescribe como
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=8cm]{../../Figuras/integration.pdf}
+	\caption{Contorno de integración $C$ conformado por cuatro curvas.}
+	\label{integration_contour}
+\end{figure}
+%
+Así, la Ec. \eqref{eq:Cauchy} se reescribe como
 \begin{align*}
-	\int_A^{\omega-a}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\Omega-\omega_0}\dd{\Omega}&+	\int_{\omega+a}^{A}\frac{[\varepsilon(\Omega)/\varepsilon_0-1])}{\Omega-\omega_0}\dd{\Omega}+\\
-	&+	\int_0^{\pi}\frac{iA\;e^{i\Omega}\; [\varepsilon(A\;e^{i\Omega})/\varepsilon_0-1]}{A\;e^{i\Omega}-\omega_0}\dd{\Omega}-\int_0^{\pi}i\;[\varepsilon(\omega_0-ae^{i\Omega})/\varepsilon_0-1]\dd{\Omega}=0.
+	\int_A^{\omega-a}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\Omega-\omega}\dd{\Omega}&+	\int_{\omega+a}^{A}\frac{[\varepsilon(\Omega)/\varepsilon_0-1])}{\Omega-\omega}\dd{\Omega}+\\
+	&+	\int_0^{\pi}\frac{iA\;e^{i\Omega}\; [\varepsilon(A\;e^{i\Omega})/\varepsilon_0-1]}{A\;e^{i\Omega}-\omega}\dd{\Omega}-\int_0^{\pi}i\;[\varepsilon(\omega-ae^{-i\Omega})/\varepsilon_0-1]\dd{\Omega}=0.
 \end{align*}
-Al integrar por partes la Ec. \eqref{seq:G}, se obtiene que 
+Integrando por partes la Ec. \eqref{seq:G}, se obtiene  
 %
 \begin{equation*}
 	\frac{\varepsilon(\omega)}{\varepsilon_0}-1=\frac{i G(0)}{\omega}-\frac{ G'(0)}{\omega^2}+\frac{i G''(0)}{\omega^3}+...,
 \end{equation*}
 %
-donde se empleó que $G(\tau)\rightarrow 0$ si $\tau\rightarrow \infty$. Además, dado que $G(\tau)$ es causal, $G(0)=0$, por lo que el primer término no contribuye y los demás términos decaen muy rápido. Con ello, por el lema de Jordan, la integral sobre $C_4$ se desvanece conforme $A$ tiende a $\infty$ si $\lim_{\omega'\to\infty} \varepsilon(\omega')=0$. Al hacer $a\to 0$, la integral sobre $C_3$ es 0. Por otro lado, las integrales sobre $C_1$ y $C_3$ equivalen a 
+donde se empleó que $G(\tau)\rightarrow 0$ cuando $\tau\rightarrow \infty$. Además, dado que $G(\tau)$ es causal, $G(0)=0$; por lo que el primer término se anula al igual que los términos que decaen más rápido que $1/\omega^2$ a frecuencias altas. Con ello, por el lema de Jordan\footnote{El lema de Jordan establece que }, la integral sobre el segmento $C_4$ es 0 \cite{bohrenAbsorptionScatteringLight2008}. Por otro lado, al considerar el límite de $a\to 0$, la integral sobre $C_2$ es $i\pi[\varepsilon(\Omega)/\varepsilon_0-1]$ \cite{jacksonClassicalElectrodynamics2021a}. Finalmente, las integrales sobre los segmentos $C_1$ y $C_3$ equivalen a 
 %
 \begin{equation}
-	\text{PV}\int_{-\infty}^{\infty}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\omega'-\omega_0} \dd{\Omega}=i\pi [\varepsilon(\omega)/\varepsilon_0-1]
+		\int_A^{\omega-a}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\Omega-\omega}\dd{\Omega}+	\int_{\omega+a}^{A}\frac{[\varepsilon(\Omega)/\varepsilon_0-1])}{\Omega-\omega}\dd{\Omega}=\text{PV}\int_{-\infty}^{\infty}\frac{[\varepsilon(\Omega)/\varepsilon_0-1]}{\Omega-\omega} \dd{\Omega}
 \end{equation}
 %
-donde PV denota el valor principal de la integral. Al separar sus contribuciones en parte real e imaginaria se obtienen
-
+donde P.V. denota el valor principal de la integral \cite{arfkenMathematicalMethodsPhysicists2011a}. Por lo tanto, se obtiene 
+%
+\begin{equation}
+	\PV{\int_{-\infty}^{\infty}\frac{[\varepsilon(\omega')/\varepsilon_0-1]}{\omega'-\omega} \dd{\omega'}}=i\pi[\varepsilon(\omega')/\varepsilon_0-1].
+	\label{eq:KK_compleja}
+\end{equation}
+%
+ Al separar la Ec. \eqref{eq:KK_compleja} en parte real e imaginaria, se obtienen las relaciones de Kramers-Kronig
+%
+\begin{align}
+	\frac{\varepsilon'(\omega)}{\varepsilon_0}&=1+\frac{1}{\pi}\,\PV{\int_{-\infty}^{\infty}\frac{\varepsilon''(\omega')/\varepsilon_0}{\omega'-\omega}\dd{\omega'}} \label{seq:ReKK_inf}\\
+	\frac{\varepsilon''(\omega)}{\varepsilon_0}&=-\frac{1}{\pi}\,\PV{\int_{-\infty}^{\infty}\frac{[\varepsilon'(\omega')/\varepsilon_0-1]}{\omega'-\omega}\dd{\omega'}}.\label{seq:ImKK_inf}
+\end{align}
+Dada la Ec. \eqref{seq:G}, se deduce que $\varepsilon(-\omega)/\varepsilon_0=\varepsilon^*(\omega^*)/\varepsilon_0$. Esta propiedad de simetría permite reescribir las Ecs. \eqref{seq:ReKK_inf} y \eqref{seq:ImKK_inf} en frecuencias positivas como
+\begin{subequations}%
+	\begin{tcolorbox}[
+		ams align, breakable]
+		\frac{\varepsilon'(\omega)}{\varepsilon_0}&=1+\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{\varepsilon''(\omega')/\varepsilon_0}{\omega'-\omega}\dd{\omega'}}\\ \label{seq:ReKK}
+		\frac{\varepsilon''(\omega)}{\varepsilon_0}&=-\frac{2\omega}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\varepsilon'(\omega')/\varepsilon_0-1]}{\omega'-\omega}\dd{\omega'}}.
+		\label{seq:ImKK}
+	\end{tcolorbox}
+\end{subequations}\vspace*{1em}
+%
 
 
 

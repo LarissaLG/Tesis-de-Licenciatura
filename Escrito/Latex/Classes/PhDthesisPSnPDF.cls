@@ -45,6 +45,7 @@
 \usepackage{tocloft}
 \usepackage{xcolor}
 \definecolor{myTurquoise}{HTML}{12B3C5} 
+\definecolor{UNAMblue0}{RGB}{6,151,213}		% Blue pantone  541 (C)
 
 \setlength\cftparskip{.6em}
 \setlength\cftbeforechapskip{0pt}
@@ -74,6 +75,7 @@
 		\usepackage[dvipsnames]{xcolor}
 			%UNAM color palette
 			\definecolor{UNAMblue}{RGB}{0,60,113}		% Blue pantone  541 (C)
+			
 			\definecolor{UNAMgold}{RGB}{234,221,150}		% Gold pantone  460  (C) 
 			\newcommand\myshade{85}
 			\colorlet{mylinkcolor}{violet}
@@ -81,8 +83,8 @@
 			\colorlet{myurlcolor}{Aquamarine}
 		\usepackage{empheq}
 		\usepackage[most]{tcolorbox}
-			\tcbset{colframe=myTurquoise!90!blue,  % color base para el marco
-    colback=myTurquoise!20!white,    colbacktitle = black, boxrule=1.5pt,  
+			\tcbset{colframe=UNAMblue0!90!blue,  % color base para el marco
+    colback=UNAMblue0!20!white,    colbacktitle = black, boxrule=1.5pt,  
 			fonttitle=\bfseries , standard jigsaw,  opacityback=0.95, opacitybacktitle = .5,center}% sharp corners = downhill, boxrule = .75mm }
 
 \newcommand{\coloredeq}[2]{\begin{empheq}[box= \fcolorbox{myTurquoise!90!blue}{myTurquoise!20!white},{\fboxsep=15pt\fbox}]{align}\label{#1}#2\end{empheq}}
