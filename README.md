@@ -1,5 +1,5 @@
 
-# Bachelos Thesis: Numerical calculation of optical properties of healthy and diseased erythrocytes
+# Bachelor Thesis: Numerical calculation of optical properties of healthy and diseased erythrocytes
 
 **Description:**  
 The study of the optical properties of biological cells such as osteoblasts [1], lymphocytes [2], and erythrocytes [3] is important in the medical field due to its potential applications in the diagnosis and early detection of diseases. In particular, erythrocytes have been reported to exhibit alterations in their composition and morphology in various forms of anemia [3], which directly affects their optical response [4, 5]. The optical response of erythrocytes is modified by factors such as hematocrit, hemoglobin concentration, and oxygen saturation level [3], which modify their dielectric function and geometry, in turn changing their light absorption and scattering mechanisms [3]. Therefore, the main objective of this undergraduate thesis is to characterize the optical properties of both healthy and diseased erythrocytes, considering variations in their dielectric function and morphology.
