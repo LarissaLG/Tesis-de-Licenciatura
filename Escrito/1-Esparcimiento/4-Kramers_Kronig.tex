@@ -4,38 +4,33 @@
 \section{Relaciones de Kramers-Kronig}
 \label{section:yth}
 
-El estudio experimental de las propiedades ópticas lineales no siempre permite determinar por completo las características ópticas de una muestra \cite{KramersKronigRelationsSum2005}. No obstante, el principio de causalidad en la respuesta óptica de cualquier material permite extraer información adicional a partir de los datos experimentales \cite{KramersKronigRelationsSum2005}.  A partir de la aplicación del principio de causalidad y de la analiticidad de una función óptica lineal compleja, como la susceptibilidad, la función dieléctrica, el índice de refracción o la reflectividad, se deducen las relaciones de Kramers-Kronig (KK), las cuales describen la conexión entre las partes real e imaginaria de una función óptica lineal compleja \cite{KramersKronigRelationsSum2005}. Para deducir las relaciones de KK se considera un material homogéneo e isótropo caracterizado por una función óptica lineal compleja, que en este caso será la función dieléctrica, así como un espacio de frecuencias complejo.
 
-La transformada de Fourier temporal para $\vb{D}$ está dada por~\cite{jacksonClassicalElectrodynamics2021a}
+Si bien el estudio del esparcimiento y la absorción de partículas suele realizarse a través de las secciones transversales, las propiedades ópticas dependen del material, el cual puede caracterizarse mediante su función dieléctrica. Estas propiedades se determinan experimentalmente mediante distintas técnicas espectroscópicas, como la espectroscopía de transmisión, basada en la ley de Beer–Lambert, en la cual las características del material se analizan a partir de la altura, el ancho y la posición de los picos espectrales \cite{KramersKronigRelationsSum2005}.
+
+\noindent Aunque existen métodos avanzados de análisis de datos espectrales, como el análisis de componentes principales (PCA), que permiten extraer información adicional a partir de espectros experimentales (ya sean de reflectancia, transmitancia o absorbancia), ninguna técnica experimental por sí sola puede proporcionar toda la información óptica de un material. Una manera de abordar esta limitación es mediante el principio de causalidad, que permite obtener información complementaria a partir de los datos experimentales \cite{KramersKronigRelationsSum2005}. A partir de este principio y de la analiticidad de una función óptica lineal compleja como: la susceptibilidad, la función dieléctrica, el índice de refracción o la reflectividad, se deducen las relaciones de Kramers–Kronig (KK), las cuales describen la conexión entre las partes real e imaginaria de dicha función \cite{KramersKronigRelationsSum2005}. En esta sección se considera un material homogéneo e isótropo caracterizado por una función óptica lineal compleja, en este caso, la función dieléctrica, definida en un espacio de frecuencias complejo.
+
+La transformada de Fourier temporal directa e inversa de $\vb{D}$ se definen como~\cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{equation}
-	\vb{D}(\vb{r},\omega)=\int_{-\infty}^{\infty}\vb{D}(\vb{r},t')e^{i\omega t'}\text{d}t',\label{eq:TFI}
+	\vb{D}(\vb{r},\omega)=\int_{-\infty}^{\infty}\vb{D}(\vb{r},t')e^{i\omega t'}\text{d}t',\;\;\text{y}\;\;\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\vb{D}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega,\label{eq:TFD}
 \end{equation}
 %
-mientras que la transformada de Fourier inversa es
-%
-\begin{equation}
-	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\vb{D}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega.\label{eq:TF}
-\end{equation}
-%
-Al sustituir la Ec. \eqref{eq:d3} en la Ec. \eqref{eq:TF}, se obtiene
+respectivamente. Al sustituir la Ec. \eqref{eq:d3} en la transformada de Fourier directa de las Ecs. \eqref{eq:TFD}, se obtiene
 %
 \begin{equation}
 	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},\omega)e^{-i\omega t}\text{d}\omega,\label{eq:TF_D_intermedia_1}
 \end{equation}
 %
-y al sustituir la transformada de Fourier de $\vb{E}(\vb{r},t)$, se tiene que
+y al expresar $\vb{E}(\vb{r},\omega)$ mediante su transformada de Fourier, se tiene
 %
-\begin{equation}
-	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\varepsilon(\omega)e^{-i\omega t}\text{d}\omega\int_{-\infty}^{\infty}e^{i\omega t'}\vb{E}(\vb{r},t')\text{d}t'.\label{eq:TF_D_intermedia_2}
-\end{equation}
+\begin{align}
+	\vb{D}(\vb{r},t)&=\frac{1}{2\pi}\int_{-\infty}^{\infty}\varepsilon(\omega)e^{-i\omega t}\text{d}\omega\int_{-\infty}^{\infty}e^{i\omega t'}\vb{E}(\vb{r},t')\text{d}t',\\
+	&=\frac{1}{2\pi}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},t') e^{i\omega (t-t')} \text{d}\omega \text{d}t',
+	\label{eq:TF_D_intermedia_2}
+\end{align}
 %
-Considerando que los órdenes de integración se pueden intercambiar, dado que la integración se realiza en el mismo intervalo ($-\infty$, $\infty$), la Ec. \eqref{eq:TF_D_intermedia_2} se reescribe como
-%
-\begin{tcolorbox}[ams align]
-	\vb{D}(\vb{r},t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\varepsilon(\omega)\vb{E}(\vb{r},t') e^{i\omega (t-t')} \text{d}\omega \text{d}t'.\label{eq:TF_D_intermedia_3} 
-\end{tcolorbox}
-%
+donde además se consideró que los órdenes de integración se pueden intercambiar dado que la integración se realiza en el mismo intervalo ($-\infty$, $\infty$).
+
 \noindent Al realizar el cambio de variable $\tau = t - t'$ y emplear la función constante\footnote{$\delta(\tau)$ es la función delta de Dirac, que cumple con $\int_{-\infty}^{\infty}f(\tau)\delta(\tau)\text{d}\tau=f(0)$ \cite{arfkenMathematicalMethodsPhysicists2011a}.}
 \begin{equation}
 	\mathcal{F}[1]=\int_{-\infty}^{\infty}e^{-i\omega\tau}=\delta(\tau),
