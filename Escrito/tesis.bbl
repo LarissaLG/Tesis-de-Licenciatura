@@ -83,45 +83,6 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{novotnyPrinciplesNanooptics2012a}{book}{}{}
-    \name{author}{2}{}{%
-      {{hash=NL}{%
-         family={Novotny},
-         familyi={N\bibinitperiod},
-         given={Lukas},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=HB}{%
-         family={Hecht},
-         familyi={H\bibinitperiod},
-         given={Bert},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Cambridge university press}%
-    }
-    \strng{namehash}{NLHB1}
-    \strng{fullhash}{NLHB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Principles of nano-optics}
-    \verb{url}
-    \verb https://books.google.com/books?hl=es&lr=&id=RHC_AwAAQBAJ&oi=fnd&pg=PR
-    \verb 15&dq=principles+of+nano+optics&ots=X0UHHMwlyI&sig=QN4tcqJn4p8j4nu7Yw
-    \verb GxYwRYoLs
-    \endverb
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\LLASBIRI\\Novotny and Hecht - 2012 - Principles of nan
-    \verb o-optics.pdf:application/pdf
-    \endverb
-    \field{year}{2012}
-    \field{urlday}{14}
-    \field{urlmonth}{08}
-    \field{urlyear}{2025}
-  \endentry
-
   \entry{jacksonClassicalElectrodynamics2021a}{book}{}{}
     \name{author}{1}{}{%
       {{hash=JJD}{%
@@ -269,6 +230,207 @@
       {Berlin/Heidelberg}%
     }
     \field{year}{2005}
+  \endentry
+
+  \entry{fujiwaraSpectroscopicEllipsometryPrinciples2007}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=FH}{%
+         family={Fujiwara},
+         familyi={F\bibinitperiod},
+         given={Hiroyuki},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{FH1}
+    \strng{fullhash}{FH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{shorttitle}{Spectroscopic ellipsometry}
+    \field{title}{Spectroscopic ellipsometry: principles and applications}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=tTMn0NKcpjsC&oi=fnd&pg=PR
+    \verb 7&dq=Spectroscopic+Ellipsometry:+Principles+and+Applications&ots=NtTW
+    \verb nmOXtL&sig=KMDVLZwDNIu2YCnypqnUQ4lGpbE
+    \endverb
+    \field{year}{2007}
+    \field{urlday}{13}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{nakovUnifiedFrameworkNumerical2023}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=NS}{%
+         family={Nakov},
+         familyi={N\bibinitperiod},
+         given={Svetoslav},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Sobakinskaya},
+         familyi={S\bibinitperiod},
+         given={Ekaterina},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Müh},
+         familyi={M\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Extinction coefficient, Kramers–Kronig relations, Multiply
+  subtractive, Numerical evaluation, Refractive index}
+    \strng{namehash}{NSSEMF1}
+    \strng{fullhash}{NSSEMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The direct usage of the Kramers–Kronig (KK) relations is complicated by
+  two factors: limited frequency range of the available spectra and
+  experimental errors. Here, we reconsider the application of the KK relations
+  to experimental data for the construction of a self-consistent set of optical
+  constants over a wide spectral range: the real part of the complex optical
+  constant, F1, is reconstructed using the imaginary part F2, obtained from an
+  experiment. The focus is on multiply (Q-)subtractive KK relations, which in
+  contrast to the standard KK transformation, exploit information about F1 at a
+  certain number Q of anchor frequencies. We develop a general mathematical
+  framework of the Q-subtractive KK relations and analyze all sources of errors
+  contributing to the inaccuracy of the reconstructed F1. We show that for the
+  reconstruction of F1 only a single evaluation of the standard KK relation is
+  needed together with a correction term given by an approximate evaluation of
+  the error in the standard KK. It is demonstrated that in the classical form
+  of the Q-subtractive KK relations, this correction term coincides with the
+  Lagrange interpolation polynomial of the error with nodes at the anchor
+  frequencies. Another correction term can also be constructed as a lower
+  degree polynomial through a least squares fit, a particular realization of
+  which is taking the average of Q singly subtractive KK relations. As a
+  result, recommendations for the application of Q-subtractive KK relations are
+  given. The accuracy of the considered approaches is illustrated on synthetic
+  examples and experimental data of fused SiO2.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.saa.2022.122157
+    \endverb
+    \field{issn}{1386-1425}
+    \field{pages}{122157}
+    \field{title}{A unified framework for the numerical evaluation of the
+  {Q}{\textless}math{\textgreater}{\textless}mi
+  is="true"{\textgreater}{Q}{\textless}/mi{\textgreater}{\textless}/math{\textgreater}-subtractive
+  {Kramers}–{Kronig} relations and application to the reconstruction of
+  optical constants of quartz}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1386142522013051
+    \endverb
+    \field{volume}{288}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Nanoplasmonics\\Zotero\\stora
+    \verb ge\\NY9PCT2I\\Nakov et al. - 2023 - A unified framework for the numer
+    \verb ical evaluation of the QQ-subtracti.pdf:application/pdf;ScienceDirect
+    \verb  Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\XR36SDFW\\S138
+    \verb 6142522013051.html:text/html
+    \endverb
+    \field{journaltitle}{Spectrochimica Acta Part A: Molecular and Biomolecular
+  Spectroscopy}
+    \field{month}{03}
+    \field{year}{2023}
+    \field{urlday}{14}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{miltonFiniteFrequencyRange1997}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=MGW}{%
+         family={Milton},
+         familyi={M\bibinitperiod},
+         given={G.\bibnamedelima W.},
+         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=EDJ}{%
+         family={Eyre},
+         familyi={E\bibinitperiod},
+         given={D.\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MJV}{%
+         family={Mantese},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima V.},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{MGWEDJMJV1}
+    \strng{fullhash}{MGWEDJMJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.79.3062
+    \endverb
+    \field{issn}{0031-9007, 1079-7114}
+    \field{number}{16}
+    \field{pages}{3062\bibrangedash 3065}
+    \field{shorttitle}{Finite {Frequency} {Range} {Kramers}-{Kronig}
+  {Relations}}
+    \field{title}{Finite {Frequency} {Range} {Kramers}-{Kronig} {Relations}:
+  {Bounds} on the {Dispersion}}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.3062
+    \endverb
+    \field{volume}{79}
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{10}
+    \field{year}{1997}
+    \field{urlday}{14}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{bachrachExcitonOpticalPropertiesTlBr1970}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=BRZ}{%
+         family={Bachrach},
+         familyi={B\bibinitperiod},
+         given={Robert\bibnamedelima Z.},
+         giveni={R\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=BFC}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Frederick\bibnamedelima C.},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{BRZBFC1}
+    \strng{fullhash}{BRZBFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.1.818
+    \endverb
+    \field{issn}{0556-2805}
+    \field{number}{2}
+    \field{pages}{818\bibrangedash 831}
+    \field{title}{Exciton-{Optical} {Properties} of {TlBr} and {TlCl}}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevB.1.818
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{Physical Review B}
+    \field{month}{01}
+    \field{year}{1970}
+    \field{urlday}{15}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
   \endentry
 \enddatalist
 \endinput
