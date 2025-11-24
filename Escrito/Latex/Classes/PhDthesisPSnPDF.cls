@@ -54,6 +54,7 @@
 		\usepackage[labelformat=simple]{subcaption} % labelformat=simple   O brace
 		\usepackage{caption}
 		\usepackage{floatrow}
+		\usepackage{float}
 
 		\floatsetup[figure]{style=plain,subcapbesideposition=top}
 
@@ -65,7 +66,7 @@
 		%					capbesidesep=space}
 			%\DeclareCaptionSubType[alph]{figure}
 			%\captionsetup[subfigure]{labelformat=brace,justification=centerlast}
-		\usepackage[export]{adjustbox}
+		%\usepackage[export]{adjustbox}
 		\usepackage{wrapfig}                    			% to include figure with text wrapping around it
 		\usepackage{subfig}
 		\captionsetup[subfigure]{labelformat=simple, labelsep=none}
