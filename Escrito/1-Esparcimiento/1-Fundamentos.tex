@@ -5,7 +5,7 @@
 
 \vspace*{7em}
 
-En este capítulo se estudia la interacción electromagnética entre la luz y la materia mediante una formulación basada en la función dieléctrica dependiente de la frecuencia. En la primera parte se presentan las ecuaciones de Maxwell y las relaciones constitutivas para sistemas lineales, homogéneos e isótropos y se analiza la solución de ondas planas, la cual se emplea para describir el flujo de energía transportado por una onda electromagnética mediante el vector de Poynting y su valor promedio temporal. En la segunda parte, se estudian las secciones transversales de absorción, esparcimiento y extinción, que permiten cuantificar la interacción entre una onda incidente y una partícula y se presenta su derivación a partir del vector de Poynting \cite{bohrenAbsorptionScatteringLight2008}. Adicionalmente, se estudian las relaciones de Kramers–Kronig aplicadas a la función dieléctrica. Estas relaciones permiten vincular las partes real e imaginaria de cualquier función óptica lineal compleja, siempre que dicha función sea causal y analítica en el semiplano superior complejo \cite{KramersKronigRelationsSum2005}. Finalmente, se discuten las limitaciones de aplicar las relaciones de Kramers-Kronig a datos experimentales con un rango finito de frecuencias y se presenta la derivación de las relaciones de Kramers–Kronig sustractivas. 
+En este capítulo se estudia la interacción electromagnética entre la luz y la materia mediante una formulación basada en la función dieléctrica dependiente de la frecuencia de la luz considerada. En la primera parte se presentan las ecuaciones de Maxwell y las relaciones constitutivas para sistemas lineales, homogéneos e isótropos y se analiza la solución de ondas planas, la cual se emplea para describir el flujo de energía transportado por una onda electromagnética mediante el vector de Poynting y su promedio temporal. En la segunda parte se derivan las secciones transversales de absorción, esparcimiento y extinción, que permiten cuantificar la interacción entre una onda incidente y una partícula \cite{bohrenAbsorptionScatteringLight2008}. Adicionalmente, en la Sección \ref{section:rKK} se estudian las relaciones de Kramers–Kronig aplicadas a la función dieléctrica. Estas relaciones permiten vincular las partes real e imaginaria de cualquier función óptica lineal compleja, condicionada a pruebas de causalidad y analiticidad en el contexto de funciones complejas \cite{KramersKronigRelationsOptical2005}. Finalmente, se discuten las limitaciones de aplicar las relaciones de Kramers-Kronig a datos experimentales con un rango finito de frecuencias y se presenta la derivación de las relaciones de Kramers–Kronig sustractivas. 
 
 
 \section{Fundamentos}
@@ -28,25 +28,23 @@ Las ecuaciones de Maxwell, junto con la fuerza de Lorentz\footnote{La fuerza de 
 %
 donde se obvian las dependencias espaciales y temporales y $\vb{E}(\vb{r},t)$ es el campo eléctrico,  $\vb{B}(\vb{r},t)$ es el campo magnético; $\rho_{\text{tot}}$  es la densidad volumétrica de carga total, $\vb{J}_{\text{tot}}$ la densidad volumétrica de corriente  total; $\epsilon_0$ es la permitividad eléctrica en el vacío y $\mu_0$ la permeabilidad magnética en el vacío. 
 
-\noindent Las ecuaciones de Maxwell se pueden reescribir en términos del vector de desplazamiento eléctrico $\vb{D}$ y el campo H $\vb{H}$, dados por \cite{griffithsIntroductionElectrodynamics2023b}
+\noindent Las ecuaciones de Maxwell se pueden reescribir en términos del vector de desplazamiento eléctrico $\vb{D}$ y el campo $\vb{H}$, dados por \cite{griffithsIntroductionElectrodynamics2023b}
 %
 \begin{equation}
 	\vb{D}(\vb{r},t)=\epsilon_0\vb{E}(\vb{r},t)+\vb{P}(\vb{r},t) \hspace{1cm}\text{y}\hspace{1cm}
-	\vb{H}(\vb{r},t)=\frac{\vb{B}(\vb{r},t)}{\mu_0}-\vb{M}(\vb{r},t) \label{eq:D_H}
+	\vb{H}(\vb{r},t)=\frac{\vb{B}(\vb{r},t)}{\mu_0}-\vb{M}(\vb{r},t), \label{eq:D_H}
 \end{equation}
 %
-donde $\vb{P}$ es la polarización y $\vb{M}$ es la magnetización, que corresponden al momento dipolar eléctrico y magnético por unidad de volumen, respectivamente. La relación lineal más general entre $\vb{E}$ y $\vb{D}$ está dada por \cite{jacksonClassicalElectrodynamics2021a}
+donde $\vb{P}$ es la polarización y $\vb{M}$ es la magnetización de un material determinado, que corresponden al momento dipolar eléctrico y magnético por unidad de volumen, respectivamente, inducidos en el material. La relación lineal más general entre $\vb{E}$ y $\vb{D}$ está dada por \cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{tcolorbox}[ams align]
 	\vb{D}(\vb{r},t)=\int_{\infty}^{\infty}\int_{V'}\stackrel{\leftrightarrow}{\varepsilon}(\vb{r}-\vb{r}',t-t')\vdot\vb{E}(\vb{r}',t')\dd{V}'\dd{t'}\
 	\label{eq:d} 
 \end{tcolorbox}
 %	
-\noindent donde $\stackrel{\leftrightarrow}{\varepsilon}$ es un tensor de rango dos y representa una función de respuesta\footnote{Las funciones de respuesta proporcionan información sobre el efecto de las interacciones electromagnéticas con el medio y sobre la estructura y propiedades del propio medio \cite{GeneralPropertiesElectromagnetic1989}.} del material en el espacio y el tiempo \cite{jacksonClassicalElectrodynamics2021a} y $V'$ es el volumen donde se encuentra el material.
+\noindent donde $\stackrel{\leftrightarrow}{\varepsilon}$ es un tensor de rango dos y representa una función de respuesta\footnote{Las funciones de respuesta proporcionan información sobre el efecto de las interacciones electromagnéticas con el medio y sobre la estructura y propiedades del propio medio \cite{ModernProblemsCondensed1989}.} del material en el espacio y el tiempo \cite{jacksonClassicalElectrodynamics2021a} y $V'$ es el volumen donde se encuentra el material. La Ec. \eqref{eq:d} muestra que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. Adicionalmente, el campo de desplazamiento eléctrico en un punto $\vb{r}$ depende de los valores del campo eléctrico en puntos vecinos $\vb{r}'$ \cite{jacksonClassicalElectrodynamics2021a}. A estas características, se les conoce como la no localidad temporal y espacial, respectivamente, entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021a}.
 
-\noindent La Ec. \eqref{eq:d} muestra que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. Adicionalmente, el campo de desplazamiento eléctrico en un punto $\vb{r}$ depende de los valores del campo eléctrico en puntos vecinos $\vb{r}'$ \cite{jacksonClassicalElectrodynamics2021a}. A estas características, se les conoce como la no localidad temporal y espacial, respectivamente, entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021a}.
-
-En un medio isótropo y homogéneo, $\stackrel{\leftrightarrow}{\varepsilon}$ se reduce a una función escalar $\varepsilon$ \cite{jacksonClassicalElectrodynamics2021a}; en este caso, tanto $\varepsilon$ como $\vb{E}$ son independientes de la posición y dependen únicamente de la diferencia temporal, es decir \cite{jacksonClassicalElectrodynamics2021a}
+En un medio isótropo y homogéneo, $\stackrel{\leftrightarrow}{\varepsilon} = \varepsilon\; \text{diag}(1,1,1)$ donde $\varepsilon$ es una función escalar \cite{jacksonClassicalElectrodynamics2021a}; en este caso, tanto $\varepsilon$ como $\vb{E}$ son independientes de la posición y dependen únicamente de la diferencia temporal, es decir \cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{tcolorbox}[ams align]
 	\vb{D}(t)=\int_{-\infty}^{\infty}\varepsilon(t-t')\vb{E}(t')\dd{t'},
@@ -57,30 +55,29 @@ En un medio isótropo y homogéneo, $\stackrel{\leftrightarrow}{\varepsilon}$ se
 	\begin{equation*}
 		 f(\omega)&=\mathscr{F}[f(t)]=\int_{-\infty}^{\infty}f(t)e^{i\omega t}\dd{t},\;\;\; \text{y}\;\;\; f(t)&=\mathscr{F}^{-1}[f(\omega)]=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(\omega)e^{i\omega t}\dd{\omega},
 	\end{equation*} 
-donde la dependencia indica si se trata de la transformada de Fourier directa (dependencia en la frecuencia) o inversa (dependencia en el tiempo).}, la Ec. \eqref{eq:d1} se reescribe como un producto en el espacio de frecuencias y, asumiendo las mismas consideraciones para los campos $\vb{B}$ y $\vb{H}$, se llega a un resultado análogo. Esto es \cite{bohrenAbsorptionScatteringLight2008}
+donde la dependencia indica si se trata de la transformada de Fourier directa (dependencia en la frecuencia) o inversa (dependencia en el tiempo).}, la Ec. \eqref{eq:d1} se reescribe como un producto en el espacio de frecuencias. Realizando el mismo procedimiento con las relaciones constitutivas que involucran a los campos magnéticos $\mathbf{B}$ y $\mathbf{H}$, se llega a un resultado análogo. Esto es \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{tcolorbox}[ams align]
 		\vb{D}(\omega)=\varepsilon(\omega)\vb{E}(\omega)\hspace{2cm}\text{y}\hspace{2cm}\vb{B}(\omega)=\mu(\omega)\vb{H}(\omega).
 	\label{eq:d3_b3} 
 \end{tcolorbox}
 %
-\noindent Así, en el espacio de frecuencias la respuesta del medio queda completamente caracterizada por una función dieléctrica y una permeabilidad magnética dependiente de la frecuencia. Adicionalmente, la relación lineal entre $\vb{D}$ y $\vb{E}$ se debe a que tanto $\vb{P}$  como  $\vb{M}$ tienen a su vez esta relación con los campos $\vb{E}$ y $\vb{H}$, respectivamente. Entonces, en un medio lineal, homogéneo e isótropo, $\vb{P}$ es paralelo a 
+\noindent Así, en el espacio de frecuencias, la respuesta del medio queda completamente caracterizada por una función dieléctrica y una permeabilidad magnética dependiente de la frecuencia. Adicionalmente, la relación lineal entre $\vb{D}$ y $\vb{E}$ se debe a que tanto $\vb{P}$  como  $\vb{M}$ tienen a su vez esta relación con los campos $\vb{E}$ y $\vb{H}$, respectivamente. Entonces, en un medio lineal, homogéneo e isótropo, $\vb{P}$ es paralelo a 
  $\vb{E}$ y $\vb{M}$ es paralelo a $\vb{H}$, con coeficientes de proporcionalidad $\varepsilon_0 \chi(\omega)$ y $\chi_m(\omega)$, respectivamente, es decir \cite{griffithsIntroductionElectrodynamics2023b}
- \vspace{-0.3cm}
 \begin{align}
 	\vb{P}=\varepsilon_0\chi(\omega)\vb{E}\hspace{2cm}\text{y}\hspace{2cm}
 	\vb{M}=\chi_m(\omega)\vb{H},
 	\label{eq:pol_mag}
 \end{align}
 %
-donde $\chi$ y $\chi_m$ son cantidades adimensionales. Al sustituir las Ecs. \eqref{eq:pol_mag} en las Ecs. \eqref{eq:D_H} y al comparar con las Ecs. \eqref{eq:d3_b3} se obtiene que
+donde $\chi$ y $\chi_m$ son cantidades adimensionales que corresponden a la susceptibilidad eléctrica y magnética, respectivamente. Al sustituir las Ecs. \eqref{eq:pol_mag} en las Ecs. \eqref{eq:D_H} y al comparar con las Ecs. \eqref{eq:d3_b3} se obtiene que
 %
 \begin{equation}
 	\varepsilon(\omega)=\varepsilon_0[1+\chi(\omega)]\hspace{1cm}\text{y}\hspace{1cm}	\mu(\omega)=\mu_0[1+\chi_m(\omega)].
 \end{equation}
 %.
 
-En ausencia de fuentes externas ($ \rho_{\text{tot}} = 0, \vb{J}_{\text{tot}} = \vb{0}$) y en un medio lineal, homogéneo e isótropo, las Ecs. \eqref{eqs:Maxwell} pueden desacoplarse y, al aplicar la transformada de Fourier, se obtienen las ecuaciones de Helmholtz para $\vb{E}$ y para $\vb{B}$ \cite{jacksonClassicalElectrodynamics2021a}
+En ausencia de fuentes externas ($ \rho_{\text{tot}} = 0, \vb{J}_{\text{tot}} = \vb{0}$) y en un medio lineal, homogéneo e isótropo, las Ecs. \eqref{eqs:Maxwell} pueden desacoplarse y, al aplicar la transformada de Fourier temporal, se obtienen las ecuaciones de Helmholtz para $\vb{E}$ y para $\vb{B}$ \cite{jacksonClassicalElectrodynamics2021a}
 %
 \begin{equation}
 	\laplacian{\vb{E}}+k^2\vb{E}=0\hspace{2cm}\text{y}\hspace{2cm} \laplacian{\vb{B}}+k^2\vb{B}=0,

@@ -1,7 +1,7 @@
 \section{Relaciones Kramers-Kronig sustractivas}
 \label{section:SSKK}
 
-A pesar de que las relaciones de Kramers–Kronig se han aplicado ampliamente en el análisis de datos experimentales \cite{nakovUnifiedFrameworkNumerical2023}, su implementación práctica enfrenta dos limitaciones fundamentales: los errores experimentales y el intervalo finito de frecuencias en el que suelen obtenerse los datos~\cite{nakovUnifiedFrameworkNumerical2023}. De hecho, cuando las relaciones de KK se evalúan sobre un rango espectral limitado, el error en la reconstrucción de la parte real o imaginaria de la función óptica tiende a incrementarse monótonamente con la frecuencia \cite{miltonFiniteFrequencyRange1997}. Para mitigar este problema, Bachrach y Brown \cite{bachrachExcitonOpticalPropertiesTlBr1970} propusieron las relaciones de Kramers–Kronig sustractivas (SSKK), las cuales incorporan un punto de anclaje experimental es decir, el valor conocido de la función óptica en una frecuencia particular, con el fin de mejorar significativamente la precisión del análisis vía KK \cite{KramersKronigRelationsSum2005}. En esta sección se desarrollan las relaciones SSKK para la función dieléctrica considerando un punto de referencia en una frecuencia 
+A pesar de que las relaciones de Kramers–Kronig se han aplicado ampliamente en el análisis de datos experimentales \cite{nakovUnifiedFrameworkNumerical2023}, su implementación práctica enfrenta dos limitaciones fundamentales: los errores experimentales y el intervalo finito de frecuencias en el que suelen obtenerse los datos~\cite{nakovUnifiedFrameworkNumerical2023}. De hecho, cuando las relaciones de KK se evalúan sobre un rango espectral limitado, el error en la reconstrucción de la parte real o imaginaria de la función óptica tiende a incrementarse monótonamente con la frecuencia \cite{miltonFiniteFrequencyRange1997}. Para mitigar este problema, Bachrach y Brown \cite{bachrachExcitonOpticalPropertiesTlBr1970} propusieron las relaciones de Kramers–Kronig sustractivas (SSKK), las cuales incorporan un punto de anclaje experimental es decir, el valor conocido de la función óptica en una frecuencia particular, con el fin de mejorar significativamente la precisión del análisis vía KK \cite{KramersKronigRelationsOptical2005}. En esta sección se desarrollan las relaciones SSKK para la función dieléctrica considerando un punto de referencia en una frecuencia 
 $\omega_1$, cuyo valor experimental se asume conocido y se puede escribir como
 %
 \begin{align}
@@ -9,10 +9,27 @@ $\omega_1$, cuyo valor experimental se asume conocido y se puede escribir como
 		\frac{\varepsilon''(\omega_1)}{\varepsilon_0}&=-\frac{2\omega_1}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\varepsilon'(\omega')/\varepsilon_0-1]}{\omega'-\omega_1}\dd{\omega'}}.\label{seq:omega1_im}	
 \end{align}
 %
-Al restar las Ecs. \eqref{seq:omega1_re} y \eqref{seq:omega1_im} de las relaciones de KK correspondientes para una $\omega$ abitraria y simplificando, se obtienen las relaciones de Kramers–Kronig sustractivas \cite{KramersKronigRelationsSum2005}
+Al restar la Ec. \eqref{seq:omega1_re} de la relación  de KK correspondiente para una $\omega$ abitraria se tiene
 %
 \begin{align}
-	\frac{\varepsilon'(\omega)}{\varepsilon_0}&=\frac{\varepsilon'(\omega_1)}{\varepsilon_0}+\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\varepsilon''(\omega')/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\\ \label{seq:SSKK_Re}
-	\frac{\varepsilon''(\omega)}{\varepsilon_0}&=\frac{\varepsilon''(\omega_1)}{\varepsilon_0}-\frac{2(\omega-\omega_1)}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\omega'^2+\omega\,\omega_1][\varepsilon'(\omega')-1]/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKK_Im}
+	\frac{\varepsilon'(\omega)}{\varepsilon_0}-\frac{\varepsilon'(\omega_1)}{\varepsilon_0}&=\frac{2}{\pi}\PV{\int_{0}^{\infty} \frac{\omega'(\omega'^2-\omega_1^2)(\varepsilon''(\omega)/\varepsilon_0)-\omega'(\omega'^2-\omega^2)(\varepsilon''(\omega)/\varepsilon_0)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\nonumber\\
+	&=\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\varepsilon''(\omega')/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\label{seq:SSKKRe0}
 \end{align}
 %
+y de manera análoga para la parte imaginaria, al restar la Ec. \eqref{seq:omega1_im} de la relación  de KK correspondiente para una $\omega$ arbitraria se obtiene
+\begin{align}
+		\frac{\varepsilon''(\omega)}{\varepsilon_0}-\frac{\varepsilon''(\omega_1)}{\varepsilon_0}&=\frac{2}{\pi}\PV{\int_0^{\infty}\frac{\omega(\omega'^2-\omega_1^2)(\varepsilon'(\omega)/\varepsilon_0-1)-\omwga_1(\omega'^2-\omega^2)(\varepsilon'(\omega)/\varepsilon_0-1)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\nonumber\\
+		&=-\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{(\omega-\omega_1)(\omega'^2+\omega\,\omega_1)(\varepsilon'(\omega')-1)/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKKIm0}
+\end{align}
+%
+Así, al simplificar las Ecs. \eqref{seq:SSKKRe0} y \eqref{seq:SSKKIm0}, se obtienen las relaciones SSKK \cite{KramersKronigRelationsOptical2005}
+%
+\begin{subequations}%
+	\begin{tcolorbox}[
+		ams align, breakable]
+		\frac{\varepsilon'(\omega)}{\varepsilon_0}&=\frac{\varepsilon'(\omega_1)}{\varepsilon_0}+\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\varepsilon''(\omega')/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\label{seq:SSKK_Re}\\ 
+		\frac{\varepsilon''(\omega)}{\varepsilon_0}&=\frac{\varepsilon''(\omega_1)}{\varepsilon_0}-\frac{2(\omega-\omega_1)}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\omega'^2+\omega\,\omega_1][\varepsilon'(\omega')-1]/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKK_Im}
+	\end{tcolorbox}
+\end{subequations}\vspace*{1em}
+
+Las relaciones SSKK permiten considerar contribuciones espectrales no conocidas fuera de la ventana. Siguen siendo un resultado exacto y cumplen con las condiciones de analiticidad

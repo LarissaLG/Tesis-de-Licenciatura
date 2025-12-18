@@ -103,8 +103,8 @@
 					sorting = none,
 					backref=true]{biblatex} %style = trad-abbrv
 		\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
-		\AtEveryBibitem{\clearfield{urldate}}
-		\AtEveryBibitem{\clearfield{url}}
+		\AtEveryBibitem{\clearfield{urldate}}%
+		\AtEveryBibitem{\clearfield{url}}%
 		\AtEveryBibitem{\clearfield{isbn}}
 		\AtEveryBibitem{\clearfield{month}}
 		\AtEveryBibitem{\clearfield{day}}

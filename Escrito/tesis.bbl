@@ -43,25 +43,21 @@
     \field{year}{2008}
   \endentry
 
-  \entry{KramersKronigRelationsSum2005}{incollection}{}{}
+  \entry{KramersKronigRelationsOptical2005}{book}{}{}
     \list{publisher}{1}{%
       {Springer-Verlag}%
     }
     \field{labeltitlesource}{title}
-    \field{booktitle}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
-  {Research}}
     \verb{doi}
     \verb 10.1007/3-540-27316-6_4
     \endverb
     \field{isbn}{978-3-540-23673-3}
     \field{note}{Series Title: Springer Series in Optical Sciences}
-    \field{pages}{27\bibrangedash 48}
-    \field{title}{Kramers-{Kronig} {Relations} and {Sum} {Rules} in {Linear}
-  {Optics}}
+    \field{title}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
+  {Research}}
     \verb{url}
     \verb http://link.springer.com/10.1007/3-540-27316-6_4
     \endverb
-    \field{volume}{110}
     \list{location}{1}{%
       {Berlin/Heidelberg}%
     }
@@ -96,9 +92,6 @@
     \verb :application/pdf
     \endverb
     \field{year}{2013}
-    \field{urlday}{14}
-    \field{urlmonth}{08}
-    \field{urlyear}{2025}
   \endentry
 
   \entry{griffithsIntroductionElectrodynamics2023b}{book}{}{}
@@ -154,25 +147,18 @@
     \verb sPkCps
     \endverb
     \field{year}{2021}
-    \field{urlday}{14}
-    \field{urlmonth}{08}
-    \field{urlyear}{2025}
   \endentry
 
-  \entry{GeneralPropertiesElectromagnetic1989}{incollection}{}{}
+  \entry{ModernProblemsCondensed1989}{book}{}{}
     \list{publisher}{1}{%
       {Elsevier}%
     }
     \field{labeltitlesource}{title}
-    \field{booktitle}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
     \verb{doi}
     \verb 10.1016/B978-0-444-87366-8.50008-4
     \endverb
     \field{note}{ISSN: 0167-7837}
-    \field{pages}{41\bibrangedash 85}
-    \field{title}{General {Properties} of {Electromagnetic} {Response}
-  {Functions}}
-    \field{volume}{24}
+    \field{title}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
     \verb{file}
     \verb Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\95AZZ9HL\\B9780
     \verb 444873668500084.html:text/html
@@ -221,9 +207,6 @@
     \verb for physicists a comprehensive guide.pdf:application/pdf
     \endverb
     \field{year}{2011}
-    \field{urlday}{14}
-    \field{urlmonth}{08}
-    \field{urlyear}{2025}
   \endentry
 
   \entry{subediMeasurementExtinctionCross2014}{inproceedings}{}{}
@@ -268,9 +251,34 @@
     \verb ication/pdf
     \endverb
     \field{year}{2014}
-    \field{urlday}{01}
-    \field{urlmonth}{12}
-    \field{urlyear}{2025}
+  \endentry
+
+  \entry{maierPlasmonicsFundamentalsApplications2007b}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=MSA}{%
+         family={Maier},
+         familyi={M\bibinitperiod},
+         given={Stefan\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \strng{namehash}{MSA1}
+    \strng{fullhash}{MSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \verb{doi}
+    \verb 10.1007/0-387-37825-1
+    \endverb
+    \field{isbn}{978-0-387-33150-8 978-0-387-37825-1}
+    \field{shorttitle}{Plasmonics}
+    \field{title}{Plasmonics: {Fundamentals} and {Applications}}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/0-387-37825-1
+    \endverb
+    \field{year}{2007}
   \endentry
 
   \entry{nakovUnifiedFrameworkNumerical2023}{article}{}{}
@@ -426,12 +434,9 @@
     \field{journaltitle}{Physical Review B}
     \field{month}{01}
     \field{year}{1970}
-    \field{urlday}{15}
-    \field{urlmonth}{11}
-    \field{urlyear}{2025}
   \endentry
 
-  \entry{mescherJunqueirasBasicHistology2024}{article}{}{}
+  \entry{mescherJunqueirasBasicHistology2024}{book}{}{}
     \name{author}{1}{}{%
       {{hash=MAL}{%
          family={Mescher},
@@ -439,6 +444,9 @@
          given={Anthony\bibnamedelima L.},
          giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
     }
     \strng{namehash}{MAL1}
     \strng{fullhash}{MAL1}
@@ -451,6 +459,53 @@
     \verb http://thuvienso.thanglong.edu.vn/handle/TLU/13369
     \endverb
     \field{year}{2024}
+  \endentry
+
+  \entry{meinkeOpticalPropertiesPlatelets2007a}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=MM}{%
+         family={Meinke},
+         familyi={M\bibinitperiod},
+         given={Martina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Müller},
+         familyi={M\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Helfmann},
+         familyi={H\bibinitperiod},
+         given={Jürgen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Friebel},
+         familyi={F\bibinitperiod},
+         given={Moritz},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMMGHJFM1}
+    \strng{fullhash}{MMMGHJFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
+    \field{number}{1}
+    \field{pages}{014024\bibrangedash 014024}
+    \field{title}{Optical properties of platelets and blood plasma and their
+  influence on the optical behavior of whole blood in the visible to near
+  infrared wavelength range}
+    \verb{url}
+    \verb https://www.spiedigitallibrary.org/journals/Journal-of-Biomedical-Opt
+    \verb ics/volume-12/issue-1/014024/Optical-properties-of-platelets-and-bloo
+    \verb d-plasma-and-their-influence/10.1117/1.2435177.short
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Journal of biomedical optics}
+    \field{year}{2007}
   \endentry
 
   \entry{bosschaartLiteratureReviewNovel2014a}{article}{}{}
@@ -514,56 +569,6 @@
     \field{year}{2014}
   \endentry
 
-  \entry{meinkeOpticalPropertiesPlatelets2007a}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=MM}{%
-         family={Meinke},
-         familyi={M\bibinitperiod},
-         given={Martina},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MG}{%
-         family={Müller},
-         familyi={M\bibinitperiod},
-         given={Gerhard},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Helfmann},
-         familyi={H\bibinitperiod},
-         given={Jürgen},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=FM}{%
-         family={Friebel},
-         familyi={F\bibinitperiod},
-         given={Moritz},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MMMGHJFM1}
-    \strng{fullhash}{MMMGHJFM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
-    \field{number}{1}
-    \field{pages}{014024\bibrangedash 014024}
-    \field{title}{Optical properties of platelets and blood plasma and their
-  influence on the optical behavior of whole blood in the visible to near
-  infrared wavelength range}
-    \verb{url}
-    \verb https://www.spiedigitallibrary.org/journals/Journal-of-Biomedical-Opt
-    \verb ics/volume-12/issue-1/014024/Optical-properties-of-platelets-and-bloo
-    \verb d-plasma-and-their-influence/10.1117/1.2435177.short
-    \endverb
-    \field{volume}{12}
-    \field{journaltitle}{Journal of biomedical optics}
-    \field{year}{2007}
-    \field{urlday}{06}
-    \field{urlmonth}{12}
-    \field{urlyear}{2025}
-  \endentry
-
   \entry{saccoCellCycleReactivation2002}{article}{}{}
     \name{author}{6}{}{%
       {{hash=SA}{%
@@ -617,9 +622,6 @@
     \field{journaltitle}{Reactivation of the cell cycle in terminally
   differentiated cells. New York: Kluwer Academic}
     \field{year}{2002}
-    \field{urlday}{24}
-    \field{urlmonth}{11}
-    \field{urlyear}{2025}
   \endentry
 
   \entry{palTextbookMedicalPhysiology2021}{book}{}{}
@@ -638,7 +640,7 @@
     \strng{fullhash}{PGK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Textbook of {Medical} {Physiology} 4th {Edition}-{E}-{Book}}
+    \field{title}{Textbook of {Medical} {Physiology}}
     \verb{url}
     \verb https://books.google.com/books?hl=es&lr=&id=FdBcEAAAQBAJ&oi=fnd&pg=PP
     \verb 1&dq=textbook+of+medical+physiology&ots=oE3gbJpsh6&sig=ZMWnk_PGEpI7Dq
@@ -686,7 +688,6 @@
     \strng{fullhash}{ASvRMJBJGCPA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: MDPI}
     \field{number}{1}
     \field{pages}{90\bibrangedash 99}
     \field{title}{Scanning electron and atomic force microscopic analysis of
@@ -737,9 +738,6 @@
     \field{volume}{15}
     \field{journaltitle}{Journal of biomedical optics}
     \field{year}{2010}
-    \field{urlday}{06}
-    \field{urlmonth}{12}
-    \field{urlyear}{2025}
   \endentry
 
   \entry{saxenaClinicalEvaluationDifferent2018}{article}{}{}
@@ -780,11 +778,8 @@
     \verb tero\\storage\\A45GG868\\Saxena et al. - 2018 - Clinical evaluation o
     \verb f different types of anemia.pdf:application/pdf
     \endverb
-    \field{journaltitle}{World}
+    \field{journaltitle}{World Journal of Anemia}
     \field{year}{2018}
-    \field{urlday}{06}
-    \field{urlmonth}{12}
-    \field{urlyear}{2025}
   \endentry
 
   \entry{donatoEsferocitosisHereditariaRevision2015}{article}{}{}
@@ -834,9 +829,6 @@
     \endverb
     \field{journaltitle}{Arch. argent. pediatr}
     \field{year}{2015}
-    \field{urlday}{06}
-    \field{urlmonth}{12}
-    \field{urlyear}{2025}
   \endentry
 \enddatalist
 \endinput
