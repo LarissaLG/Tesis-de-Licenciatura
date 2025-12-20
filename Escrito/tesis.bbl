@@ -281,6 +281,68 @@
     \field{year}{2007}
   \endentry
 
+  \entry{royHilbertTransformBrief2024}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=RIG}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={Indrajit\bibnamedelima G.},
+         giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RIG1}
+    \strng{fullhash}{RIG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{note}{Publisher: Springer India New Delhi}
+    \field{number}{5}
+    \field{pages}{671\bibrangedash 689}
+    \field{shorttitle}{Hilbert {Transform}}
+    \field{title}{Hilbert {Transform}: {A} {Brief} {Overview}}
+    \verb{url}
+    \verb https://www.ias.ac.in/article/fulltext/reso/029/05/0671-0689
+    \endverb
+    \field{volume}{29}
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\U6LWJUYD\\Roy - 2024 - Hilbert Transform A Brief Overv
+    \verb iew.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Resonance}
+    \field{year}{2024}
+  \endentry
+
+  \entry{hallAdvancedSignalIntegrity2011}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=HSH}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Stephen\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HHL}{%
+         family={Heck},
+         familyi={H\bibinitperiod},
+         given={Howard\bibnamedelima L.},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{HSHHHL1}
+    \strng{fullhash}{HSHHHL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Advanced signal integrity for high-speed digital designs}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=IdlnVkxjw7YC&oi=fnd&pg=PP
+    \verb 10&dq=Advanced+Signal+Integrity+for+High-Speed+Digital+Designs&ots=wQ
+    \verb QhKwpFwL&sig=h1C7VWvuEP2uenMAZ5nY7pdzcX0
+    \endverb
+    \field{year}{2011}
+  \endentry
+
   \entry{nakovUnifiedFrameworkNumerical2023}{article}{}{}
     \name{author}{3}{}{%
       {{hash=NS}{%
@@ -436,6 +498,31 @@
     \field{year}{1970}
   \endentry
 
+  \entry{nussenzveigCausalityDispersionRelations1972}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=NHM}{%
+         family={Nussenzveig},
+         familyi={N\bibinitperiod},
+         given={Herch\bibnamedelima Moyses},
+         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{NHM1}
+    \strng{fullhash}{NHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{series}{Mathematics in {Science} and {Engineering}}
+    \field{title}{Causality and dispersion relations}
+    \verb{url}
+    \verb https://cir.nii.ac.jp/crid/1130282272465472896
+    \endverb
+    \field{volume}{95}
+    \field{year}{1972}
+  \endentry
+
   \entry{mescherJunqueirasBasicHistology2024}{book}{}{}
     \name{author}{1}{}{%
       {{hash=MAL}{%
@@ -452,7 +539,6 @@
     \strng{fullhash}{MAL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
-    \field{note}{Publisher: McGraw Hill}
     \field{shorttitle}{Junqueira's basic histology}
     \field{title}{Junqueira's basic histology: text and atlas}
     \verb{url}
@@ -492,7 +578,6 @@
     \strng{fullhash}{MMMGHJFM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
     \field{number}{1}
     \field{pages}{014024\bibrangedash 014024}
     \field{title}{Optical properties of platelets and blood plasma and their
@@ -619,8 +704,7 @@
     \verb https://library.stipjakarta.ac.id/index.php?p=fstream-pdf&fid=227&bid
     \verb =5800#page=54
     \endverb
-    \field{journaltitle}{Reactivation of the cell cycle in terminally
-  differentiated cells. New York: Kluwer Academic}
+    \field{journaltitle}{Kluwer Academic}
     \field{year}{2002}
   \endentry
 
@@ -725,7 +809,6 @@
     \strng{fullhash}{EÃAEAGL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
     \field{number}{4}
     \field{pages}{045004\bibrangedash 045004}
     \field{title}{Computational study of scattering from healthy and diseased
