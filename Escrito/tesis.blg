@@ -28,6 +28,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 10740 items.
 Database file #1: tesis-blx.bib
 Database file #2: 6-References/references.bib
 Warning--I didn't find a database entry for "griffiths2013electrodynamics"
@@ -39,45 +40,45 @@ Warning--I didn't find a database entry for "garcia2012multiple"
 Biblatex version: 3.21
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 25 entries,
+You've used 35 entries,
             6402 wiz_defined-function locations,
-            1419 strings with 20509 characters,
-and the built_in function-call counts, 204573 in all, are:
-= -- 16669
-> -- 3142
-< -- 774
-+ -- 5721
-- -- 1470
-* -- 14671
-:= -- 22962
+            1505 strings with 25180 characters,
+and the built_in function-call counts, 307563 in all, are:
+= -- 24795
+> -- 5441
+< -- 1122
++ -- 9709
+- -- 2888
+* -- 21895
+:= -- 35649
 add.period$ -- 0
-call.type$ -- 25
-change.case$ -- 418
-chr.to.int$ -- 80
-cite$ -- 48
-duplicate$ -- 19761
-empty$ -- 18207
-format.name$ -- 1876
-if$ -- 41458
+call.type$ -- 35
+change.case$ -- 529
+chr.to.int$ -- 158
+cite$ -- 68
+duplicate$ -- 30702
+empty$ -- 26466
+format.name$ -- 2957
+if$ -- 61061
 int.to.chr$ -- 0
-int.to.str$ -- 60
+int.to.str$ -- 87
 missing$ -- 0
-newline$ -- 880
-num.names$ -- 1114
-pop$ -- 8827
+newline$ -- 1329
+num.names$ -- 1553
+pop$ -- 12743
 preamble$ -- 1
-purify$ -- 581
+purify$ -- 798
 quote$ -- 0
-skip$ -- 4773
+skip$ -- 6877
 stack$ -- 0
-substring$ -- 32548
-swap$ -- 3660
-text.length$ -- 604
+substring$ -- 47687
+swap$ -- 5527
+text.length$ -- 932
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 838
+type$ -- 1178
 warning$ -- 0
-while$ -- 2548
+while$ -- 4080
 width$ -- 0
-write$ -- 856
+write$ -- 1295
 (There were 6 warnings)
