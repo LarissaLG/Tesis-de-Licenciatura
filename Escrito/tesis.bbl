@@ -1315,34 +1315,6 @@
     \field{urlyear}{2026}
   \endentry
 
-  \entry{maggioreModernIntroductionClassical2023}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=MM}{%
-         family={Maggiore},
-         familyi={M\bibinitperiod},
-         given={Michele},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Oxford University Press}%
-    }
-    \strng{namehash}{MM1}
-    \strng{fullhash}{MM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{A modern introduction to classical electrodynamics}
-    \verb{url}
-    \verb https://books.google.com/books?hl=es&lr=&id=fbnQEAAAQBAJ&oi=fnd&pg=PP
-    \verb 1&dq=A+Modern+Introduction+to+Classical+Electrodynamics&ots=WlpM_pUFb
-    \verb 4&sig=H0dyR_5s-RGWuys1hEaA2Tra5XE
-    \endverb
-    \field{year}{2023}
-    \field{urlday}{13}
-    \field{urlmonth}{01}
-    \field{urlyear}{2026}
-  \endentry
-
   \entry{bohrenAbsorptionScatteringLight2008a}{book}{}{}
     \name{author}{2}{}{%
       {{hash=BCF}{%
@@ -1371,6 +1343,75 @@
     \verb 2&dq=bohren+scattering&ots=ABfstbegWN&sig=lFx_kQ_GYzmFpTlIPYLmiqmgqCc
     \endverb
     \field{year}{2008}
+  \endentry
+
+  \entry{maggioreModernIntroductionClassical2023}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Maggiore},
+         familyi={M\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A modern introduction to classical electrodynamics}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=fbnQEAAAQBAJ&oi=fnd&pg=PP
+    \verb 1&dq=A+Modern+Introduction+to+Classical+Electrodynamics&ots=WlpM_pUFb
+    \verb 4&sig=H0dyR_5s-RGWuys1hEaA2Tra5XE
+    \endverb
+    \field{year}{2023}
+    \field{urlday}{13}
+    \field{urlmonth}{01}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{palmerMultiplySubtractiveKramers1998}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=PKF}{%
+         family={Palmer},
+         familyi={P\bibinitperiod},
+         given={Kent\bibnamedelima F.},
+         giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=WMZ}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Michael\bibnamedelima Z.},
+         giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=BBA}{%
+         family={Budde},
+         familyi={B\bibinitperiod},
+         given={Ben\bibnamedelima A.},
+         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PKFWMZBBA1}
+    \strng{fullhash}{PKFWMZBBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Publisher: Optical Society of America}
+    \field{number}{13}
+    \field{pages}{2660\bibrangedash 2673}
+    \field{title}{Multiply subtractive {Kramers}–{Kronig} analysis of optical
+  data}
+    \verb{url}
+    \verb https://opg.optica.org/abstract.cfm?uri=ao-37-13-2660
+    \endverb
+    \field{volume}{37}
+    \field{journaltitle}{Applied Optics}
+    \field{year}{1998}
+    \field{urlday}{14}
+    \field{urlmonth}{01}
+    \field{urlyear}{2026}
   \endentry
 \enddatalist
 \endinput
