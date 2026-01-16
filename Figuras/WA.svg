@@ -29,12 +29,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.5273506"
-     inkscape:cx="159.09903"
-     inkscape:cy="212.4594"
-     inkscape:window-width="2049"
-     inkscape:window-height="1046"
-     inkscape:window-x="-11"
-     inkscape:window-y="283"
+     inkscape:cx="290.69946"
+     inkscape:cy="162.70004"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="2038"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <defs
@@ -676,7 +676,7 @@
      fill="#000000"
      fill-opacity="1"
      id="id-fb433c6b-a58e-4cb6-b75a-bb45a927cee6"
-     transform="matrix(0.76268048,0,0,0.63732976,-39.60951,0.58545982)"
+     transform="matrix(0.83894853,0,0,0.70106274,-51.12845,-7.8665884)"
      style="fill:#ff0000;fill-opacity:1">
     <g
        transform="translate(148.712,134.765)"
@@ -689,7 +689,7 @@
     </g>
   </g>
   <g
-     transform="matrix(0.73949589,0,0,0.7275521,21.324456,34.726847)"
+     transform="matrix(0.81344548,0,0,0.80030731,21.071428,34.467061)"
      ns4:version="1.10.2"
      ns4:texconverter="pdflatex"
      ns4:pdfconverter="inkscape"
@@ -742,7 +742,7 @@
      sodipodi:nodetypes="ccc"
      transform="translate(-27.748984,-3.0115176)" />
   <g
-     transform="matrix(0.57366196,0,0,0.42558361,87.270786,77.545632)"
+     transform="matrix(0.63102816,0,0,0.46814197,88.644544,78.263808)"
      ns4:version="1.10.2"
      ns4:texconverter="pdflatex"
      ns4:pdfconverter="inkscape"
@@ -779,7 +779,7 @@
         <path
            d="m -20.803777,-25.908859 c 0,-0.862732 -0.227645,-2.690902 -1.572823,-2.690902 -1.841859,0 -3.869974,3.697422 -3.869974,6.696443 0,1.232474 0.372511,2.690902 1.572824,2.690902 1.862554,0 3.869973,-3.759046 3.869973,-6.696443 z m -4.056229,1.787087 c 0.227646,-0.821649 0.496681,-1.869252 1.034753,-2.814149 0.351815,-0.636778 0.827801,-1.376263 1.427958,-1.376263 0.641546,0 0.724326,0.842191 0.724326,1.581675 0,0.65732 -0.103481,1.31464 -0.4139,2.608737 z m 2.648966,0.431366 c -0.144865,0.595696 -0.413901,1.704923 -0.931277,2.64982 -0.455291,0.903814 -0.951972,1.540593 -1.531433,1.540593 -0.434596,0 -0.703632,-0.390284 -0.703632,-1.602217 0,-0.554613 0.08278,-1.314639 0.413901,-2.588196 z m 0,0"
            id="id-be9a9028-29ba-4f4f-801e-4efd4c82b61f"
-           style="fill:#00ff00;fill-opacity:1;stroke-width:1.31955;stroke:none" />
+           style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:1.31955" />
       </g>
     </g>
   </g>

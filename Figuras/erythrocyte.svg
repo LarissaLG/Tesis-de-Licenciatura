@@ -28,9 +28,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2.8970538"
-     inkscape:cx="121.84793"
-     inkscape:cy="171.03583"
+     inkscape:zoom="2.0485264"
+     inkscape:cx="58.090538"
+     inkscape:cy="315.10456"
      inkscape:window-width="1920"
      inkscape:window-height="1094"
      inkscape:window-x="2038"
@@ -277,8 +277,9 @@
        d="m 69.228537,64.884193 -0.02614,-1.856109"
        id="path29-7" /><path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.229934;stroke-dasharray:none;stroke-opacity:1"
-       d="m 36.526494,66.637893 -0.02614,-1.856109"
-       id="path29-7-7" /><g
+       d="m 36.494205,66.621748 0.0061,-1.839964"
+       id="path29-7-7"
+       sodipodi:nodetypes="cc" /><g
        id="g75"
        transform="matrix(0.80962537,0,0,0.80962537,-6.9659065,6.7293822)"><path
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.283854;stroke-dasharray:none;stroke-opacity:1"
@@ -319,7 +320,7 @@
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.284;stroke-dasharray:none;stroke-opacity:1"
          d="m 79.422951,43.926621 3.940893,0.0483"
          id="path30-8-6-3" /></g><g
-       transform="matrix(0.51976245,0,0,0.51976245,21.911706,57.645491)"
+       transform="matrix(0.4556353,0,0,0.4556353,23.454468,57.9077)"
        ns4:version="1.10.2"
        ns4:texconverter="pdflatex"
        ns4:pdfconverter="inkscape"
@@ -450,7 +451,7 @@
    id="id-1eaef405-0089-41ea-9a95-d9528b007398" />
       </g></g>
 </g><g
-       transform="matrix(0.50853716,0,0,0.50853716,48.141468,57.644809)"
+       transform="matrix(0.4612431,0,0,0.4612431,49.07728,57.900329)"
        ns4:version="1.10.2"
        ns4:texconverter="pdflatex"
        ns4:pdfconverter="inkscape"
@@ -570,7 +571,7 @@
    id="id-cf697f66-2dce-415b-8c0c-bc8cd2b0b4eb" />
       </g></g>
 </g><g
-       transform="matrix(0.50256979,0,0,0.50256979,25.598537,68.019108)"
+       transform="matrix(0.46661625,0,0,0.46661625,26.359535,67.926999)"
        ns4:version="1.10.2"
        ns4:texconverter="pdflatex"
        ns4:pdfconverter="inkscape"
