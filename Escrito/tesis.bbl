@@ -48,11 +48,7 @@
       {Springer-Verlag}%
     }
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1007/3-540-27316-6_4
-    \endverb
     \field{isbn}{978-3-540-23673-3}
-    \field{note}{Series Title: Springer Series in Optical Sciences}
     \field{title}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
   {Research}}
     \verb{url}
@@ -154,10 +150,6 @@
       {Elsevier}%
     }
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1016/B978-0-444-87366-8.50008-4
-    \endverb
-    \field{note}{ISSN: 0167-7837}
     \field{title}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
     \verb{file}
     \verb Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\95AZZ9HL\\B9780
@@ -294,7 +286,6 @@
     \strng{fullhash}{RIG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
-    \field{note}{Publisher: Springer India New Delhi}
     \field{number}{5}
     \field{pages}{671\bibrangedash 689}
     \field{shorttitle}{Hilbert {Transform}}
@@ -945,7 +936,6 @@
     \strng{fullhash}{SRTAZRPCS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Elsevier}
     \field{number}{3}
     \field{pages}{245\bibrangedash 264}
     \field{title}{Strain energy function of red blood cell membranes}
@@ -982,7 +972,6 @@
     \strng{fullhash}{LJQYPHXH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
     \field{number}{2}
     \field{pages}{024022\bibrangedash 024022}
     \field{title}{Simulations of light scattering from a biconcave red blood
@@ -1130,7 +1119,6 @@
     \strng{fullhash}{WTHJEESR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
-    \field{note}{Publisher: Elsevier}
     \field{number}{1-3}
     \field{pages}{444\bibrangedash 456}
     \field{shorttitle}{Light scattering by single erythrocyte}
@@ -1219,9 +1207,6 @@
     \field{volume}{45}
     \field{journaltitle}{Applied optics}
     \field{year}{2006}
-    \field{urlday}{11}
-    \field{urlmonth}{01}
-    \field{urlyear}{2026}
   \endentry
 
   \entry{liuMeasurementRefractiveIndex2019}{article}{}{}
@@ -1291,7 +1276,6 @@
     \strng{fullhash}{LSDZLJWJHNCRZQMJZWZC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
     \field{number}{3}
     \field{pages}{035003\bibrangedash 035003}
     \field{title}{Measurement of the refractive index of whole blood and its
@@ -1310,9 +1294,6 @@
     \endverb
     \field{journaltitle}{Journal of biomedical optics}
     \field{year}{2019}
-    \field{urlday}{11}
-    \field{urlmonth}{01}
-    \field{urlyear}{2026}
   \endentry
 
   \entry{bohrenAbsorptionScatteringLight2008a}{book}{}{}
@@ -1409,9 +1390,60 @@
     \field{volume}{37}
     \field{journaltitle}{Applied Optics}
     \field{year}{1998}
-    \field{urlday}{14}
-    \field{urlmonth}{01}
-    \field{urlyear}{2026}
+  \endentry
+
+  \entry{dayerBandAssignmentHemoglobin2010}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=DM}{%
+         family={Dayer},
+         familyi={D\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Moosavi-Movahedi},
+         familyi={M\bibinithyphendelim M\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dayer},
+         familyi={D\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{DMMMADM1}
+    \strng{fullhash}{DMMMADM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \verb{doi}
+    \verb 10.2174/092986610790963645
+    \endverb
+    \field{issn}{09298665}
+    \field{number}{4}
+    \field{pages}{473\bibrangedash 479}
+    \field{shorttitle}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
+  {Spectrum}}
+    \field{title}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
+  {Spectrum}: {Using} {Four}-{Orbital} {Model} of {Gouterman}}
+    \verb{url}
+    \verb http://www.eurekaselect.com/openurl/content.php?genre=article&issn=09
+    \verb 29-8665&volume=17&issue=4&spage=473
+    \endverb
+    \field{volume}{17}
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\I6M8RKE3\\Dayer et al. - 2010 - Band Assignment in Hem
+    \verb oglobin Porphyrin Ring Spectrum Using Four-Orbital Model of Gouterman
+    \verb .pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Protein \& Peptide Letters}
+    \field{month}{04}
+    \field{year}{2010}
   \endentry
 \enddatalist
 \endinput
