@@ -5,101 +5,80 @@
 
 \label{section:apendix1}
 
-En la sección \ref{section:optical_properties} se obtuvo una expresión analítica de la parte imaginaria de la función dieléctrica de los eritrocitos y el plasma a través de un ajuste con el modelo de Lorentz. En esta sección se mostrarán los valores empleados para los ajustes con el modelo de Lorentz así como las gráficas de los ajustes obtenidos.
-\vspace{-0.5cm}
-\begin{itemize}
-	\item Concentración 15.3 g/dL
-	\begin{table}[h!]
-		\centering
-		\setlength{\tabcolsep}{12pt} 
+En la Sección~\ref{section:optical_properties} se empleó el modelo de osciladores de Lorentz para ajustar la parte imaginaria de la función dieléctrica mediante una superposición de $N$ osciladores armónicos amortiguados, descrita por \cite{bohrenAbsorptionScatteringLight2008a}
+%
+\begin{equation}
+	\varepsilon''(\omega)=\sum_{i=1}^N \frac{A_i \gamma_i \omega}{(\omega_{0_{i}}^2-\omega^2)^2 + \gamma_i^2 \omega^2},
+\end{equation}
+%
+donde $A_i$ es la fuerza del oscilador asociada a la $i$-ésima transición electrónica, $\omega_{0_{i}}$ es su frecuencia de resonancia y $\gamma_i$ es el coeficiente fenomenológico de amortiguamiento, que caracteriza el ancho de línea de cada banda de absorción \cite{kreibigOpticalPropertiesMetal2013}. Los conjuntos de parámetros se obtuvieron mediante un procedimiento de optimización de tipo cuasi-Newton, minimizando el error cuadrático medio entre el modelo y los datos experimentales extraídos de la literatura.
 
-		\begin{tabular}{ccccc}
-			\hline
-			% Encabezado con color personalizado
-		$i$ & $A_i\, [\text{eV}]^2$  & $\hbar\omega_i$ [eV] & $\hbar\gamma_i$ [eV] \\
-			\hline
-			1 & $4.13 \times 10^{-4}$ & 2.16 & $5.61 \times 10^{-2}$ \\
-			2 & $6.64 \times 10^{-4}$ & $2.29$ & $9.01 \times 10^{-2}$ \\
-			3 & $1.39 \times 10^{-2}$ & $3$ & $1.86 \times 10^{-2}$ \\
-			4 & $6.55 \times 10^{-3}$ & $3.59$ & $5.14 \times 10^{-1}$\\
-			5 & $1.76 \times 10^{-2}$ & $4.6$ & $8.32 \times 10^{-1}$ \\
-			6 & $1.15 \times 10^{-5}$ & $2.72$ & $7.83 \times 10^{-3}$ \\ \hline
-		\end{tabular}
-		\caption{Parámetros del modelo de Lorentz empleados para una CHCM de 15.3 g/dL.}
-		
-	\end{table}
-	%
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[width=0.7\textwidth]{../../Figuras/ajusteLorentz15.pdf}
-		\caption{Parte imaginaria de la función dieléctrica de eritrocitos con una CHCM de 15.3 g/dL. Los datos experimentales se obtuvieron de \cite{friebelDeterminationComplexRefractive2005a} y están indicados mediante puntos rojos. La línea azul continua representa el ajuste con lorentzianas obtenido. Las líneas grises verticales indican las frecuencias de resonancia asociadas a los osciladores de Lorentz empleados en el ajuste.}
-		\label{fig:lorentz15}
-	\end{figure}
-	%
-	
-	\item Concentración 28.7 g/dL
+En la Tabla \ref{table:lorentz15} se listan los parámetros ajustados para las tres concentraciones de hemoglobina consideradas y para el plasma. En el caso de las concentraciones de la hemoglobina se ajustaron 6 osciladores, mientras que para el plasma se ajustaron 4 osciladores. En todos los casos de la hemoglobina, el oscilador centrado alrededor de $\hbar\omega_{0}\simeq 3$~eV (correspondiente a la banda de Soret, $\lambda\approx 410$–420~nm) presenta la mayor fuerza de oscilador, en concordancia con el hecho de que esta transición domina el espectro de absorción de la hemoglobina en el UV-Vis. Asimismo, se observa que la amplitud de dicha banda, así como la de las bandas Q en el visible, aumenta con la CHCM. Por otra parte, los parámetros muestran ligeros desplazamientos espectrales de las resonancias: en las concentraciones de 15.3 y 30.6~g/dL, las bandas $\alpha$ y $\beta$, asociadas a los osciladores con $\hbar\omega_{0}\approx 2.14$–2.16~eV y $\hbar\omega_{0}\approx 2.27$–2.29~eV, presentan un corrimiento hacia el azul con respecto al caso de 28.7~g/dL, mientras que la resonancia correspondiente a la banda de Soret y al oscilador en la región de $\hbar\omega_{0}\approx 3.6$–4.6~eV muestra un desplazamiento ligeramente hacia el rojo. Los valores más altos de $\gamma_i$ asociados a la banda de Soret indican que esta transición presenta un ensanchamiento y un amortiguamiento más pronunciados. Asimismo, para todas las concentraciones consideradas, la banda $\alpha$ exhibe constantes de amortiguamiento menores que la banda $\beta$, lo que sugiere tiempos de vida efectivos más largos y resonancias espectralmente más estrechas. En el caso del plasma, los osciladores correspondientes a las resonancias en 1.27 eV (351 nm) y 2.65 eV (351 nm)
+
 	\begin{table}[h!]
-		\centering
-		\setlength{\tabcolsep}{12pt} 
-		% Alterna blanco y un azul muy clarito para que los datos sean legibles
-		
-		
-			\begin{tabular}{ccccc}
-			\hline
-			% Encabezado con color personalizado
-			$i$ & $A_i\, [\text{eV}]^2$  & $\hbar\omega_i$ [eV] & $\hbar\gamma_i$ [eV] \\
-			\hline
-			1 & $4.87 \times 10^{-4}$ & 2.14 & $5.23 \times 10^{-2}$ \\
-			2 & $8.28 \times 10^{-4}$ & $2.27$ & $9.33 \times 10^{-2}$ \\
-			3 & $1.8 \times 10^{-2}$ & $3.01$ & $1.87 \times 10^{-1}$ \\
-			4 & $8.47 \times 10^{-3}$ & $3.61$ & $5.23 \times 10^{-1}$\\
-			5 & $1.84 \times 10^{-2}$ & $4.58$ & $7.37 \times 10^{-1}$ \\
-			6 & $2.66 \times 10^{-5}$ & $2.72$ & $1.44 \times 10^{-2\underline{}}$ \\ \hline
-		\end{tabular}
-		\caption{Parámetros del modelo de Lorentz empleados para una CHCM de 28.7 g/dL.}
-	\end{table}
-	%
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.47\textwidth]{../../Figuras/ajusteLorentz28.pdf}
-		\caption{Parte imaginaria de la función dieléctrica de eritrocitos con una CHCM de 28.7 g/dL. Los datos experimentales se obtuvieron de \cite{friebelModelFunctionCalculate2006} y están indicados mediante puntos rojos. La línea azul continua representa el ajuste con lorentzianas obtenido. Las líneas grises verticales indican las frecuencias de resonancia asociadas a los osciladores de Lorentz empleados en el ajuste.}
-		\label{fig:lorentz28}
-	\end{figure}
-	%
+	\centering
+	\setlength{\tabcolsep}{12pt} 
 	
-	
-	\item Concentración 30.6 g/dL
-	\begin{table}[h!]
-		\centering
-		\setlength{\tabcolsep}{12pt} 
-		% Alterna blanco y un azul muy clarito para que los datos sean legibles
-		
-		
-		\begin{tabular}{ccccc}
+	\begin{tabular}{ccccc}
 		\hline
 		% Encabezado con color personalizado
-		$i$ & $A_i\, [\text{eV}]^2$  & $\hbar\omega_i$ [eV] & $\hbar\gamma_i$ [eV] \\
+		$i$ & $A_i\, [\text{eV}^2]$  & $\hbar\omega_i$ [eV] & $\hbar\gamma_i$ [eV] \\
+		\hline \hline
+		\multicolumn{4}{c}{CHCM: 15.3 g/dL}\\
 		\hline
-		1 & $3.86 \times 10^{-4}$ & 2.16 & $5.41 \times 10^{-2}$ \\
-		2 & $6.96 \times 10^{-4}$ & $2.29$ & $9.99 \times 10^{-2}$ \\
-		3 & $1.51 \times 10^{-2}$ & $3$ & $9.99 \times 10^{-2}$ \\
-		4 & $1.51 \times 10^{-2}$ & $3$ & $2.08 \times 10^{-1}$\\
-		5 & $6.08 \times 10^{-3}$ & $3.6$ & $5.1 \times 10^{-1}$ \\
-		6 & $1.82 \times 10^{-2}$ & $4.61$ & $8.75 \times 10^{-1}$ \\ \hline
-	\end{tabular}
-		\caption{Parámetros del modelo de Lorentz empleados para una CHCM de 30.6 g/dL.}
+		1 & $4.13 \times 10^{-4}$ & 2.16 & $5.61 \times 10^{-2}$ \\
+		2 & $6.64 \times 10^{-4}$ & $2.29$ & $9.01 \times 10^{-2}$ \\
+		3 & $1.39 \times 10^{-2}$ & $3$ & $1.86 \times 10^{-2}$ \\
+		4 & $6.55 \times 10^{-3}$ & $3.59$ & $5.14 \times 10^{-1}$\\
+		5 & $1.76 \times 10^{-2}$ & $4.6$ & $8.32 \times 10^{-1}$ \\
+		6 & $1.15 \times 10^{-5}$ & $2.72$ & $7.83 \times 10^{-3}$ \\ \hline
+			\hline
+		% Encabezado con color personalizado
+		\multicolumn{4}{c}{CHCM: 28.7 g/dL}\\
+		\hline
+		1 & $4.87 \times 10^{-4}$ & 2.14 & $5.23 \times 10^{-2}$ \\
+		2 & $8.28 \times 10^{-4}$ & $2.27$ & $9.33 \times 10^{-2}$ \\
+		3 & $1.8 \times 10^{-2}$ & $3.01$ & $1.87 \times 10^{-1}$ \\
+		4 & $8.47 \times 10^{-3}$ & $3.61$ & $5.23 \times 10^{-1}$\\
+		5 & $1.84 \times 10^{-2}$ & $4.58$ & $7.37 \times 10^{-1}$ \\
+		6 & $2.66 \times 10^{-5}$ & $2.72$ & $1.44 \times 10^{-2}$ \\ \hline
+		\hline
+		% Encabezado con color personalizado
+		\multicolumn{4}{c}{CHCM: 30.6 g/dL}\\
+		\hline
+		1 & $9.67 \times 10^{-4}$ & 2.16 & $6.58 \times 10^{-2}$ \\
+		2 & $1.43 \times 10^{-3}$ & $2.29$ & $9.76 \times 10^{-2}$ \\
+		3 & $2.83 \times 10^{-2}$ & $3$ & $1.87 \times 10^{-1}$ \\
+		4 & $1.45 \times 10^{-2}$ & $3.58$ & $5.48 \times 10^{-1}$\\
+		5 & $3.61 \times 10^{-2}$ & $4.6$ & $8.3 \times 10^{-1}$ \\
+		6 & $1.02 \times 10^{-5}$ & $2.74$ & $6.14 \times 10^{-3}$ \\ \hline
 		
-	\end{table}
+	\multicolumn{4}{c}{Plasma}\\
+	\hline
+	1 & $7.66 \times 10^{-6}$ & 1.27 & $9.15 \times 10^{-2}$ \\
+	2 & $4.08 \times 10^{-6}$ & $2.65$ & $2.61 \times 10^{-1}$ \\
+	3 & $5.69 \times 10^{-6}$ & $2.91$ & $3.93 \times 10^{-1}$ \\
+	4 & $7.36 \times 10^{-6}$ & $3.53$ & $4.66 \times 10^{-1}$\\ \hline
+	\end{tabular}
+	\caption{Parámetros del modelo de Lorentz empleados para distintos valores de CHCM y para el plasma.}
+	\label{table:lorentz15}
+\end{table}
+%
+En la Fig. \ref{fig:epsLorentz} se muestran los datos experimentales (puntos rojos) correspondientes a la parte imaginaria de la función dieléctrica de eritrocitos con una CHCM de \textbf{a)} 15.3 g/dL, \textbf{b)} 28.7 g/dL y \textbf{c)} 30.6 g/dL, extraídos de \cite{friebelDeterminationComplexRefractive2005a}, \cite{friebelModelFunctionCalculate2006} y \cite{friebelDeterminationComplexRefractive2005a}, respectivamente, junto con el ajuste obtenido mediante osciladores de Lorentz (línea azul continua) en función de la longitud de onda $\lambda$ (eje inferior) y la energía $\hbar\omega$ (eje superior). En todos los casos, las líneas grises verticales indican las frecuencias de resonancia asociadas a los osciladores empleados en el ajuste.
+%
+\begin{figure}[h]
+	\centering
 	
-	%
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.7\textwidth]{../../Figuras/ajusteLorentz30.pdf}
-		\caption{Parte imaginaria de la función dieléctrica de eritrocitos con una CHCM de 15.3 g/dL. Los datos experimentales se obtuvieron de \cite{friebelDeterminationComplexRefractive2005a} y están indicados mediante puntos rojos. La línea azul continua representa el ajuste con lorentzianas obtenido. Las líneas grises verticales indican las frecuencias de resonancia asociadas a los osciladores de Lorentz empleados en el ajuste.}
-		\label{fig:lorentz30}
-	\end{figure}
-	%
-	
-	
-	
-\end{itemize}
+			\includegraphics[width=0.45\textwidth]{../../Figuras/ajusteLorentzLegend.pdf}\\
+	\sidesubfloat[First image]{\hspace{-0.8cm}{
+				\includegraphics[width=0.47\textwidth]{../../Figuras/ajusteLorentz15.pdf}\label{subfig:ajusteLorentz15}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.6cm}{		\includegraphics[width=0.47\textwidth]{../../Figuras/ajusteLorentz28.pdf}\label{subfig:ajusteLorentz28}}}\\
+	\vspace{0.5cm}
+	\sidesubfloat[Second image]{\hspace{-0.6cm}{		\includegraphics[width=0.47\textwidth]{../../Figuras/ajusteLorentz30.pdf}\label{subfig:ajusteLorentz30}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.8cm}{		\includegraphics[width=0.52\textwidth]{../../Figuras/ajustePlasma.pdf}\label{subfig:ajusteLorentzPlasma}}}
+
+	\caption{Parte imaginaria de la función dieléctrica como función de la longitud de onda $\lambda$ (eje inferior) y la energía $\hbar\omega$ (eje superior). Se grafican datos experimentales representados por puntos rojos y el ajuste con lorenzianas con una línea azul continua para \textbf{a)} eritrocitos con una concentración de 15.3 g/dL, cuyos experimentales se obtuvieron de \cite{friebelDeterminationComplexRefractive2005a}; \textbf{b)} eritrocitos con una concentración de 28.7 g/dL, cuyos experimentales se obtuvieron de \cite{friebelModelFunctionCalculate2006}; \textbf{c)} eritrocitos con una concentración de 30.6 g/dL, cuyos experimentales se obtuvieron de \cite{friebelDeterminationComplexRefractive2005a} y \textbf{d)} plasma, cuyos datos experimentales  se extrajeron de \cite{meinkeOpticalPropertiesPlatelets2007a}. En todas las figuras las líneas grises verticales indican las frecuencias de resonancia asociadas a los osciladores de Lorentz empleados en el ajuste.}
+	\label{fig:epsLorentz}
+\end{figure}
+%
+

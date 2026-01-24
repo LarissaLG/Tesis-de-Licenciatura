@@ -5,9 +5,9 @@
 \label{section:SC}
 La interacción luz–materia puede describirse clásicamente mediante dos procesos fundamentales: la absorción y el esparcimiento, cuyo efecto conjunto se denomina extinción \cite{bohrenAbsorptionScatteringLight2008}. Experimentalmente, estos fenómenos se evidencian al comparar la potencia medida por un detector con y sin la presencia de una partícula iluminada por un campo electromagnético incidente  ($\vb{E}_{\text{inc}}, \vb{H}_{\text{inc}}$) la cual genera un campo electromagnético esparcido ($\vb{E}_{\text{sca}}, \vb{H}_{\text{sca}}$) como se ejemplifica en la Fig. \ref{scattering}, donde se muestra una partícula de geometría arbitraria iluminada por un campo $(\mathbf{E}_{\text{inc}},  \mathbf{H}_{\text{inc}})$ representado por vectores en rojo paralelos. La interacción del campo con la partícula genera un campo electromagnético esparcido $(\mathbf{E}_{\text{sca}}, \mathbf{H}_{\text{sca}})$ representado por los vectores en rojo que surgen de la partícula y se propagan en distintas direcciones. Este campo puede ser medido con un detector~\cite{bohrenAbsorptionScatteringLight2008}.
 %
-\begin{figure}[bt]
+\begin{figure}[t]
 	\centering
-	\includegraphics[width=8.5cm]{../../Figuras/scattering.pdf}
+	\includegraphics[width=8.3cm]{../../Figuras/scattering.pdf}
 	\caption{Diagrama del problema de esparcimiento. El campo electromagnético ($\vb{E}_{\text{inc}}, \vb{H}_{\text{inc}}$) incide sobre una partícula arbitraria, produciendo el campo electromagnético esparcido ($\vb{E}_{\text{sca}}, \vb{H}_{\text{sca}}$).}
 	\label{scattering}
 \end{figure}
@@ -18,16 +18,7 @@ Para cuantificar la extinción, absorción y el esparcimiento de manera macrosc�
 	W_{\text{abs}}=-\int_A \langle\vb{S}\rangle_t\cdot\vu{e}_r \text{ dA},
 	\label{flujopoynting}
 \end{tcolorbox}
-\noindent donde $\langle\vb{S}\rangle_t$ y $\vu{e}_r$ son paralelos y el signo negativo garantiza que $W_{\text{abs}}$ sea una cantidad positiva definida, asumiendo que únicamente hay procesos de absorción y no de emisión \cite{bohrenAbsorptionScatteringLight2008}.
-%
-\begin{figure}[bt]
-	\centering
-	\includegraphics[width=7cm]{../../Figuras/WA.pdf}
-	\caption{Esquema de la superficie de integración $A$ como una esfera de radio $r$ centrada en el origen y que encierra a una partícula.}
-	\label{WA}
-\end{figure}
-%
-\noindent Es posible descomponer el vector de Poynting total en tres contribuciones \cite{bohrenAbsorptionScatteringLight2008}
+\noindent donde $\langle\vb{S}\rangle_t$ y $\vu{e}_r$ son paralelos y el signo negativo garantiza que $W_{\text{abs}}$ sea una cantidad positiva definida, asumiendo que únicamente hay procesos de absorción y no de emisión \cite{bohrenAbsorptionScatteringLight2008}. Es posible descomponer el vector de Poynting total en tres contribuciones \cite{bohrenAbsorptionScatteringLight2008}
 %		
 \begin{subequations}%
 	\begin{tcolorbox}[
@@ -47,6 +38,14 @@ Para cuantificar la extinción, absorción y el esparcimiento de manera macrosc�
 		W_{\text{ext}} &= -\int_{A}\langle\vb{S}_{\text{ext}}\rangle_t\cdot\vu{e}_r\text{ dA}. \label{seq:Wext}
 	\end{align}
 \end{subequations}
+%
+%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=6.7cm]{../../Figuras/WA.pdf}
+	\caption{Esquema de la superficie de integración $A$ como una esfera de radio $r$ centrada en el origen y que encierra a una partícula.}
+	\label{WA}
+\end{figure}
 %
 Los signos de las Ecs. \eqref{eqs:W} se eligen de forma que sean cantidades positivas considerando las direcciones de los vectores de Poynting y de $\vu{e}_r$. Como la energía del campo incidente que cruza la esfera es la misma que la que entra, $W_{\text{inc}}$ se anula, entonces
 %
@@ -124,7 +123,6 @@ que es la sección transversal de extinción y que posee dimensiones de área.
 	\label{C_sca_general}
 \end{equation}
 %%
-
  \noindent Finalmente, la Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{tcolorbox}[ams align]

@@ -514,6 +514,140 @@
     \field{year}{1972}
   \endentry
 
+  \entry{ereminaDifferentShapeModels2006a}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=EE}{%
+         family={Eremina},
+         familyi={E\bibinitperiod},
+         given={Elena},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hellmers},
+         familyi={H\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EY}{%
+         family={Eremin},
+         familyi={E\bibinitperiod},
+         given={Yuri},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wriedt},
+         familyi={W\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EEHJEYWT1}
+    \strng{fullhash}{EEHJEYWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 10}
+    \field{shorttitle}{Different shape models for erythrocyte}
+    \field{title}{Different shape models for erythrocyte: {Light} scattering
+  analysis based on the discrete sources method}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0022407306000719?c
+    \verb asa_token=RHOr51i-pzYAAAAA:pkoh2zBi6TSQcsWO9RvoHu9bwNhsq8xPd3QhjgoIcx
+    \verb gM9v4fHLautveZepK3bec7Qsfjz7Nmxf4
+    \endverb
+    \field{volume}{102}
+    \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative
+  Transfer}
+    \field{year}{2006}
+  \endentry
+
+  \entry{friebelModelFunctionCalculate2006}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Friebel},
+         familyi={F\bibinitperiod},
+         given={Moritz},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meinke},
+         familyi={M\bibinitperiod},
+         given={Martina},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMMM1}
+    \strng{fullhash}{FMMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Publisher: Optical Society of America}
+    \field{number}{12}
+    \field{pages}{2838\bibrangedash 2842}
+    \field{title}{Model function to calculate the refractive index of native
+  hemoglobin in the wavelength range of 250–1100 nm dependent on
+  concentration}
+    \verb{url}
+    \verb https://opg.optica.org/abstract.cfm?uri=ao-45-12-2838
+    \endverb
+    \field{volume}{45}
+    \field{journaltitle}{Applied optics}
+    \field{year}{2006}
+  \endentry
+
+  \entry{dayerBandAssignmentHemoglobin2010}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=DM}{%
+         family={Dayer},
+         familyi={D\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Moosavi-Movahedi},
+         familyi={M\bibinithyphendelim M\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dayer},
+         familyi={D\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{DMMMADM1}
+    \strng{fullhash}{DMMMADM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \verb{doi}
+    \verb 10.2174/092986610790963645
+    \endverb
+    \field{issn}{09298665}
+    \field{number}{4}
+    \field{pages}{473\bibrangedash 479}
+    \field{shorttitle}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
+  {Spectrum}}
+    \field{title}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
+  {Spectrum}: {Using} {Four}-{Orbital} {Model} of {Gouterman}}
+    \verb{url}
+    \verb http://www.eurekaselect.com/openurl/content.php?genre=article&issn=09
+    \verb 29-8665&volume=17&issue=4&spage=473
+    \endverb
+    \field{volume}{17}
+    \verb{file}
+    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
+    \verb tero\\storage\\I6M8RKE3\\Dayer et al. - 2010 - Band Assignment in Hem
+    \verb oglobin Porphyrin Ring Spectrum Using Four-Orbital Model of Gouterman
+    \verb .pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Protein \& Peptide Letters}
+    \field{month}{04}
+    \field{year}{2010}
+  \endentry
+
   \entry{mescherJunqueirasBasicHistology2024}{book}{}{}
     \name{author}{1}{}{%
       {{hash=MAL}{%
@@ -1041,53 +1175,6 @@
     \field{year}{1981}
   \endentry
 
-  \entry{ereminaDifferentShapeModels2006a}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=EE}{%
-         family={Eremina},
-         familyi={E\bibinitperiod},
-         given={Elena},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Hellmers},
-         familyi={H\bibinitperiod},
-         given={Jens},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=EY}{%
-         family={Eremin},
-         familyi={E\bibinitperiod},
-         given={Yuri},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=WT}{%
-         family={Wriedt},
-         familyi={W\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{EEHJEYWT1}
-    \strng{fullhash}{EEHJEYWT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{number}{1}
-    \field{pages}{3\bibrangedash 10}
-    \field{shorttitle}{Different shape models for erythrocyte}
-    \field{title}{Different shape models for erythrocyte: {Light} scattering
-  analysis based on the discrete sources method}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0022407306000719?c
-    \verb asa_token=RHOr51i-pzYAAAAA:pkoh2zBi6TSQcsWO9RvoHu9bwNhsq8xPd3QhjgoIcx
-    \verb gM9v4fHLautveZepK3bec7Qsfjz7Nmxf4
-    \endverb
-    \field{volume}{102}
-    \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative
-  Transfer}
-    \field{year}{2006}
-  \endentry
-
   \entry{wriedtLightScatteringSingle2006a}{article}{}{}
     \name{author}{4}{}{%
       {{hash=WT}{%
@@ -1174,39 +1261,6 @@
     \endverb
     \field{journaltitle}{Journal of Biomedical Optics}
     \field{year}{2005}
-  \endentry
-
-  \entry{friebelModelFunctionCalculate2006}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=FM}{%
-         family={Friebel},
-         familyi={F\bibinitperiod},
-         given={Moritz},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MM}{%
-         family={Meinke},
-         familyi={M\bibinitperiod},
-         given={Martina},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FMMM1}
-    \strng{fullhash}{FMMM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Publisher: Optical Society of America}
-    \field{number}{12}
-    \field{pages}{2838\bibrangedash 2842}
-    \field{title}{Model function to calculate the refractive index of native
-  hemoglobin in the wavelength range of 250–1100 nm dependent on
-  concentration}
-    \verb{url}
-    \verb https://opg.optica.org/abstract.cfm?uri=ao-45-12-2838
-    \endverb
-    \field{volume}{45}
-    \field{journaltitle}{Applied optics}
-    \field{year}{2006}
   \endentry
 
   \entry{liuMeasurementRefractiveIndex2019}{article}{}{}
@@ -1392,58 +1446,36 @@
     \field{year}{1998}
   \endentry
 
-  \entry{dayerBandAssignmentHemoglobin2010}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=DM}{%
-         family={Dayer},
-         familyi={D\bibinitperiod},
-         given={Mohammad},
-         giveni={M\bibinitperiod},
+  \entry{kreibigOpticalPropertiesMetal2013}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=KU}{%
+         family={Kreibig},
+         familyi={K\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
       }}%
-      {{hash=MMA}{%
-         family={Moosavi-Movahedi},
-         familyi={M\bibinithyphendelim M\bibinitperiod},
-         given={Ali},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=DM}{%
-         family={Dayer},
-         familyi={D\bibinitperiod},
-         given={Mohammad},
+      {{hash=VM}{%
+         family={Vollmer},
+         familyi={V\bibinitperiod},
+         given={Michael},
          giveni={M\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {en}%
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
     }
-    \strng{namehash}{DMMMADM1}
-    \strng{fullhash}{DMMMADM1}
+    \strng{namehash}{KUVM1}
+    \strng{fullhash}{KUVM1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \verb{doi}
-    \verb 10.2174/092986610790963645
-    \endverb
-    \field{issn}{09298665}
-    \field{number}{4}
-    \field{pages}{473\bibrangedash 479}
-    \field{shorttitle}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
-  {Spectrum}}
-    \field{title}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
-  {Spectrum}: {Using} {Four}-{Orbital} {Model} of {Gouterman}}
+    \field{labeltitlesource}{title}
+    \field{title}{Optical properties of metal clusters}
     \verb{url}
-    \verb http://www.eurekaselect.com/openurl/content.php?genre=article&issn=09
-    \verb 29-8665&volume=17&issue=4&spage=473
+    \verb https://books.google.com/books?hl=es&lr=&id=6WrrCAAAQBAJ&oi=fnd&pg=PR
+    \verb 18&dq=Optical+Properties+Of+Metal+Clusters&ots=rZ1KeqYnPP&sig=WCQ4_gR
+    \verb VFPz3RaNL7P9WHb6I-jE
     \endverb
-    \field{volume}{17}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\I6M8RKE3\\Dayer et al. - 2010 - Band Assignment in Hem
-    \verb oglobin Porphyrin Ring Spectrum Using Four-Orbital Model of Gouterman
-    \verb .pdf:application/pdf
-    \endverb
-    \field{journaltitle}{Protein \& Peptide Letters}
-    \field{month}{04}
-    \field{year}{2010}
+    \field{volume}{25}
+    \field{year}{2013}
   \endentry
 \enddatalist
 \endinput

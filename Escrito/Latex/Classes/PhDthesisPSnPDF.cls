@@ -47,6 +47,11 @@
 \definecolor{myTurquoise}{HTML}{12B3C5} 
 \definecolor{UNAMblue0}{RGB}{6,151,213}		% Blue pantone  541 (C)
 \usepackage{booktabs}
+
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+
+%\interfootnotelinepenalty=10000
 \setlength\cftparskip{.6em}
 \setlength\cftbeforechapskip{0pt}
 	%---------------------- Figurbackref change legend latex bibtexes ----------------------------
