@@ -334,6 +334,31 @@
     \field{year}{2011}
   \endentry
 
+  \entry{nussenzveigCausalityDispersionRelations1972}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=NHM}{%
+         family={Nussenzveig},
+         familyi={N\bibinitperiod},
+         given={Herch\bibnamedelima Moyses},
+         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{NHM1}
+    \strng{fullhash}{NHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{series}{Mathematics in {Science} and {Engineering}}
+    \field{title}{Causality and dispersion relations}
+    \verb{url}
+    \verb https://cir.nii.ac.jp/crid/1130282272465472896
+    \endverb
+    \field{volume}{95}
+    \field{year}{1972}
+  \endentry
+
   \entry{nakovUnifiedFrameworkNumerical2023}{article}{}{}
     \name{author}{3}{}{%
       {{hash=NS}{%
@@ -489,31 +514,6 @@
     \field{year}{1970}
   \endentry
 
-  \entry{nussenzveigCausalityDispersionRelations1972}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=NHM}{%
-         family={Nussenzveig},
-         familyi={N\bibinitperiod},
-         given={Herch\bibnamedelima Moyses},
-         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Academic Press}%
-    }
-    \strng{namehash}{NHM1}
-    \strng{fullhash}{NHM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{series}{Mathematics in {Science} and {Engineering}}
-    \field{title}{Causality and dispersion relations}
-    \verb{url}
-    \verb https://cir.nii.ac.jp/crid/1130282272465472896
-    \endverb
-    \field{volume}{95}
-    \field{year}{1972}
-  \endentry
-
   \entry{ereminaDifferentShapeModels2006a}{article}{}{}
     \name{author}{4}{}{%
       {{hash=EE}{%
@@ -576,11 +576,13 @@
          giveni={M\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Optical Society of America}%
+    }
     \strng{namehash}{FMMM1}
     \strng{fullhash}{FMMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Optical Society of America}
     \field{number}{12}
     \field{pages}{2838\bibrangedash 2842}
     \field{title}{Model function to calculate the refractive index of native
@@ -948,6 +950,43 @@
     \field{year}{2010}
   \endentry
 
+  \entry{keohaneRodaksHematologyClinical2015}{book}{}{}
+    \name{author}{3}{}{%
+      {{hash=KEM}{%
+         family={Keohane},
+         familyi={K\bibinitperiod},
+         given={Elaine\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Larry},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WJM}{%
+         family={Walenga},
+         familyi={W\bibinitperiod},
+         given={Jeanine\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Health Sciences}%
+    }
+    \strng{namehash}{KEMSLWJM1}
+    \strng{fullhash}{KEMSLWJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Rodak's hematology: clinical principles and applications}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=UC3uBgAAQBAJ&oi=fnd&pg=PP
+    \verb 1&dq=Hematology+CLINICAL+PRINCIPLES+AND+APPLICATIONs&ots=PJRESvpfgY&s
+    \verb ig=MYUo_u2lyZLv32NHCwbKz7uvzCg
+    \endverb
+    \field{year}{2015}
+  \endentry
+
   \entry{saxenaClinicalEvaluationDifferent2018}{article}{}{}
     \name{author}{3}{}{%
       {{hash=SR}{%
@@ -1237,11 +1276,13 @@
          giveni={M\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Society of Photo-Optical Instrumentation Engineers}%
+    }
     \strng{namehash}{FMMM1}
     \strng{fullhash}{FMMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Society of Photo-Optical Instrumentation Engineers}
     \field{number}{6}
     \field{pages}{064019\bibrangedash 064019}
     \field{title}{Determination of the complex refractive index of highly
@@ -1429,11 +1470,13 @@
          giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Optical Society of America}%
+    }
     \strng{namehash}{PKFWMZBBA1}
     \strng{fullhash}{PKFWMZBBA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Publisher: Optical Society of America}
     \field{number}{13}
     \field{pages}{2660\bibrangedash 2673}
     \field{title}{Multiply subtractive {Kramers}–{Kronig} analysis of optical

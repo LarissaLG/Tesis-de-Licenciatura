@@ -28,7 +28,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 11160 items.
+Reallocating 'field_info' (item size: 4) to 11300 items.
 Database file #1: tesis-blx.bib
 Database file #2: 6-References/references.bib
 Warning--I didn't find a database entry for "griffiths2013electrodynamics"
@@ -40,45 +40,45 @@ Warning--I didn't find a database entry for "garcia2012multiple"
 Biblatex version: 3.21
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 38 entries,
+You've used 39 entries,
             6402 wiz_defined-function locations,
-            1527 strings with 26308 characters,
-and the built_in function-call counts, 331863 in all, are:
-= -- 27033
-> -- 5305
-< -- 1198
-+ -- 9987
-- -- 2590
-* -- 23786
-:= -- 38180
+            1532 strings with 26639 characters,
+and the built_in function-call counts, 346353 in all, are:
+= -- 28398
+> -- 5562
+< -- 1348
++ -- 10385
+- -- 2651
+* -- 24580
+:= -- 39512
 add.period$ -- 0
-call.type$ -- 38
-change.case$ -- 586
+call.type$ -- 39
+change.case$ -- 723
 chr.to.int$ -- 116
-cite$ -- 74
-duplicate$ -- 33206
-empty$ -- 28762
-format.name$ -- 3218
-if$ -- 66393
+cite$ -- 76
+duplicate$ -- 34525
+empty$ -- 29921
+format.name$ -- 3316
+if$ -- 69574
 int.to.chr$ -- 0
-int.to.str$ -- 95
+int.to.str$ -- 101
 missing$ -- 0
-newline$ -- 1431
-num.names$ -- 1707
-pop$ -- 13873
+newline$ -- 1474
+num.names$ -- 1883
+pop$ -- 14259
 preamble$ -- 1
-purify$ -- 879
+purify$ -- 1025
 quote$ -- 0
-skip$ -- 7468
+skip$ -- 8034
 stack$ -- 0
-substring$ -- 51968
-swap$ -- 5916
-text.length$ -- 990
+substring$ -- 54387
+swap$ -- 6180
+text.length$ -- 1017
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1280
+type$ -- 1314
 warning$ -- 0
-while$ -- 4388
+while$ -- 4515
 width$ -- 0
-write$ -- 1394
+write$ -- 1436
 (There were 6 warnings)
