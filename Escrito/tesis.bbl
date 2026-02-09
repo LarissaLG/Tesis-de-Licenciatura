@@ -43,10 +43,39 @@
     \field{year}{2008}
   \endentry
 
-  \entry{KramersKronigRelationsOptical2005}{book}{}{}
+  \entry{lucariniKramersKronigRelationsOptical2005a}{book}{}{}
+    \name{author}{4}{}{%
+      {{hash=LV}{%
+         family={Lucarini},
+         familyi={L\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=PKE}{%
+         family={Peiponen},
+         familyi={P\bibinitperiod},
+         given={Kai-Erik},
+         giveni={K\bibinithyphendelim E\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Saarinen},
+         familyi={S\bibinitperiod},
+         given={Jarkko},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VE}{%
+         family={Vartiainen},
+         familyi={V\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+    }
     \list{publisher}{1}{%
       {Springer-Verlag}%
     }
+    \strng{namehash}{LVPKESJVE1}
+    \strng{fullhash}{LVPKESJVE1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{isbn}{978-3-540-23673-3}
     \field{title}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
@@ -145,12 +174,26 @@
     \field{year}{2021}
   \endentry
 
-  \entry{ModernProblemsCondensed1989}{book}{}{}
+  \entry{kirzhnitsGeneralPropertiesElectromagnetic1989}{incollection}{}{}
+    \name{author}{1}{}{%
+      {{hash=KDA}{%
+         family={Kirzhnits},
+         familyi={K\bibinitperiod},
+         given={D.\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
     \list{publisher}{1}{%
       {Elsevier}%
     }
+    \strng{namehash}{KDA1}
+    \strng{fullhash}{KDA1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
+    \field{booktitle}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
+    \field{title}{General {Properties} of {Electromagnetic} {Response}
+  {Functions}}
+    \field{volume}{24}
     \verb{file}
     \verb Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\95AZZ9HL\\B9780
     \verb 444873668500084.html:text/html

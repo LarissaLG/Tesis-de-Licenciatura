@@ -31,8 +31,8 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'field_info' (item size: 4) to 11300 items.
 Database file #1: tesis-blx.bib
 Database file #2: 6-References/references.bib
-Warning--I didn't find a database entry for "griffiths2013electrodynamics"
-Warning--I didn't find a database entry for "hecht1998optics"
+Warning--I didn't find a database entry for "yeeNumericalSolutionInitial1966"
+Warning--I didn't find a database entry for "tafloveComputationalElectrodynamicsFinite2005"
 Warning--I didn't find a database entry for "reyes2018analytical"
 Warning--I didn't find a database entry for "pena-gomar2006coherent"
 Warning--I didn't find a database entry for "barrera1991optical"
@@ -42,43 +42,43 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 39 entries,
             6402 wiz_defined-function locations,
-            1532 strings with 26639 characters,
-and the built_in function-call counts, 346353 in all, are:
-= -- 28398
-> -- 5562
-< -- 1348
-+ -- 10385
-- -- 2651
-* -- 24580
-:= -- 39512
+            1537 strings with 26964 characters,
+and the built_in function-call counts, 359351 in all, are:
+= -- 29614
+> -- 5788
+< -- 1376
++ -- 10833
+- -- 2744
+* -- 25637
+:= -- 41300
 add.period$ -- 0
 call.type$ -- 39
-change.case$ -- 723
+change.case$ -- 731
 chr.to.int$ -- 116
 cite$ -- 76
-duplicate$ -- 34525
-empty$ -- 29921
-format.name$ -- 3316
-if$ -- 69574
+duplicate$ -- 35724
+empty$ -- 30834
+format.name$ -- 3481
+if$ -- 72085
 int.to.chr$ -- 0
-int.to.str$ -- 101
+int.to.str$ -- 103
 missing$ -- 0
-newline$ -- 1474
-num.names$ -- 1883
-pop$ -- 14259
+newline$ -- 1516
+num.names$ -- 1959
+pop$ -- 14363
 preamble$ -- 1
-purify$ -- 1025
+purify$ -- 1048
 quote$ -- 0
-skip$ -- 8034
+skip$ -- 8253
 stack$ -- 0
-substring$ -- 54387
-swap$ -- 6180
-text.length$ -- 1017
+substring$ -- 56848
+swap$ -- 6318
+text.length$ -- 1050
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 1314
 warning$ -- 0
-while$ -- 4515
+while$ -- 4721
 width$ -- 0
-write$ -- 1436
+write$ -- 1478
 (There were 6 warnings)

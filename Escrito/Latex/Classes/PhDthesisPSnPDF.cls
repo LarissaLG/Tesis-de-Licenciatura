@@ -107,6 +107,7 @@
 					backend = bibtex,
 					sorting = none,
 					backref=true]{biblatex} %style = trad-abbrv
+		
 		\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
 		\AtEveryBibitem{\clearfield{urldate}}%
 		\AtEveryBibitem{\clearfield{url}}%
@@ -119,6 +120,8 @@
 			  backrefpage = {citado en la pág.},% originally "cited on page"
 			  backrefpages = {citado en las págs.},% originally "cited on pages"
 		}	
+
+
 	
 		\addbibresource{6-References/references.bib}
 		\addto\captionsspanish{\renewcommand{\figurename}{Fig.}}

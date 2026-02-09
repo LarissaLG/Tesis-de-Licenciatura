@@ -78,7 +78,7 @@ Cell[BoxData[
    3.958864804404563*^9}, 3.958864877819378*^9, 3.958864973448106*^9, {
    3.965694739624092*^9, 3.965694741510063*^9}, {3.965694782920067*^9, 
    3.965694828143572*^9}},
- CellLabel->"In[91]:=",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
+ CellLabel->"In[51]:=",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
 
 Cell[BoxData[
  RowBox[{
@@ -132,7 +132,7 @@ Cell[BoxData[
       "\[IndentingNewLine]", "kimag"}]}], "]"}]}], "\n"}]], "Input",
  CellChangeTimes->{{3.9587755154696655`*^9, 3.958775515472607*^9}, {
   3.965694709382702*^9, 3.9656948203972664`*^9}},
- CellLabel->"In[92]:=",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
+ CellLabel->"In[52]:=",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
 },
 WindowSize->{949, 502},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -152,7 +152,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 2384, 60, 200, "Input",ExpressionUUID->"e106a206-ab1e-43a1-8ef0-6f3a6ab30943"],
-Cell[2945, 82, 2007, 52, 172, "Input",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
+Cell[2945, 82, 2007, 52, 143, "Input",ExpressionUUID->"c5623eb5-8398-4f16-8db8-0db69e02e701"]
 }
 ]
 *)

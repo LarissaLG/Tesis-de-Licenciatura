@@ -28,12 +28,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="2.0485264"
-     inkscape:cx="180.12948"
-     inkscape:cy="30.997891"
-     inkscape:window-width="1920"
-     inkscape:window-height="1094"
-     inkscape:window-x="2038"
-     inkscape:window-y="-11"
+     inkscape:cx="172.80715"
+     inkscape:cy="30.997892"
+     inkscape:window-width="2049"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="283"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -135,7 +135,7 @@
        clip-path="url(#clip2)"
        clip-rule="nonzero"
        id="g329"
-       transform="matrix(0.35277777,0,0,0.35277777,-74.234,-22.532417)">
+       transform="matrix(0.35277777,0,0,0.35277777,-19.200633,-22.532417)">
       <path
          style="fill:#0597d4;fill-opacity:1;fill-rule:nonzero;stroke:none"
          d="m 221.60156,86.472656 v -4 h 14 v 4 z m 0,0"
@@ -145,7 +145,7 @@
        clip-path="url(#clip3)"
        clip-rule="nonzero"
        id="g330"
-       transform="matrix(0.35277777,0,0,0.35277777,-74.234,-22.532417)">
+       transform="matrix(0.35277777,0,0,0.35277777,-19.200633,-22.532417)">
       <path
          style="fill:none;stroke:#0597d4;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.23931;stroke-opacity:1"
          d="m 221.60156,86.472656 v -4 h 14 v 4 z m 0,0"
@@ -158,7 +158,7 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g335"
-       transform="matrix(0.38805555,0,0,0.38805555,-81.160181,-25.129097)">
+       transform="matrix(0.38805555,0,0,0.38805555,-26.126814,-25.129097)">
       <g
          id="use330"
          transform="translate(236.7,87.973442)">
@@ -211,7 +211,7 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g337"
-       transform="matrix(0.38805555,0,0,0.38805555,-81.160181,-25.129097)">
+       transform="matrix(0.38805555,0,0,0.38805555,-26.126814,-25.129097)">
       <g
          id="use336"
          transform="translate(274.76401,87.973442)">
@@ -233,7 +233,7 @@
        clip-path="url(#clip5)"
        clip-rule="nonzero"
        id="g351"
-       transform="matrix(0.35277777,0,0,0.35277777,-17.32959,-28.222859)">
+       transform="matrix(0.35277777,0,0,0.35277777,-72.892126,-28.222859)">
       <path
          style="fill:#e64228;fill-opacity:1;fill-rule:nonzero;stroke:none"
          d="m 221.5,102.54297 v -4.000001 h 14 v 4.000001 z m 0,0"
@@ -243,7 +243,7 @@
        clip-path="url(#clip6)"
        clip-rule="nonzero"
        id="g352"
-       transform="matrix(0.35277777,0,0,0.35277777,-17.32959,-28.222859)">
+       transform="matrix(0.35277777,0,0,0.35277777,-72.892126,-28.222859)">
       <path
          style="fill:none;stroke:#e64228;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.23931;stroke-opacity:1"
          d="m 221.5,102.54297 v -4.000001 h 14 v 4.000001 z m 0,0"
@@ -256,7 +256,7 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g356"
-       transform="matrix(0.38805555,0,0,0.38805555,-24.52402,-31.51764)">
+       transform="matrix(0.38805555,0,0,0.38805555,-80.086554,-31.51764)">
       <g
          id="use352"
          transform="translate(236.60001,104.04233)">
@@ -301,7 +301,7 @@
     <g
        style="fill:#000000;fill-opacity:1"
        id="g370"
-       transform="matrix(0.38805555,0,0,0.38805555,-24.52402,-31.51764)">
+       transform="matrix(0.38805555,0,0,0.38805555,-80.086554,-31.51764)">
       <g
          id="use357"
          transform="translate(271.16,104.04233)">
@@ -425,7 +425,7 @@
        ns4:alignment="middle center"
        ns4:stroke-to-path="0"
        ns4:inkscapeversion="1.4.2"
-       transform="matrix(0.47315556,0,0,0.47315556,31.48217,5.7910158)"
+       transform="matrix(0.47315556,0,0,0.47315556,86.515537,5.7910158)"
        ns4:jacobian_sqrt="1.55424"
        id="g520">
       <defs
