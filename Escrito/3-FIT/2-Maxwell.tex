@@ -1,7 +1,22 @@
 \section{Maxwell Grid Equations}
 \label{section:maxwell}
 
-Las Ecs. de Maxwell en su forma integral son
-
+En unidades del Sistema Internacional (SI), las ecuaciones de Maxwell se expresan en forma diferencial como
+\cite{griffithsIntroductionElectrodynamics2023b}
+%
+\begin{subequations} \label{eqs:Maxwell_int}
+	\begin{tcolorbox}[
+		ams align, breakable]
+		\oint_{S}\vb{E} \cdot \dd{\vb{a}}&= \frac{Q_{\text{tot}}^{\text{enc}}}{\varepsilon_0}, &\mbox{(Ley de Gauss eléctrica)}  
+		\label{seq:GE_int} \\
+		\oint_{S}\vb{B} \cdot \dd{\vb{a}} &= 0,						&\mbox{(Ley de Gauss magnética)}   
+		\label{seq:GM_int} \\
+		\oint_{\partial S}\vb{E} \cdot d\vb{l} &= -\frac{\text{d}}{\dd{t}}\int_{S}\vb{B}\cdot\dd{\vb{a}}, 	&\mbox{(Ley de Faraday-Lenz)}		
+		\label{seq:FL_int}\\
+		\oint_{\partial S}\vb{B} \cdot d\vb{l} &= \mu_0 \vb{I}_{\text{tot}}^{\text{atrav}} +\varepsilon_0\mu_0 \frac{\text{d}}{\dd{t}}\int_{S}\vb{E}\cdot\dd{\vb{a}}, &
+		\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM_int}
+\end{tcolorbox}\end{subequations}\noindent
+%
+donde se obvian las dependencias espaciales y temporales y $\vb{J}_{\text{tot}}$ es la densidad volumétrica de corriente  total; $\epsilon_0$ es la permitividad eléctrica en el vacío y $\mu_0$ la permeabilidad magnética en el vacío. 
 
 Considerando la ley de Faraday, la integral cerrada del lado izquierdo de la ecuación puede reescribirse como la suma de cuatro voltajes de red sin introducir errores adicionales. En consecuencia, la derivada temporal del flujo magnético definido en la faceta de la celda primaria cerrada representa el lado derecho de la ecuación, como se ilustra en la figura siguiente. Al repetir este procedimiento para todas las facetas de celda disponibles, la regla de cálculo puede resumirse en una elegante formulación matricial, introduciendo la matriz topológica C como el equivalente discreto del operador rotacional analítico:
