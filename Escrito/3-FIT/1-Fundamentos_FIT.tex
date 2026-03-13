@@ -136,10 +136,20 @@ donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discre
 \end{figure}
 %
 
-La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo complejo $\tilde{G}$, que es dual al primer complejo $G$. 
+La discretización de las ecuaciones restantes de Maxwell requiere la introducción de un segundo complejo $\tilde{G}$, dual al complejo primario $G$. Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa. En la Fig. se muestra la localización espacial de una celda del complejo primario $G$ y su correspondiente celda dual $\tilde{G}$, así como la relación de ortogonalidad entre ambas mallas. A lo largo de las aristas $\tilde{L}_k$ del complejo dual se integra el campo magnético para definir 
+%
+\begin{equation}
+	h_k=\int_{\tilde{L}_k} \vb{H}\cdot\dd{\vb{l}}.
+\end{equation}
+%
+De manera análoga al complejo primario, las cantidades discretas del complejo dual se asocian a sus elementos geométricos: las circulaciones $h_k$ se definen sobre las aristas, mientras que los flujos del desplazamiento eléctrico 
+$d_k$ y las corrientes eléctricas $j_k$ se asocian a las caras. Las discretizaciones obtenidas para el complejo dual conducen nuevamente a ecuaciones matriciales que involucran operadores topológicos de malla: el operador rotacional discreto dual $\overleftrightarrow{\vb{\tilde{C}}}$ y el operador de divergencia discreta dual $\overleftrightarrow{\vb{\tilde{S}}}$ y a los vectores asociados a $h_k, j_k$ y $d_k$ dados por $\vb{h},\vb{j}$ y $\vb{d}$, respectivamente. En la Fig. se mueestra el proceso de construcción del método FIT, desde el dominio continuo hasta su discretización en volúmenes elementales, así como la definición de la celda primaria y su correspondiente celda dual.
+
+Para el par de complejos $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Mawwell Grid Equations} (MGE)— se escribe como
+
 
 %
-\begin{figure}[h!]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=14cm]{../../Figuras/FIT_grid.pdf}
 	\caption{Contorno de integración $C$ conformado por cuatro curvas.}
