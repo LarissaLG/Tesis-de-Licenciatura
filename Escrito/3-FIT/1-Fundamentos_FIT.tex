@@ -10,7 +10,7 @@ El método \textit{Finite Integration Technique} (FIT), propuesto por primera ve
 \blindtext
 
 
-\section{Maxwell Grid Equations}
+\section{\textit{Maxwell Grid Equations}}
 \label{section:yee}
 
 El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las \textit{Maxwell Grid Equations}. A diferencia del Método del Elemento Finito (FEM), que se fundamenta en la  resolución de una formulación débil mediante funciones de forma, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian de manera natural a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras.
@@ -90,6 +90,7 @@ Al aplicar la Ec. \ref{eq:Faraday_grid} a cada una de las superficies de las cel
 b_{n}\\
 \vdots
 \end{pmatrix}}_{\vb{b}},
+\label{eq:rot_discreto}
 \end{equation}
 %
 donde $\overleftrightarrow{\vb{C}}$ representa el operador rotacional discreto. El siguiente operador a discretizar es el operador de divergencia. Su derivación se obtiene a partir de la ecuación de Gauss magnética [Ec. \ref{seq:GM_int}], que para una celda $V_{i,j,k}$ se reescribe como 
@@ -116,6 +117,7 @@ En la Fig. \ref{subfig:FIT_cell_magnetic} se muestra una celda $V_i,j,k$ donde l
 			b_{m_6}\\
 				\vdots
 	\end{pmatrix}}_{\vb{b}}=0,
+\label{eq:div:discreto}
 \end{equation}
 %
 donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discreto.
@@ -131,45 +133,58 @@ donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discre
 \end{figure}
 %
 
-La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo complejo $\tilde{G}$, dual al complejo primario $G$. Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa. La malla dual se encuentra además desplazada media celda respecto a la malla primaria. En consecuencia, los nodos de la malla dual ($x_i',y_j',z_k'$) se indexan mediante los índices $i',j',k'$ a lo largo de los ejes $x,y,z$ donde $i'=i+1/2,j'=j+1/2,k'=k+1/2$. En la Fig. \ref{fig:FIT_dual_grid} se muestra la localización espacial de una celda del complejo primario $G$ y su correspondiente celda dual del complejo $\tilde{G}$, destacando la relación de ortogonalidad entre ambas mallas y el desplazamiento de media celda entre ambas. Además, se muestran los flujos y circulaciones asociados a cada uno de los complejos.
-%
-\begin{figure}[b]
-	\centering
-	\includegraphics[width=8cm]{../../Figuras/FIT_dual_grid.pdf}
-	\caption{}
-	\label{fig:FIT_dual_grid}
-\end{figure}
-%
-
-A lo largo de las aristas $\tilde{L}_k$ del complejo dual se integra el campo magnético para definir 
+La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo complejo $\tilde{G}$, dual al complejo primario $G$. Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa. La malla dual se encuentra además desplazada media celda respecto a la malla primaria. En consecuencia, los nodos de la malla dual ($x_i',y_j',z_k'$) se indexan mediante los índices $i',j',k'$ a lo largo de los ejes $x,y,z$ donde $i'=i+1/2,j'=j+1/2,k'=k+1/2$. 
+Sobre las aristas $\tilde{L}_k$ del complejo dual se integra el campo $\vb{H}$ para definir 
 %
 \begin{equation}
-	h_k=\int_{\tilde{L}_k} \vb{H}\cdot\dd{\vb{l}}.
+	h_k=\int_{\tilde{L}_k} \vb{H}\cdot\dd{\vb{l}},
 \end{equation}
 %
-De manera análoga al complejo primario, las cantidades discretas del complejo dual se asocian a sus elementos geométricos: las circulaciones $h_k$ se definen sobre las aristas, mientras que los flujos del desplazamiento eléctrico 
-$d_k$ y las corrientes eléctricas $j_k$ se asocian a las caras. Las discretizaciones obtenidas para el complejo dual conducen nuevamente a ecuaciones matriciales que involucran operadores topológicos de malla: el operador rotacional discreto dual $\overleftrightarrow{\vb{\tilde{C}}}$ y el operador de divergencia discreta dual $\overleftrightarrow{\vb{\tilde{S}}}$ y a los vectores asociados a $h_k, j_k$ y $d_k$ dados por $\vb{h},\vb{j}$ y $\vb{d}$, respectivamente. En la Fig. se muestra el proceso de discretización del dominio $\Omega$ para construir la malla que constituye el complejo $G$. Asimismo, se muestra la localización espacial de una celda del complejo primario $G$ y su correspondiente celda dual del complejo $\tilde{G}$, destacando la relación de ortogonalidad entre ambas mallas y el desplazamiento de media celda entre ambas. 
+donde  $h_k$ representa la circulación del campo $\vb{H}$ a lo largo de la arista correspondiente. De manera análoga al complejo primario, se define el flujo del desplazamiento eléctrico a través de las caras de la malla dual como
 %
-\begin{figure}[b]
+\begin{equation}
+	d_k(i,j,k)=\int_{A_z(i,j,k)}\vb{D}\cdot\dd{\vb{a}}.
+\end{equation}
+%
+Asimismo, la corriente eléctrica $j_k$ y la carga eléctrica $q_k$ se obtienen como integrales de las densidades correspondientes sobre las superficies y volúmenes del complejo dual, respectivamente
+%
+\begin{equation}
+	j_k(i,j,k)=\int_{A_z(i,j,k)}\vb{J}\cdot\dd{\vb{a}}\;\;\;\text{y}\;\;\;q_k=\int_{\tilde{V}_i}\rho_{\text{ext}}\dd{V}. 
+\end{equation}
+%
+De este modo, la carga total de una celda dual $\tilde{V}_i$ se asocia al nodo correspondiente de la malla primaria situado en su centro geométrico. En consecuencia, la distribución continua de carga se aproxima mediante magnitudes escalares discretas $q_k$ localizadas en los nodos del complejo primario. Las magnitudes $h_k,d_k, j_k$ y $q_k$ se agrupan en los vectores $\vb{h},\vb{d}, \vb{j}$ y $\vb{q}$, respectivamente, los cuales permiten escribir las ecuaciones de Maxwell en forma matricial. En la Fig. \ref{fig:FIT_cell_dual} se muestra la relación de ortogonalidad entre una celda del complejo primario $G$ y su correspondiente celda dual $\tilde{G}$. Además, se muestran las cantidades asociadas a cada complejo y su localización espacial en cada celda.
+%
+\begin{figure}[tb]
 	\centering
-	\includegraphics[width=14cm]{../../Figuras/FIT_grid.pdf}
-	\caption{Esquema de funcionamiento del método de FIT. Se parte de un dominio $\Omega$ que se divide en celdas que integran una malla llamada complejo $G$. El complejo $G$ tiene un complejo $\tilde{G}$ asociado}
-	\label{fig:FIT_grid}
+	\includegraphics[width=9cm]{../../Figuras/FIT_dual_grid.pdf}
+	\caption{Celda $V_{i,j,k}$ del complejo $G$ y celda dual $\tilde{V}_{i,j,k}$ del complejo $\tilde{G}$ desplazada media celda en todas las direcciones y ortogonal a la primera. Se muestran las cantidades asosiadas a cada complejo localizadas en las aristas y caras de las celdas.}
+	\label{fig:FIT_cell_dual}
 \end{figure}
 %
 
-Para el par de complejos $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Maxwell Grid Equations} (MGE)— se escribe como
+La aplicación del mismo procedimiento de discretización empleado para el complejo primario conduce, en el complejo dual, a ecuaciones matriciales que involucran los operadores duales: el rotacional discreto $\overleftrightarrow{\vb{\tilde{C}}}$ y el operador de divergencia discreto $\overleftrightarrow{\vb{\tilde{S}}}$. Dado que estos operadores se obtienen mediante la misma construcción geométrica empleada en $G$, su estructura es completamente análoga a la de los operadores definidos en el complejo primario dados por las Ecs. \ref{eq:rot_discreto} y \ref{eq:div:discreto}. De esta forma, para el par de complejos $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Maxwell Grid Equations} (MGE)— se escribe como
 %
-\begin{subequations} \label{eqs:Maxwell_int}
+\begin{subequations} \label{eqs:MGE}
 	\begin{tcolorbox}[
 		ams align, breakable]
-		\oint_{S}\vb{D} \cdot \dd{\vb{a}}&= \int_{V}\rho_{\text{ext}}\dd{V}, &\mbox{(Ley de Gauss eléctrica)}  
-		\label{seq:GE_int} \\
-		\oint_{S}\vb{B} \cdot \dd{\vb{a}} &= 0,						&\mbox{(Ley de Gauss magnética)}   
-		\label{seq:GM_int} \\
-		\oint_{\partial S}\vb{E} \cdot d\vb{l} &= -\frac{\text{d}}{\dd{t}}\int_{S}\vb{B}\cdot\dd{\vb{a}}, 	&\mbox{(Ley de Faraday-Lenz)}		
-		\label{seq:FL_int}\\
-		\oint_{\partial S}\vb{H} \cdot d\vb{l} &= \int_{S}\left(\vb{J}_{\text{ext}}+\frac{\partial \vb{D}}{\partial t}\right)\cdot\dd{\vb{a}}, &
-		\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM_int}
+		\overleftrightarrow{\vb{\tilde{S}}} \vb{d}&= \vb{q}, &\mbox{(Ley de Gauss eléctrica)}  
+		\label{seq:GE_MGE} \\
+		\overleftrightarrow{\vb{\tilde{S}}} \vb{b}&=0,						&\mbox{(Ley de Gauss magnética)}   
+		\label{seq:GM_MGE} \\
+		\overleftrightarrow{\vb{C}}\vb{e} &= -\frac{\text{d}}{\dd{t}}\vb{b}, 	&\mbox{(Ley de Faraday-Lenz)}		
+		\label{seq:FL_MGE}\\
+		\overleftrightarrow{\vb{C}}\vb{h} &= \frac{\text{d}}{\dd{t}}\vb{d}+\vb{j}. &
+		\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM_MGE}
 \end{tcolorbox}\end{subequations}\noindent
 %
+
+Además de las ecuaciones topológicas expresadas por las MGE, el método FIT incorpora las relaciones constitutivas discretas, que describen la respuesta del material. Estas relaciones se escriben en forma matricial como
+%
+\begin{equation}
+	\vb{d}=\overleftrightarrow{\vb{M}_{\varepsilon}}\vb{e}+\vb{p},\;\;\; \vb{j}=\overleftrightarrow{\vb{M}_{\sigma}}\vb{e},\;\;\;\text{y}\;\;\;\vb{h}=\overleftrightarrow{\vb{M}_{\mu}}\vb{b}-\vb{m}
+\end{equation}
+%
+donde $\overleftrightarrow{\vb{M}_{\varepsilon}}$, $\overleftrightarrow{\vb{M}_{\sigma}}$ y $\overleftrightarrow{\vb{M}_{\mu}}$ son las matrices discretas de permitividad, conductividad y permeabilidad, respectivamente. Para medios isótropos, estas matrices son diagonales. Los vectores $\vb{p}$ y $\vb{m}$ representan las polarizaciones eléctrica y magnética, respectivamente. 
+
+
+
