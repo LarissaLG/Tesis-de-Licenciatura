@@ -15,7 +15,7 @@ El método \textit{Finite Integration Technique} (FIT), propuesto por primera ve
 
 El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las \textit{Maxwell Grid Equations}. A diferencia del Método del Elemento Finito (FEM), que se fundamenta en la  resolución de una formulación débil mediante funciones de forma, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian de manera natural a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras.
 
-El primer paso del proceso de discretización consiste en restringir el problema electromagnético —generalmente formulado en una región con frontera abierta— a un dominio computacional finito $\Omega$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un complejo $G$, que constituye la malla computacional del problema. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, es decir,
+El primer paso del proceso de discretización consiste en restringir el problema electromagnético —generalmente formulado en una región con frontera abierta— a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un complejo $G$, que constituye la malla computacional del problema. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, es decir,
 %
 \begin{align}
 	G=\{V_{i,j,k}\in \mathbb{R}^3 | V_{i,j,k}&:=[x_i,x_{i+1}]\times[y_i,y_{i+1}]\times[z_i,z_{i+1}],\nonumber\\
@@ -125,8 +125,8 @@ donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discre
 \begin{figure}[bt]
 	\centering
 	\sidesubfloat[First image]{\hspace{-0.8cm}{
-			\includegraphics[width=6.5cm]{../../Figuras/FIT_cell.pdf}\label{subfig:FIT_cell_electric}}}\hspace{0.1cm}
-	\sidesubfloat[Second image]{\hspace{-0.5cm}{	\includegraphics[width=7.5cm]{../../Figuras/FIT_cell_fluxB.pdf}\label{subfig:FIT_cell_magnetic}}}\vspace{-0.1cm}
+			\includegraphics[width=6.5cm]{../../Figuras/3-FIT/FIT_cell.pdf}\label{subfig:FIT_cell_electric}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.5cm}{	\includegraphics[width=7.5cm]{../../Figuras/3-FIT/FIT_cell_fluxB.pdf}\label{subfig:FIT_cell_magnetic}}}\vspace{-0.1cm}
 	\caption{\textbf{a)} Celda $V_{i,j,k}$ del complejo $G$ en la que las flechas rojas indican la circulación del campo eléctrico a lo largo de las aristas que conforman el contorno de la cara 
 		$A_z$, mientras que la flecha azul representa el flujo del campo magnético a través de dicha superficie, asociado a $b_z$. \textbf{b)} Celda $V_{i,j,k}$ del complejo $G$ que muestra el flujo de campo magnético que atraviesa cada una de sus superficies. Los subíndices asociados a cada flujo corresponden a la superficie de la cara que atraviesan.}
 	\label{fig:FIT_cell}
@@ -149,14 +149,14 @@ donde  $h_k$ representa la circulación del campo $\vb{H}$ a lo largo de la aris
 Asimismo, la corriente eléctrica $j_k$ y la carga eléctrica $q_k$ se obtienen como integrales de las densidades correspondientes sobre las superficies y volúmenes del complejo dual, respectivamente
 %
 \begin{equation}
-	j_k(i,j,k)=\int_{A_z(i,j,k)}\vb{J}\cdot\dd{\vb{a}}\;\;\;\text{y}\;\;\;q_k=\int_{\tilde{V}_i}\rho_{\text{ext}}\dd{V}. 
+	j_k(i,j,k)=\int_{A_z(i,j,k)}\vb{J}_{\text{ext}}\cdot\dd{\vb{a}}\;\;\;\text{y}\;\;\;q_k=\int_{\tilde{V}_i}\rho_{\text{ext}}\dd{V}. 
 \end{equation}
 %
 De este modo, la carga total de una celda dual $\tilde{V}_i$ se asocia al nodo correspondiente de la malla primaria situado en su centro geométrico. En consecuencia, la distribución continua de carga se aproxima mediante magnitudes escalares discretas $q_k$ localizadas en los nodos del complejo primario. Las magnitudes $h_k,d_k, j_k$ y $q_k$ se agrupan en los vectores $\vb{h},\vb{d}, \vb{j}$ y $\vb{q}$, respectivamente, los cuales permiten escribir las ecuaciones de Maxwell en forma matricial. En la Fig. \ref{fig:FIT_cell_dual} se muestra la relación de ortogonalidad entre una celda del complejo primario $G$ y su correspondiente celda dual $\tilde{G}$. Además, se muestran las cantidades asociadas a cada complejo y su localización espacial en cada celda.
 %
 \begin{figure}[tb]
 	\centering
-	\includegraphics[width=9cm]{../../Figuras/FIT_dual_grid.pdf}
+	\includegraphics[width=9cm]{../../Figuras/3-FIT/FIT_dual_grid.pdf}
 	\caption{Celda $V_{i,j,k}$ del complejo $G$ y celda dual $\tilde{V}_{i,j,k}$ del complejo $\tilde{G}$ desplazada media celda en todas las direcciones y ortogonal a la primera. Se muestran las cantidades asosiadas a cada complejo localizadas en las aristas y caras de las celdas.}
 	\label{fig:FIT_cell_dual}
 \end{figure}
@@ -181,10 +181,10 @@ La aplicación del mismo procedimiento de discretización empleado para el compl
 Además de las ecuaciones topológicas expresadas por las MGE, el método FIT incorpora las relaciones constitutivas discretas, que describen la respuesta del material. Estas relaciones se escriben en forma matricial como
 %
 \begin{equation}
-	\vb{d}=\overleftrightarrow{\vb{M}_{\varepsilon}}\vb{e}+\vb{p},\;\;\; \vb{j}=\overleftrightarrow{\vb{M}_{\sigma}}\vb{e},\;\;\;\text{y}\;\;\;\vb{h}=\overleftrightarrow{\vb{M}_{\mu}}\vb{b}-\vb{m}
+	\vb{d}=\overleftrightarrow{\vb{M}}_{\varepsilon}\vb{e}+\vb{p},\;\;\; \vb{j}=\overleftrightarrow{\vb{M}}_{\sigma}\vb{e},\;\;\;\text{y}\;\;\;\vb{h}=\overleftrightarrow{\vb{M}}_{\mu}\vb{b}-\vb{m}
 \end{equation}
 %
-donde $\overleftrightarrow{\vb{M}_{\varepsilon}}$, $\overleftrightarrow{\vb{M}_{\sigma}}$ y $\overleftrightarrow{\vb{M}_{\mu}}$ son las matrices discretas de permitividad, conductividad y permeabilidad, respectivamente. Para medios isótropos, estas matrices son diagonales. Los vectores $\vb{p}$ y $\vb{m}$ representan las polarizaciones eléctrica y magnética, respectivamente. 
+donde $\overleftrightarrow{\vb{M}}_{\varepsilon}$, $\overleftrightarrow{\vb{M}}_{\sigma}$ y $\overleftrightarrow{\vb{M}}_{\mu}$ son las matrices discretas de permitividad, conductividad y permeabilidad, respectivamente. Para medios isótropos, estas matrices son diagonales. Los vectores $\vb{p}$ y $\vb{m}$ representan las polarizaciones eléctrica y magnética, respectivamente. 
 
 
 

@@ -1,5 +1,17 @@
 \section{\textit{Leap-frog Scheme}}
 \label{section:maxwell}
 
-
-Considerando la ley de Faraday, la integral cerrada del lado izquierdo de la ecuación puede reescribirse como la suma de cuatro voltajes de red sin introducir errores adicionales. En consecuencia, la derivada temporal del flujo magnético definido en la faceta de la celda primaria cerrada representa el lado derecho de la ecuación, como se ilustra en la figura siguiente. Al repetir este procedimiento para todas las facetas de celda disponibles, la regla de cálculo puede resumirse en una elegante formulación matricial, introduciendo la matriz topológica C como el equivalente discreto del operador rotacional analítico:
+Para resolver MGE en el dominio del tiempo, se emplea el esquema de avance temporal conocido como \textit{Leap-frog}. Este método se basa en una discretización escalonada tanto en el espacio como en el tiempo, lo que permite un cálculo explícito y eficiente de los campos.En este esquema, las circulaciones del campo eléctrico $\mathbf{\widehat{e}}$ y los flujos magnéticos $\mathbf{\widehat{\widehat{b}}}$ no se calculan en los mismos instantes de tiempo, sino que se encuentran desplazados por medio paso temporal ($\Delta t/2$). Inicialmente, se calcula el nuevo flujo magnético en un paso de tiempo entero ($n+1$) a partir del flujo anterior y de la circulación eléctrica evaluada en el medio paso previo ($n+1/2$). Posteriormente, se calcula la circulación eléctrica en el siguiente medio paso ($n+3/2$) utilizando el flujo magnético recién actualizado.Matemáticamente, el algoritmo se expresa mediante las siguientes relaciones recursivas:
+%
+\begin{align}
+	\vb{b}^{(n+1)}&=\vb{b}^{(n)}+\Delta t \overleftrightarrow{\vb{\tilde{C}}} \overleftrightarrow{\vb{M}}_{\varepsilon}^{-1}\vb{d}^{(n+1/2)},\\
+	\vb{d}^{(n+3/2)}&=\vb{d}+\Delta t \left(\overleftrightarrow{\vb{\tilde{C}}}\overleftrightarrow{\vb{M}}_{\mu}\vb{b}^{(n+1)}-\vb{j}^{(n+1)}\right).
+\end{align}
+%
+Este proceso cíclico garantiza que el método sea de segundo orden de exactitud en el tiempo. Para asegurar la estabilidad numérica de la simulación, el paso de tiempo $\Delta t$ debe satisfacer el criterio de estabilidad de Courant-Friedrichs-Lewy (CFL), 
+%
+\begin{equation}
+	\Delta t\leq \frac{1}{u_{\text{max}}}\left[\frac{1}{\Delta x^2}+\frac{1}{\Delta y^2}+\frac{1}{\Delta z^2}\right]^{(-1/2)}
+\end{equation}
+%
+donde $u_{\text{max}}$ es la velocidad máxima de fase de la onda dentro del modelo (determinada por las propiedades del material). Esta condición vincula la velocidad de la luz con el tamaño mínimo de las celdas de la malla primaria y garantiza que los campos no sean numéricamente propagados una distancia mayor que la dada por la celda de menor tamaño.
