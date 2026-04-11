@@ -10,19 +10,33 @@ El método \textit{Finite Integration Technique} (FIT), propuesto por primera ve
 \blindtext
 
 
-\section{\textit{Maxwell Grid Equations}}
-\label{section:yee}
+\section{\textit{Ecuaciones de malla de Maxwell}}
+\label{section:MGE}
 
-El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las \textit{Maxwell Grid Equations}. A diferencia del Método del Elemento Finito (FEM), que se fundamenta en la  resolución de una formulación débil mediante funciones de forma, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian de manera natural a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras.
+El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las Ecuaciones de Malla de Maxwell. A diferencia del Método del Elemento Finito (FEM), que se fundamenta en la  resolución de una formulación débil mediante funciones de interpolación, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras.
 
-El primer paso del proceso de discretización consiste en restringir el problema electromagnético —generalmente formulado en una región con frontera abierta— a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un complejo $G$, que constituye la malla computacional del problema. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, es decir,
+El primer paso del proceso de discretización consiste en definir el mallado de integración. Para ello, se emplea el mallado de Yee, que es un tipo de mallado numérico específico empleado en el método de Diferencias Finitas (FDTD, por sus siglas en inglés) para resolver las ecuaciones de Maxwell. Este método está diseñado para discretizar el espacio y el tiempo para permitir tener una simulación adecuada de la propagación de la onda electromagnética. El primer paso para ello es restringir el problema electromagnético —generalmente formulado en una región con frontera abierta— a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un sistema coordenado ortogonal $G$, que constituye la malla computacional del problema. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, de forma que $G$ está dado por
 %
 \begin{align}
-	G=\{V_{i,j,k}\in \mathbb{R}^3 | V_{i,j,k}&:=[x_i,x_{i+1}]\times[y_i,y_{i+1}]\times[z_i,z_{i+1}],\nonumber\\
-	&i=1,...,I-1,j=1,...,J-1,k=1,...K-1\}.
+	G=\{(x_i,y_j,z_k); i\in\{1,...,I\};j\in\{1,...,J\};k\in\{1,...,K\}\}.
 \end{align}
 %
-Los nodos de la malla ($x_i,y_j,z_k$) se enumeran mediante los índices $i,j,k$ a lo largo de los ejes $x,y,z$. De esta forma, el mallado contiene un total de $N_p=IJK$ nodos y $(I-1)(J-1)(K-1)$ celdas.
+Los nodos de la malla $(x_i,y_j,z_k)$ se enumeran mediante los índices $i,j,k$ a lo largo de los ejes $x,y,z$. De esta forma, el mallado contiene un total de $N_p=IJK$ nodos y $(I-1)(J-1)(K-1)$ celdas. Para numerar cada uno de los nodos, se emplea un sistema de indexación dado por la tripleta $(i,j,k)$. Esta numeración está dada por la ecuación
+%
+\begin{equation}
+	n=1+(i-1)M_u+(j-1)M_v+(k-1)M_w,
+\end{equation}
+% 
+donde $M_u=1,M_v=1$ y $M_w=IJ$. En la Fig. \ref{fig:G_complex} se muestra el sistema coordenado $G$ para un conjunto de celdas. Asimismo, se etiquetan cada una de las coordenadas de las celdas en los extremos y el correspondiente volumen $V_n$ y área $A_{u,m}$ de los nodos $n$ y $m$, respectivamente.
+%
+\begin{figure}[b]
+	\centering
+	\includegraphics[width=7.8cm]{../../Figuras/3-FIT/G_complex.pdf}
+	\caption{}
+	\label{fig:G_complex}
+\end{figure}
+%
+
 
 Una vez definido $G$, el método FIT se formula sobre un volumen $V_n$ de la malla. Para ello, se parte de las ecuaciones de Maxwell en unidades del SI, expresadas en su forma integral \cite{griffithsIntroductionElectrodynamics2023b}
 
@@ -42,28 +56,110 @@ Una vez definido $G$, el método FIT se formula sobre un volumen $V_n$ de la mal
 %
 donde se obvian las dependencias espaciales y temporales; $\rho_{\text{ext}}$ es la densidad volumétrica de carga externa y  $\vb{J}_{\text{ext}}$ es la densidad volumétrica de corriente  externa. A partir de las ecuaciones de Maxwell en su forma integral, se construye la discretización del método FIT. En particular, la ley de Faraday–Lenz [Ec. \ref{seq:FL_int}] puede ser reescrita para una cara de la celda $V_n$ como
 %
-\begin{equation}
-	e_x(i, j, k)+e_y(i, j, k)-e_x(i, j, k)-e_y(i, j, k)=-\frac{\dd}{\dd{t}}b_z(i,j,k),
+\begin{align}
+	(x_{i+1}-x_i)E_{x,n}+(y_{j+1}-y_j)E_{y,n+1}&+(x_{i+1}-x_i)E_{u,n+I}+ \nonumber\\
+	&+(y_{j+1}-y_j)E_{y,n}
+	=-\frac{\dd}{\dd{t}}B_{z,n}(x_{i+1}-x_i)(y_{j+1}-y_j).
 	\label{eq:Faraday_grid}
+\end{align}
+En la Fig.~\ref{subfig:FIT_cell_electric} se muestra la superficie $A_{z,n}$ de una celda en la cual los vectores en rojo y azul oscuro representan, respectivamente, la circulación del campo eléctrico a lo largo de las aristas y el flujo magnético que atraviesa la superficie.
+
+Esta formulación es válida para cualquier cara de $G$. Además, puede extenderse naturalmente a superficies formadas por la unión de varias caras $A=\cup A(i,j,k)$, ya que la suma de las circulaciones sobre los contornos individuales equivale a la circulación sobre el contorno total de la superficie. La Ec. corresponde únicamente a una de las tres superficies asociadas a un nodo. Con el fin de escribir la Ec. \ref{eq:Faraday_grid} para todas las caras de la malla, se introduce una notación matricial para cada uno de los vectores y los operadores de la ecuación.
+
+El primer paso para la definición de las matrices de los operadores es la introducción de tres matrices de discretización, una para cada uno de las caras del nodo. La primera matriz está dada por 
+%
+\begin{equation}
+	(P_x)_{m,p}=
+		\left\{
+		\begin{array}{ll}
+			-1, & \text{si } rp=m\\
+			1 & \text{si } p=m+M_x=m+1, \text{donde} (m,p)\in [[1,N]]^2\\
+			0 & \text{en cualquier otro caso}.
+		\end{array}
+		\right,
 \end{equation}
 % 
-donde
+de manera similar la segunda matriz está dada por
 %
 \begin{equation}
-	e_x(i,j,k)=\int_{(x_i,y_j,z_k)}^{(x_{i+1},y_j,z_k)}\vb{E}\cdot\dd{\vb{l}},
+	(P_y)_{m,p}=
+	\left\{
+	\begin{array}{ll}
+		-1, & \text{si } rp=m\\
+		1 & \text{si } p=m+M_y=m+I, \text{donde} (m,p)\in [[1,N]]^2\\
+		0 & \text{en cualquier otro caso}.
+	\end{array}
+	\right.
 \end{equation}
-%
-representa la circulación del campo eléctrico a lo largo de la arista paralela al eje $x$ que forma parte del contorno de la superficie $A_z(i,j,k)$. De manera análoga,
+% 
+Finalmente, la tercera matriz está dada por
 %
 \begin{equation}
-	b_z(i,j,k)=\int_{A_z(i,j,k)}\vb{B}\cdot\dd{\vb{a}},
+	(P_z)_{m,p}=
+	\left\{
+	\begin{array}{ll}
+		-1, & \text{si } rp=m\\
+		1 & \text{si } p=m+M_z=m+IJ, \text{donde} (m,p)\in [[1,N]]^2\\
+		0 & \text{en cualquier otro caso}.
+	\end{array}
+	\right.
+\end{equation}
+% 
+Las tres matrices se combinan en una matriz más grande que representa al operador rotacional discreto con una dimensión de $3N\times 3N$ dado por
+%
+\begin{equation}
+	\mathbb{C}=\begin{pmatrix}
+		0 & -P_z & P_y\\
+		P_z & 0 & -P_x\\
+		-P_y & P_x & 0
+	\end{pmatrix}
 \end{equation}
 %
-corresponde al flujo magnético a través de $A_z$. En la Fig.~\ref{subfig:FIT_cell_electric} se muestra una celda $V_{i,j,k}$, en la cual se resalta en amarillo oscuro la cara $A_z$; los vectores en rojo y azul oscuro representan, respectivamente, la circulación del campo eléctrico a lo largo de las aristas y el flujo magnético que atraviesa la superficie $A_z$.
+Por otro lado, los campos electromagnético se consideran vectores de dimensión $3N$. Entonces, los campos $\vb{E},\vb{D}, \vb{B}$ y $\vb{H}$ se guardan como vectores $\vb{e},\vb{d},\vb{b}$ y $\vb{h}$, respectivamente dados por
+\begin{equation}
+	e=\begin{bmatrix}
+		E_{x,1}\\
+		E_{x,2}\\
+		\vdots\\
+		E_{z,N} 
+	\end{bmatrix}; 
+	d=\begin{bmatrix}
+	D_{x,1}\\
+	D_{x,2}\\
+	\vdots\\
+	D_{z,N} 
+	\end{bmatrix};
+	b=\begin{bmatrix}
+		B_{x,1}\\
+		B_{x,2}\\
+		\vdots\\
+		B_{z,N} 
+	\end{bmatrix};
+	h=\begin{bmatrix}
+		H_{x,1}\\
+		H_{x,2}\\
+		\vdots\\
+		H_{z,N} 
+	\end{bmatrix};
+	j=\begin{bmatrix}
+		J_{x,1}\\
+		J_{x,2}\\
+		\vdots\\
+		J_{z,N} 
+	\end{bmatrix}.
+\end{equation}
 
-Esta formulación es válida para cualquier cara $A(i,j,k)$ de $G$. Además, puede extenderse naturalmente a superficies formadas por la unión de varias caras $A=\cup A(i,j,k)$, ya que la suma de las circulaciones sobre los contornos individuales equivale a la circulación sobre el contorno total de la superficie.
 
-Con el fin de escribir la Ec. \ref{eq:Faraday_grid} para todas las caras de la malla, se introducen los vectores
+Otra matriz que se define es la matriz $\mathbb{D}_A$, que contiene todas las áreas del mallado. Es una matriz diagnonal, dada por
+%
+\begin{equation}
+	\mathbb{D}_A=\text{diag}(A_{x,1},\dotso,A_{x,N}, A_{y,1},)
+\end{equation}
+%
+
+
+
+
 %
 \begin{align}
 	\mathbf{e}&=(e_{x,n}|e_{y,n}|e_{z,n})_{n=1,...,N_p}^T\in \mathbb{R}^{3N_p},\\
@@ -75,22 +171,22 @@ Al aplicar la Ec. \ref{eq:Faraday_grid} a cada una de las superficies de las cel
 %
 \begin{equation}
 	\underbrace{\begin{pmatrix}
-		 &  & ... & ... & ... & &\\
-		 1 & ... & 1 & ... & -1 & ... &-1\\
-		  &  & ... & ... & ... & &
+			&  & ... & ... & ... & &\\
+			1 & ... & 1 & ... & -1 & ... &-1\\
+			&  & ... & ... & ... & &
 	\end{pmatrix}}_{\overleftrightarrow{\vb{C}}}\underbrace{\begin{pmatrix}
-	e_{n_1}\\
-	\vdots\\
-	e_{n_2}\\
-	\vdots\\e_{n_3}\\
-	\vdots\\
-	e_{n_4}
-\end{pmatrix}}_{\vb{e}}=-\frac{\dd}{\dd{t}}\underbrace{\begin{pmatrix}
-\vdots\\
-b_{n}\\
-\vdots
-\end{pmatrix}}_{\vb{b}},
-\label{eq:rot_discreto}
+			e_{n_1}\\
+			\vdots\\
+			e_{n_2}\\
+			\vdots\\e_{n_3}\\
+			\vdots\\
+			e_{n_4}
+	\end{pmatrix}}_{\vb{e}}=-\frac{\dd}{\dd{t}}\underbrace{\begin{pmatrix}
+			\vdots\\
+			b_{n}\\
+			\vdots
+	\end{pmatrix}}_{\vb{b}},
+	\label{eq:rot_discreto}
 \end{equation}
 %
 donde $\overleftrightarrow{\vb{C}}$ representa el operador rotacional discreto. El siguiente operador a discretizar es el operador de divergencia. Su derivación se obtiene a partir de la ecuación de Gauss magnética [Ec. \ref{seq:GM_int}], que para una celda $V_{i,j,k}$ se reescribe como 
@@ -115,9 +211,9 @@ En la Fig. \ref{subfig:FIT_cell_magnetic} se muestra una celda $V_i,j,k$ donde l
 			b_{m_4}\\
 			b_{m_5}\\
 			b_{m_6}\\
-				\vdots
+			\vdots
 	\end{pmatrix}}_{\vb{b}}=0,
-\label{eq:div:discreto}
+	\label{eq:div:discreto}
 \end{equation}
 %
 donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discreto.
@@ -125,7 +221,7 @@ donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discre
 \begin{figure}[bt]
 	\centering
 	\sidesubfloat[First image]{\hspace{-0.8cm}{
-			\includegraphics[width=6.5cm]{../../Figuras/3-FIT/FIT_cell.pdf}\label{subfig:FIT_cell_electric}}}\hspace{0.1cm}
+			\includegraphics[width=7.8cm]{../../Figuras/3-FIT/FIT_cell.pdf}\label{subfig:FIT_cell_electric}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.5cm}{	\includegraphics[width=7.5cm]{../../Figuras/3-FIT/FIT_cell_fluxB.pdf}\label{subfig:FIT_cell_magnetic}}}\vspace{-0.1cm}
 	\caption{\textbf{a)} Celda $V_{i,j,k}$ del complejo $G$ en la que las flechas rojas indican la circulación del campo eléctrico a lo largo de las aristas que conforman el contorno de la cara 
 		$A_z$, mientras que la flecha azul representa el flujo del campo magnético a través de dicha superficie, asociado a $b_z$. \textbf{b)} Celda $V_{i,j,k}$ del complejo $G$ que muestra el flujo de campo magnético que atraviesa cada una de sus superficies. Los subíndices asociados a cada flujo corresponden a la superficie de la cara que atraviesan.}
@@ -185,6 +281,5 @@ Además de las ecuaciones topológicas expresadas por las MGE, el método FIT in
 \end{equation}
 %
 donde $\overleftrightarrow{\vb{M}}_{\varepsilon}$, $\overleftrightarrow{\vb{M}}_{\sigma}$ y $\overleftrightarrow{\vb{M}}_{\mu}$ son las matrices discretas de permitividad, conductividad y permeabilidad, respectivamente. Para medios isótropos, estas matrices son diagonales. Los vectores $\vb{p}$ y $\vb{m}$ representan las polarizaciones eléctrica y magnética, respectivamente. 
-
 
 
