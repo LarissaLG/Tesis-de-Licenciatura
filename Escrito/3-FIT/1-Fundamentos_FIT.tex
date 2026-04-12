@@ -149,75 +149,80 @@ Por otro lado, los campos electromagnético se consideran vectores de dimensión
 	\end{bmatrix}.
 \end{equation}
 
+La matriz de las circulaciones está dada por
+%
+\begin{equation}
+	\mathbb{D}_l=\text{diag}(\Delta x_{1},\dotso,\Delta x_{N},\Delta y_{1},\dotso,\Delta y_{N},\Delta z_{1},\dotso,\Delta z_{N}),
+\end{equation}
+%
+donde
+%
+\begin{equation}
+	\Delta x_n=
+	\left\{
+	\begin{array}{ll}
+		\int_{x_i}^{x_{i+1}}||\frac{\partial r(x,y_j,z_k)}{\partial x}||\dd{x}, & \text{para } (i,j,k)\in [[1,I-1]]\times[[I,J]]\times[[1,K]]\\
+		0 & \text{si } i=I
+	\end{array}
+	\right,
+\end{equation}
+% 
+%
+\begin{equation}
+	\Delta x_n=
+	\left\{
+	\begin{array}{ll}
+		\int_{x_i}^{x_{i+1}}||\frac{\partial r(x,y_j,z_k)}{\partial x}||\dd{x}, & \text{para } (i,j,k)\in [[1,I-1]]\times[[I,J]]\times[[1,K]]\\
+		0 & \text{si } i=I
+	\end{array}
+	\right,
+\end{equation}
+% 
+%
+\begin{equation}
+	\Delta y_n=
+	\left\{
+	\begin{array}{ll}
+		\int_{y_j}^{y_{j+1}}||\frac{\partial r(x_i,y,z_k)}{\partial y}||\dd{y}, & \text{para } (i,j,k)\in [[1,I]]\times[[I,J-1]]\times[[1,K]]\\
+		0 & \text{si } j=J
+	\end{array}
+	\right,
+\end{equation}
+% 
+%
+\begin{equation}
+	\Delta z_n=
+	\left\{
+	\begin{array}{ll}
+		\int_{z_k}^{z_{k+1}}||\frac{\partial r(x_i,y,z_k)}{\partial z}||\dd{z}, & \text{para } (i,j,k)\in [[1,I]]\times[[I,J]]\times[[1,K-1]]\\
+		0 & \text{si } k=K
+	\end{array}
+	\right.
+\end{equation}
+% 
+
+
 
 Otra matriz que se define es la matriz $\mathbb{D}_A$, que contiene todas las áreas del mallado. Es una matriz diagnonal, dada por
 %
 \begin{equation}
-	\mathbb{D}_A=\text{diag}(A_{x,1},\dotso,A_{x,N}, A_{y,1},)
+	\mathbb{D}_A=\text{diag}(A_{x,1},\dotso,A_{x,N}, A_{y,1},\dotso,A_{y,N},A_{z,1},\dotso,A_{z,N}),
 \end{equation}
 %
-
-
-
-
-%
-\begin{align}
-	\mathbf{e}&=(e_{x,n}|e_{y,n}|e_{z,n})_{n=1,...,N_p}^T\in \mathbb{R}^{3N_p},\\
-	\mathbf{b}&=(b_{x,n}|b_{y,n}|b_{z,n})_{n=1,...,N_p}^T\in \mathbb{R}^{3N_p},
-\end{align}
-%
-donde $\mathbf{e}$ es el vector de circulaciones del campo eléctrico en las aristas de la malla y $\mathbf{b}$ es el vector de flujos magnéticos a través de sus caras.
-Al aplicar la Ec. \ref{eq:Faraday_grid} a cada una de las superficies de las celdas de $G$, el conjunto de ecuaciones resultante puede escribirse en forma matricial como
+donde
 %
 \begin{equation}
-	\underbrace{\begin{pmatrix}
-			&  & ... & ... & ... & &\\
-			1 & ... & 1 & ... & -1 & ... &-1\\
-			&  & ... & ... & ... & &
-	\end{pmatrix}}_{\overleftrightarrow{\vb{C}}}\underbrace{\begin{pmatrix}
-			e_{n_1}\\
-			\vdots\\
-			e_{n_2}\\
-			\vdots\\e_{n_3}\\
-			\vdots\\
-			e_{n_4}
-	\end{pmatrix}}_{\vb{e}}=-\frac{\dd}{\dd{t}}\underbrace{\begin{pmatrix}
-			\vdots\\
-			b_{n}\\
-			\vdots
-	\end{pmatrix}}_{\vb{b}},
-	\label{eq:rot_discreto}
+	A_{x,n}=\Delta y_n \Delta z_n, 
 \end{equation}
 %
-donde $\overleftrightarrow{\vb{C}}$ representa el operador rotacional discreto. El siguiente operador a discretizar es el operador de divergencia. Su derivación se obtiene a partir de la ecuación de Gauss magnética [Ec. \ref{seq:GM_int}], que para una celda $V_{i,j,k}$ se reescribe como 
+De esta forma, se reescirbe la ecuación como
 %
 \begin{equation}
-	-b_x(i, j, k)+b_x(i+1, j, k)-b_y(i, j, k)+b_y(i, j+1, k)-b_z(i,j,k)+b_z(i,j,k+1)=0.
-	\label{eq:GM_grid}
-\end{equation}
-% 
-En la Fig. \ref{subfig:FIT_cell_magnetic} se muestra una celda $V_i,j,k$ donde las flechas azules representan el flujo magnético que atraviesa cada una de sus superficies. De manera análoga a la ecuación de Faraday-Lenz, la Ec. \ref{eq:GM_grid} se puede extender a todo el complejo $G$ y reescribirse en forma matricial como
-%
-\begin{equation}
-	\underbrace{\begin{pmatrix}
-			&  &  & ... & ... & & &\\
-			. & -1 & 1 & -1 & 1 & -1 & 1 &.\\
-			&  &  & ... & ... & & &
-	\end{pmatrix}}_{\overleftrightarrow{\vb{S}}}\underbrace{\begin{pmatrix}
-			\vdots\\
-			b_{m_1}\\
-			b_{m_2}\\
-			b_{m_3}\\
-			b_{m_4}\\
-			b_{m_5}\\
-			b_{m_6}\\
-			\vdots
-	\end{pmatrix}}_{\vb{b}}=0,
-	\label{eq:div:discreto}
+	\mathbb{C}\mathbb{D}_l\vb{e}=-\mathbb{D}_A\frac{\partial}{\partial t}\vb{B}
 \end{equation}
 %
-donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discreto.
-%
+
+
 \begin{figure}[bt]
 	\centering
 	\sidesubfloat[First image]{\hspace{-0.8cm}{
@@ -229,7 +234,7 @@ donde $\overleftrightarrow{\vb{S}}$ representa el operador de divergencia discre
 \end{figure}
 %
 
-La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo complejo $\tilde{G}$, dual al complejo primario $G$. Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa. La malla dual se encuentra además desplazada media celda respecto a la malla primaria. En consecuencia, los nodos de la malla dual ($x_i',y_j',z_k'$) se indexan mediante los índices $i',j',k'$ a lo largo de los ejes $x,y,z$ donde $i'=i+1/2,j'=j+1/2,k'=k+1/2$. 
+La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo sistema coordenado $\tilde{G}$, dual al complejo primario $G$. Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa. La malla dual se encuentra además desplazada media celda respecto a la malla primaria. En consecuencia, los nodos de la malla dual ($x_i',y_j',z_k'$) se indexan mediante los índices $i',j',k'$ a lo largo de los ejes $x,y,z$ donde $i'=i+1/2,j'=j+1/2,k'=k+1/2$. 
 Sobre las aristas $\tilde{L}_k$ del complejo dual se integra el campo $\vb{H}$ para definir 
 %
 \begin{equation}
