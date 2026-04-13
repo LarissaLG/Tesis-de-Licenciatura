@@ -13,32 +13,32 @@ El método \textit{Finite Integration Technique} (FIT), propuesto por primera ve
 \section{\textit{Ecuaciones de malla de Maxwell}}
 \label{section:MGE}
 
-El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las Ecuaciones de Malla de Maxwell. A diferencia del Método del Elemento Finito (FEM), que se fundamenta en la  resolución de una formulación débil mediante funciones de interpolación, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras.
+El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las Ecuaciones de Malla de Maxwell. A diferencia del Método del Elemento Finito (FEM por sus siglas en inglés), que se fundamenta en la  resolución de una formulación débil mediante funciones de interpolación, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras.
 
-El primer paso del proceso de discretización consiste en definir el mallado de integración. Para ello, se emplea el mallado de Yee, que es un tipo de mallado numérico específico empleado en el método de Diferencias Finitas (FDTD, por sus siglas en inglés) para resolver las ecuaciones de Maxwell. Este método está diseñado para discretizar el espacio y el tiempo para permitir tener una simulación adecuada de la propagación de la onda electromagnética. El primer paso para ello es restringir el problema electromagnético —generalmente formulado en una región con frontera abierta— a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un sistema coordenado ortogonal $G$, que constituye la malla computacional del problema. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, de forma que $G$ está dado por
+El primer paso del proceso de discretización consiste en definir el mallado de integración. Para ello, se emplea una discretización tipo Yee, ampliamente utilizada en métodos en el dominio del tiempo, en la cual las componentes de los campos se disponen de manera escalonada en el espacio. En este conetxto, el problema electromagnético —generalmente formulado en una región con frontera abierta—  se restringe a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un sistema coordenado ortogonal $G$, que constituye la malla computacional del problema. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, de modo que 
 %
 \begin{align}
 	G=\{(x_i,y_j,z_k); i\in\{1,...,I\};j\in\{1,...,J\};k\in\{1,...,K\}\}.
 \end{align}
 %
-Los nodos de la malla $(x_i,y_j,z_k)$ se enumeran mediante los índices $i,j,k$ a lo largo de los ejes $x,y,z$. De esta forma, el mallado contiene un total de $N_p=IJK$ nodos y $(I-1)(J-1)(K-1)$ celdas. Para numerar cada uno de los nodos, se emplea un sistema de indexación dado por la tripleta $(i,j,k)$. Esta numeración está dada por la ecuación
+Los nodos de la malla $(x_i,y_j,z_k)$ se indexan mediante los índices $i,j,k$ a lo largo de los ejes $x,y,z$. De esta forma, el mallado contiene un total de $N_p=IJK$ nodos y $(I-1)(J-1)(K-1)$ celdas. Para facilitar la implementación numérica, los nodos se enumeran mediante un único índice $n$ definido como
 %
 \begin{equation}
-	n=1+(i-1)M_u+(j-1)M_v+(k-1)M_w,
+	n=1+(i-1)M_x+(j-1)M_y+(k-1)M_z,
 \end{equation}
 % 
-donde $M_u=1,M_v=1$ y $M_w=IJ$. En la Fig. \ref{fig:G_complex} se muestra el sistema coordenado $G$ para un conjunto de celdas. Asimismo, se etiquetan cada una de las coordenadas de las celdas en los extremos y el correspondiente volumen $V_n$ y área $A_{u,m}$ de los nodos $n$ y $m$, respectivamente.
+donde $M_x=1,M_y=I$ y $M_z=IJ$. En la Fig. \ref{fig:G_complex} se muestra el sistema coordenado $G$ para un conjunto de celdas. Asimismo, se muestran las componentes de los nodos en los extremos de la malla, así como la identificación del volumen $V_n$ y el área $A_{u,m}$ asociados a los elementos vinculados a los nodos $n$ y $m$, respectivamente.
 %
 \begin{figure}[b]
 	\centering
-	\includegraphics[width=7.8cm]{../../Figuras/3-FIT/G_complex.pdf}
+	\includegraphics[width=8cm]{../../Figuras/3-FIT/G_complex.pdf}
 	\caption{}
 	\label{fig:G_complex}
 \end{figure}
 %
 
 
-Una vez definido $G$, el método FIT se formula sobre un volumen $V_n$ de la malla. Para ello, se parte de las ecuaciones de Maxwell en unidades del SI, expresadas en su forma integral \cite{griffithsIntroductionElectrodynamics2023b}
+Una vez definido $G$, el método FIT se formula a partir de las ecuaciones de Maxwell en unidades del SI, expresadas en su forma integral: \cite{griffithsIntroductionElectrodynamics2023b}
 
 %
 \begin{subequations} \label{eqs:Maxwell_int}
@@ -54,175 +54,97 @@ Una vez definido $G$, el método FIT se formula sobre un volumen $V_n$ de la mal
 		\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM_int}
 \end{tcolorbox}\end{subequations}\noindent
 %
-donde se obvian las dependencias espaciales y temporales; $\rho_{\text{ext}}$ es la densidad volumétrica de carga externa y  $\vb{J}_{\text{ext}}$ es la densidad volumétrica de corriente  externa. A partir de las ecuaciones de Maxwell en su forma integral, se construye la discretización del método FIT. En particular, la ley de Faraday–Lenz [Ec. \ref{seq:FL_int}] puede ser reescrita para una cara de la celda $V_n$ como
+donde se obvian las dependencias espaciales y temporales; $\rho_{\text{ext}}$ es la densidad volumétrica de carga externa y  $\vb{J}_{\text{ext}}$ es la densidad volumétrica de corriente  externa. A partir de las ecuaciones de Maxwell en su forma integral, se construye la discretización del método FIT. En particular, la ley de Faraday–Lenz [Ec. \ref{seq:FL_int}] puede ser reescrita para la cara $A_{z,n}$ de una celda con volumen $V_n$ como
 %
 \begin{align}
 	(x_{i+1}-x_i)E_{x,n}+(y_{j+1}-y_j)E_{y,n+1}&+(x_{i+1}-x_i)E_{u,n+I}+ \nonumber\\
 	&+(y_{j+1}-y_j)E_{y,n}
-	=-\frac{\dd}{\dd{t}}B_{z,n}(x_{i+1}-x_i)(y_{j+1}-y_j).
+	=-\frac{\dd}{\dd{t}}B_{z,n}(x_{i+1}-x_i)(y_{j+1}-y_j),
 	\label{eq:Faraday_grid}
 \end{align}
-En la Fig.~\ref{subfig:FIT_cell_electric} se muestra la superficie $A_{z,n}$ de una celda en la cual los vectores en rojo y azul oscuro representan, respectivamente, la circulación del campo eléctrico a lo largo de las aristas y el flujo magnético que atraviesa la superficie.
+donde cada término representa la circulación del campo eléctrico a lo largo de una arista del contorno de la cara considerada, mientras que el término del lado derecho corresponde a la variación temporal del flujo magnético a través de dicha superficie. En la Fig.~\ref{subfig:FIT_cell_electric} se muestra la superficie $A_{z,n}$ de una celda en la cual los vectores en rojo y azul oscuro representan, respectivamente, la circulación del campo eléctrico a lo largo de las aristas y el flujo magnético que atraviesa la superficie. 
 
-Esta formulación es válida para cualquier cara de $G$. Además, puede extenderse naturalmente a superficies formadas por la unión de varias caras $A=\cup A(i,j,k)$, ya que la suma de las circulaciones sobre los contornos individuales equivale a la circulación sobre el contorno total de la superficie. La Ec. corresponde únicamente a una de las tres superficies asociadas a un nodo. Con el fin de escribir la Ec. \ref{eq:Faraday_grid} para todas las caras de la malla, se introduce una notación matricial para cada uno de los vectores y los operadores de la ecuación.
 
-El primer paso para la definición de las matrices de los operadores es la introducción de tres matrices de discretización, una para cada uno de las caras del nodo. La primera matriz está dada por 
+La formulación anterior es válida para cualquier cara de $G$ y puede extenderse a superficies formadas por la unión de varias caras, ya que la suma de las circulaciones sobre los contornos individuales equivale a la circulación sobre el contorno total de la superficie. La Ec.~\ref{eq:Faraday_grid} corresponde únicamente a una de las tres superficies asociadas a un nodo. Con el fin de extender esta relación a todo el dominio, se introduce una formulación matricial que permite representar de manera compacta tanto las magnitudes electromagnéticas como los operadores discretos.
+En este marco, los campos electromagnéticos se organizan como vectores de dimensión $3N$. En particular, los campos $\vb{E}, \vb{D}, \vb{B}$ y $\vb{H}$ se representan mediante los vectores $\vb{e}, \vb{d}, \vb{b}$ y $\vb{h}$, respectivamente, definidos como 
+\begin{equation}
+	\vb{e}=\begin{bmatrix}
+		E_{x,1}\\
+		E_{x,2}\\
+		\vdots\\
+		E_{z,N} 
+	\end{bmatrix}; 
+	\vb{d}=\begin{bmatrix}
+		D_{x,1}\\
+		D_{x,2}\\
+		\vdots\\
+		D_{z,N} 
+	\end{bmatrix};
+	\vb{b}=\begin{bmatrix}
+		B_{x,1}\\
+		B_{x,2}\\
+		\vdots\\
+		B_{z,N} 
+	\end{bmatrix};
+	\vb{h}=\begin{bmatrix}
+		H_{x,1}\\
+		H_{x,2}\\
+		\vdots\\
+		H_{z,N} 
+	\end{bmatrix},
+\end{equation}
+%
+y de manera análoga se define el vector de corrientes $\vb{j}$ y el vector de cargas $\vb{q}$. Para construir los operadores discretos, se introducen las matrices de discretización $P_u$, con $u=\{x,y,z\}$, que codifican la conectividad de la malla. Estas matrices se definen de forma general como
 %
 \begin{equation}
-	(P_x)_{m,p}=
-		\left\{
-		\begin{array}{ll}
-			-1, & \text{si } rp=m\\
-			1 & \text{si } p=m+M_x=m+1, \text{donde} (m,p)\in [[1,N]]^2\\
-			0 & \text{en cualquier otro caso}.
-		\end{array}
-		\right,
+	(P_u)_{m,p}=
+	\begin{cases}
+		-1, & \text{si } p=m,\\
+		1, & \text{si } p=m+M_u,\\
+		0, & \text{en cualquier otro caso},
+	\end{cases}
+	\qquad (m,p)\in \{1,\dots,N\}^2.
 \end{equation}
-% 
-de manera similar la segunda matriz está dada por
-%
-\begin{equation}
-	(P_y)_{m,p}=
-	\left\{
-	\begin{array}{ll}
-		-1, & \text{si } rp=m\\
-		1 & \text{si } p=m+M_y=m+I, \text{donde} (m,p)\in [[1,N]]^2\\
-		0 & \text{en cualquier otro caso}.
-	\end{array}
-	\right.
-\end{equation}
-% 
-Finalmente, la tercera matriz está dada por
-%
-\begin{equation}
-	(P_z)_{m,p}=
-	\left\{
-	\begin{array}{ll}
-		-1, & \text{si } rp=m\\
-		1 & \text{si } p=m+M_z=m+IJ, \text{donde} (m,p)\in [[1,N]]^2\\
-		0 & \text{en cualquier otro caso}.
-	\end{array}
-	\right.
-\end{equation}
-% 
-Las tres matrices se combinan en una matriz más grande que representa al operador rotacional discreto con una dimensión de $3N\times 3N$ dado por
+A partir de estas matrices, se construye el operador rotacional discreto $\mathbb{C}\in\mathbb{R}^{3N\times 3N}$, dado por
 %
 \begin{equation}
 	\mathbb{C}=\begin{pmatrix}
 		0 & -P_z & P_y\\
 		P_z & 0 & -P_x\\
 		-P_y & P_x & 0
-	\end{pmatrix}
+	\end{pmatrix}.
 \end{equation}
-%
-Por otro lado, los campos electromagnético se consideran vectores de dimensión $3N$. Entonces, los campos $\vb{E},\vb{D}, \vb{B}$ y $\vb{H}$ se guardan como vectores $\vb{e},\vb{d},\vb{b}$ y $\vb{h}$, respectivamente dados por
-\begin{equation}
-	e=\begin{bmatrix}
-		E_{x,1}\\
-		E_{x,2}\\
-		\vdots\\
-		E_{z,N} 
-	\end{bmatrix}; 
-	d=\begin{bmatrix}
-	D_{x,1}\\
-	D_{x,2}\\
-	\vdots\\
-	D_{z,N} 
-	\end{bmatrix};
-	b=\begin{bmatrix}
-		B_{x,1}\\
-		B_{x,2}\\
-		\vdots\\
-		B_{z,N} 
-	\end{bmatrix};
-	h=\begin{bmatrix}
-		H_{x,1}\\
-		H_{x,2}\\
-		\vdots\\
-		H_{z,N} 
-	\end{bmatrix};
-	j=\begin{bmatrix}
-		J_{x,1}\\
-		J_{x,2}\\
-		\vdots\\
-		J_{z,N} 
-	\end{bmatrix}.
-\end{equation}
-
-La matriz de las circulaciones está dada por
+Adicionalmente, se introducen matrices diagonales que contienen la información geométrica del mallado. En particular, la matriz $\mathbb{D}_l$ agrupa las longitudes asociadas a las aristas, mientras que la matriz $\mathbb{D}_A$ contiene las áreas de las caras. La primera se define como
 %
 \begin{equation}
 	\mathbb{D}_l=\text{diag}(\Delta x_{1},\dotso,\Delta x_{N},\Delta y_{1},\dotso,\Delta y_{N},\Delta z_{1},\dotso,\Delta z_{N}),
 \end{equation}
 %
-donde
+donde las longitudes asociadas a cada dirección se definen de manera general como
 %
 \begin{equation}
-	\Delta x_n=
-	\left\{
-	\begin{array}{ll}
-		\int_{x_i}^{x_{i+1}}||\frac{\partial r(x,y_j,z_k)}{\partial x}||\dd{x}, & \text{para } (i,j,k)\in [[1,I-1]]\times[[I,J]]\times[[1,K]]\\
-		0 & \text{si } i=I
-	\end{array}
-	\right,
+	\Delta u_n =
+	\begin{cases}
+		\displaystyle \int_{u_\ell}^{u_{\ell+1}} \left\lVert \frac{\partial \vb{r}}{\partial u} \right\rVert \dd{u}, & \text{si } \ell < N_u,\\
+		0, & \text{si } \ell = N_u,
+	\end{cases}
 \end{equation}
-% 
 %
-\begin{equation}
-	\Delta x_n=
-	\left\{
-	\begin{array}{ll}
-		\int_{x_i}^{x_{i+1}}||\frac{\partial r(x,y_j,z_k)}{\partial x}||\dd{x}, & \text{para } (i,j,k)\in [[1,I-1]]\times[[I,J]]\times[[1,K]]\\
-		0 & \text{si } i=I
-	\end{array}
-	\right,
-\end{equation}
-% 
-%
-\begin{equation}
-	\Delta y_n=
-	\left\{
-	\begin{array}{ll}
-		\int_{y_j}^{y_{j+1}}||\frac{\partial r(x_i,y,z_k)}{\partial y}||\dd{y}, & \text{para } (i,j,k)\in [[1,I]]\times[[I,J-1]]\times[[1,K]]\\
-		0 & \text{si } j=J
-	\end{array}
-	\right,
-\end{equation}
-% 
-%
-\begin{equation}
-	\Delta z_n=
-	\left\{
-	\begin{array}{ll}
-		\int_{z_k}^{z_{k+1}}||\frac{\partial r(x_i,y,z_k)}{\partial z}||\dd{z}, & \text{para } (i,j,k)\in [[1,I]]\times[[I,J]]\times[[1,K-1]]\\
-		0 & \text{si } k=K
-	\end{array}
-	\right.
-\end{equation}
-% 
-
-
-
-Otra matriz que se define es la matriz $\mathbb{D}_A$, que contiene todas las áreas del mallado. Es una matriz diagnonal, dada por
+con $\ell=\{i,j,k\}$ tal que $u_\ell$ es la coordenada correspondiente ($x_i$, $y_j$ o $z_k$), y $N_u$ el número total de nodos en la dirección $u$ (es decir, $N_x=I$, $N_y=J$, $N_z=K$). De manera análoga, la matriz de áreas está dada por
 %
 \begin{equation}
 	\mathbb{D}_A=\text{diag}(A_{x,1},\dotso,A_{x,N}, A_{y,1},\dotso,A_{y,N},A_{z,1},\dotso,A_{z,N}),
 \end{equation}
 %
-donde
+con $A_{x,n}=\Delta y_n \Delta z_n, A_{y,n}=\Delta x_n \Delta z_n$ y $A_{z,n}=\Delta x_n \Delta y_n$. Finalmente, la ley de Faraday–Lenz puede escribirse en forma matricial como
 %
 \begin{equation}
-	A_{x,n}=\Delta y_n \Delta z_n, 
-\end{equation}
-%
-De esta forma, se reescirbe la ecuación como
-%
-\begin{equation}
-	\mathbb{C}\mathbb{D}_l\vb{e}=-\mathbb{D}_A\frac{\partial}{\partial t}\vb{B}
+	\mathbb{C}\mathbb{D}_l\vb{e}=-\mathbb{D}_A\frac{\partial}{\partial t}\vb{b}.
 \end{equation}
 %
 
-
+El segundo operador a discretizar es el operador de la divergencia. Para ello, se parte de la Ec. \eqref{seq:GM_int} aplicada a una celda de volumen $V_n$, como se muestra en la Fig.~\ref{fig:FIT_cell}, donde las flechas azules representan los flujos magnéticos asociados a cada una de las caras de la celda.
+%
 \begin{figure}[bt]
 	\centering
 	\sidesubfloat[First image]{\hspace{-0.8cm}{
@@ -233,48 +155,105 @@ De esta forma, se reescirbe la ecuación como
 	\label{fig:FIT_cell}
 \end{figure}
 %
+Al aplicar la ley de Gauss magnética siguiendo el esquema de Yee, la ecuación integral puede reescribirse como una suma de los flujos magnéticos que atraviesan las seis caras de la celda, dando lugar a
+%
+\begin{align}
+	B_{z,n}(x_{i+1}-x_i)(y_{j+1}-y_j)
+	&-B_{z,n+1}(x_{i+1}-x_i)(y_{j+1}-y_j)\nonumber\\
+	&+B_{x,n}(y_{j+1}-y_j)(z_{k+1}-z_k)\nonumber\\
+	&-B_{x,n+1}(y_{j+1}-y_j)(z_{k+1}-z_k)\nonumber\\
+	&+B_{y,n}(x_{i+1}-x_i)(z_{k+1}-z_k)\nonumber\\
+	&-B_{y,n+1}(x_{i+1}-x_i)(z_{k+1}-z_k)=0.
+	\label{eq:GM-Yee}
+\end{align}
+%
+La Ec. \eqref{eq:GM-Yee} puede escribirse en forma matricial para extenderse en todo el dominio mediante la introducción del operador de divergencia discreto
+%
+\begin{equation}
+	\mathbb{S} = \begin{pmatrix} P_x & P_y & P_z \end{pmatrix},
+\end{equation}
+%
+el cual actúa sobre el vector de campo magnético ponderado por las áreas de las caras. De este modo, la ecuación discreta de la ley de Gauss magnética se expresa como
+%
+\begin{equation}
+	\mathbb{S}\mathbb{D}_A\vb{b} = 0.
+\end{equation}
+%%
 
-La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo sistema coordenado $\tilde{G}$, dual al complejo primario $G$. Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa. La malla dual se encuentra además desplazada media celda respecto a la malla primaria. En consecuencia, los nodos de la malla dual ($x_i',y_j',z_k'$) se indexan mediante los índices $i',j',k'$ a lo largo de los ejes $x,y,z$ donde $i'=i+1/2,j'=j+1/2,k'=k+1/2$. 
-Sobre las aristas $\tilde{L}_k$ del complejo dual se integra el campo $\vb{H}$ para definir 
+La discretización de las ecuaciones de Maxwell restantes requiere la introducción de un segundo sistema coordenado $\tilde{G}$, dual al complejo primario $G$:
 %
-\begin{equation}
-	h_k=\int_{\tilde{L}_k} \vb{H}\cdot\dd{\vb{l}},
-\end{equation}
+\begin{align}
+	\tilde{G}=\{(\tilde{x}_i,\tilde{y}_j,\tilde{z}_k); i\in\{1,...,I\};j\in\{1,...,J\};k\in\{1,...,K\}\}.
+\end{align}
 %
-donde  $h_k$ representa la circulación del campo $\vb{H}$ a lo largo de la arista correspondiente. De manera análoga al complejo primario, se define el flujo del desplazamiento eléctrico a través de las caras de la malla dual como
-%
-\begin{equation}
-	d_k(i,j,k)=\int_{A_z(i,j,k)}\vb{D}\cdot\dd{\vb{a}}.
-\end{equation}
-%
-Asimismo, la corriente eléctrica $j_k$ y la carga eléctrica $q_k$ se obtienen como integrales de las densidades correspondientes sobre las superficies y volúmenes del complejo dual, respectivamente
-%
-\begin{equation}
-	j_k(i,j,k)=\int_{A_z(i,j,k)}\vb{J}_{\text{ext}}\cdot\dd{\vb{a}}\;\;\;\text{y}\;\;\;q_k=\int_{\tilde{V}_i}\rho_{\text{ext}}\dd{V}. 
-\end{equation}
-%
-De este modo, la carga total de una celda dual $\tilde{V}_i$ se asocia al nodo correspondiente de la malla primaria situado en su centro geométrico. En consecuencia, la distribución continua de carga se aproxima mediante magnitudes escalares discretas $q_k$ localizadas en los nodos del complejo primario. Las magnitudes $h_k,d_k, j_k$ y $q_k$ se agrupan en los vectores $\vb{h},\vb{d}, \vb{j}$ y $\vb{q}$, respectivamente, los cuales permiten escribir las ecuaciones de Maxwell en forma matricial. En la Fig. \ref{fig:FIT_cell_dual} se muestra la relación de ortogonalidad entre una celda del complejo primario $G$ y su correspondiente celda dual $\tilde{G}$. Además, se muestran las cantidades asociadas a cada complejo y su localización espacial en cada celda.
-%
-\begin{figure}[tb]
-	\centering
-	\includegraphics[width=9cm]{../../Figuras/3-FIT/FIT_dual_grid.pdf}
-	\caption{Celda $V_{i,j,k}$ del complejo $G$ y celda dual $\tilde{V}_{i,j,k}$ del complejo $\tilde{G}$ desplazada media celda en todas las direcciones y ortogonal a la primera. Se muestran las cantidades asosiadas a cada complejo localizadas en las aristas y caras de las celdas.}
-	\label{fig:FIT_cell_dual}
-\end{figure}
-%
-
-La aplicación del mismo procedimiento de discretización empleado para el complejo primario conduce, en el complejo dual, a ecuaciones matriciales que involucran los operadores duales: el rotacional discreto $\overleftrightarrow{\vb{\tilde{C}}}$ y el operador de divergencia discreto $\overleftrightarrow{\vb{\tilde{S}}}$. Dado que estos operadores se obtienen mediante la misma construcción geométrica empleada en $G$, su estructura es completamente análoga a la de los operadores definidos en el complejo primario dados por las Ecs. \ref{eq:rot_discreto} y \ref{eq:div:discreto}. De esta forma, para el par de complejos $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Maxwell Grid Equations} (MGE)— se escribe como
+ Este complejo dual se construye tomando los centros de las celdas de $G$ como vértices de las celdas de $\tilde{G}$. Con esta definición se obtiene una correspondencia uno a uno entre las aristas de $G$ y las caras de $\tilde{G}$, y viceversa, con la malla dual desplazada media celda respecto a la malla primaria. En consecuencia, los nodos de la malla dual ($\tilde{x}_i,\tilde{y}_j,\tilde{z}_k$) se definen como los puntos medios entre nodos consecutivos de la malla primaria
+ %
+ \begin{equation}
+ 	 \tilde{u}_{\ell} =\dfrac{u_{l+1}+u_l}{2}, \begin{cases}
+ 		 l \in \{1,...,N_u-1\}\\
+ 		\tilde{u}_{N_u}=0
+ 	\end{cases}.
+ \end{equation}
+ %
+ En la Fig. \ref{fig:FIT_cell_dual} se muestra la relación de ortogonalidad entre una celda del complejo primario $G$ (celda amarilla) y su correspondiente celda dual $\tilde{G}$ (celda gris). Además, se muestran las cantidades asociadas a cada complejo ($\vb{E}$ y $\vb{B}$ asociados a $G$, mientras que $\vb{D}$ y $\vb{H}$ asociados a $\tilde{G}$) y su localización espacial en cada celda.
+ %
+ \begin{figure}[bt]
+ 	\centering
+ 	\includegraphics[width=9cm]{../../Figuras/3-FIT/FIT_dual_grid.pdf}
+ 	\caption{Celda $V_{i,j,k}$ del complejo $G$ y celda dual $\tilde{V}_{i,j,k}$ del complejo $\tilde{G}$ desplazada media celda en todas las direcciones y ortogonal a la primera. Se muestran las cantidades asosiadas a cada complejo localizadas en las aristas y caras de las celdas.}
+ 	\label{fig:FIT_cell_dual}
+ \end{figure}
+ %
+ De manera análoga al caso del complejo primario, se introducen matrices diagonales que contienen la información geométrica de la malla dual. En particular, la matriz dual de longitudes de integración $\tilde{\mathbb{D}}_{\ell}$ se define como
+ %
+ \begin{equation}
+ 	 \tilde{\mathbb{D}}_{\ell}=\text{diag}(\Delta\tilde{x}_{1},\dotso,\Delta\tilde{x}_{N},\Delta\tilde{y}_{1},\dotso,\Delta\tilde{y}_{N},\Delta\tilde{z}_{1},\dotso,\Delta\tilde{z}_{N}),
+ \end{equation}
+ %
+ donde las longitudes asociadas a cada dirección se definen de manera general como
+ %
+ \begin{equation}
+ 	\Delta \tilde{u}_n =
+ 	\begin{cases}
+ 		\dfrac{\Delta u_n+ \Delta u_{n-M_u}}{2}, &  2<\ell < N_u-1,\\
+ 		\dfrac{\Delta u_n}{2}, & \ell = 1,\\
+ 		\dfrac{\Delta u_{n-M_u}}{2}, & \ell=M_u.
+ 	\end{cases}
+ \end{equation}
+ %
+De forma similar, la matriz de áreas de la malla dual $\tilde{\mathbb{D}}_A$ está dada por
+ %
+ \begin{equation}
+ 	\mathbb{D}_A=\text{diag}(\tilde{A}_{x,1},\dotso,\tilde{A}_{x,N}, \tilde{A}_{y,1},\dotso,\tilde{A}_{y,N},\tilde{A}_{z,1},\dotso,\tilde{A}_{z,N}),
+ \end{equation}
+ %
+ con $\tilde{A}_{x,n}=\Delta \tilde{y}_n \Delta \tilde{z}_n, \tilde{A}_{y,n}=\Delta \tilde{x}_n \Delta \tilde{z}_n$ y $\tilde{A}_{z,n}=\Delta \tilde{x}_n \Delta \tilde{y}_n$. Asimismo, la matriz de volúmenes de la malla dual $\mathbb{D}_V$ se define como
+ %
+ \begin{equation}
+ 	\mathbb{D}_V=\text{diag}(\tilde{V}_{x,1},\dotso,\tilde{V}_{x,N}, \tilde{V}_{y,1},\dotso,\tilde{V}_{y,N},\tilde{V}_{z,1},\dotso,\tilde{V}_{z,N}),
+ \end{equation}
+ %
+ donde cada volumen se expresa como $\tilde{V}_{x,n}=\tilde{A}_{y,n}\tilde{A}_{z,n}, \tilde{V}_{y,n}=\tilde{A}_{x,n}\tilde{A}_{z,n}, \tilde{V}_{z,n}=\tilde{A}_{x,n}\tilde{A}_{y,n}$.
+ 
+ Los operadores discretos en la malla dual se relacionan directamente con los del complejo primario. En particular, el operador rotacional dual $\tilde{\mathbb{C}}$ y el operador divergencia dual $\tilde{\mathbb{S}}$ están dados por
+ %
+ \begin{align}
+ 	\tilde{\mathbb{C}}&=\mathbb{C}^T\\
+ 	\tilde{\mathbb{S}}&=(P_x^T,P_y^T,P_z^T).
+ \end{align}
+ %
+ De esta forma, para el par de sistemas $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Maxwell Grid Equations} (MGE por sus siglas en inglés)— se escribe como
 %
 \begin{subequations} \label{eqs:MGE}
 	\begin{tcolorbox}[
 		ams align, breakable]
-		\overleftrightarrow{\vb{\tilde{S}}} \vb{d}&= \vb{q}, &\mbox{(Ley de Gauss eléctrica)}  
+	\tilde{\mathbb{S}} \vb{d}&= \vb{q}, &\mbox{(Ley de Gauss eléctrica)}  
 		\label{seq:GE_MGE} \\
-		\overleftrightarrow{\vb{\tilde{S}}} \vb{b}&=0,						&\mbox{(Ley de Gauss magnética)}   
+	\mathbb{S}\mathbb{D}_A\vb{b}&=0,						&\mbox{(Ley de Gauss magnética)}   
 		\label{seq:GM_MGE} \\
-		\overleftrightarrow{\vb{C}}\vb{e} &= -\frac{\text{d}}{\dd{t}}\vb{b}, 	&\mbox{(Ley de Faraday-Lenz)}		
+		\mathbb{C}\mathbb{D}_l\vb{e}&=-\mathbb{D}_A\frac{\partial}{\partial t}\vb{b},	&\mbox{(Ley de Faraday-Lenz)}		
 		\label{seq:FL_MGE}\\
-		\overleftrightarrow{\vb{C}}\vb{h} &= \frac{\text{d}}{\dd{t}}\vb{d}+\vb{j}. &
+		\tilde{\mathbb{C}}\tilde{\mathbb{D}}_l\vb{h} &= \tilde{\mathbb{D}}_A \left( \frac{\text{d}}{\dd{t}}\vb{d}+\vb{j}\right). &
 		\mbox{(Ley de Ampère-Maxwell)} \label{seq:AM_MGE}
 \end{tcolorbox}\end{subequations}\noindent
 %
