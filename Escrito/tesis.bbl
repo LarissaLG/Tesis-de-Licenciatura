@@ -43,7 +43,7 @@
     \field{year}{2008}
   \endentry
 
-  \entry{lucariniKramersKronigRelationsOptical2005a}{book}{}{}
+  \entry{lucariniKramersKronigRelationsOptical2005}{book}{}{}
     \name{author}{4}{}{%
       {{hash=LV}{%
          family={Lucarini},
@@ -71,20 +71,19 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Springer-Verlag}%
+      {Springer}%
     }
+    \keyw{entropy, Linear optics, Nonlinear optics, Optical materials research
+  and development, Optical spectroscopy, optics, Physical chemistry,
+  spectroscopy}
     \strng{namehash}{LVPKESJVE1}
     \strng{fullhash}{LVPKESJVE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{isbn}{978-3-540-23673-3}
-    \field{title}{Kramers-{Kronig} {Relations} in {Optical} {Materials}
-  {Research}}
-    \verb{url}
-    \verb http://link.springer.com/10.1007/3-540-27316-6_4
-    \endverb
+    \field{title}{Kramers-Kronig Relations in Optical Materials Research}
     \list{location}{1}{%
-      {Berlin/Heidelberg}%
+      {Berlín, Alemania}%
     }
     \field{year}{2005}
   \endentry
@@ -111,15 +110,10 @@
     \verb 19&dq=zangwill+electrodynamics&ots=MFE72ZX4iA&sig=dO-_7G-C4cRiF_nKwiU
     \verb QSOO_H0I
     \endverb
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\VZ4PFB3G\\Zangwill - 2013 - Modern electrodynamics.pdf
-    \verb :application/pdf
-    \endverb
     \field{year}{2013}
   \endentry
 
-  \entry{griffithsIntroductionElectrodynamics2023b}{book}{}{}
+  \entry{griffithsIntroductionElectrodynamics2023}{book}{}{}
     \name{author}{1}{}{%
       {{hash=GDJ}{%
          family={Griffiths},
@@ -141,15 +135,10 @@
     \verb 11&dq=introduction+to+electrodynamics&ots=x_URGwzp0J&sig=nJMnm-i-C5db
     \verb GHct6Zx5PKw4-NU
     \endverb
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\AEMI2PDB\\Griffiths - 2023 - Introduction to electrody
-    \verb namics.pdf:application/pdf
-    \endverb
     \field{year}{2023}
   \endentry
 
-  \entry{jacksonClassicalElectrodynamics2021a}{book}{}{}
+  \entry{jacksonClassicalElectrodynamics2021}{book}{}{}
     \name{author}{1}{}{%
       {{hash=JJD}{%
          family={Jackson},
@@ -168,8 +157,8 @@
     \field{title}{Classical electrodynamics}
     \verb{url}
     \verb https://books.google.com/books?hl=es&lr=&id=6VV-EAAAQBAJ&oi=fnd&pg=PP
-    \verb 1&dq=jackson+electrodynamics&ots=7xC6kI1Zb3&sig=b50U-WDYWQTZsAkspcl2M
-    \verb sPkCps
+    \verb 1&dq=Classical+electrodynamics&ots=7xA9oFYTb7&sig=v9A9PW5jhLccaP_f0W_
+    \verb GggqTfVs
     \endverb
     \field{year}{2021}
   \endentry
@@ -190,19 +179,14 @@
     \strng{fullhash}{KDA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Modern {Problems} in {Condensed} {Matter} {Sciences}}
-    \field{title}{General {Properties} of {Electromagnetic} {Response}
-  {Functions}}
+    \field{booktitle}{Modern Problems in Condensed Matter Sciences}
+    \field{title}{General Properties of Electromagnetic Response Functions}
     \field{volume}{24}
-    \verb{file}
-    \verb Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\95AZZ9HL\\B9780
-    \verb 444873668500084.html:text/html
-    \endverb
     \field{month}{01}
     \field{year}{1989}
   \endentry
 
-  \entry{arfkenMathematicalMethodsPhysicists2011a}{book}{}{}
+  \entry{arfkenMathematicalMethodsPhysicists2011}{book}{}{}
     \name{author}{3}{}{%
       {{hash=AGB}{%
          family={Arfken},
@@ -232,15 +216,6 @@
     \field{labeltitlesource}{shorttitle}
     \field{shorttitle}{Mathematical methods for physicists}
     \field{title}{Mathematical methods for physicists: a comprehensive guide}
-    \verb{url}
-    \verb https://books.google.com/books?hl=es&lr=&id=JOpHkJF-qcwC&oi=fnd&pg=PP
-    \verb 1&dq=arfken&ots=UNSWpbUxMb&sig=zAAP8hyLNEBndRgMGa2oWr6ExJM
-    \endverb
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\BW8JJH3R\\Arfken et al. - 2011 - Mathematical methods
-    \verb for physicists a comprehensive guide.pdf:application/pdf
-    \endverb
     \field{year}{2011}
   \endentry
 
@@ -272,23 +247,17 @@
     \strng{fullhash}{SNAPBM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Digital {Holography} and {Three}-{Dimensional} {Imaging}}
+    \field{booktitle}{Digital Holography and Three-Dimensional Imaging}
     \field{pages}{DTh4B\bibrangedash 4}
     \field{title}{Measurement of the extinction cross section of a single
   wavelength-sized particle}
     \verb{url}
     \verb https://opg.optica.org/abstract.cfm?uri=dh-2014-DTh4B.4
     \endverb
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\GNJQXU2M\\Subedi et al. - 2014 - Measurement of the ex
-    \verb tinction cross section of a single wavelength-sized particle.pdf:appl
-    \verb ication/pdf
-    \endverb
     \field{year}{2014}
   \endentry
 
-  \entry{maierPlasmonicsFundamentalsApplications2007b}{book}{}{}
+  \entry{maierPlasmonicsFundamentalsApplications2007}{book}{}{}
     \name{author}{1}{}{%
       {{hash=MSA}{%
          family={Maier},
@@ -298,7 +267,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Springer US}%
+      {Springer {US}}%
     }
     \strng{namehash}{MSA1}
     \strng{fullhash}{MSA1}
@@ -309,7 +278,7 @@
     \endverb
     \field{isbn}{978-0-387-33150-8 978-0-387-37825-1}
     \field{shorttitle}{Plasmonics}
-    \field{title}{Plasmonics: {Fundamentals} and {Applications}}
+    \field{title}{Plasmonics: Fundamentals and Applications}
     \verb{url}
     \verb http://link.springer.com/10.1007/0-387-37825-1
     \endverb
@@ -331,19 +300,140 @@
     \field{labeltitlesource}{shorttitle}
     \field{number}{5}
     \field{pages}{671\bibrangedash 689}
-    \field{shorttitle}{Hilbert {Transform}}
-    \field{title}{Hilbert {Transform}: {A} {Brief} {Overview}}
+    \field{shorttitle}{Hilbert Transform}
+    \field{title}{Hilbert Transform: A Brief Overview}
     \verb{url}
     \verb https://www.ias.ac.in/article/fulltext/reso/029/05/0671-0689
     \endverb
     \field{volume}{29}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\U6LWJUYD\\Roy - 2024 - Hilbert Transform A Brief Overv
-    \verb iew.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Resonance}
     \field{year}{2024}
+  \endentry
+
+  \entry{terdaleIntensitymodulatedOpticalFiber2022}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=TJ}{%
+         family={Terdale},
+         familyi={T\bibinitperiod},
+         given={Jayprabha},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Amrit},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{TJGA1}
+    \strng{fullhash}{TJGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 7}
+    \field{title}{An intensity-modulated optical fiber sensor with agarose
+  coating for measurement of refractive index}
+    \verb{url}
+    \verb https://idp.springer.com/authorize/casa?redirect_uri=https://link.spr
+    \verb inger.com/article/10.1007/s13198-022-01804-0&casa_token=Imb8sLOXPVoAA
+    \verb AAA:0hCVkkzaoTkrqxMgHBZesvJGKtZNu41PjhadNZ9h22-G_NXEx-_SsrY8_CzuhgI6Y
+    \verb m1wL6WaEAjhKgjY5fg
+    \endverb
+    \field{journaltitle}{International journal of system assurance engineering
+  and management}
+    \field{year}{2022}
+  \endentry
+
+  \entry{brindzaThinSampleRefractive2014}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=BM}{%
+         family={Brindza},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AFR}{%
+         family={A.\bibnamedelima Flynn},
+         familyi={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SSJ}{%
+         family={S.\bibnamedelima Shirk},
+         familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Beadie},
+         familyi={B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMAFRSSJBG1}
+    \strng{fullhash}{BMAFRSSJBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1364/OE.22.028537
+    \endverb
+    \field{number}{23}
+    \field{pages}{28537\bibrangedash 28552}
+    \field{title}{Thin sample refractive index by transmission spectroscopy}
+    \field{volume}{22}
+    \field{year}{2014}
+  \endentry
+
+  \entry{liuRealPartRefractive2015}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Junwei},
+         familyi={J\bibinitperiod},
+         given={Ye},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=XM}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Min},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Wenping},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LHJYXMGWLW1}
+    \strng{fullhash}{LHJYXMGWLW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1364/AO.54.006046
+    \endverb
+    \field{number}{19}
+    \field{pages}{6046\bibrangedash 6052}
+    \field{title}{Real part of refractive index measurement approach for
+  absorbing liquid}
+    \field{volume}{54}
+    \field{journaltitle}{Applied Optics}
+    \field{year}{2015}
   \endentry
 
   \entry{hallAdvancedSignalIntegrity2011}{book}{}{}
@@ -393,7 +483,7 @@
     \strng{fullhash}{NHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{series}{Mathematics in {Science} and {Engineering}}
+    \field{series}{Mathematics in Science and Engineering}
     \field{title}{Causality and dispersion relations}
     \verb{url}
     \verb https://cir.nii.ac.jp/crid/1130282272465472896
@@ -430,28 +520,29 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The direct usage of the Kramers–Kronig (KK) relations is complicated by
+    The direct usage of the Kramers–Kronig ({KK}) relations is complicated by
   two factors: limited frequency range of the available spectra and
-  experimental errors. Here, we reconsider the application of the KK relations
-  to experimental data for the construction of a self-consistent set of optical
-  constants over a wide spectral range: the real part of the complex optical
-  constant, F1, is reconstructed using the imaginary part F2, obtained from an
-  experiment. The focus is on multiply (Q-)subtractive KK relations, which in
-  contrast to the standard KK transformation, exploit information about F1 at a
-  certain number Q of anchor frequencies. We develop a general mathematical
-  framework of the Q-subtractive KK relations and analyze all sources of errors
-  contributing to the inaccuracy of the reconstructed F1. We show that for the
-  reconstruction of F1 only a single evaluation of the standard KK relation is
-  needed together with a correction term given by an approximate evaluation of
-  the error in the standard KK. It is demonstrated that in the classical form
-  of the Q-subtractive KK relations, this correction term coincides with the
-  Lagrange interpolation polynomial of the error with nodes at the anchor
-  frequencies. Another correction term can also be constructed as a lower
-  degree polynomial through a least squares fit, a particular realization of
-  which is taking the average of Q singly subtractive KK relations. As a
-  result, recommendations for the application of Q-subtractive KK relations are
-  given. The accuracy of the considered approaches is illustrated on synthetic
-  examples and experimental data of fused SiO2.%
+  experimental errors. Here, we reconsider the application of the {KK}
+  relations to experimental data for the construction of a self-consistent set
+  of optical constants over a wide spectral range: the real part of the complex
+  optical constant, F1, is reconstructed using the imaginary part F2, obtained
+  from an experiment. The focus is on multiply (Q-)subtractive {KK} relations,
+  which in contrast to the standard {KK} transformation, exploit information
+  about F1 at a certain number Q of anchor frequencies. We develop a general
+  mathematical framework of the Q-subtractive {KK} relations and analyze all
+  sources of errors contributing to the inaccuracy of the reconstructed F1. We
+  show that for the reconstruction of F1 only a single evaluation of the
+  standard {KK} relation is needed together with a correction term given by an
+  approximate evaluation of the error in the standard {KK}. It is demonstrated
+  that in the classical form of the Q-subtractive {KK} relations, this
+  correction term coincides with the Lagrange interpolation polynomial of the
+  error with nodes at the anchor frequencies. Another correction term can also
+  be constructed as a lower degree polynomial through a least squares fit, a
+  particular realization of which is taking the average of Q singly subtractive
+  {KK} relations. As a result, recommendations for the application of
+  Q-subtractive {KK} relations are given. The accuracy of the considered
+  approaches is illustrated on synthetic examples and experimental data of
+  fused {SiO}2.%
     }
     \verb{doi}
     \verb 10.1016/j.saa.2022.122157
@@ -459,19 +550,12 @@
     \field{issn}{1386-1425}
     \field{pages}{122157}
     \field{title}{A unified framework for the numerical evaluation of the
-  {Q}-subtractive {Kramers}-{Kronig} relations and application to the
-  reconstruction of optical constants of quartz}
+  Q-subtractive Kramers-Kronig relations and application to the reconstruction
+  of optical constants of quartz}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/S1386142522013051
     \endverb
     \field{volume}{288}
-    \verb{file}
-    \verb ScienceDirect Full Text PDF:C\:\\Users\\Nanoplasmonics\\Zotero\\stora
-    \verb ge\\NY9PCT2I\\Nakov et al. - 2023 - A unified framework for the numer
-    \verb ical evaluation of the QQ-subtracti.pdf:application/pdf;ScienceDirect
-    \verb  Snapshot:C\:\\Users\\Nanoplasmonics\\Zotero\\storage\\XR36SDFW\\S138
-    \verb 6142522013051.html:text/html
-    \endverb
     \field{journaltitle}{Spectrochimica Acta Part A: Molecular and Biomolecular
   Spectroscopy}
     \field{month}{03}
@@ -509,10 +593,9 @@
     \field{issn}{0031-9007, 1079-7114}
     \field{number}{16}
     \field{pages}{3062\bibrangedash 3065}
-    \field{shorttitle}{Finite {Frequency} {Range} {Kramers}-{Kronig}
-  {Relations}}
-    \field{title}{Finite {Frequency} {Range} {Kramers}-{Kronig} {Relations}:
-  {Bounds} on the {Dispersion}}
+    \field{shorttitle}{Finite Frequency Range Kramers-Kronig Relations}
+    \field{title}{Finite Frequency Range Kramers-Kronig Relations: Bounds on
+  the Dispersion}
     \verb{url}
     \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.3062
     \endverb
@@ -547,7 +630,7 @@
     \field{issn}{0556-2805}
     \field{number}{2}
     \field{pages}{818\bibrangedash 831}
-    \field{title}{Exciton-{Optical} {Properties} of {TlBr} and {TlCl}}
+    \field{title}{Exciton-Optical Properties of {TlBr} and {TlCl}}
     \verb{url}
     \verb https://link.aps.org/doi/10.1103/PhysRevB.1.818
     \endverb
@@ -557,7 +640,7 @@
     \field{year}{1970}
   \endentry
 
-  \entry{ereminaDifferentShapeModels2006a}{article}{}{}
+  \entry{ereminaDifferentShapeModels2006}{article}{}{}
     \name{author}{4}{}{%
       {{hash=EE}{%
          family={Eremina},
@@ -591,7 +674,7 @@
     \field{number}{1}
     \field{pages}{3\bibrangedash 10}
     \field{shorttitle}{Different shape models for erythrocyte}
-    \field{title}{Different shape models for erythrocyte: {Light} scattering
+    \field{title}{Different shape models for erythrocyte: Light scattering
   analysis based on the discrete sources method}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/S0022407306000719?c
@@ -660,9 +743,6 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {en}%
-    }
     \strng{namehash}{DMMMADM1}
     \strng{fullhash}{DMMMADM1}
     \field{labelnamesource}{author}
@@ -673,21 +753,15 @@
     \field{issn}{09298665}
     \field{number}{4}
     \field{pages}{473\bibrangedash 479}
-    \field{shorttitle}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
-  {Spectrum}}
-    \field{title}{Band {Assignment} in {Hemoglobin} {Porphyrin} {Ring}
-  {Spectrum}: {Using} {Four}-{Orbital} {Model} of {Gouterman}}
+    \field{shorttitle}{Band Assignment in Hemoglobin Porphyrin Ring Spectrum}
+    \field{title}{Band Assignment in Hemoglobin Porphyrin Ring Spectrum: Using
+  Four-Orbital Model of Gouterman}
     \verb{url}
     \verb http://www.eurekaselect.com/openurl/content.php?genre=article&issn=09
     \verb 29-8665&volume=17&issue=4&spage=473
     \endverb
     \field{volume}{17}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\I6M8RKE3\\Dayer et al. - 2010 - Band Assignment in Hem
-    \verb oglobin Porphyrin Ring Spectrum Using Four-Orbital Model of Gouterman
-    \verb .pdf:application/pdf
-    \endverb
+    \field{langid}{english}
     \field{journaltitle}{Protein \& Peptide Letters}
     \field{month}{04}
     \field{year}{2010}
@@ -703,7 +777,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {McGraw-Hill}%
+      {{McGraw}-Hill}%
     }
     \strng{namehash}{MAL1}
     \strng{fullhash}{MAL1}
@@ -717,7 +791,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{meinkeOpticalPropertiesPlatelets2007a}{article}{}{}
+  \entry{meinkeOpticalPropertiesPlatelets2007}{article}{}{}
     \name{author}{4}{}{%
       {{hash=MM}{%
          family={Meinke},
@@ -744,26 +818,46 @@
          giveni={M\bibinitperiod},
       }}%
     }
+    \keyw{Cardiovascular, Computer Simulation, Humans, Models, Refractometry,
+  Blood Physiological Phenomena, Blood Platelets, Infrared, Monte Carlo Method,
+  Plasma, Spectrophotometry, Statistical}
     \strng{namehash}{MMMGHJFM1}
     \strng{fullhash}{MMMGHJFM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The optical parameters absorption coefficient, scattering coefficient, and
+  the anisotropy factor of platelets ({PLTs}) suspended in plasma and cell-free
+  blood plasma are determined by measuring the diffuse reflectance, total and
+  diffuse transmission, and subsequently by inverse Monte Carlo simulation.
+  Furthermore, the optical behavior of {PLTs} and red blood cells suspended in
+  plasma are compared with those suspended in saline solution. Cell-free plasma
+  shows a higher scattering coefficient and anisotropy factor than expected for
+  Rayleigh scattering by plasma proteins. The scattering coefficient of {PLTs}
+  increases linearly with the {PLT} concentration. The existence of
+  physiological concentrations of leukocytes has no measurable influence on the
+  absorption and scattering properties of whole blood. In summary, red blood
+  cells predominate over the other blood components by two to three orders of
+  magnitude with regard to absorption and effective scattering. However,
+  substituting saline solution for plasma leads to a significant increase in
+  the effective scattering coefficient and therefore should be taken into
+  consideration.%
+    }
+    \verb{doi}
+    \verb 10.1117/1.2435177
+    \endverb
+    \field{issn}{1083-3668}
     \field{number}{1}
-    \field{pages}{014024\bibrangedash 014024}
+    \field{pages}{014024}
     \field{title}{Optical properties of platelets and blood plasma and their
   influence on the optical behavior of whole blood in the visible to near
   infrared wavelength range}
-    \verb{url}
-    \verb https://www.spiedigitallibrary.org/journals/Journal-of-Biomedical-Opt
-    \verb ics/volume-12/issue-1/014024/Optical-properties-of-platelets-and-bloo
-    \verb d-plasma-and-their-influence/10.1117/1.2435177.short
-    \endverb
     \field{volume}{12}
-    \field{journaltitle}{Journal of biomedical optics}
+    \field{journaltitle}{Journal of Biomedical Optics}
     \field{year}{2007}
   \endentry
 
-  \entry{bosschaartLiteratureReviewNovel2014a}{article}{}{}
+  \entry{bosschaartLiteratureReviewNovel2014}{article}{}{}
     \name{author}{5}{}{%
       {{hash=BN}{%
          family={Bosschaart},
@@ -784,9 +878,11 @@
          giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
   G\bibinitperiod},
       }}%
-      {{hash=VLTG}{%
-         family={Van\bibnamedelima Leeuwen},
-         familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      {{hash=vLTG}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Leeuwen},
+         familyi={L\bibinitperiod},
          given={Ton\bibnamedelima G.},
          giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
@@ -797,28 +893,46 @@
          giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{BNEGJAMCGVLTGFDJ1}
-    \strng{fullhash}{BNEGJAMCGVLTGFDJ1}
+    \keyw{Erythrocytes, Humans, Radiation, Scattering, Anisotropy, Blood
+  Physiological Phenomena, Hematocrit, Optics and Photonics}
+    \strng{namehash}{BNEGJAMCGvLTGFDJ1}
+    \strng{fullhash}{BNEGJAMCGvLTGFDJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Optical property measurements on blood are influenced by a large variety of
+  factors of both physical and methodological origin. The aim of this review is
+  to list these factors of influence and to provide the reader with optical
+  property spectra (250–2,500 nm) for whole blood that can be used in the
+  practice of biomedical optics (tabulated in the appendix). Hereto, we perform
+  a critical examination and selection of the available optical property
+  spectra of blood in literature, from which we compile average spectra for the
+  absorption coefficient (μ(a)), scattering coefficient (μ(s)) and scattering
+  anisotropy (g). From this, we calculate the reduced scattering coefficient
+  (μ(s)′) and the effective attenuation coefficient (μ(eff)). In the
+  compilation of μ(a) and μ(s), we incorporate the influences of absorption
+  flattening and dependent scattering (i.e. spatial correlations between
+  positions of red blood cells), respectively. For the influence of dependent
+  scattering on μ(s), we present a novel, theoretically derived formula that
+  can be used for practical rescaling of μ(s) to other haematocrits. Since the
+  measurement of the scattering properties of blood has been proven to be
+  challenging, we apply an alternative, theoretical approach to calculate
+  spectra for μ(s) and g. Hereto, we combine Kramers–Kronig analysis with
+  analytical scattering theory, extended with Percus–Yevick structure factors
+  that take into account the effect of dependent scattering in whole blood. We
+  argue that our calculated spectra may provide a better estimation for μ(s)
+  and g (and hence μ(s)′ and μ(eff)) than the compiled spectra from
+  literature for wavelengths between 300 and 600 nm.%
+    }
     \verb{doi}
     \verb 10.1007/s10103-013-1446-7
     \endverb
-    \field{issn}{0268-8921, 1435-604X}
+    \field{issn}{1435-604X}
     \field{number}{2}
     \field{pages}{453\bibrangedash 479}
     \field{title}{A literature review and novel theoretical approach on the
   optical properties of whole blood}
-    \verb{url}
-    \verb https://link.springer.com/10.1007/s10103-013-1446-7
-    \endverb
     \field{volume}{29}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\MPJBBNXJ\\Bosschaart et al. - 2014 - A literature revi
-    \verb ew and novel theoretical approach on the optical properties of whole
-    \verb blood.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Lasers in Medical Science}
     \field{month}{03}
     \field{year}{2014}
@@ -894,7 +1008,7 @@
     \strng{fullhash}{PGK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Textbook of {Medical} {Physiology}}
+    \field{title}{Textbook of Medical Physiology}
     \verb{url}
     \verb https://books.google.com/books?hl=es&lr=&id=FdBcEAAAQBAJ&oi=fnd&pg=PP
     \verb 1&dq=textbook+of+medical+physiology&ots=oE3gbJpsh6&sig=ZMWnk_PGEpI7Dq
@@ -954,13 +1068,13 @@
     \field{year}{2023}
   \endentry
 
-  \entry{ergulComputationalStudyScattering2010a}{article}{}{}
+  \entry{ergulComputationalStudyScattering2010}{article}{}{}
     \name{author}{3}{}{%
-      {{hash=E�}{%
+      {{hash=EO}{%
          family={Ergül},
          familyi={E\bibinitperiod},
-         given={Özgür},
-         giveni={�\bibinitperiod},
+         given={Ozgür},
+         giveni={O\bibinitperiod},
       }}%
       {{hash=AEA}{%
          family={Arslan-Ergül},
@@ -975,21 +1089,35 @@
          giveni={L\bibinitperiod},
       }}%
     }
-    \strng{namehash}{E�AEAGL1}
-    \strng{fullhash}{E�AEAGL1}
+    \keyw{Abnormal, Animals, Cardiovascular, Computer Simulation, Erythrocytes,
+  Humans, Light, Models, Nephelometry and Turbidimetry, Radiation,
+  Refractometry, Scattering}
+    \strng{namehash}{EOAEAGL1}
+    \strng{fullhash}{EOAEAGL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We present a comparative study of scattering from healthy red blood cells
+  ({RBCs}) and diseased {RBCs} with deformed shapes. Scattering problems
+  involving three-dimensional {RBCs} are formulated accurately with the
+  electric and magnetic current combined-field integral equation and solved
+  efficiently by the multilevel fast multipole algorithm. We compare scattering
+  cross section values obtained for different {RBC} shapes and different
+  orientations. In this way, we determine strict guidelines to distinguish
+  deformed {RBCs} from healthy {RBCs} and to diagnose various diseases using
+  scattering cross section values. The results may be useful for designing new
+  and improved flow cytometry procedures.%
+    }
+    \verb{doi}
+    \verb 10.1117/1.3467493
+    \endverb
+    \field{issn}{1560-2281}
     \field{number}{4}
-    \field{pages}{045004\bibrangedash 045004}
+    \field{pages}{045004}
     \field{title}{Computational study of scattering from healthy and diseased
   red blood cells}
-    \verb{url}
-    \verb https://www.spiedigitallibrary.org/journals/Journal-ofBiomedical-Opti
-    \verb cs/volume-15/issue-4/045004/Computational-study-of-scattering-from-he
-    \verb althy-anddiseased-red-blood/10.1117/1.3467493.short
-    \endverb
     \field{volume}{15}
-    \field{journaltitle}{Journal of biomedical optics}
+    \field{journaltitle}{Journal of Biomedical Optics}
     \field{year}{2010}
   \endentry
 
@@ -1063,11 +1191,6 @@
     \verb ed/journals/WJOA/2/1/10.5005_jp-journals-10065-0024/WJOA-2-26.pdf
     \endverb
     \field{volume}{2}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\A45GG868\\Saxena et al. - 2018 - Clinical evaluation o
-    \verb f different types of anemia.pdf:application/pdf
-    \endverb
     \field{journaltitle}{World Journal of Anemia}
     \field{year}{2018}
   \endentry
@@ -1111,8 +1234,8 @@
     \field{labeltitlesource}{shorttitle}
     \field{pages}{69\bibrangedash 80}
     \field{shorttitle}{Esferocitosis hereditaria}
-    \field{title}{Esferocitosis hereditaria: {Revisión}. {Parte} {I}.
-  {Historia}, demografía, etiopatogenia y diagnóstico}
+    \field{title}{Esferocitosis hereditaria: Revisión. Parte I. Historia,
+  demografía, etiopatogenia y diagnóstico}
     \verb{url}
     \verb https://pesquisa.bvsalud.org/portal/resource/frgovbrrevistarialpdf/bi
     \verb blio-1159661
@@ -1198,12 +1321,6 @@
     \verb iconcave-red-blood-cell/10.1117/1.1897397.short
     \endverb
     \field{volume}{10}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\4H2CWBIY\\Lu et al. - 2005 - Simulations of light scat
-    \verb tering from a biconcave red blood cell using the finite-difference ti
-    \verb me-dom.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Journal of Biomedical Optics}
     \field{year}{2005}
   \endentry
@@ -1245,7 +1362,7 @@
     \verb 10.3233/BIR-1981-183-606
     \endverb
     \field{issn}{18785034, 0006355X}
-    \field{number}{3-6}
+    \field{number}{3}
     \field{pages}{369\bibrangedash 385}
     \field{title}{High-resolution data on the geometry of red blood cells}
     \verb{url}
@@ -1257,7 +1374,7 @@
     \field{year}{1981}
   \endentry
 
-  \entry{wriedtLightScatteringSingle2006a}{article}{}{}
+  \entry{wriedtLightScatteringSingle2006}{article}{}{}
     \name{author}{4}{}{%
       {{hash=WT}{%
          family={Wriedt},
@@ -1284,27 +1401,42 @@
          giveni={R\bibinitperiod},
       }}%
     }
+    \keyw{Discrete dipole approximation, Discrete sources method,
+  Electromagnetic scattering, Erythrocyte, Finite integration technique,
+  Multiple multipole program, T-matrix}
     \strng{namehash}{WTHJEESR1}
     \strng{fullhash}{WTHJEESR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
-    \field{number}{1-3}
+    \field{abstract}{%
+    In this paper we investigate the capabilities of different light scattering
+  programs for light scattering simulation of the single human red blood cell,
+  also known as erythrocyte. Knowledge of the scattering properties can help to
+  solve the inverse problem of classifying erythrocytes according to size and
+  shape using measured scattering diagrams. We compare the different programs
+  by presenting the corresponding scattering diagrams. Then we give an overview
+  of computation times and point out the different characteristics of the
+  methods.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jqsrt.2005.11.057
+    \endverb
+    \field{number}{1}
     \field{pages}{444\bibrangedash 456}
     \field{shorttitle}{Light scattering by single erythrocyte}
-    \field{title}{Light scattering by single erythrocyte: comparison of
+    \field{title}{Light scattering by single erythrocyte: Comparison of
   different methods}
     \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0022407305004073?c
-    \verb asa_token=Atkovzo7EqEAAAAA:t2gFabPNSHvjSLv18lm_v9yX_WC_TVtJAplOuJDPvp
-    \verb Im9wsYI8A6OZVzlt7IlGS4taL7NcJH2GWo
+    \verb https://www.sciencedirect.com/science/article/pii/S0022407305004073
     \endverb
     \field{volume}{100}
     \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative
   Transfer}
+    \field{month}{07}
     \field{year}{2006}
   \endentry
 
-  \entry{friebelDeterminationComplexRefractive2005a}{article}{}{}
+  \entry{friebelDeterminationComplexRefractive2005}{article}{}{}
     \name{author}{2}{}{%
       {{hash=FM}{%
          family={Friebel},
@@ -1319,30 +1451,32 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Society of Photo-Optical Instrumentation Engineers}%
-    }
+    \keyw{Erythrocytes, Humans, Nephelometry and Turbidimetry, Refractometry,
+  Blood Chemical Analysis, Complex Mixtures, Hemoglobins, Photometry,
+  Reproducibility of Results, Sensitivity and Specificity, Solutions}
     \strng{namehash}{FMMM1}
     \strng{fullhash}{FMMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The complex refractive index of highly concentrated hemoglobin solutions as
+  they appear in red blood cells are determined in the wavelength range of 250
+  to 1100 nm using transmittance and Fresnel reflectance measurements. The
+  determined real parts of the refractive indices are on average 0.02 units
+  higher than the values found in the literature. The wavelength dependence of
+  the measured data in the {UV} region differs from the calculated data using
+  the Kramers-Kronig relation.%
+    }
+    \verb{doi}
+    \verb 10.1117/1.2138027
+    \endverb
+    \field{issn}{1083-3668}
     \field{number}{6}
-    \field{pages}{064019\bibrangedash 064019}
+    \field{pages}{064019}
     \field{title}{Determination of the complex refractive index of highly
   concentrated hemoglobin solutions using transmittance and reflectance
   measurements}
-    \verb{url}
-    \verb https://www.spiedigitallibrary.org/journals/Journal-of-Biomedical-Opt
-    \verb ics/volume-10/issue-6/064019/Determination-of-the-complex-refractive-
-    \verb index-of-highly-concentrated-hemoglobin/10.1117/1.2138027.short
-    \endverb
     \field{volume}{10}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\S72Y5GDP\\Friebel and Meinke - 2005 - Determination of
-    \verb  the complex refractive index of highly concentrated hemoglobin solut
-    \verb ions using tran.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Journal of Biomedical Optics}
     \field{year}{2005}
   \endentry
@@ -1424,44 +1558,8 @@
     \verb hole-blood-and-its/10.1117/1.JBO.24.3.035003.short
     \endverb
     \field{volume}{24}
-    \verb{file}
-    \verb Available Version (via Google Scholar):C\:\\Users\\Nanoplasmonics\\Zo
-    \verb tero\\storage\\3INWQXHG\\Liu et al. - 2019 - Measurement of the refra
-    \verb ctive index of whole blood and its components for a continuous spectr
-    \verb al regi.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Journal of biomedical optics}
     \field{year}{2019}
-  \endentry
-
-  \entry{bohrenAbsorptionScatteringLight2008a}{book}{}{}
-    \name{author}{2}{}{%
-      {{hash=BCF}{%
-         family={Bohren},
-         familyi={B\bibinitperiod},
-         given={Craig\bibnamedelima F.},
-         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=HDR}{%
-         family={Huffman},
-         familyi={H\bibinitperiod},
-         given={Donald\bibnamedelima R.},
-         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {John Wiley \& Sons}%
-    }
-    \strng{namehash}{BCFHDR1}
-    \strng{fullhash}{BCFHDR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Absorption and scattering of light by small particles}
-    \verb{url}
-    \verb https://books.google.com/books?hl=es&lr=&id=ib3EMXXIRXUC&oi=fnd&pg=PP
-    \verb 2&dq=bohren+scattering&ots=ABfstbegWN&sig=lFx_kQ_GYzmFpTlIPYLmiqmgqCc
-    \endverb
-    \field{year}{2008}
   \endentry
 
   \entry{maggioreModernIntroductionClassical2023}{book}{}{}
@@ -1522,7 +1620,7 @@
     \field{labeltitlesource}{title}
     \field{number}{13}
     \field{pages}{2660\bibrangedash 2673}
-    \field{title}{Multiply subtractive {Kramers}–{Kronig} analysis of optical
+    \field{title}{Multiply subtractive Kramers–Kronig analysis of optical
   data}
     \verb{url}
     \verb https://opg.optica.org/abstract.cfm?uri=ao-37-13-2660
@@ -1530,6 +1628,161 @@
     \field{volume}{37}
     \field{journaltitle}{Applied Optics}
     \field{year}{1998}
+  \endentry
+
+  \entry{clemensDiscreteElectromagnetismFinite2001}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Clemens},
+         familyi={C\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Weiland},
+         familyi={W\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Electromagnetics Academy}%
+    }
+    \strng{namehash}{CMWT1}
+    \strng{fullhash}{CMWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{65}
+    \field{title}{Discrete electromagnetism with the finite integration
+  technique}
+    \verb{url}
+    \verb http://www.mweda.com/html/img/smqh/rf/rf-856axbgqiblbrl.pdf
+    \endverb
+    \field{volume}{32}
+    \field{journaltitle}{Progress In Electromagnetics Research}
+    \field{year}{2001}
+    \field{urlday}{13}
+    \field{urlmonth}{04}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{dhattFiniteElementMethod2012}{book}{}{}
+    \name{author}{3}{}{%
+      {{hash=DG}{%
+         family={Dhatt},
+         familyi={D\bibinitperiod},
+         given={Gouri},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Touzot},
+         familyi={T\bibinitperiod},
+         given={Gilbert},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Lefrançois},
+         familyi={L\bibinitperiod},
+         given={Emmanuel},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons, Ltd}%
+    }
+    \strng{namehash}{DGTGLE1}
+    \strng{fullhash}{DGTGLE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/9781118569764.ch3
+    \endverb
+    \field{title}{Finite Element Method}
+    \field{year}{2012}
+  \endentry
+
+  \entry{dassaultsystemesCSTMicrowaveStudio2003}{report}{}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Dassault Systèmes}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{155}
+    \field{title}{{CST} Microwave Studio: {HF} Design and Analysis}
+    \field{type}{Documentación técnica}
+    \field{year}{2003}
+  \endentry
+
+  \entry{yeeNumericalSolutionInitial1966}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=YK}{%
+         family={Yee},
+         familyi={Y\bibinitperiod},
+         given={Kane},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YK1}
+    \strng{fullhash}{YK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/tap.1966.1138693
+    \endverb
+    \field{number}{3}
+    \field{pages}{302\bibrangedash 307}
+    \field{title}{Numerical solution of initial boundary value problems
+  involving Maxwell's equations in isotropic media}
+    \field{volume}{14}
+    \field{journaltitle}{{IEEE} Transactions on Antennas and Propagation}
+    \field{year}{1966}
+  \endentry
+
+  \entry{hadabSolutionMaxwellsEquation2023}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=HA}{%
+         family={Hadab},
+         familyi={H\bibinitperiod},
+         given={Abdennaser},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HA1}
+    \strng{fullhash}{HA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Solution of Maxwell's Equation: A. Numerical Approach}
+    \verb{url}
+    \verb https://forschung.rwu.de/
+    \endverb
+    \list{institution}{1}{%
+      {Hochschule Ravensburg-Weingarten University of Applied Sciences}%
+    }
+    \field{type}{{BSc} Thesis}
+    \field{year}{2023}
+  \endentry
+
+  \entry{dassaultsystemesUnderstandingTimeDomain2010}{report}{}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Dassault Systèmes}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{17}
+    \field{title}{Understanding Time Domain Meshing in {CST} {MICROWAVE}
+  {STUDIO}}
+    \field{year}{2010}
   \endentry
 
   \entry{kreibigOpticalPropertiesMetal2013}{book}{}{}

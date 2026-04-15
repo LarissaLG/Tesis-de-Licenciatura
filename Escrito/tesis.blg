@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tesis.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
@@ -28,57 +28,55 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 11300 items.
+Reallocating 'field_info' (item size: 4) to 12140 items.
 Database file #1: tesis-blx.bib
 Database file #2: 6-References/references.bib
-Warning--I didn't find a database entry for "yeeNumericalSolutionInitial1966"
-Warning--I didn't find a database entry for "tafloveComputationalElectrodynamicsFinite2005"
-Warning--I didn't find a database entry for "reyes2018analytical"
-Warning--I didn't find a database entry for "pena-gomar2006coherent"
-Warning--I didn't find a database entry for "barrera1991optical"
-Warning--I didn't find a database entry for "garcia2012multiple"
+Warning--I didn't find a database entry for "bohrenAbsorptionScatteringLight2008a"
+Warning--I didn't find a database entry for "bosschaartLiteratureReviewNovel2014a"
+Warning--I didn't find a database entry for "friebelDeterminationComplexRefractive2005a"
+Warning--I didn't find a database entry for "meinkeOpticalPropertiesPlatelets2007a"
 Biblatex version: 3.21
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 39 entries,
+You've used 47 entries,
             6402 wiz_defined-function locations,
-            1537 strings with 26964 characters,
-and the built_in function-call counts, 359351 in all, are:
-= -- 29614
-> -- 5788
-< -- 1376
-+ -- 10833
-- -- 2744
-* -- 25637
-:= -- 41300
+            1599 strings with 31023 characters,
+and the built_in function-call counts, 523185 in all, are:
+= -- 34440
+> -- 29400
+< -- 2276
++ -- 33884
+- -- 24030
+* -- 29674
+:= -- 70178
 add.period$ -- 0
-call.type$ -- 39
-change.case$ -- 731
-chr.to.int$ -- 116
-cite$ -- 76
-duplicate$ -- 35724
-empty$ -- 30834
-format.name$ -- 3481
-if$ -- 72085
+call.type$ -- 47
+change.case$ -- 836
+chr.to.int$ -- 1298
+cite$ -- 92
+duplicate$ -- 45859
+empty$ -- 37713
+format.name$ -- 4093
+if$ -- 87777
 int.to.chr$ -- 0
-int.to.str$ -- 103
+int.to.str$ -- 120
 missing$ -- 0
-newline$ -- 1516
-num.names$ -- 1959
-pop$ -- 14363
+newline$ -- 1696
+num.names$ -- 2306
+pop$ -- 17661
 preamble$ -- 1
-purify$ -- 1048
+purify$ -- 1199
 quote$ -- 0
-skip$ -- 8253
+skip$ -- 11222
 stack$ -- 0
-substring$ -- 56848
-swap$ -- 6318
-text.length$ -- 1050
+substring$ -- 67288
+swap$ -- 8620
+text.length$ -- 1816
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1314
+type$ -- 1578
 warning$ -- 0
-while$ -- 4721
+while$ -- 6430
 width$ -- 0
-write$ -- 1478
-(There were 6 warnings)
+write$ -- 1650
+(There were 4 warnings)

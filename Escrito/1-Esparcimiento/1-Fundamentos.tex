@@ -5,13 +5,13 @@
 
 \vspace*{7em}
 
-En este capítulo se estudia la interacción electromagnética entre la luz y la materia mediante una formulación basada en la función dieléctrica dependiente de la frecuencia de la luz considerada. En la primera parte se presentan las ecuaciones de Maxwell y las relaciones constitutivas para sistemas lineales, homogéneos e isótropos y se analiza la solución de ondas planas, la cual se emplea para describir el flujo de energía transportado por una onda electromagnética mediante el vector de Poynting y su promedio temporal. En la segunda parte se derivan las secciones transversales de absorción, esparcimiento y extinción, que permiten cuantificar la interacción entre una onda incidente y una partícula \cite{bohrenAbsorptionScatteringLight2008}. Adicionalmente, en la Sección \ref{section:rKK} se estudian las relaciones de Kramers–Kronig aplicadas a la función dieléctrica. Estas relaciones permiten vincular las partes real e imaginaria de cualquier función óptica lineal compleja, condicionada a pruebas de causalidad y analiticidad en el contexto de funciones complejas \cite{lucariniKramersKronigRelationsOptical2005a}. Finalmente, se discuten las limitaciones de aplicar las relaciones de Kramers-Kronig a datos experimentales con un rango finito de frecuencias y se presenta la derivación de las relaciones de Kramers–Kronig sustractivas. 
+En este capítulo se estudia la interacción electromagnética entre la luz y la materia mediante una formulación basada en la función dieléctrica dependiente de la frecuencia de la luz considerada. En la primera parte se presentan las ecuaciones de Maxwell y las relaciones constitutivas para sistemas lineales, homogéneos e isótropos y se analiza la solución de ondas planas, la cual se emplea para describir el flujo de energía transportado por una onda electromagnética mediante el vector de Poynting y su promedio temporal. En la segunda parte se derivan las secciones transversales de absorción, esparcimiento y extinción, que permiten cuantificar la interacción entre una onda incidente y una partícula \cite{bohrenAbsorptionScatteringLight2008}. Adicionalmente, en la Sección \ref{section:rKK} se estudian las relaciones de Kramers–Kronig aplicadas a la función dieléctrica. Estas relaciones permiten vincular las partes real e imaginaria de cualquier función óptica lineal compleja, condicionada a pruebas de causalidad y analiticidad en el contexto de funciones complejas \cite{lucariniKramersKronigRelationsOptical2005}. Finalmente, se discuten las limitaciones de aplicar las relaciones de Kramers-Kronig a datos experimentales con un rango finito de frecuencias y se presenta la derivación de las relaciones de Kramers–Kronig sustractivas. 
 
 
 \section{Formalismo}
 \label{section:basics}
 Las ecuaciones de Maxwell, junto con la fuerza de Lorentz\footnote{La fuerza de Lorentz es la fuerza que experimenta una partícula de carga \( q \) que se desplaza con velocidad \( \vb{v} \) en presencia de un campo eléctrico \( \vb{E} \) y un campo magnético \( \vb{B} \). En unidades del SI está dada por $\vb{F}=q(\vb{E}+\vb{v}\times\vb{B})$ \cite{zangwillModernElectrodynamics2013}. }, describen a la electrodinámica clásica, que se centra en el origen y comportamiento de los campos electromagnéticos \cite{zangwillModernElectrodynamics2013}. En unidades del Sistema Internacional (SI), las ecuaciones de Maxwell se expresan en forma diferencial como
-\cite{griffithsIntroductionElectrodynamics2023b}
+\cite{griffithsIntroductionElectrodynamics2023}
 %
 	\begin{subequations} \label{eqs:Maxwell}
 	\begin{tcolorbox}[
@@ -28,30 +28,30 @@ Las ecuaciones de Maxwell, junto con la fuerza de Lorentz\footnote{La fuerza de 
 %
 donde se obvian las dependencias espaciales y temporales y $\vb{E}(\vb{r},t)$ es el campo eléctrico,  $\vb{B}(\vb{r},t)$ es el campo magnético; $\rho_{\text{tot}}$  es la densidad volumétrica de carga total, $\vb{J}_{\text{tot}}$ la densidad volumétrica de corriente  total; $\epsilon_0$ es la permitividad eléctrica en el vacío y $\mu_0$ la permeabilidad magnética en el vacío. 
 
-\noindent Las ecuaciones de Maxwell se pueden reescribir en términos del vector de desplazamiento eléctrico $\vb{D}$ y el campo $\vb{H}$, dados por \cite{griffithsIntroductionElectrodynamics2023b}
+\noindent Las ecuaciones de Maxwell se pueden reescribir en términos del vector de desplazamiento eléctrico $\vb{D}$ y el campo $\vb{H}$, dados por \cite{griffithsIntroductionElectrodynamics2023}
 %
 \begin{equation}
 	\vb{D}(\vb{r},t)=\epsilon_0\vb{E}(\vb{r},t)+\vb{P}(\vb{r},t) \hspace{1cm}\text{y}\hspace{1cm}
 	\vb{H}(\vb{r},t)=\frac{\vb{B}(\vb{r},t)}{\mu_0}-\vb{M}(\vb{r},t), \label{eq:D_H}
 \end{equation}
 %
-donde $\vb{P}$ es la polarización y $\vb{M}$ es la magnetización de un material determinado, que corresponden al momento dipolar eléctrico y magnético por unidad de volumen, respectivamente, inducidos en el material. La relación lineal más general entre $\vb{E}$ y $\vb{D}$ está dada por \cite{jacksonClassicalElectrodynamics2021a}
+donde $\vb{P}$ es la polarización y $\vb{M}$ es la magnetización de un material determinado, que corresponden al momento dipolar eléctrico y magnético por unidad de volumen, respectivamente, inducidos en el material. La relación lineal más general entre $\vb{E}$ y $\vb{D}$ está dada por \cite{jacksonClassicalElectrodynamics2021}
 %
 \begin{tcolorbox}[ams align]
 	\vb{D}(\vb{r},t)=\int_{\infty}^{\infty}\int_{V'}\stackrel{\leftrightarrow}{\varepsilon}(\vb{r}-\vb{r}',t-t')\vdot\vb{E}(\vb{r}',t')\dd{V}'\dd{t'}\
 	\label{eq:d} 
 \end{tcolorbox}
 %	
-\noindent donde $\stackrel{\leftrightarrow}{\varepsilon}$ es un tensor de rango dos y representa una función de respuesta\footnote{Las funciones de respuesta proporcionan información sobre el efecto de las interacciones electromagnéticas con el medio y sobre la estructura y propiedades del propio medio \cite{kirzhnitsGeneralPropertiesElectromagnetic1989}.} del material en el espacio y el tiempo \cite{jacksonClassicalElectrodynamics2021a} y $V'$ es el volumen donde se encuentra el material. La Ec. \eqref{eq:d} muestra que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. Adicionalmente, el campo de desplazamiento eléctrico en un punto $\vb{r}$ depende de los valores del campo eléctrico en puntos vecinos $\vb{r}'$ \cite{jacksonClassicalElectrodynamics2021a}. A estas características, se les conoce como la no localidad temporal y espacial, respectivamente, entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021a}.
+\noindent donde $\stackrel{\leftrightarrow}{\varepsilon}$ es un tensor de rango dos y representa una función de respuesta\footnote{Las funciones de respuesta proporcionan información sobre el efecto de las interacciones electromagnéticas con el medio y sobre la estructura y propiedades del propio medio \cite{kirzhnitsGeneralPropertiesElectromagnetic1989}.} del material en el espacio y el tiempo \cite{jacksonClassicalElectrodynamics2021} y $V'$ es el volumen donde se encuentra el material. La Ec. \eqref{eq:d} muestra que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. Adicionalmente, el campo de desplazamiento eléctrico en un punto $\vb{r}$ depende de los valores del campo eléctrico en puntos vecinos $\vb{r}'$ \cite{jacksonClassicalElectrodynamics2021}. A estas características, se les conoce como la no localidad temporal y espacial, respectivamente, entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021}.
 
-En un medio isótropo y homogéneo, $\stackrel{\leftrightarrow}{\varepsilon} = \varepsilon\; \text{diag}(1,1,1)$ donde $\varepsilon$ es una función escalar~\cite{jacksonClassicalElectrodynamics2021a} y $\text{diag}(1,1,1)$ es la matriz identidad; en este caso, tanto $\varepsilon$ como $\vb{E}$ son independientes de la posición y dependen únicamente de la diferencia temporal, es decir \cite{jacksonClassicalElectrodynamics2021a}
+En un medio isótropo y homogéneo, $\stackrel{\leftrightarrow}{\varepsilon} = \varepsilon\; \text{diag}(1,1,1)$ donde $\varepsilon$ es una función escalar~\cite{jacksonClassicalElectrodynamics2021} y $\text{diag}(1,1,1)$ es la matriz identidad; en este caso, tanto $\varepsilon$ como $\vb{E}$ son independientes de $\vb{r}'$ y dependen únicamente de la diferencia temporal, es decir \cite{jacksonClassicalElectrodynamics2021}
 %
 \begin{tcolorbox}[ams align]
 	\vb{D}(\vb{r},t)=\int_{-\infty}^{\infty}\varepsilon(t-t')\vb{E}(t')\dd{t'},
 	\label{eq:d1} 
 \end{tcolorbox}
 %	
-\noindent de modo que la Ec. \eqref{eq:d1} es una convolución\footnote{La convolución de dos funciones $f(t), g(t)$ está dada por $f\ast g=\int_{-\infty}^{\infty}f(t-t')g(t')\dd{t'}$ \cite{arfkenMathematicalMethodsPhysicists2011a}.} en el tiempo. Al aplicar la transformada de Fourier y el teorema de la convolución\footnote{El teorema de la convolución es $\mathscr{F}[f\ast g]=\mathscr{F}[f]\mathscr{F}[g]$, donde $\mathscr{F}$ es la transformada de Fourier de una función. En este trabajo se considera la convención de la transformada de Fourier como \cite{arfkenMathematicalMethodsPhysicists2011a}
+\noindent de modo que la Ec. \eqref{eq:d1} es una convolución\footnote{La convolución de dos funciones $f(t), g(t)$ está dada por $f\ast g=\int_{-\infty}^{\infty}f(t-t')g(t')\dd{t'}$ \cite{arfkenMathematicalMethodsPhysicists2011}.} en el tiempo. Al aplicar la transformada de Fourier y el teorema de la convolución\footnote{El teorema de la convolución es $\mathscr{F}[f\ast g]=\mathscr{F}[f]\mathscr{F}[g]$, donde $\mathscr{F}$ es la transformada de Fourier de una función. En este trabajo se considera la convención de la transformada de Fourier como \cite{arfkenMathematicalMethodsPhysicists2011}
 	\begin{equation*}
 		 f(\omega)&=\mathscr{F}[f(t)]=\int_{-\infty}^{\infty}f(t)e^{i\omega t}\dd{t},\;\;\; \text{y}\;\;\; f(t)&=\mathscr{F}^{-1}[f(\omega)]=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(\omega)e^{i\omega t}\dd{\omega},
 	\end{equation*} 
@@ -63,7 +63,7 @@ donde la dependencia indica si se trata de la transformada de Fourier directa (d
 \end{tcolorbox}
 %
 \noindent Así, en el espacio de frecuencias, la respuesta del medio queda completamente caracterizada por una función dieléctrica y una permeabilidad magnética dependiente de la frecuencia. Adicionalmente, la relación lineal entre $\vb{D}$ y $\vb{E}$ se debe a que tanto $\vb{P}$  como  $\vb{M}$ tienen a su vez esta relación con los campos $\vb{E}$ y $\vb{H}$, respectivamente. Entonces, en un medio lineal, homogéneo e isótropo, $\vb{P}$ es paralelo a 
- $\vb{E}$ y $\vb{M}$ es paralelo a $\vb{H}$, con coeficientes de proporcionalidad $\varepsilon_0 \chi(\omega)$ y $\chi_m(\omega)$, respectivamente, es decir \cite{griffithsIntroductionElectrodynamics2023b}
+ $\vb{E}$ y $\vb{M}$ es paralelo a $\vb{H}$, con coeficientes de proporcionalidad $\varepsilon_0 \chi(\omega)$ y $\chi_m(\omega)$, respectivamente, es decir \cite{griffithsIntroductionElectrodynamics2023}
 \begin{align}
 	\vb{P}=\varepsilon_0\chi(\omega)\vb{E}\hspace{2cm}\text{y}\hspace{2cm}
 	\vb{M}=\chi_m(\omega)\vb{H},
@@ -77,21 +77,21 @@ donde $\chi$ y $\chi_m$ son cantidades adimensionales que corresponden a la susc
 \end{equation}
 %.
 
-En ausencia de fuentes externas ($ \rho_{\text{tot}} = 0, \vb{J}_{\text{tot}} = \vb{0}$) y en un medio lineal, homogéneo e isótropo, las Ecs. \eqref{eqs:Maxwell} pueden desacoplarse y, al aplicar la transformada de Fourier temporal, se obtienen las ecuaciones de Helmholtz para $\vb{E}$ y para $\vb{B}$ \cite{jacksonClassicalElectrodynamics2021a}
+En ausencia de fuentes externas ($ \rho_{\text{tot}} = 0, \vb{J}_{\text{tot}} = \vb{0}$) y en un medio lineal, homogéneo e isótropo, las Ecs. \eqref{eqs:Maxwell} pueden desacoplarse y, al aplicar la transformada de Fourier temporal, se obtienen las ecuaciones de Helmholtz para $\vb{E}$ y para $\vb{B}$ \cite{jacksonClassicalElectrodynamics2021}
 %
 \begin{equation}
 	\laplacian{\vb{E}}+k^2\vb{E}=0\hspace{2cm}\text{y}\hspace{2cm} \laplacian{\vb{B}}+k^2\vb{B}=0,
 	\label{eqs:helmholtz}
 \end{equation}
 %
-con $k$ una constante denominada número de onda. Una solución a la ecuación de Helmholtz son las ondas planas, en las que los campos están descritos por superficies de fase constante \cite{griffithsIntroductionElectrodynamics2023b}
+con $k$ una constante denominada número de onda. Una solución a la ecuación de Helmholtz son las ondas planas, en las que los campos están descritos por superficies de fase constante \cite{griffithsIntroductionElectrodynamics2023}
 %
 \begin{equation}
 	\vb{E}(\vb{r},t) =\vb{E}_0 e^{i(\vb{k}\cdot\vb{r} -\omega t)}\hspace{2cm}\text{y}\hspace{2cm} \vb{B}(\vb{r}, t) =\vb{B}_0 e^{i(\vb{k}\cdot\vb{r} -\omega t)},	
 	\label{eqs:ondas_planas}
 \end{equation}
 %
-\noindent donde $\vb{E}_0$ y $\vb{B}_0$ corresponden a las amplitudes de los campos, $\omega$ es la frecuencia angular de la onda y $\vb{k}$ el vector de onda. Para que las Ecs. \eqref{eqs:ondas_planas} satisfagan las Ecs. \eqref{eqs:helmholtz}, se impone la relación de dispersión de una onda plana dada por $k=\sqrt{\mu\varepsilon}\;\omega$, donde $\varepsilon$ y $\mu$ corresponden a la permitividad eléctrica y la permeabilidad magnética del medio \cite{jacksonClassicalElectrodynamics2021a}. La relación de dispersión se puede reescribir en términos del índice de refracción del material dado por \cite{jacksonClassicalElectrodynamics2021a}
+\noindent donde $\vb{E}_0$ y $\vb{B}_0$ corresponden a las amplitudes de los campos, $\omega$ es la frecuencia angular de la onda y $\vb{k}$ el vector de onda. Para que las Ecs. \eqref{eqs:ondas_planas} satisfagan las Ecs. \eqref{eqs:helmholtz}, se impone la relación de dispersión de una onda plana dada por $k=\sqrt{\mu\varepsilon}\;\omega$, donde $\varepsilon$ y $\mu$ corresponden a la permitividad eléctrica y la permeabilidad magnética del medio \cite{jacksonClassicalElectrodynamics2021}. La relación de dispersión se puede reescribir en términos del índice de refracción del material dado por \cite{jacksonClassicalElectrodynamics2021}
 \vspace{-0.1cm}
 %
 \begin{tcolorbox}[ams align]
@@ -108,7 +108,7 @@ con $k$ una constante denominada número de onda. Una solución a la ecuación d
 
 \noindent donde $c=1/\sqrt{\varepsilon_0\mu_0}$ es la velocidad de la luz en el vacío.
 
-El flujo de energía que transporta una onda electromagnética en la dirección de propagación se describe mediante el vector de Poynting  $\vb{S}$ \cite{griffithsIntroductionElectrodynamics2023b}
+El flujo de energía que transporta una onda electromagnética en la dirección de propagación se describe mediante el vector de Poynting  $\vb{S}$ \cite{griffithsIntroductionElectrodynamics2023}
 \begin{tcolorbox}[ams align]
 	\vb{S}=\frac{1}{\mu_0}(\vb{E}\times\vb{B}).
 	\label{eq:vect_Poynting} 
