@@ -1,6 +1,6 @@
 % !TeX root = ../tesis.tex
 
-\section{\textit{Esquema Leap-frog}}
+\section{Esquema \textit{Leap-frog}}
 \label{section:Tiempo}
 
 Para resolver las MGE en el dominio del tiempo, se emplea el esquema de avance temporal conocido como \textit{Leap-frog} \cite{clemensDiscreteElectromagnetismFinite2001}. Este método se basa en una discretización escalonada tanto en el espacio como en el tiempo. En este esquema, las circulaciones del campo eléctrico y los flujos magnéticos no se calculan en los mismos instantes de tiempo, sino que se encuentran desplazados por medio paso temporal ($\Delta t/2$) \cite{dassaultsystemesUnderstandingTimeDomain2010}. En particular, el flujo magnético se actualiza en instantes enteros $t^n$, mientras que la circulación eléctrica se evalúa en un tiempo desfasado ($t^{n+1/2}$). El procedimiento de integración temporal es, por tanto, alternante: primero se calcula el flujo magnético en el instante $t^{n+1}$ a partir del valor de $t^n$ y de la circulación eléctrica evaluada en $t^{n+1/2}$. Posteriormente se actualiza la circulación eléctrica en $t^{n+3/2}$ empleando el flujo magnético recién obtenido.  Para asegurar la estabilidad numérica de la simulación, el paso de tiempo $\Delta t$ debe satisfacer el criterio de estabilidad de Courant-Friedrichs-Lewy (CFL) \cite{dassaultsystemesUnderstandingTimeDomain2010}
