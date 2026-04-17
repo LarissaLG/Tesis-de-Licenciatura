@@ -6,16 +6,16 @@
    version="1.1"
    id="svg219"
    sodipodi:docname="Recontruccion.svg"
-   inkscape:export-filename="Recontruccion.png"
+   inkscape:export-filename="Recontruccion.pdf"
    inkscape:export-xdpi="700"
    inkscape:export-ydpi="700"
-   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:ns4="http://www.iki.fi/pav/software/textext/">
+   xmlns:ns5="http://www.iki.fi/pav/software/textext/">
   <sodipodi:namedview
      id="namedview219"
      pagecolor="#ffffff"
@@ -27,12 +27,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="2.0739796"
-     inkscape:cx="300.1476"
+     inkscape:cx="300.38868"
      inkscape:cy="226.37638"
-     inkscape:window-width="2880"
-     inkscape:window-height="1514"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg219" />
   <defs
@@ -1195,7 +1195,7 @@
      clip-path="url(#clip1-0)"
      clip-rule="nonzero"
      id="g73-4"
-     transform="matrix(0.98678261,0,0,1.3080688,-7.4043906,-42.106482)"
+     transform="matrix(0.98744305,0,0,1.0741608,-7.183265,-22.818686)"
      style="stroke:#5aa02c;stroke-opacity:1">
     <path
        style="fill:none;stroke:#5aa02c;stroke-width:1.6;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.25;stroke-opacity:1"
@@ -1438,17 +1438,17 @@
      d="m 70.063584,69.040758 6.648366,17.899452 8.438317,12.52962 6.90408,10.22826 8.182603,11.50679 7.41549,4.60272 7.15978,-20.20081 4.09131,-22.757883 3.8356,-18.666573 6.39266,-16.876629 6.90407,6.392662 9.71685,9.716847 7.15978,6.136957 8.18261,6.648369 7.6712,7.159785 6.64836,3.068475 8.18262,5.11413 7.67119,4.091302 7.41548,5.369848 7.41549,1.27853 6.90408,0.51141 8.18261,1.02283 6.64837,0.51141 7.41549,0.76712 h 7.67119 l 8.18261,0.2557 7.9269,1.27854 7.15979,2.30135 7.41548,1.78995 7.15979,2.55706 7.41549,1.53424 8.1826,-0.2557 6.90408,-1.02283 8.43832,-1.27853 6.90407,-1.02282 7.6712,-0.51142 8.94972,-0.76712"
      id="path73" />
   <g
-     ns4:version="1.10.2"
-     ns4:texconverter="pdflatex"
-     ns4:pdfconverter="inkscape"
-     ns4:text="KK - Bosschaart N., et al. 2013"
-     ns4:preamble="C:\Users\Nanoplasmonics\AppData\Roaming\inkscape\extensions\textext\default_packages.tex"
-     ns4:scale="1.3254992289565362"
-     ns4:alignment="middle center"
-     ns4:stroke-to-path="0"
-     ns4:inkscapeversion="1.4.2"
+     ns5:version="1.10.2"
+     ns5:texconverter="pdflatex"
+     ns5:pdfconverter="inkscape"
+     ns5:text="KK - Bosschaart N., et al. 2013"
+     ns5:preamble="C:\Users\Nanoplasmonics\AppData\Roaming\inkscape\extensions\textext\default_packages.tex"
+     ns5:scale="1.3254992289565362"
+     ns5:alignment="middle center"
+     ns5:stroke-to-path="0"
+     ns5:inkscapeversion="1.4.2"
      transform="matrix(1.126675,0,0,1.126675,163.36209,184.9402)"
-     ns4:jacobian_sqrt="1.3255"
+     ns5:jacobian_sqrt="1.3255"
      id="g66">
     <defs
        id="id-c37359d4-85b3-4a4a-ae68-e2e7e7ad535b">
