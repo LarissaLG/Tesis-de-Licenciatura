@@ -1816,5 +1816,39 @@
     \field{volume}{25}
     \field{year}{2013}
   \endentry
+
+  \entry{pressNumericalRecipesSource2007}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=PWH}{%
+         family={Press},
+         familyi={P\bibinitperiod},
+         given={William\bibnamedelima H.},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=TSA}{%
+         family={Teukolsky},
+         familyi={T\bibinitperiod},
+         given={Saul\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{PWHTSA1}
+    \strng{fullhash}{PWHTSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{shorttitle}{Numerical recipes with source code {CD}-{ROM} 3rd
+  edition}
+    \field{title}{Numerical recipes with source code {CD}-{ROM} 3rd edition:
+  the art of scientific computing}
+    \verb{url}
+    \verb https://books.google.com/books?hl=es&lr=&id=DyykEZo4fwUC&oi=fnd&pg=PR
+    \verb 11&dq=Numerical+Recipes-The+Art+of+Scientific+Computing+3rd+Edition+&
+    \verb ots=X7JY_rTGPN&sig=q5UnMIvnLdgqS9LzNhOxhD8V8gM
+    \endverb
+    \field{year}{2007}
+  \endentry
 \enddatalist
 \endinput
