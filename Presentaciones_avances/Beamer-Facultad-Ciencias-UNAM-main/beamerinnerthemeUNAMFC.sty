@@ -1,0 +1,229 @@
+
+% show logo top right corner, navigation symbols bottom right
+\setbeamertemplate{sidebar right}
+{
+	\vskip0.33cm%
+	\llap{\insertlogo\hskip0.4cm}%
+	\vfill%
+	\llap{\usebeamertemplate***{navigation symbols}\hskip0.4cm}%
+	\vskip2pt%
+}
+
+
+
+% -------------------------------------------------------------
+% ----------------------------- Frame title --------------------
+% -------------------------------------------------------------
+\setbeamerfont{frametitle}{series=\bfseries\titlefont,size=\huge}
+\setbeamertemplate{frametitle}{
+	\vspace{2.5mm}
+	\begin{beamercolorbox}{frametitle}
+						 \insertframetitle
+	\end{beamercolorbox}
+%
+	\ifx\insertframesubtitle\@empty%
+%
+	\else\vskip-0.0em%
+		{\begin{beamercolorbox}{structure}
+				\normalfont\titlefont\LARGE\insertframesubtitle
+		 \end{beamercolorbox}
+		}%
+	\fi%  
+}
+
+% ------------------------------------------------- centertitle
+\defbeamertemplate{frametitle}{centertitle}[0]{%
+		\vspace{2.5mm}
+		\begin{beamercolorbox}{frametitle}\centering
+			\insertframetitle
+		\end{beamercolorbox}
+		%
+		\ifx\insertframesubtitle\@empty%
+		%
+		\else\vskip-0.0em%
+		{\begin{beamercolorbox}{structure}\centering
+				\normalfont\titlefont\LARGE\insertframesubtitle
+			\end{beamercolorbox}
+		}%
+		\fi%  		
+}
+
+% ------------------------------------------------- righttitle
+\defbeamertemplate{frametitle}{righttitle}[0]{%
+		\vspace{2.5mm}
+		\begin{beamercolorbox}{frametitle}\hfill
+			\insertframetitle
+		\end{beamercolorbox}
+		%
+		\ifx\insertframesubtitle\@empty%
+		%
+		\else\vskip-0.0em%
+		{\begin{beamercolorbox}{structure}\hfill
+				\normalfont\titlefont\LARGE\insertframesubtitle
+			\end{beamercolorbox}
+		}%
+		\fi%  		
+}
+
+% -------------------------------------------------------------
+% ----------------------------- Part page --------------------
+% -------------------------------------------------------------
+\setbeamertemplate{part page}
+{
+	\vspace*{\fill} % \vfill seems not to work here
+	% workaround from http://www.latex-community.org/forum/viewtopic.php?f=44&t=17339
+	\begin{beamercolorbox}[sep=6pt]{part name}
+		\usebeamerfont{part name}\usebeamercolor[fg]{part name}\partname~\insertromanpartnumber
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[sep=6pt]{part title}
+		\usebeamerfont{part title}\insertpart\par
+	\end{beamercolorbox}
+	\vspace*{\fill}
+}
+
+
+% -------------------------------------------------------------
+% ----------------------------- Section page --------------------
+% -------------------------------------------------------------
+\setbeamertemplate{section page}
+{
+	\vfill
+	\begin{beamercolorbox}[sep=6pt]{section name}
+		\usebeamerfont{section name}\usebeamercolor[fg]{section name}\sectionname~\insertsectionnumber
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[sep=6pt]{part title}
+		\usebeamerfont{section title}\insertsection\par
+	\end{beamercolorbox}
+	\vfill
+}
+
+% -------------------------------------------------------------
+% ----------------------------- Subsection page --------------------
+% -------------------------------------------------------------
+\setbeamertemplate{subsection page}
+{
+	\vfill
+	\begin{beamercolorbox}[sep=6pt]{subsection name}
+		\usebeamerfont{subsection name}\usebeamercolor[fg]{subsection name}\subsectionname~\insertsubsectionnumber
+	\end{beamercolorbox}    \begin{beamercolorbox}[sep=6pt]{part title}
+		\usebeamerfont{subsection title}\insertsubsection\par
+	\end{beamercolorbox}
+	\vfill
+}
+
+% -------------------------------------------------------------
+% ----------------------------- TOC       --------------------
+% -------------------------------------------------------------
+\setbeamerfont{section in toc}{size=\large}
+\setbeamerfont{subsection in toc}{size=\normalsize}
+\setbeamerfont{subsubsection in toc}{size=\small}
+\setbeamertemplate{section in toc}
+	{\quad{\color{sblueFC}\bfseries \inserttocsectionnumber.}~~\inserttocsection}
+	
+\setbeamertemplate{subsection in toc}
+{\quad\quad{\color{sblueFC}  \inserttocsectionnumber.\inserttocsubsectionnumber.}~~\inserttocsubsection\par}
+	
+\setbeamertemplate{subsubsection in toc}
+{\quad\quad\quad{\color{sblueFC}  \inserttocsectionnumber.\inserttocsubsectionnumber.\inserttocsubsubsectionnumber.}~~\inserttocsubsubsection\par}	
+
+
+% -------------------------------------------------------------
+% -----------------------------  Tikz flowboxes--------------------
+% -------------------------------------------------------------
+
+\newcommand{\fbtitle}[1]{\titlefont\textbf{\textcolor{slgrayFC}{#1}}}
+\tikzset{%
+	flowbox/.style={rectangle split, rectangle split parts=2, 
+					rectangle split part fill={pblueFC,pgrayFC},
+					align=center, rounded corners=5pt, draw=pblueFC, line width= .4mm},
+	conn/.style={draw=sblueFC, -{Latex[length=3mm]},
+				rounded corners=5pt, line width = .6mm},
+	conng/.style={draw=sdgrayFC, -{Latex[length=3mm]}, % Latex[length=2mm]
+				rounded corners=5pt, line width = .5mm},
+	hidden/.style={-{Latex[length=3mm]}, draw=sdgrayFC,
+				rounded corners=2pt, densely dotted,line width = .5mm},
+	concept/.style={fill=pgrayFC},
+	darrows/.style={{Latex[length=3mm]}-{Latex[length=3mm]}},
+	onslide/.code args={<#1>#2}{\only<#1>{\pgfkeysalso{#2}}},
+	fb-muted/.style={rectangle split part fill={pgrayFC,pgrayFC!15}},
+	fb-highlight/.style={rectangle split part fill={sredFC,sredFC!20}, draw=sredFC, line width = .4mm}
+}
+
+% -----------------------------  Tikz images with reference's text--------------------
+
+% custom commands
+\usepackage[export]{adjustbox}
+%\tikzset{ffgcaption/.style={%
+%		anchor=south east,font=\tiny,
+%		text=jdwhite,fill=jdblack,
+%		fill opacity=.5,text opacity=1,inner sep=2pt,
+%		text height=1ex,text depth=.25ex}}
+
+% \fullframegraphic 
+% renders a single image fullscreen, with an optional credit/caption in the 
+% lower right corner.
+% Usage: \fullframegraphic[some optional caption]{path/to/image}
+% It does not crop the image, but leads to white borders if image does not match
+% the aspect ratio of the slide. See commands \fullframegraphicw and
+% \fullframegraphich below for cropping alternatives.
+\newcommand{\fullframegraphic}[2][]{%
+\begin{frame}[plain]%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[at=(current page.center)] {%
+\includegraphics[height=\paperheight,width=\paperwidth,keepaspectratio]{#2}%
+};%
+\ifx\relax#1\relax\else%
+\node[at=(current page.south east),ffgcaption] {#1};%
+\fi%
+\end{tikzpicture}%
+\end{frame}%
+}
+
+% \fullframegraphicw: scles image to frame width, cropping excess height.
+% use for images that are "taller" than the frame aspect ratio
+\newcommand{\fullframegraphicw}[2][]{%
+\begin{frame}[plain]%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[at=(current page.center)] {%
+\includegraphics[min height=\paperheight,max width=\paperwidth,keepaspectratio]{#2}%
+};%
+\ifx\relax#1\relax\else%
+\node[at=(current page.south east),ffgcaption] {#1};%
+\fi%
+\end{tikzpicture}%
+\end{frame}%
+}
+
+% \fullframegraphich: scales image to frame height, cropping excess width.
+% use for images that are wider than the frame aspect ratio
+\newcommand{\fullframegraphich}[2][]{%
+\begin{frame}[plain]%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[at=(current page.center)] {%
+\includegraphics[max height=\paperheight,min width=\paperwidth,keepaspectratio]{#2}%
+};%
+\ifx\relax#1\relax\else%
+\node[at=(current page.south east),ffgcaption] {#1};%
+\fi%
+\end{tikzpicture}%
+\end{frame}%
+}
+
+% \fullframegraphics: more customisable version of fullframegraphic, allowing
+% a third argument to insert additional tikz commands for custom overlays.
+% use when tooltips or highlights are required on a large image
+\newcommand{\fullframegraphics}[3][]{%
+\begin{frame}[plain]%
+\begin{tikzpicture}[remember picture,overlay]%
+\node[at=(current page.center)] {%
+\includegraphics[height=\paperheight,width=\paperwidth,keepaspectratio]{#2}%
+};%
+\ifx\relax#1\relax\else%
+\node[at=(current page.south east),ffgcaption] {#1};%
+\fi%
+#3%
+\end{tikzpicture}%
+\end{frame}%
+}
+
+

@@ -1,0 +1,71 @@
+
+% ------------------------------------------------------------------- Itemize 
+\setbeamertemplate{itemize item}{\textcolor{pblueFC}{$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{sredFC}{$\blacktriangleright$}}
+\setbeamertemplate{itemize subsubitem}{\textcolor{sblueFC}{$\blacktriangleright$}}
+
+
+% ------------------------------------------------------------------- Footline
+\setbeamerfont{footline}{size=\scriptsize}
+\setbeamertemplate{footline}{
+	\leavevmode%
+	\hbox{%
+		  \begin{beamercolorbox}[wd=.8\paperwidth,ht=5mm,dp=1ex,left]{author in head/foot}% %2.25ex
+				\usebeamerfont{author in head/foot}
+				\hspace*{5mm}
+				\insertshortauthor{}\qquad
+				\insertshortinstitute{}\qquad
+				\insertshorttitle{}\qquad
+				\insertshortdate{}
+		  \end{beamercolorbox}
+%		  
+		   \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+				\usebeamerfont{date in head/foot}
+				\makebox[5em][r]{%
+					\insertframenumber{} / \inserttotalframenumber\hspace*{5mm}
+			} 
+			\end{beamercolorbox}
+	}%
+	\vskip1mm%
+}
+
+% ------------------------------------------------------------------- Title page
+\setbeamerfont{title}{series=\bfseries\titlefont, size=\Huge}%\bfseries
+\setbeamerfont{subtitle}{series=\normalfont\titlefont, size=\huge}
+\setbeamerfont{author}{size=\Large}
+\setbeamerfont{institute}{size=\large}
+\setbeamerfont{date}{size=\large}
+\setbeamertemplate{title page}
+{
+  \vskip-.5em %\hskip110mm%
+  %\llap
+  \inserttitlegraphic\par%
+  \vbox{}%
+  \vfill\hspace*{\fill}
+	\begin{beamercolorbox}[sep=1em,wd=.8\paperwidth]{title}
+		\centering%
+		\usebeamerfont{title}\inserttitle\par%
+		\ifx%
+		\insertsubtitle\@empty%
+		\else%
+		\vskip0em%
+		{\usebeamerfont{subtitle}
+			\usebeamercolor[fg]{subtitle}
+			{\rule[.75em]{15cm}{1pt}\\[-1em]
+			\insertsubtitle}%
+		}
+		\fi%
+	\end{beamercolorbox}\hspace*{\fill}
+    \vskip0.5em\par
+    \begin{beamercolorbox}[sep=6pt]{author}
+      	\usebeamerfont{author}\insertauthor 
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=6pt]{institute}
+      	\usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=6pt]{date}
+      	\usebeamerfont{date}\insertdate
+    \end{beamercolorbox}
+  \vfill
+}
+

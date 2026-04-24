@@ -1,0 +1,62 @@
+% !TeX TS-program = xelatex
+% !TeX root = template-UNAMFC.tex
+% !TeX spellcheck = es_MX
+
+\documentclass[spanish,11pt]{beamer}  %aspectratio=169
+\input{Latex/setup}
+
+
+\usepackage{lipsum}
+\usetheme{UNAMFC}
+
+%\graphicspath{{img}}
+
+\title
+    [Título corto]
+    {Título de algo muy largo que se va a presentar en la Facultad de Ciencias}
+\subtitle{Subtítulo de esa presentación} 
+\author
+    [\hyperlink{fr:Contenido}{J. A. Urrutia Anguiano}]
+    {\emphb{Jonathan Alexis Urrutia Anguiano$^{1}$}\\
+    {Nombre de colaboradores}}
+\institute
+    [Grupo de investigación]
+    {Departamento de Física\\
+    Facultad de Ciencias\\
+    Universidad Nacional Autónoma de México
+    }
+\date
+    [dd/mm/yy]{día de mes de año}
+
+ 
+\titlegraphic{
+	\includegraphics[width = 110mm]{Latex/Logo_FC_Color.png}
+  	}
+
+\begin{document}
+
+% -------------------------------------------------- Title with extra image
+% ----------------------------- With no image you can simple use \maketitle
+\begin{frame}\titlepage
+  	\begin{beamercolorbox}{author}
+    	  \usebeamerfont{institute}
+    	  \hspace*{.5em}\large\emphb{$^1$}\url{jaurrutia.95@ciencias.unam.mx}
+  	\end{beamercolorbox}\par
+  \begin{textblock*}{75mm}(200mm, 120mm)
+	\includegraphics[width = 75mm]{Latex/pcf-logo.png}
+  \end{textblock*}
+\end{frame}
+
+% -------------------------------------------------------- Table of contents
+\begin{frame}{Contenido}
+	\label{fr:Contenido}
+	\tableofcontents
+\end{frame}
+	
+	\input{tex/0-Introduction.tex}
+
+	\input{tex/1-Tikz.tex}	
+	\input{tex/2-Beamer.tex}	
+
+\end{document}
+

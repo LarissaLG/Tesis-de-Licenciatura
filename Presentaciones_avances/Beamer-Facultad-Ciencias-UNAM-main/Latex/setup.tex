@@ -1,0 +1,105 @@
+
+% ----------------------------------------------------- Font and input related
+%\usepackage[T1]{fontenc} 
+%\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} \spanishdecimal{.}
+
+
+\usepackage{fontspec}       % XeLaTeX requre: Allow to use installed fonts
+\usepackage{unicode-math}	% Allow to use other fonts in math mode
+%	\setsansfont{Gotham}	% Beamer default font is sans: Needs Gotham in system
+	\setsansfont{BoosterNextFY-Regular}
+	%\setsansfont{Booster Next FY}%{}
+	\setmathfont{Latin Modern Roman} % Needs Lation Modern Roman in system
+	%\setmathfont{LM Roman 10}
+	\newfontfamily{\titlefont}{HomepageBaukasten}%{Nimbus Sans}
+
+\usepackage[table]{xcolor}
+% This package 
+%\usepackage[texcoord,grid,gridu	nit=mm,gridcolor=red!20,subgridcolor=green!40]{eso-pic}  
+
+\usepackage{pdfpages}		
+\geometry{papersize={280mm,157.5mm}}	% Convas is in 16:9 aspect ration 
+										% and a 11pt fontsize in normal text works well 
+\usepackage{setspace}
+	\setlength{\parskip}{1em}
+	\setlength{\parindent}{0em}
+	\setlength{\itemsep}{2em}
+\usepackage{multicol}						% for pages with multiple text columns, e.g. References
+	\setlength{\columnsep}{10pt} 				% space between columns; default 10pt quite narrow
+\usepackage{multirow}
+\usepackage[margin=10pt,font=scriptsize,labelfont=bf]{caption}
+\usepackage[labelformat=simple]{subcaption} 
+\usepackage{float}
+\renewcommand*{\thesubfigure}{\alph{subfigure})}
+% ----------------------------------------------------- Math typesetting	
+\usepackage{mathtools}
+\usepackage{amsmath} 
+\usepackage{physics}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{bbold}
+\usepackage{listings}
+
+% ----------------------------------------------------- Beamer optional packages
+\usepackage[absolute,overlay]{textpos}		% Use of textes
+\usepackage{appendixnumberbeamer}
+\usepackage{svg}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{textcomp}
+
+
+% tikz libraries
+\usepackage{tikz}
+\tikzset{>=latex} % for LaTeX arrow head
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+% pgfplots libraries
+\usepgfplotslibrary{fillbetween}
+% ----------------------------------------------------- References 
+\usepackage[ bibstyle = trad-abbrv,
+			citestyle = numeric-comp,
+			backend = bibtex,
+			maxcitenames=1,
+			date = year,
+			doi = false, 
+			url = false,
+			isbn = false
+			]{biblatex}%trad-abbrv numeric-comp
+	\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+	\DeclareFieldFormat[article]{title}{}
+	\AtEveryBibitem{\clearfield{month}}
+	\AtEveryBibitem{\clearfield{day}}
+	\DefineBibliographyStrings{spanish}{andothers = {et\addabbrvspace al\adddot}}
+	\renewbibmacro*{journal}{%
+		\ifboolexpr{ test {\ifcitation} and not test {\iffieldundef{shortjournal}}
+		}
+		{\printfield[journaltitle]{shortjournal}}
+		{\iffieldundef{journaltitle}
+			{}
+			{\printtext[journaltitle]{%
+				\printfield[titlecase]{journaltitle}%
+				\setunit{\subtitlepunct}%
+				\printfield[titlecase]{journalsubtitle}
+									}
+			}
+		}
+	}
+\addbibresource{tex/references.bib}
+
+
+
+
+
+
+
+		
+
+
+

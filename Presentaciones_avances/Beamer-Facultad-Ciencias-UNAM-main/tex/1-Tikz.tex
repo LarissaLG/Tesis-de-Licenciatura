@@ -1,0 +1,227 @@
+% !TeX root = template-UNAMFC.tex
+
+\section{Tikz y Beamer}
+	\subsection{Tikz}
+		\subsubsection{Flowboxes}
+
+\begin{frame}{Hablamos de nuestro proyecto}
+	{\textoverline{Con metas parciales, referencias y  resaltando  lo que hacemos nosotros}}
+%		{\rlap{Con metas parciales, referencias y  resaltando  lo que hacemos nosotros}\rule[1em]{\widthof{Con metas parciales, referencias y  resaltando  lo que hacemos nosotros}}{1.3pt}}
+	
+    \begin{center}
+    \begin{tikzpicture}[node distance=15mm and 15mm,font=\normalfont]
+%        \setlength{\leftmargini}{10pt}
+
+    % caract
+        \node[flowbox] (caract) {%
+            \fbtitle{Caracterización}\vphantom{yÖ}
+         \nodepart{two}
+            \begin{minipage}{.17\textwidth}
+                \begin{itemize}\itemsep0em
+                    \item Experimental
+                    \item Teórica
+                    \item Numérica
+                \end{itemize}
+            \end{minipage}
+        };
+
+    % quiestion
+        \node[concept,above=of caract,align=center,yshift=-.6cm] (question) {
+            Metasuperficie  plasmónica  desordenada
+            };
+
+        \draw[conn] (question) -- (caract);
+
+    % teo
+        \node[flowbox,right=of caract,yshift=0cm,onslide=<2->{fb-highlight}] (teo) {%
+            \fbtitle{Teórica}\vphantom{yÖ}
+         \nodepart{two}
+            \begin{minipage}{.24\textwidth}
+                \textit{Coherent Scattering Model\footnotemark[1]}\centering
+                \begin{itemize}\itemsep0em  \small
+                    \item Teoría de esparcimiento
+                    \item Polidispersidad en tamaño
+                    \item Partículas esféricas
+                \end{itemize}
+            \end{minipage}
+        };
+
+        \draw[conn] (caract) -- (teo);
+
+    % num
+        \node[flowbox,right=of teo,onslide=<2->{fb-highlight},xshift=0cm] (num) {%
+            \fbtitle{Numérica}\vphantom{yÖ}
+         \nodepart{two}
+            \begin{minipage}{.20\textwidth}
+                Descenso de gradiente\footnotemark[2]
+                \begin{itemize}\itemsep0em
+                    \item Ajuste a modelos
+                    \item Minimizar error
+                \end{itemize}
+            \end{minipage}
+        };
+
+        \draw[conn] (teo) -- (num);
+
+    % exp
+        \node[flowbox,below=of teo] (exp) {%
+            \fbtitle{Experimental}\vphantom{yÖ}
+         \nodepart{two}
+            \begin{minipage}{.24\textwidth}
+                \begin{itemize}\itemsep0pt
+                    \item Síntesis
+                    \item Microscopía
+                    \item Arreglo experimental\footnotemark[3]
+                \end{itemize}
+            \end{minipage}
+        };
+
+
+        % concept text nodes
+        \node[concept, below right=of num,align=center,xshift=-1cm] (assump) {Biosensor};
+
+        \draw[hidden] (question.east) -|
+                      node[above,text=sdgrayFC,font=\itshape\scriptsize,anchor=south east] {Optimización/Condiciones experimentales}
+                      (assump.30);%
+
+        % connections
+        {%
+             \draw[conn] (exp.north -| teo.290) --
+                        node[right,anchor=west,text=sdgrayFC,font=\itshape\scriptsize] {
+                        \begin{minipage}{2cm}
+                            \begin{flushleft}
+                            Muestra
+                            \end{flushleft}
+                        \end{minipage}
+                        }
+                        (teo.290);
+            \draw[conn] (teo.250) --
+                        node[left,anchor=east,text=sdgrayFC,font=\itshape\scriptsize] {
+                        \begin{minipage}{2cm}
+                            \begin{flushright}
+                            Diseño
+                            \end{flushright}
+                        \end{minipage}
+                        }
+                        (exp.north -| teo.250);
+        }
+        \draw[conn] (caract.south) |-
+                        node[below,near end,anchor=north,text=sdgrayFC,font=\itshape\scriptsize] {
+                        \begin{minipage}{2cm}
+                            \begin{flushright}
+                            Colaboración\\ INAOE
+                            \end{flushright}
+                        \end{minipage}
+                        }
+                        (exp.west);
+        \draw[conn] (exp) -|
+                        node[below,near start,anchor=north,text=sdgrayFC,font=\itshape\scriptsize] {Mediciones ópticas}
+                        (num);
+        \draw[conn] (num.300) |-
+                        node[below,near end,anchor=north ,text=sdgrayFC,font=\itshape\scriptsize] {
+                        \begin{minipage}{2cm}
+                            \begin{center}
+                            Análisis\\ sensitividad
+                            \end{center}
+                        \end{minipage}
+                        }
+                        (assump.west);
+    \end{tikzpicture}
+    \end{center}
+
+    \begin{textblock*}{85mm}(170mm,115mm)
+        \begin{flushleft}
+        \begin{spacing}{0}\scriptsize%\fontsize{4}{12} \selectfont \boosterfont
+            \footnotemark[1]\fullcite{vazquez-estrada_optical_2014}\\
+            \footnotemark[2]\fullcite{barzilai_two-point_1988}\\
+            \footnotemark[3]\fullcite{cuanalo_sensitivity_2022}
+        \end{spacing}
+        \end{flushleft}
+    \end{textblock*}
+\end{frame}
+
+
+{\setbeamertemplate{frametitle}[centertitle]{}
+\begin{frame}{\underline{Plantilla con título centrado: centertitle}}
+	{Vale la pena leer el código de tikz}
+	
+	\begin{center}
+		\begin{tikzpicture}[node distance=5mm and 60mm,font=\normalsize]
+			%        \setlength{\leftmargini}{10pt}
+			
+			% mono
+			\path (0,2) node[concept,align=center] (modelo) {
+				Modelo teórico
+			};
+			\node[below=of modelo, font = {\normalsize}] {%
+				\begin{minipage}{1.5cm}
+					$\begin{aligned}
+						&\vec{x} \equiv \text{Parámetros}\\
+						&f_i(\vec{x}) \equiv \text{Modelo}\\
+					\end{aligned}$
+				\end{minipage}
+			};
+			
+			\path (0,-5) node[concept,align=center] (exp) {
+				Resultado experimental
+			};
+			\node[below=of exp,yshift=0cm, font = {\normalsize}] {%
+				\begin{minipage}{1.5cm}
+					$\begin{aligned}
+						y_i(\vec{x}) &\equiv \text{Medición}\\
+					\end{aligned}$
+				\end{minipage}
+			};
+			
+			\node[below right = of modelo, concept,align=center,yshift=-.5cm] (error) {
+				Error};
+			
+			\node[below =of error,font = {\normalsize}](min){
+				$\begin{aligned}
+					F(\vec{x}) = \frac{1}{N}\sum_{i=1}^N\qty(f_i(\vec{x})-y_i)^2
+				\end{aligned}$
+			};
+			
+			\draw[hidden] (modelo.east) -| (error.north) ;
+			\draw[hidden] (exp.east) -| (min.south) ;
+			
+			\node[flowbox,fb-highlight,right =of error,xshift=0cm,font = {\normalsize}] (des) {%
+				\fbtitle{Descenso de gradiente}\vphantom{yÖ}
+				\nodepart{two}
+				\begin{minipage}{3.2cm}\centering
+					$\begin{aligned}
+						\vec{x}_{\ell+1} = \vec{x}_\ell - \gamma \nabla F(\vec{x}_\ell)
+					\end{aligned}$
+				\end{minipage}
+			};
+			
+			\draw[hidden] (error.east) -- (des)
+			node[right,near start,text=sdgrayFC,font=\itshape\normalsize,anchor=south] {
+				Minimización
+			};
+			
+			\node[flowbox,below=of des,yshift=-30mm,font = {\normalsize}] (barzilai) {%
+				\fbtitle{Método de dos pasos}\vphantom{yÖ}
+				\nodepart{two}
+				\begin{minipage}{75mm}\centering
+					$\begin{aligned}
+						\gamma_\ell = \frac{\qty(\vec{x}_{\ell} - \vec{x}_{\ell-1}) \cdot  \qty[\nabla F(\vec{x}_\ell)-\nabla F(\vec{x}_{\ell-1})]}
+						{\norm{\nabla F(\vec{x}_\ell)-\nabla F(\vec{x}_{\ell-1})}^2}
+					\end{aligned}$
+				\end{minipage}
+			};
+			
+			\draw[conn] (des) -- (barzilai);
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\begin{textblock*}{30mm}(185mm,80mm)
+		\begin{flushright}\scriptsize
+			\fullcite{barzilai_two-point_1988}
+		\end{flushright}
+	\end{textblock*}
+	
+\end{frame}
+}
+

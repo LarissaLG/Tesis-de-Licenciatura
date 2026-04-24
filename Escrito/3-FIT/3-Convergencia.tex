@@ -1,6 +1,39 @@
 \section{Convergencia}
 \label{section:convergence}
 
-Las simulaciones se realizaron utilizando el software Computer Simulation Technology (CST). El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera —descrita por la teoría de Mie— y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2680nm, cuya función dieléctrica corresponde a la de un eritrocito con una concentración de hemoglobina corpuscular media (CHCM) de 30.6g/dL, inmersa en un medio de plasma con permitividad dieléctrica constante $\varepsilon$=1.823. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional (definido por la distancia entre la partícula y la caja de simulación, bounding box), el nivel de reflexión estimado (estimated reflection level), así como el mallado global y el mallado local (tanto en volumen como en superficie). En la Fig.~ se ilustra la definición del tamaño del dominio y los distintos tipos de mallado considerados.
+Las simulaciones se realizaron empleando el software Computer Simulation Technology (CST). El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera —descrita por la teoría de Mie— y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2680nm, cuya función dieléctrica corresponde a la de un eritrocito con una concentración de hemoglobina corpuscular media (CHCM) de 30.6g/dL, inmersa en un medio de plasma con permitividad dieléctrica constante ε=1.823 en el rango espectral de 400 a 600 nm. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional —definido por la distancia entre la partícula y la caja de simulación (bounding box)—, el nivel de reflexión estimado (estimated reflection level), así como el mallado global y el mallado local (tanto en volumen como en superficie). En la Fig.~\ref{subfig:CST_matriz} se muestra la geometría del problema, donde la esfera se encuentra inmersa en el dominio delimitado por la bounding box. Por otro lado, en la Fig.~\ref{subfig:CST_mesh} se ilustran los parámetros de discretización considerados. El mallado global corresponde a la discretización del dominio completo (matriz y partícula). En caso de introducir un refinamiento local, este se aplica exclusivamente a la partícula, mientras que el mallado global describe el resto del dominio. Asimismo, se define la distancia h como la separación mínima entre la superficie de la partícula y la bounding box
 
-Inicialmente, se emplearon los parámetros predeterminados de CST: un mesh step igual a 15, sin refinamiento de mallado local, y un nivel de reflexión de 0.0005 (cercano al valor recomendado de 0.0004). Bajo estas condiciones, se estudió la influencia de la distancia entre la partícula y la bounding box, considerando los valores de 500, 1000, 1230, 1570, 1720 y 2300 nm.
+\begin{figure}[b]
+	\centering
+	\sidesubfloat[First image]{{
+			\includegraphics[width=5cm]{../../Figuras/3-FIT/Matriz.pdf}\label{subfig:CST_matriz}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{{	\includegraphics[width=4.55cm]{../../Figuras/3-FIT/Mesh.pdf}\label{subfig:CST_mesh}}}\vspace{-0.1cm}
+	\caption{\textbf{a)}  \textbf{b)} }
+	\label{fig:CST}
+\end{figure}
+%
+
+Inicialmente, se emplearon los parámetros predeterminados de CST: un mallado global definido por 15 celdas por longitud de onda, sin refinamiento local, y un nivel de reflexión de 0.0005 (cercano al valor recomendado de 0.0004). Bajo estas condiciones, se analizó la influencia de la distancia h, considerando los valores de 500, 1000, 1230, 1570, 1720 y 2300 nm. En la Fig.~ se muestra la eficiencia de extinción en función de la longitud de onda, comparando los resultados obtenidos mediante CST con la solución analítica de Mie. El espectro completo se presenta en la Fig., mientras que en las Figs. se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas Q ($\alpha$ y $\beta$).
+
+A partir de estos resultados, se observa un ligero desfase entre la solución numérica y la analítica, así como la presencia de oscilaciones espurias en la región espectral intermedia entre la banda de Soret y las bandas Q. Estas oscilaciones no corresponden a un comportamiento físico del sistema, sino que se atribuyen a errores numéricos asociados a la discretización espacial de la geometría. Dichos artefactos se vuelven más notorios en regiones donde la absorción es moderada, ya que no existe un amortiguamiento suficiente de las reflexiones internas no físicas introducidas por la malla. En contraste, en regiones donde la parte imaginaria de la función dieléctrica es mayor —como en la banda de Soret y las bandas Q—, la absorción del material atenúa estas contribuciones espurias, dando lugar a curvas más suaves. En cuanto a la influencia de la distancia h, se observa que en la región de la banda de Soret la concordancia con la solución analítica mejora al incrementar h. En contraste, en las bandas Q ($\alpha$ y $\beta$) se obtiene una mejor aproximación para valores menores de h. Considerando el comportamiento global en todo el rango espectral, así como el costo computacional asociado, se seleccionó $h$=1000nm como un valor óptimo para las simulaciones posteriores.
+
+
+Como se verá más adelante, la aplicación de un refinamiento local de la malla en la superficie de la partícula permitió eliminar dichas oscilaciones, confirmando su origen numérico y mejorando la convergencia de los resultados.
+
+Una vez escogido el valor de $h$, se procedió a analizar la influencia del mallago global empleando variando el número de celdas por longitud de onda. Para ello, no se consideró un mallado local y se consideró un nivel de reflexión de 0.0005 (cercano al valor recomendado de 0.0004). En la Fig.~ se muestra la eficiencia de extinción en función de la longitud de onda, comparando los resultados obtenidos mediante CST con la solución analítica de Mie. El espectro completo se presenta en la Fig., mientras que en las Figs. se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas Q ($\alpha$ y $\beta$). El número de celdas por longitud de onda afecta direcamente el tamaño mínimo de una celda, entonces se muestran estos tamaños asociados a el número de celdas de 7, 10, 15 y 17 dados por: 
+
+En la Fig.~ se muestra la eficiencia de extinción Q
+ext
+​
+
+en función de la longitud de onda para distintos niveles de discretización espacial, controlados mediante el número de celdas por longitud de onda (cells per wavelength), lo que determina el tamaño mínimo de celda. Se incluyen valores de tamaño de celda de 40.0, 28.2, 23.5, 18.7 y 16.5 nm, junto con la solución analítica de Mie como referencia.
+
+Se observa que, para tamaños de celda más grandes (menor resolución espacial), la curva presenta desviaciones significativas respecto a la solución analítica, especialmente en la región de longitudes de onda cortas. En particular, aparecen oscilaciones y un desplazamiento en la posición del mínimo de la curva, lo cual indica una discretización insuficiente para capturar adecuadamente la respuesta electromagnética de la partícula.
+
+A medida que se refina el mallado (es decir, al disminuir el tamaño de celda), las curvas muestran una mejor concordancia con la solución de Mie en todo el rango espectral. En particular, para tamaños de celda menores a aproximadamente 20 nm, se observa una convergencia clara tanto en la forma general del espectro como en la posición y profundidad del mínimo.
+
+Sin embargo, incluso para los mallados más refinados, persisten pequeñas discrepancias en ciertas regiones espectrales, lo que sugiere la presencia de errores numéricos residuales asociados a la discretización. Estos resultados evidencian la importancia de emplear un mallado suficientemente fino para garantizar la precisión de las simulaciones, especialmente en regiones donde la respuesta espectral presenta variaciones pronunciadas.
+
+
+
+El siguiente paso a realizar fue el de 

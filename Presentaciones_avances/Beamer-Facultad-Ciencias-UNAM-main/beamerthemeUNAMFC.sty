@@ -1,0 +1,63 @@
+
+\mode<presentation>
+
+\setbeamersize{text margin left=5mm}
+\setbeamersize{text margin right=5mm}
+
+
+\RequirePackage{tikz}
+
+% Settings
+\useinnertheme{UNAMFC}
+\useoutertheme{UNAMFC}
+\usecolortheme{UNAMFC}
+
+\newlength{\maxheight}
+\setlength{\maxheight}{\textheight}
+\addtolength{\maxheight}{-\headheight}
+\addtolength{\maxheight}{-\footheight}
+\addtolength{\maxheight}{-2em} % guessing :-(
+
+\AtBeginDocument{%
+	\newlength{\squeezetwo}
+	\setlength{\squeezetwo}{.495\paperwidth}
+	%
+	\newlength{\squeezethree}
+	\setlength{\squeezethree}{.33\paperwidth}
+	%
+	\newlength{\loosethree}
+	\setlength{\loosethree}{.29\textwidth}
+}
+
+\hypersetup{colorlinks=true,linkcolor=,urlcolor=sblueFC}
+\newcommand{\emphb}[1]{\textcolor{sblueFC}{\textbf{#1}}}
+\newcommand{\emphr}[1]{\textcolor{sredFC}{\textbf{#1}}}
+\newcommand{\textoverline}[1]{\rlap{#1}\rule[1.07em]{\widthof{#1}}{.75pt}}
+
+
+
+
+%\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{blocks}[rounded][shadow=false]  
+
+\AtBeginDocument{
+\setbeamertemplate{framesubtitle}{
+\begin{center}
+\begin{tcolorbox}[
+  colback=blue!70!black,
+  coltext=white,
+  arc=10pt,
+  boxrule=0pt,
+  left=6pt,right=6pt,top=4pt,bottom=4pt,
+  width=0.5\textwidth,
+  halign=center
+]
+\insertframesubtitle
+\end{tcolorbox}
+\end{center}
+}
+}
+
+
+\mode<all>
+

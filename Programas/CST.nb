@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    248858,       5515]
+NotebookDataLength[    248822,       5514]
 NotebookOptionsPosition[    239902,       5356]
-NotebookOutlinePosition[    240342,       5373]
-CellTagsIndexPosition[    240299,       5370]
+NotebookOutlinePosition[    240306,       5372]
+CellTagsIndexPosition[    240263,       5369]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5354,9 +5354,8 @@ Cell["Eritrocito sano\t", "Subsection",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1152., 579.6},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{1141.2, 574.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"13.1 para Microsoft Windows (64-bit) (August 22, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"c5e4dae3-6414-45e5-8279-54d7a9de6ebb"
@@ -5431,7 +5430,7 @@ Cell[143205, 3152, 13278, 249, 243, "Output",ExpressionUUID->"28863070-23ff-432a
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[156532, 3407, 266, 4, 69, "Chapter",ExpressionUUID->"2dfe1eb6-04d1-44f6-9d9a-2011ccf3d168"],
-Cell[156801, 3413, 6965, 202, 606, "Input",ExpressionUUID->"78b0343b-49ab-4108-b125-99ef1cb096a9"],
+Cell[156801, 3413, 6965, 202, 548, "Input",ExpressionUUID->"78b0343b-49ab-4108-b125-99ef1cb096a9"],
 Cell[CellGroupData[{
 Cell[163791, 3619, 754, 13, 43, "Input",ExpressionUUID->"0fefb8ef-ae68-4548-af60-f9679d94c1a5"],
 Cell[164548, 3634, 3276, 71, 236, "Output",ExpressionUUID->"702cada5-0d46-4df6-9ab8-19b8f0ade70f"]

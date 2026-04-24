@@ -1,4 +1,4 @@
-\section{Relaciones Kramers-Kronig sustractivas}
+\section{Relaciones de Kramers-Kronig sustractivas}
 \label{section:SSKK}
 \vspace{-0.2cm}
 
@@ -6,22 +6,24 @@ A pesar de que las relaciones de Kramers–Kronig se han aplicado ampliamente en
 $\omega_1$, cuyo valor experimental se asume conocido y se puede escribir como
 %
 \begin{align}
-		\frac{\varepsilon'(\omega_1)}{\varepsilon_0}&=1+\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{\varepsilon''(\omega')/\varepsilon_0}{\omega'-\omega_1}\dd{\omega'}}, \label{seq:omega1_re}\\
-		\frac{\varepsilon''(\omega_1)}{\varepsilon_0}&=-\frac{2\omega_1}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\varepsilon'(\omega')/\varepsilon_0-1]}{\omega'-\omega_1}\dd{\omega'}}.\label{seq:omega1_im}	
+		\frac{\text{Re}\{\varepsilon(\omega_1)\}}{\varepsilon_0}&=1+\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{\text{Im}\{\varepsilon(\omega')\}/\varepsilon_0}{\omega'-\omega_1}\dd{\omega'}}, \label{seq:omega1_re}\\
+		\frac{\text{Im}\{\varepsilon(\omega_1)\}}{\varepsilon_0}&=-\frac{2\omega_1}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\text{Re}\{\varepsilon(\omega')\}/\varepsilon_0-1]}{\omega'-\omega_1}\dd{\omega'}}.\label{seq:omega1_im}	
 \end{align}
 %
 Al restar la Ec. \eqref{seq:omega1_re} de la relación  de KK correspondiente para una $\omega$ abitraria se tiene
 %
 \begin{align}
-	\frac{\varepsilon'(\omega)}{\varepsilon_0}-\frac{\varepsilon'(\omega_1)}{\varepsilon_0}&=\frac{2}{\pi}\PV{\int_{0}^{\infty} \frac{\omega'(\omega'^2-\omega_1^2)(\varepsilon''(\omega)/\varepsilon_0)-\omega'(\omega'^2-\omega^2)(\varepsilon''(\omega)/\varepsilon_0)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\nonumber\\
-	&=\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\varepsilon''(\omega')/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\label{seq:SSKKRe0}
+	\frac{\text{Re}\{\varepsilon(\omega)\}}{\varepsilon_0}-\frac{\text{Re}\{\varepsilon(\omega_1)\}}{\varepsilon_0}&=\frac{2}{\pi}\PV{\int_{0}^{\infty} \frac{\omega'(\omega'^2-\omega_1^2)(\text{Im}\{\varepsilon(\omega')\}/\varepsilon_0)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}+\nonumber\\
+	&-\frac{2}{\pi}\PV{\int_{0}^{\infty} \frac{\omega'(\omega'^2-\omega^2)(\text{Im}\{\varepsilon(\omega')\}/\varepsilon_0)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\nonumber\\
+	&=\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\text{Im}\{\varepsilon(\omega')\}/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\label{seq:SSKKRe0}
 \end{align}
 %
 y de manera análoga para la parte imaginaria, al restar la Ec. \eqref{seq:omega1_im} de la relación  de KK correspondiente para una $\omega$ arbitraria se obtiene
 %
 \begin{align}
-		\frac{\varepsilon''(\omega)}{\varepsilon_0}-\frac{\varepsilon''(\omega_1)}{\varepsilon_0}&=\frac{2}{\pi}\PV{\int_0^{\infty}\frac{\omega(\omega'^2-\omega_1^2)(\varepsilon'(\omega)/\varepsilon_0-1)-\omwga_1(\omega'^2-\omega^2)(\varepsilon'(\omega)/\varepsilon_0-1)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\nonumber\\
-		&=-\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{(\omega-\omega_1)(\omega'^2+\omega\,\omega_1)(\varepsilon'(\omega')-1)/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKKIm0}
+		\frac{\text{Im}\{\varepsilon(\omega)\}}{\varepsilon_0}-\frac{\text{Im}\{\varepsilon(\omega_1)\}}{\varepsilon_0}&=\frac{2}{\pi}\PV{\int_0^{\infty}\frac{\omega(\omega'^2-\omega_1^2)(\text{Re}\{\varepsilon(\omega')\}/\varepsilon_0-1)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}+\nonumber\\
+		&-\frac{2}{\pi}\PV{\int_0^{\infty}\frac{\omega_1(\omega'^2-\omega^2)(\text{Re}\{\varepsilon(\omega')\}/\varepsilon_0-1)}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\nonumber\\
+		&=-\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{(\omega-\omega_1)(\omega'^2+\omega\,\omega_1)(\text{Re}\{\varepsilon(\omega')\}-1)/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKKIm0}
 \end{align}
 %
 Así, al simplificar las Ecs. \eqref{seq:SSKKRe0} y \eqref{seq:SSKKIm0}, se obtienen las relaciones SSKK \cite{lucariniKramersKronigRelationsOptical2005}
@@ -29,8 +31,9 @@ Así, al simplificar las Ecs. \eqref{seq:SSKKRe0} y \eqref{seq:SSKKIm0}, se obti
 \begin{subequations}%
 	\begin{tcolorbox}[
 		ams align, breakable]
-		\frac{\varepsilon'(\omega)}{\varepsilon_0}&=\frac{\varepsilon'(\omega_1)}{\varepsilon_0}+\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\varepsilon''(\omega')/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\label{seq:SSKK_Re}\\ 
-		\frac{\varepsilon''(\omega)}{\varepsilon_0}&=\frac{\varepsilon''(\omega_1)}{\varepsilon_0}-\frac{2(\omega-\omega_1)}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\omega'^2+\omega\,\omega_1][\varepsilon'(\omega')-1]/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKK_Im}
+		\frac{\text{Re}\{\varepsilon(\omega)\}}{\varepsilon_0}&=\frac{\text{Re}\{\varepsilon(\omega_1)\}}{\varepsilon_0}+\frac{2(\omega^2-\omega_1^2)}{\pi}\,\PV{\int_{0}^{\infty}\frac{\omega'\text{Im}\{\varepsilon(\omega')\}/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}},\label{seq:SSKK_Re}\\ 
+		\frac{\text{Im}\{\varepsilon(\omega)\}}{\varepsilon_0}&=\frac{\text{Im}\{\varepsilon(\omega_1)\}}{\varepsilon_0}+ \nonumber\\
+		&\hspace{1cm}-\frac{2(\omega-\omega_1)}{\pi}\,\PV{\int_{0}^{\infty}\frac{[\omega'^2+\omega\,\omega_1][\text{Re}\{\varepsilon(\omega')\}-1]/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKK_Im}
 	\end{tcolorbox}
 \end{subequations}\vspace*{1em}
 
