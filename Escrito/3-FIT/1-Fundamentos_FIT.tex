@@ -18,7 +18,7 @@ El método \textit{Finite Integration Technique} (FIT), propuesto por primera ve
 
 El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las Ecuaciones de malla de Maxwell \cite{clemensDiscreteElectromagnetismFinite2001}. A diferencia del Método del Elemento Finito (FEM por sus siglas en inglés), que se fundamenta en la  resolución de una formulación débil mediante funciones de interpolación \cite{dhattFiniteElementMethod2012}, FIT aplica directamente las ecuaciones integrales sobre una descomposición discreta del dominio. Como consecuencia, las magnitudes electromagnéticas se asocian a los objetos geométricos de la malla sobre los cuales se definen dichas integrales. En particular, las componentes del campo eléctrico se vinculan con las aristas de las celdas, mientras que las componentes del campo magnético se asocian a sus caras \cite{dassaultsystemesCSTMicrowaveStudio2003}.
 
-El primer paso del proceso de discretización consiste en definir el mallado de integración. Para ello, se emplea una discretización tipo Yee \cite{yeeNumericalSolutionInitial1966}, ampliamente utilizada en métodos en el dominio del tiempo, en la cual las componentes de los campos se disponen de manera escalonada en el espacio. En este contexto, el problema electromagnético —generalmente formulado en una región con frontera abierta—  se restringe a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un sistema coordenado ortogonal $G$, que constituye la malla computacional del problema \cite{clemensDiscreteElectromagnetismFinite2001}. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, de modo que \cite{hadabSolutionMaxwellsEquation2023}
+El primer paso del proceso de discretización consiste en definir el mallado de integración. Para ello, se emplea una discretización tipo Yee \cite{yeeNumericalSolutionInitial1966}, en la cual las componentes de los campos se disponen de manera escalonada en el espacio. En este contexto, el problema electromagnético —generalmente formulado en una región con frontera abierta—  se restringe a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un sistema coordenado ortogonal $G$, que constituye la malla computacional del problema~\cite{clemensDiscreteElectromagnetismFinite2001}. Para simplificar el desarrollo del método, se supone que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, de modo que \cite{hadabSolutionMaxwellsEquation2023}
 %
 \begin{align}
 	G=\{(x_i,y_j,z_k); i\in\{1,...,I\};j\in\{1,...,J\};k\in\{1,...,K\}\}.
@@ -69,7 +69,7 @@ donde se obvian las dependencias espaciales y temporales; $\rho_{\text{ext}}$ es
 donde cada término representa la circulación del campo eléctrico a lo largo de una arista del contorno de la cara considerada, mientras que el término del lado derecho corresponde a la variación temporal del flujo magnético a través de dicha superficie. En la Fig.~\ref{subfig:FIT_cell_electric} se muestra la superficie $S_{z,n}$ de una celda en la cual los vectores en rojo y azul oscuro representan, respectivamente, la circulación del campo eléctrico a lo largo de las aristas y el flujo magnético que atraviesa la superficie. 
 
 
-La formulación anterior es válida para cualquier cara de $G$ y puede extenderse a superficies formadas por la unión de varias caras, ya que la suma de las circulaciones sobre los contornos individuales equivale a la circulación sobre el contorno total de la superficie \cite{arfkenMathematicalMethodsPhysicists2011}. La Ec.~\ref{eq:Faraday_grid} corresponde únicamente a una de las tres superficies asociadas a un nodo. Con el fin de extender esta relación a todo el dominio, se introduce una formulación matricial que permite representar de manera compacta tanto las magnitudes electromagnéticas como los operadores discretos.
+La formulación anterior es válida para cualquier cara de $G$ y puede extenderse a superficies formadas por la unión de varias caras, ya que la suma de las circulaciones sobre los contornos individuales equivale a la circulación sobre el contorno total de la superficie \cite{arfkenMathematicalMethodsPhysicists2011}. Con el fin de extender esta relación a todo el dominio, se introduce una formulación matricial que permite representar de manera compacta tanto las magnitudes electromagnéticas como los operadores discretos.
 En este marco, los campos electromagnéticos se organizan como vectores de dimensión $3N$. En particular, los campos $\vb{E}, \vb{D}, \vb{B}$ y $\vb{H}$ se representan mediante los vectores $\vb{e}, \vb{d}, \vb{b}$ y $\vb{h}$, respectivamente, definidos como \cite{hadabSolutionMaxwellsEquation2023}
 \begin{equation}
 	\vb{e}=\begin{bmatrix}
@@ -109,7 +109,7 @@ y de manera análoga se define el vector de corrientes $\vb{j}$ y el vector de c
 	\end{cases}
 	\qquad (m,p)\in \{1,\dots,N\}^2.
 \end{equation}
-A partir de estas matrices, se construye el operador rotacional discreto \cite{hadabSolutionMaxwellsEquation2023} $\mathbb{C}\in\mathbb{R}^{3N\times 3N}$, dado por
+A partir de estas, se construye el operador rotacional discreto  $\mathbb{C}\in\mathbb{R}^{3N\times 3N}$, dado por \cite{hadabSolutionMaxwellsEquation2023}
 %
 \begin{equation}
 	\mathbb{C}=\begin{pmatrix}
@@ -158,7 +158,7 @@ El segundo operador a discretizar es el operador de la divergencia. Para ello, s
 	\label{fig:FIT_cell}
 \end{figure}
 %
-Al aplicar la ley de Gauss magnética siguiendo el esquema de Yee, la ecuación integral puede reescribirse como una suma de los flujos magnéticos que atraviesan las seis caras de la celda, dando lugar a \cite{hadabSolutionMaxwellsEquation2023}
+Al aplicar la ley de Gauss magnética siguiendo el esquema de Yee, la ecuación integral puede reescribirse como una suma de los flujos magnéticos que atraviesan las seis caras de la celda, dando lugar a~\cite{hadabSolutionMaxwellsEquation2023}
 %
 \begin{align}
 	B_{z,n}(x_{i+1}-x_i)(y_{j+1}-y_j)
@@ -202,7 +202,7 @@ La discretización de las ecuaciones de Maxwell restantes requiere la introducci
  %
  \begin{figure}[bt]
  	\centering
- 	\includegraphics[width=9cm]{../../Figuras/3-FIT/FIT_dual_grid.pdf}
+ 	\includegraphics[width=8cm]{../../Figuras/3-FIT/FIT_dual_grid.pdf}
  	\caption{Celda $V_{n}$ del complejo $G$ y celda dual $\tilde{V}_{n}$ del complejo $\tilde{G}$ desplazada media celda en todas las direcciones y ortogonal a la primera. Se muestran las cantidades asociadas a una cara $S_{z,n}$ y $\tilde{S}_{\tilde{z},n}$ del complejo $G$ y $\tilde{G}$, respectivamente. Se muestran en azul las cantidades relacionadas con los campos magnéticos y en rojo con los campos eléctricos.}
  	\label{fig:FIT_cell_dual}
  \end{figure}
