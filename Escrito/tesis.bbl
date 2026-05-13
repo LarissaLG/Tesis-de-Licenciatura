@@ -1562,6 +1562,68 @@
     \field{year}{2019}
   \endentry
 
+  \entry{haleOpticalConstantsWater1973}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=HGM}{%
+         family={Hale},
+         familyi={H\bibinitperiod},
+         given={George\bibnamedelima M.},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=QMR}{%
+         family={Querry},
+         familyi={Q\bibinitperiod},
+         given={Marvin\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Optica Publishing Group}%
+    }
+    \keyw{Refractive index, Absorption coefficient, Extinction coefficients,
+  Optical computing, Optical constants, Optical properties}
+    \strng{namehash}{HGMQMR1}
+    \strng{fullhash}{HGMQMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Extinction coefficients k(λ) for water at 25°C were determined through a
+  broad spectral region by manually smoothing a point by point graph of k(λ)
+  vs wavelength λ that was plotted for data obtained from a review of the
+  scientific literature on the optical constants of water. Absorption bands
+  representing k(λ) were postulated where data were not available in the
+  vacuum uv and soft x-ray regions. A subtractive Kramers-Kronig analysis of
+  the combined postulated and smoothed portions of the k(λ) spectrum provided
+  the index of refraction n(λ) for the spectral region 200 nm ≤ λ ≤ 200
+  μm.%
+    }
+    \verb{doi}
+    \verb 10.1364/AO.12.000555
+    \endverb
+    \field{issn}{2155-3165}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 563}
+    \field{shortjournal}{Appl. Opt., {AO}}
+    \field{title}{Optical Constants of Water in the 200-nm to 200-μm
+  Wavelength Region}
+    \verb{url}
+    \verb https://opg.optica.org/ao/abstract.cfm?uri=ao-12-3-555
+    \endverb
+    \field{volume}{12}
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\danal\\Zotero\\storage\\J6MJ5KZ4\\Hale y Qu
+    \verb erry - 1973 - Optical Constants of Water in the 200-nm to 200-μm Wav
+    \verb elength Region.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Applied Optics}
+    \field{day}{01}
+    \field{month}{03}
+    \field{year}{1973}
+    \field{urlday}{10}
+    \field{urlmonth}{05}
+    \field{urlyear}{2026}
+  \endentry
+
   \entry{maggioreModernIntroductionClassical2023}{book}{}{}
     \name{author}{1}{}{%
       {{hash=MM}{%
