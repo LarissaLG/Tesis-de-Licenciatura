@@ -6,16 +6,16 @@
    version="1.1"
    id="svg222"
    sodipodi:docname="sskkComp.svg"
-   inkscape:export-filename="sskkComp.pdf"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="sskkComp.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:ns4="http://www.iki.fi/pav/software/textext/">
+   xmlns:ns5="http://www.iki.fi/pav/software/textext/">
   <sodipodi:namedview
      id="namedview222"
      pagecolor="#ffffff"
@@ -29,9 +29,9 @@
      inkscape:zoom="1.5004001"
      inkscape:cx="205.27858"
      inkscape:cy="33.657689"
-     inkscape:window-width="2400"
-     inkscape:window-height="1261"
-     inkscape:window-x="-9"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg222" />
@@ -1677,16 +1677,16 @@
      id="path214" />
   <g
      id="g3013"
-     ns4:version="1.13.0"
-     ns4:texconverter="pdflatex"
-     ns4:pdfconverter="inkscape"
-     ns4:text="$\\eta_{\\text{Hb}}(\\lambda)$"
-     ns4:preamble="C:\Users\danal\AppData\Roaming\inkscape\extensions\textext\default_packages.tex"
-     ns4:scale="1.5300729958655137"
-     ns4:alignment="middle center"
-     ns4:inkscapeversion="1.4.3"
+     ns5:version="1.13.0"
+     ns5:texconverter="pdflatex"
+     ns5:pdfconverter="inkscape"
+     ns5:text="$\\eta_{\\text{Hb}}(\\lambda)$"
+     ns5:preamble="C:\Users\danal\AppData\Roaming\inkscape\extensions\textext\default_packages.tex"
+     ns5:scale="1.5300729958655137"
+     ns5:alignment="middle center"
+     ns5:inkscapeversion="1.4.3"
      transform="matrix(0,-1.6372221,1.6372221,0,0.074895,111.26567)"
-     ns4:jacobian_sqrt="1.53007">
+     ns5:jacobian_sqrt="1.53007">
     <defs
        id="defs9883">
       <g
