@@ -1722,38 +1722,6 @@
     \field{year}{2001}
   \endentry
 
-  \entry{dhattFiniteElementMethod2012}{book}{}{}
-    \name{author}{3}{}{%
-      {{hash=DG}{%
-         family={Dhatt},
-         familyi={D\bibinitperiod},
-         given={Gouri},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=TG}{%
-         family={Touzot},
-         familyi={T\bibinitperiod},
-         given={Gilbert},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=LE}{%
-         family={Lefrançois},
-         familyi={L\bibinitperiod},
-         given={Emmanuel},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {John Wiley \& Sons, Ltd}%
-    }
-    \strng{namehash}{DGTGLE1}
-    \strng{fullhash}{DGTGLE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Finite Element Method}
-    \field{year}{2012}
-  \endentry
-
   \entry{dassaultsystemesCSTMicrowaveStudio2003}{report}{}{}
     \name{author}{1}{}{%
       {{hash=D}{%
@@ -1836,6 +1804,62 @@
     \field{title}{Understanding Time Domain Meshing in {CST} {MICROWAVE}
   {STUDIO}}
     \field{year}{2010}
+  \endentry
+
+  \entry{tsinopoulosLightScatteringAggregated2002}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=TSV}{%
+         family={Tsinopoulos},
+         familyi={T\bibinitperiod},
+         given={Stephanos\bibnamedelima V.},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=EJS}{%
+         family={Euripides},
+         familyi={E\bibinitperiod},
+         given={J.\bibnamedelima Sellountos},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Demosthenes},
+         familyi={D\bibinitperiod},
+         given={Polyzos},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TSVEJSDP1}
+    \strng{fullhash}{TSVEJSDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1364/AO.41.001408
+    \endverb
+    \field{number}{7}
+    \field{pages}{1408\bibrangedash 1417}
+    \field{title}{Light scattering by aggregated red blood cells}
+    \field{volume}{41}
+    \field{journaltitle}{Appl. Opt.}
+    \field{year}{2002}
+  \endentry
+
+  \entry{fungBiomechanicsMechanicalProperties1990}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=FY}{%
+         family={Fung},
+         familyi={F\bibinitperiod},
+         given={Y.C.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FY1}
+    \strng{fullhash}{FY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Biomechanics Mechanical Properties of Living Tissues}
+    \field{year}{1990}
   \endentry
 
   \entry{kreibigOpticalPropertiesMetal2013}{book}{}{}
