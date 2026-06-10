@@ -1,0 +1,29 @@
+% !TeX root = ../tesis.tex
+
+\section{Contraste con la literatura}
+\label{section:Res_Esferocito}
+
+Con el fin de evaluar la capacidad del modelo para reproducir resultados reportados en la literatura, se compararon las simulaciones realizadas en este trabajo con estudios numéricos y experimentales previamente publicados. Para la validación numérica se emplearon los resultados de Tsinopoulos et al. \cite{tsinopoulosLightScatteringAggregated2002}, quienes emplearon el modelo de eritrocito propuesto por Fung \cite{fungBiomechanicsMechanicalProperties1990}, descrito por la ecuación en coordenadas cilíndricas
+%
+\begin{equation}
+	z(\rho)=\left[1-\left(\dfrac{\rho}{a}\right)^2\right]^{1/2}\left[0.72+4.152\left(\dfrac{\rho}{a}\right)^2-3.426\left(\dfrac{\rho}{a}\right)^4\right],
+\end{equation}
+%
+donde $a$ es el radio del eritrocito, para el cual los autores consideraron un valor de $3825$ nm. Cabe señalar que esta parametrización fue desarrollada para describir eritrocitos sanos y, por tanto, su validez se restringe a este tipo de células. En sus simulaciones, Tsinopoulos et al. emplearon el Método de Elementos de Frontera (BEM por sus siglas en inglés) y consideraron un eritrocito orientado con su eje de simetría a lo largo de la dirección $z$, iluminado por una onda plana propagándose en la misma dirección y polarizada en $x$, con una longitud de onda de $632.8~\text{nm}$. En esta longitud de onda consideraron un índice de refracción de 1.402 para el eritrocito y de 1.335 para el plasma, lo que corresponde a un índice de refracción relativo de aproximadamente 1.05. Estas mismas condiciones fueron reproducidas en CST empleando los parámetros de convergencia determinados previamente. En la Fig. \ref{fig:Tsinopoulos} se muestran los resultados de la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}/\dd{\Omega}}$ en función del ángulo polar $\theta$ obtenidos mediante CST con puntos azules y los obtenidos mediante BEM extraídos de la Ref. \cite{tsinopoulosLightScatteringAggregated2002}. 
+%
+\begin{figure}[b]
+	\centering
+	\sidesubfloat[First image]{\hspace{-0.1cm}{
+			\includegraphics[width=0.45\textwidth]{../Figuras/4-Resultados/comparacionpaper0.pdf}\label{subfig:Tsi_par}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.1cm}{	\includegraphics[width=0.45\textwidth]{../Figuras/4-resultados/comparacionpaper90.pdf}\label{subfig:Tsi_perp}}}
+	
+	
+	\caption{Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}/\dd{\Omega}}$ en función del ángulo polar $\theta$ para un eritrocito con geometría descrita por Fung \cite{fungBiomechanicsMechanicalProperties1990} y con radio igual a 3825 nm. El eritrocito fue iluminado por una onda plana propagándose en la dirección $z$ y polarizada en $x$, con una longitud de onda de $632.8~\text{nm}$. Se consideró un índice de refracción relativo de 1.05. Los puntos azules muestran los resultados obtenidos mediante el método FIT y los naranjas mediante BEM en la Ref.  \cite{tsinopoulosLightScatteringAggregated2002}}
+	\label{fig:Tsinopoulos}
+\end{figure}
+%
+
+Se observa que en el plano paralelo ($\varphi=0$) se observa una coinsicidencia en la posición de los máximos locales excepto en la región de 160-165 nm. Existen ligeras variaciones del en la amplitud, pero se obtienen errores absolutos menores al . Por otro lado, en el plano paralelo se observa la coincidencia de la posición de los máximos y mínimos locales mientras que las variaciones en la amplitud son menores (del orden de ). Por lo tanto, se puede concluir que se obtiene una buena coincidencia entre los resultados en CST y los ya reportados 
+
+
+Añadido a esto, se muestra en la Fig. la comparación de la geometría empleada en \cite{tsinopoulosLightScatteringAggregated2002} con la geometría de óvalos de Cassini empleada aquí. Se muestran las curvas en las que se puede observar que con la geometría del paper se observa una concavidad más pronunciada y bordes más afilados en el plano ecuatorial. Esto se ve reflejado en la Fig. donde se muestra 

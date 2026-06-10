@@ -93,4 +93,79 @@ Empleando los valores previamente optimizados, se analizó la influencia del niv
 \end{figure}
 %
 
+Con los parámetros previamente seleccionados, se realizó una verificación adicional de los criterios de convergencia empleados. Para ello, se fijó un tamaño mínimo de celda de 10 nm y se repitió el análisis de la distancia borde-esfera con valores de $h$=950, 1000 y 1050 nm y del mallado global con valores de 12, 15 y 17 celdas por longitud de onda. Los resultados obtenidos se compararon con la solución analítica de Mie en tres longitudes de onda representativas: 428, 529 y 563 nm. Estas longitudes corresponden, respectivamente, al mínimo asociado a la banda de Soret y a los máximos asociados a las bandas $\beta$ y $\alpha$ respectivamente. En la Tabla \ref{table:convergencia} se muestran los valores de $Q_{\text{ext}}$ obtenidos así como el error relativo con respecto a la solución analítica de Mie para distintos valores del mallado global y de $h$. En la tabla de la izquierda se mantiene fijo un mallado global de 15 celdas por longitud de onda mientras se varía $h$. Por su parte, en la tabla de la derecha se fija el valor de $h=1000$ nm y se modifica el número de celdas por longitud de onda.
+%
+\begin{table}[h!]
+	\centering
+	
+	\begin{tabular}{cc}
+		% -------- BLOQUE 1 --------
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{ccc}
+				\hline
+				\multicolumn{3}{c}{15 celdas por longitud de onda}\\ 
+				\hline
+				$\lambda$ & $Q_{\text{ext}}$ & Error relativo\\
+				\hline
+				\multicolumn{3}{c}{$h=950$ nm} \\
+				\hline
+				428 & 2.07084 & 4.56847 \\
+				529 & 3.07943 & 0.994313 \\
+				563 & 3.17225 & 0.670544 \\
+				\hline
+				\multicolumn{3}{c}{$h=1000$ nm} \\
+				\hline
+				428 & 2.06953 & 4.57459 \\
+				529 & 3.07902 & 1.0078 \\
+				563 & 3.17233 & 0.668147 \\
+				\hline
+				\multicolumn{3}{c}{$h=1050$ nm} \\
+				\hline
+				428 & 2.06824 & 4.64005 \\
+				529 & 3.07854 & 1.0235 \\
+				563 & 3.17232 & 0.668147 \\
+				\hline
+			\end{tabular}
+		\end{minipage}
+		&
+		% -------- BLOQUE 2 --------
+		\begin{minipage}{0.45\textwidth}
+			\centering
+		\begin{tabular}{ccc}
+			\hline
+			\multicolumn{3}{c}{$h=1000$ nm}\\ 
+			\hline
+			$\lambda$ & $Q_{\text{ext}}$ & Error relativo\\
+			\hline
+			\multicolumn{3}{c}{12 celdas por longitud de onda} \\
+			\hline
+			428 & 2.04120 & 6.02605 \\
+			529 & 3.06460 & 1.48286 \\
+			563 & 3.16445 & 0.918616 \\
+			\hline
+			\multicolumn{3}{c}{15 celdas por longitud de onda} \\
+			\hline
+			428 & 2.06953 & 4.57459 \\
+			529 & 3.07902 & 1.00780 \\
+			563 & 3.17233 & 0.66814 \\
+			\hline
+			\multicolumn{3}{c}{17 celdas por longitud de onda} \\
+			\hline
+			428 & 2.07888 & 4.10444 \\
+			529 & 3.08384 & 0.84972 \\
+			563 & 3.17484 & 0.58853 \\
+			\hline
+		\end{tabular}
+		\end{minipage}
+	\end{tabular}
+	
+	\caption{Valores de $Q_{\text{ext}}$ y errores relativos respecto a la solución analítica de Mie, considerando un refinamiento local con tamaño mínimo de celda de 10 nm. En la tabla izquierda se muestran los resultados obtenidos para un mallado global de 15 celdas por longitud de onda y valores de $h=950, 1000$ y 1500 nm. En la tabla derecha se presentan los resultados para $h=1000$ nm y mallados globales de 12, 15 y 17 celdas por longitud de onda.}
+	\label{table:convergencia}
+\end{table}
+%
+
+Se observa que en la longitud de onda de 428 nm las diferencias aparecen a partir de la segunda o tercera cifra decimal de $Q_{\text{ext}}$, mientras que para 529 y 563 nm las discrepancias se restringen principalmente a la tercera y cuarta cifras decimales. Los errores relativos muestran que las tendencias observadas en los análisis iniciales se conservan tras la incorporación del mallado local. Por otra parte, el mallado de 17 celdas por longitud de onda presenta la mejor concordancia con la solución analítica de Mie en las tres longitudes de onda consideradas, alcanzando errores relativos inferiores al 4.2\%. Asimismo, el incremento en el costo computacional asociado resulta moderado, ya que el tiempo de simulación aumenta únicamente alrededor de 30 minutos respecto al caso de 15 celdas por longitud de onda. Con base en estos resultados, se adoptó finalmente la combinación $h=1000$ nm y un mallado global de 17 celdas por longitud de onda para las simulaciones posteriores.
+
+
 
