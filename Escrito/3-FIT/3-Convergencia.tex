@@ -1,18 +1,41 @@
 \section{Convergencia}
 \label{section:convergence}
 
-Las simulaciones se realizaron empleando el software \textit{Computer Simulation Technology} (CST, versión 2025) en una computadora de escritorio equipada con un procesador Intel Core i7 de $13^a$ generación (16 núcleos, 24 hilos) y 64 GB de memoria RAM, bajo el sistema operativo Windows. El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera, descrita por la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}, y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2,680 nm, cuya función dieléctrica corresponde a la de un eritrocito con una CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=~1.823$. La esfera se iluminó con una onda plana propagándose en la dirección $z$ y polarizada en $x$, considerando longitudes de onda el rango de 400 a 600 nm. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional --definido por la distancia entre la partícula y la caja de simulación (\textit{bounding box})--, el nivel de reflexión estimado (\textit{estimated reflection level}) --relacionado con la capa absorbente Perfect Matching Layer (PML)--, así como el mallado global y el mallado local (tanto en volumen como en superficie). A lo largo del análisis, estos parámetros se ajustaron con el fin de minimizar las discrepancias numéricas respecto a la solución analítica de Mie y garantizar la convergencia de las simulaciones. En la Fig.~\ref{subfig:CST_matriz} se muestra la geometría del problema, donde la esfera se encuentra inmersa en el dominio delimitado por la caja de simulación. Por otro lado, en la Fig.~\ref{subfig:CST_mesh} se muestran algunos de los parámetros de discretización considerados. El mallado global corresponde a la discretización de todo el dominio (matriz y partícula), mientras que, en caso de emplearse un refinamiento local, este se aplica exclusivamente a la partícula. Asimismo, se define la distancia $h$ como la separación mínima entre la superficie de la partícula y la caja de simulación. 
+Las simulaciones se realizaron empleando el software \textit{Computer Simulation Technology} (CST, versión 2025) en una computadora de escritorio equipada con un procesador Intel Core i7 de $13^a$ generación (16 núcleos, 24 hilos) y 64 GB de memoria RAM, bajo el sistema operativo Windows.%
+%	--- JAUA ---
+%	Cuál vesión?
+%
+El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera, descrita por la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}, y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2,680 nm, cuya función dieléctrica corresponde a la de un eritrocito con una CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=~1.823$. La esfera se iluminó con una onda plana propagándose en la dirección $z$ y polarizada en $x$, considerando longitudes de onda el rango de 400 a 600 nm. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional --definido por la distancia entre la partícula y la caja de simulación (\textit{bounding box})--, el nivel de reflexión estimado (\textit{estimated reflection level}) --relacionado con la capa absorbente Perfect Matching Layer (PML)--, así como el mallado global y el mallado local (tanto en volumen como en superficie). A lo largo del análisis, estos parámetros se ajustaron con el fin de minimizar las discrepancias numéricas respecto a la solución analítica de Mie y garantizar la convergencia de las simulaciones.%
+%	--- JAUA ---
+%	En la última frase cambiar por algo como:
+%		A partir de una variación paramétrica se minimizó el error entre.... (explicas en qué consiste tu error.)
+%	Es repetitivo lo de "convergencia" al final porque es lo que has estado explicando en esta sección
+%
+En la Fig.~\ref{subfig:CST_matriz} se muestra la geometría del problema, donde la esfera se encuentra inmersa en el dominio delimitado por la caja de simulación. Por otro lado, en la Fig.~\ref{subfig:CST_mesh} se muestran algunos de los parámetros de discretización considerados. El mallado global corresponde a la discretización de todo el dominio (matriz y partícula), mientras que, en caso de emplearse un refinamiento local, este se aplica exclusivamente a la partícula. Asimismo, se define la distancia $h$ como la separación mínima entre la superficie de la partícula y la caja de simulación.
 
 \begin{figure}[h]
 	\centering
 	\sidesubfloat[First image]{{
 			\includegraphics[width=5cm]{../../Figuras/3-FIT/Matriz.pdf}\label{subfig:CST_matriz}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{{	\includegraphics[width=4.55cm]{../../Figuras/3-FIT/Mesh.pdf}\label{subfig:CST_mesh}}}\vspace{-0.1cm}
-	\caption{\textbf{a)} Vista tridimensional del dominio computacional en CST.  \textbf{b)} Corte transversal del mallado del dominio computacional en CST. Se indica el mallado global como todo lo que rodea a la esfera, el mallado local como lo que compone a la esfera y la distancia $h$ entre el borde de la esfera y el borde de la caja de simulación.}
+	\caption{\textbf{a)} Vista tridimensional del dominio computacional en CST.  \textbf{b)} Corte transversal%
+%	--- JAUA ---
+%	del dominio computacional mostrando el mallado en el plano y=0 (o el que corresponda que sea consistente con tu polarización)
+%
+del mallado del dominio computacional en CST. Se indica el mallado global como todo lo que rodea a la esfera, el mallado local como lo que compone a la esfera y la distancia $h$ entre el borde de la esfera y el borde de la caja de simulación.}
 	\label{fig:CST}
 \end{figure}
 %
-
+%	--- JAUA ---
+%
+%	Te propongo que expliques que el parámetro $h$ es el primero que se analiza pues tiene un
+%	impacto en el tamaño de la geometría y por tanto en los recursos computacionales a emplear.
+%
+%	En un punto y a parte, describe la geometría de lesfera y demás detalles y luego los parámetros
+%	que se dejaron fijos
+%
+%	Por cierto, la reflectividad pasó de 5E-4 a 1E-5. POr?
+%
 Para evaluar la influencia de la distancia $h$ en $Q_{\text{ext}}$ y su diferencia con respecto a la solución analítica de teoría de Mie para una esfera de radio 2,680 nm, con función dieléctrica corresponde de un eritrocito con una CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=~1.823$, se emplearon los parámetros predeterminados de CST: un mallado global definido por 15 celdas por longitud de onda, sin refinamiento local, y un nivel de reflexión de $10^{-5}$ (cercano al valor recomendado de $10^{-4}$). En la Fig.~\ref{fig:ajusteMatriz} se muestra $Q_{\text{ext}}$ en función de la longitud de onda incidente $\lambda$ para distintos valores de $h$: 500, 1000, 1230, 1470, 1720 y 2300 nm que se identificaron mediante puntos de color negro, morado, vino, naranja oscuro, naranja claro y amarillo, respectivamente. La línea continua que une los puntos es una guía visual. Asimismo, se muestra la solución analítica obtenida mediante teoría de Mie como una línea continua verde. En la solución analítica se observan tres mínimos espectrales asociados a los centros de las principales bandas de absorción descritas por la función dieléctrica: la banda de Soret, centrada alrededor de 428 nm, y las bandas $\beta$ y $\alpha$, centradas aproximadamente en 541 nm y 575 nm, respectivamente. El espectro completo de 400 a 600 nm se presenta en la Fig.~\ref{subfig:ajusteMatrizGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMatrizSoret}, \ref{subfig:ajusteMatrizBeta} y \ref{subfig:ajusteMatrizAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$. 
 %
 \begin{figure}[h!]
@@ -32,13 +55,24 @@ Para evaluar la influencia de la distancia $h$ en $Q_{\text{ext}}$ y su diferenc
 \end{figure}
 %
 
-A partir de estos resultados, se observa un desfase en el mínimo global entre la solución numérica y la analítica, así como la presencia de oscilaciones en todo el espectro. Dado que estas oscilaciones no se observan en la solución analítica, se espera que no correspondan a un comportamiento físico del sistema. Asimismo, se observa una mayor frecuencia de oscilación a menores longitudes de onda por ejemplo, en la región de la banda de Soret las oscilaciones tienen un \textit{Full Width Half Maximum} (FWHM) de 8 nm, mientras que en la región de las bandas $\alpha$ y $\beta$ de aproximadamente 11 nm y 10 nm, respectivamente. En cuanto a la influencia de la distancia $h$, se observa que en la región de la banda de Soret el error\footnote{Se considera al error absoluto a una longitud de onda dada como
+A partir de estos resultados, se observa un desfase%
+%
+%	--- JAUA ---
+%	Propuesta: corrimiento al rojo en lugar de desfase
+%	Arriba acomodabas \beta y \alpha por su posición en
+%	Lambdas. PEro ahora están al revés.
+%
+en el mínimo global entre la solución numérica y la analítica, así como la presencia de oscilaciones en todo el espectro. Dado que estas oscilaciones no se observan en la solución analítica, se espera que no correspondan a un comportamiento físico del sistema. Asimismo, se observa una mayor frecuencia de oscilación a menores longitudes de onda por ejemplo, en la región de la banda de Soret las oscilaciones tienen un \textit{Full Width Half Maximum} (FWHM) de 8 nm, mientras que en la región de las bandas $\alpha$ y $\beta$ de aproximadamente 11 nm y 10 nm, respectivamente. En cuanto a la influencia de la distancia $h$, se observa que en la región de la banda de Soret el error\footnote{Se considera al error absoluto a una longitud de onda dada como
 	$$\text{Error}(\lambda)=|Q_{\text{CST}}(\lambda)-Q_{\text{Mie}}(\lambda)|,$$
 	mientras que el error absoluto promedio se consudera como 
 $$\text{Error promedio}=\frac{1}{N}\Sum_i|Q_{\text{CST}}(\lambda_i)-Q_{\text{Mie}}(\lambda_i)|,$$
 donde $N$ es el número total de datos promediados.} entre la solución de Mie con la solución analítica disminuye al incrementar $h$ alcanzando valores de hasta 0.022. En contraste, en las bandas $\alpha$ y $\beta$ el error aumenta para valores menores de $h$ alcanzando valores de 0.64. Considerando el comportamiento global en todo el rango espectral, así como el costo computacional asociado (82 minutos), se seleccionó $h$=1000~nm como un valor conveniente para las simulaciones posteriores, dado que el ajuste de otros parámetros podría incrementar significativamente el tiempo de cómputo.
 
-
+%	--- JAUA ---
+%	Se verá muy feo si pones cel/\lambda ?? COnsidéralo para ahorrar espacio
+%	Aquí volviste  poner beta y alpha
+%	Te dugiero cambiar desplazamiento por corrimiento (al rojo o al azul) al final del párrafo
+%
 El análisis de la influencia del mallado global se realizó mediante la variación del número de celdas por longitud de onda. Para este estudio no se consideró refinamiento local y se fijó el nivel de reflexión en $10^{-5}$. En la Fig.~\ref{fig:ajusteMesh} se muestra la $Q_{\text{ext}}$ en función de la longitud de onda de la luz incidente, comparando los resultados obtenidos mediante CST con la solución analítica de Mie. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs. \ref{subfig:ajusteMeshBeta} y \ref{subfig:ajusteMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$. El número de celdas por longitud de onda determina directamente el tamaño mínimo de celda en la discretización. En este caso, se consideraron valores de 7, 10, 12, 15 y 17 celdas por longitud de onda, correspondientes a tamaños de celda de 40.0, 28.2, 23.5, 18.7 y 16.5 nm, respectivamente. Estos puntos se representan mediante un gradiente de color rosa, que va de tonos más oscuros para los valores menores (7 celdas por longitud de onda) a tonos más claros para los valores mayores (17 celdas por longitud de onda).  También se muestra la solución analítica de Mie como referencia como una línea continua verde. Se observa que en las regiones de la banda de Soret, $\beta$ y $\alpha$ conforme aumenta el tamaño mínimo de celda, las desviaciones respecto a la solución analítica aumentan. Estas discrepancias se manifiestan como oscilaciones espurias y un desplazamiento en la posición del mínimo global, lo que indica que la discretización es insuficiente para describir adecuadamente la respuesta electromagnética de la partícula. A medida que se refina el mallado la discrepancia entre los resultados de CST y la solución de Mie disminuye de forma sistemática. En particular, para el mallado más fino considerado se obtiene el menor error absoluto promedio, igual a 0.49. No obstante, incluso en este caso persiste un desplazamiento del mínimo global de 37 nm. Considerando el compromiso entre precisión y costo computacional, se seleccionó un mallado de 15 celdas por longitud de onda, ya que la mejora obtenida al incrementar a 17 celdas es poco significativa (del orden de $10^{-3}$ en error absoluto promedio), mientras que el tiempo de simulación aumenta 50 minutos adicionales.
 %
 \begin{figure}[tb]
@@ -57,10 +91,22 @@ El análisis de la influencia del mallado global se realizó mediante la variaci
 \end{figure}
 %
 
+Con el fin de analizar la influencia del mallado local se evaluó el refinamiento en la superficie y en el volumen de la partícula.%
+% --- JAUA ---
+%	Creo que podemos cambiar el orden de la segunda parte.
+%	PRopuesta:
+%	Dado que en CST se implementa \textit{Perfect Boundary Approximation} (PBA), la cual permite...., no se observaron variaciones significativas en el refiniamineto del mallado en la superficie. En particular, el error en la banda de Soret para un refinamiento de XX fue de YY, mientas que para XX2, de YY2, es decir, un cambio de 1\times-8 ( o algo así).
+%	REcuerda que apesar de que no mostremos las gráficas, sí tienes los resulados, entonces hay que reportarlos. para dar fidelidad al trabajo.
+%
+%	Corrígeme si estoy mal, pero también habíamos considerado que incluirías una tabla de estos valores, no?? Si ese es el caso, lo puedes juntar con los valores de abajo de la reflectividada (para los cntros de tus tres bandas) y hacer referencia a la misma tabla en abos párrafos.
+%
+Sin embargo, en cuanto al mallado de la superficie no se observaron variaciones ni en $Q_{\text{ext}}$ ni en el tiempo de simulación, por lo que no se incluyen los resultados correspondientes. Este comportamiento puede explicarse por la técnica de \textit{Perfect Boundary Approximation} (PBA) implementada en CST, la cual permite representar con alta precisión superficies curvas sin necesidad de refinamientos adicionales en la discretización geométrica \cite{dassaultsystemesUnderstandingTimeDomain2010}.
 
-Con el fin de analizar la influencia del mallado local se evaluó el refinamiento en la superficie y en el volumen de la partícula. Sin embargo, en cuanto al mallado de la superficie no se observaron variaciones ni en $Q_{\text{ext}}$ ni en el tiempo de simulación, por lo que no se incluyen los resultados correspondientes. Este comportamiento puede explicarse por la técnica de \textit{Perfect Boundary Approximation} (PBA) implementada en CST, la cual permite representar con alta precisión superficies curvas sin necesidad de refinamientos adicionales en la discretización geométrica \cite{dassaultsystemesUnderstandingTimeDomain2010}. 
-
-Para evaluar el efecto del mallado local en el volumen de la esfera se fijaron los parámetros previamente optimizados: $h=1000$ nm, un mallado global de 15 celdas por longitud de onda y un nivel de reflexión de $10^{-5}$, variando únicamente el tamaño mínimo absoluto de celda dentro de la partícula. En la Fig.~\ref{fig:ajusteLocalMesh} se muestran los resultados obtenidos de $Q_{\text{ext}}$ para tamaños de celda de 20, 16, 15, 12 y 10 nm, los cuales corresponden a tamaños efectivos mínimos dentro de la esfera de 16.17, 15.95, 14.83, 11.96 y 9.93 nm, respectivamente. Los resultados se representan mediante un gradiente de color morado, que varía desde tonos más oscuros para el mayor tamaño mínimo de celda hasta tonos más claros para el menor. Adicionalmente, se incluye la solución analítica de la teoría de Mie como una línea continua de color verde. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs. \ref{subfig:ajusteLocalMeshSoret}, \ref{subfig:ajusteLocalMeshBeta} y \ref{subfig:ajusteLocalMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas Q ($\beta$ y $\alpha$). Se observa que, al disminuir el tamaño de celda, los resultados numéricos convergen progresivamente hacia la solución analítica. Asimismo, la inclusión del mallado local en el volumen de la partícula elimina las oscilaciones espurias observadas previamente, confirmando su origen numérico asociado a una discretización insuficiente de la geometría. Con base en estos resultados, se seleccionó un tamaño mínimo de celda de 10 nm, al representar un equilibrio entre precisión y costo computacional. Cabe señalar que refinamientos adicionales no fueron considerados debido a limitaciones de memoria RAM del equipo de cómputo empleado.
+Para evaluar el efecto del mallado local en el volumen de la esfera se fijaron los parámetros previamente optimizados: $h=1000$ nm, un mallado global de 15 celdas por longitud de onda y un nivel de reflexión de $10^{-5}$, variando únicamente el tamaño mínimo absoluto de celda dentro de la partícula. En la Fig.~\ref{fig:ajusteLocalMesh} se muestran los resultados obtenidos de $Q_{\text{ext}}$ para tamaños de celda de 20, 16, 15, 12 y 10 nm, los cuales corresponden a tamaños efectivos mínimos dentro de la esfera de 16.17, 15.95, 14.83, 11.96 y 9.93 nm, respectivamente. Los resultados se representan mediante un gradiente de color morado, que varía desde tonos más oscuros para el mayor tamaño mínimo de celda hasta tonos más claros para el menor.%
+% --- JAUA ---
+% el mayor tamaño mínimo es algo confuso. Piensa una forma más clara de abordar esta descrpición (propongo poner los valores.)
+%
+Adicionalmente, se incluye la solución analítica de la teoría de Mie como una línea continua de color verde. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs. \ref{subfig:ajusteLocalMeshSoret}, \ref{subfig:ajusteLocalMeshBeta} y \ref{subfig:ajusteLocalMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas Q ($\beta$ y $\alpha$). Se observa que, al disminuir el tamaño de celda, los resultados numéricos convergen progresivamente hacia la solución analítica. Asimismo, la inclusión del mallado local en el volumen de la partícula elimina las oscilaciones espurias observadas previamente, confirmando su origen numérico asociado a una discretización insuficiente de la geometría. Con base en estos resultados, se seleccionó un tamaño mínimo de celda de 10 nm, al representar un equilibrio entre precisión y costo computacional. Cabe señalar que refinamientos adicionales no fueron considerados debido a limitaciones de memoria RAM del equipo de cómputo empleado.
 %
 \begin{figure}[tb]
 	\centering
@@ -79,8 +125,17 @@ Para evaluar el efecto del mallado local en el volumen de la esfera se fijaron l
 \end{figure}
 %
 
+% --- JAUA ---
+%	Mismo comentario que arriba: reporta los valores para los casos límites y menciona qué tanto cambiaron. Está bien lo de poner el tiempo de cómputo pero rambién danos un estimado.
+%
+%	Te recomiendo iniciar el párrafo diciendo que es el último parámetro que cambiaste para que, com lectores, nos demos una idea que ya terminaste de hacer el análisis.
+% Recuerda que mínimo qieremos tres oraciones por +párrafo: intro, desarrollo, conlusión
+%
 Empleando los valores previamente optimizados, se analizó la influencia del nivel de reflexión estimado, considerando valores de $ 10^{-4},  10^{-6}, 10^{-8}, 10^{-10}$. No se observan diferencias en los valores de $Q_{\text{ext}}$, sin embargo a medida que disminuye el nivel de reflexión hay incremento en el tiempo de simulación.
 
+% --- JAUA ---
+% inicia este párradfo diciedo que vas a sintetizar el análisis de convergencia en función del tiempo de simulación por haber elegido soluciones de compromiso. Ya luego, introduces la figura en el txto.
+%
  En la Fig.~\ref{fig:tiempos} se muestran los tiempos de simulación (en minutos) en función de las distintas variaciones de parámetros consideradas. Se presentan los resultados conforme se realizó la variación de parámetros, es decir, de izquierda a derecha se muestran los resultados correspondientes a la variación de la distancia $h$, el mallado global, el mallado local en volumen y el nivel de reflexión asociado a la capa absorbente (PML). Cada punto está identificado mediante el mismo código de color empleado en las figuras anteriores, mientras que en color verde se indica el valor seleccionado como óptimo en cada caso. Con base en el análisis conjunto de la convergencia y el costo computacional, los parámetros finales seleccionados son: $h=1000$ nm, mallado global con 15 celdas por longitud de onda, mallado local con un tamaño mínimo de celda de 10 nm y nivel de reflexión estimado de $10^{-4}$. Esta configuración produce un error absoluto promedio de aproximadamente 0.05 respecto a la solución analítica de Mie, con un tiempo total de simulación de alrededor de 770 minutos.
 %
 \begin{figure}[tb]
