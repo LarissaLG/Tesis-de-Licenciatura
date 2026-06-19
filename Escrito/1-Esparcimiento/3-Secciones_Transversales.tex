@@ -42,7 +42,7 @@ Para cuantificar la extinción, absorción y el esparcimiento de manera macrosc�
 %
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=6.7cm]{../../Figuras/1-Esparcimiento/WA.pdf}
+	\includegraphics[width=6.6cm]{../../Figuras/1-Esparcimiento/WA.pdf}
 	\caption{Esquema de la superficie de integración $A$ como una esfera de radio $r$ centrada en el origen y que encierra a una partícula.}
 	\label{WA}
 \end{figure}
@@ -119,11 +119,17 @@ que es la sección transversal de extinción y que posee dimensiones de área.
  Al sustituir las Ecs.~(\ref{eq:EH_s}) en la Ec. (\ref{seq:Ws}) se obtiene
 %
 \begin{equation}
-	C_{\text{sca}}=\int_0^{2\pi}\int_0^{\pi}\frac{|\vb{X}|^2}{k^2}\:\sin\theta\: \text{d}\theta\:\text{d}\phi.
+	C_{\text{sca}}=\int_0^{2\pi}\int_0^{\pi}\frac{|\vb{X}|^2}{k^2}\:\sin\theta\: \text{d}\theta\:\text{d}\phi,
 	\label{C_sca_general}
 \end{equation}
 %%
- \noindent Finalmente, la Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
+donde 
+%
+\begin{equation}
+	\frac{\dd{C_{\text{sca}}}}{\dd{\Omega}}=\frac{|\vb{X}|^2}{k^2},
+\end{equation}
+%%
+es la sección transversal de esparcimiento diferencial, que indica la distribución angular de la onda esparcida \cite{bohrenAbsorptionScatteringLight2008}. Finalmente, la Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{tcolorbox}[ams align]
 	C_{\text{ext}}=C_{\text{abs}}+C_{\text{sca}},
