@@ -3,6 +3,7 @@
 
 Las simulaciones se realizaron empleando el software \textit{Computer Simulation Technology} (CST, versión 2025) en una computadora de escritorio equipada con un procesador Intel Core i7 de $13^a$ generación (16 núcleos, 24 hilos) y 64 GB de memoria RAM, bajo el sistema operativo Windows 11 Home. El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera, descrita por la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}, y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2,680 nm, cuya función dieléctrica corresponde a la de un eritrocito con una CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=~1.823$. La esfera se iluminó con una onda plana propagándose en la dirección $z$ y polarizada en $x$, considerando longitudes de onda en el rango de 400 a 600 nm. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional ---definido por la distancia entre la partícula y la caja de simulación (\textit{bounding box})---, el nivel de reflexión estimado (\textit{estimated reflection level}) ---relacionado con la capa absorbente Perfect Matching Layer (PML)---, así como el mallado global y el mallado local (tanto en volumen como en superficie). A partir de una variación paramétrica se minimizó el error %
 	% --- JAUA --- Voy a poner un espacio para que lo puedas leer mejor
+	% No se compiló la suma. Es con minúscula, creo
 	\footnote{Se considera al error absoluto a una longitud de onda dada como
 	$$\text{Error}(\lambda)=|Q_{\text{CST}}(\lambda)-Q_{\text{Mie}}(\lambda)|,$$
 	mientras que el error absoluto promedio se consudera como 
@@ -41,7 +42,13 @@ Dado que el parámetro $h$ define el tamaño del dominio de simulación, el núm
 %
 \sout{obre la discrepancia respecto a la solución analítica de la teoría de Mie, con el fin de identificar un valor que proporcione el menor error con respecto a la solución analítica sin incurrir en un costo computacional excesivo que limite el} análisis posterior de los demás parámetros.
 
-Para este análisis se consideró una esfera de radio 2680 nm, con una función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=1.823$. Se emplearon los parámetros predeterminados de CST: un mallado global de 15 celdas por longitud de onda, sin refinamiento local, y un nivel de reflexión de $10^{-5}$. En la Fig.~\ref{fig:ajusteMatriz} se presenta $Q_{\text{ext}}$ en función de la longitud de onda incidente $\lambda$ para distintos valores de $h$: 500, 1000, 1230, 1470, 1720 y 2300 nm. Los resultados se identifican mediante puntos de color negro, morado, vino, naranja oscuro, naranja claro y amarillo, respectivamente, mientras que la línea continua que los une se incluye únicamente como guía visual. Asimismo, se muestra la solución analítica obtenida mediante teoría de Mie como una línea continua verde. En la solución analítica se observan tres mínimos espectrales asociados a los centros de las principales bandas de absorción descritas por la función dieléctrica: la banda de Soret, centrada alrededor de 428 nm, y las bandas $\beta$ y $\alpha$, centradas aproximadamente en 541 nm y 575 nm, respectivamente. El espectro completo de 400 a 600 nm se presenta en la Fig.~\ref{subfig:ajusteMatrizGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMatrizSoret}, \ref{subfig:ajusteMatrizBeta} y \ref{subfig:ajusteMatrizAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$. 
+% --- JAUA ---
+% Repites toda a primera parte de este párrafo en la parte de arriba. Reescribe y considera retomar lo qeu ya pusiste arriba
+\sout{Para este análisis se consideró una esfera de radio 2680 nm, con una función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=1.823$}. Se emplearon los parámetros predeterminados de CST: un mallado global de 15 celdas por longitud de onda, sin refinamiento local, y un nivel de reflexión de $10^{-5}$. En la Fig.~\ref{fig:ajusteMatriz} se presenta $Q_{\text{ext}}$ en función de la longitud de onda incidente $\lambda$ para distintos valores de $h$:
+% --- JAUA ---
+% Pones comas a los número de más de tres cifra ($1,470) por ejemplo
+%
+500, 1000, 1230, 1470, 1720 y 2300 nm. Los resultados se identifican mediante puntos de color negro, morado, vino, naranja oscuro, naranja claro y amarillo, respectivamente, mientras que la línea continua que los une se incluye únicamente como guía visual. Asimismo, se muestra la solución analítica obtenida mediante teoría de Mie como una línea continua verde. En la solución analítica se observan tres mínimos espectrales asociados a los centros de las principales bandas de absorción descritas por la función dieléctrica: la banda de Soret, centrada alrededor de 428 nm, y las bandas $\beta$ y $\alpha$, centradas aproximadamente en 541 nm y 575 nm, respectivamente. El espectro completo de 400 a 600 nm se presenta en la Fig.~\ref{subfig:ajusteMatrizGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMatrizSoret}, \ref{subfig:ajusteMatrizBeta} y \ref{subfig:ajusteMatrizAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$.
 %
 \begin{figure}[h!]
 	\centering
@@ -137,6 +144,8 @@ Para evaluar el efecto del mallado local en el volumen de la esfera se fijaron l
 El último parámetro analizado fue el nivel de reflexión estimado del PML. Empleando los parámetros previamente seleccionados, se evaluó su influencia considerando valores de $10^{-4}$, $10^{-6}$, $10^{-8}$ y $10^{-10}$. Para cada uno de estos valores, CST ajusta automáticamente las características del PML, dando lugar a grosores de 68.26, 85.32, 102.39 y 136.51 nm, respectivamente. No se observaron diferencias significativas en los valores de $Q_{\text{ext}}$ obtenidos. En particular, para la banda de Soret se obtuvo un error absoluto de 0.43150 al emplear un nivel de reflexión de $10^{-4}$, mientras que para $10^{-6}$, $10^{-8}$ y $10^{-10}$ se obtuvieron errores de 0.43134, 0.43139 y 0.43134, respectivamente es decir, cambios del orden de $10^{-4}$ y $10^{-5}$. Dado que la reducción del nivel de reflexión no produce mejoras significativas en la convergencia de los resultados, pero sí incrementa el tiempo de simulación, se seleccionó finalmente un valor de $10^{-4}$ para las simulaciones posteriores.
 
 A continuación, se sintetizan los resultados del análisis de convergencia, en términos del tiempo de simulación, con el objetivo de evaluar el equilibrio alcanzado entre precisión numérica y costo computacional. En la Fig.~\ref{fig:tiempos} se muestran los tiempos de simulación (en minutos) en función de las distintas variaciones de parámetros consideradas. Se presentan los resultados conforme se realizó la variación de parámetros, es decir, de izquierda a derecha se muestran los resultados correspondientes a la variación de la distancia $h$, el mallado global, el mallado local en volumen y el nivel de reflexión asociado a la capa absorbente (PML). Cada punto está identificado mediante el mismo código de color empleado en las figuras anteriores, mientras que en color verde se indica el valor seleccionado como óptimo en cada caso. Con base en el análisis conjunto de la convergencia y el costo computacional, los parámetros finales seleccionados son: $h=1000$ nm, mallado global con 15 celdas por longitud de onda, mallado local con un tamaño mínimo de celda de 10 nm y nivel de reflexión estimado de $10^{-4}$. Esta configuración produce un error absoluto promedio de aproximadamente 0.05 respecto a la solución analítica de Mie, con un tiempo total de simulación de alrededor de 770 minutos.
+% --- JAUA ---
+% En qué ventana espectra? Con qué valores de lamda? cuántos puntos?
 %
 \begin{figure}[tb]
 	\centering
@@ -150,7 +159,26 @@ A continuación, se sintetizan los resultados del análisis de convergencia, en 
 
 %%% AQuí empieza lo nuevo
 
-Con los parámetros previamente seleccionados, se realizó una verificación adicional de los criterios de convergencia empleados. Para ello, se fijó un tamaño mínimo de celda de 10 nm y se repitió el análisis de la distancia borde-esfera con valores de $h$=950, 1000 y 1050 nm y del mallado global con valores de 12, 15 y 17 celdas por longitud de onda. Los resultados obtenidos se compararon con la solución analítica de Mie en tres longitudes de onda representativas: 428, 529 y 563 nm. Estas longitudes corresponden, respectivamente, al mínimo asociado a la banda de Soret y a los máximos asociados a las bandas $\beta$ y $\alpha$ respectivamente. En la Tabla \ref{table:convergencia} se muestran los valores de $Q_{\text{ext}}$ obtenidos así como el error relativo con respecto a la solución analítica de Mie para distintos valores del mallado global y de $h$. En la tabla de la izquierda se mantiene fijo un mallado global de 15 celdas por longitud de onda mientras se varía $h$. Por su parte, en la tabla de la derecha se fija el valor de $h=1000$ nm y se modifica el número de celdas por longitud de onda.
+Con los parámetros previamente seleccionados, se realizó una verificación adicional de los criterios de convergencia empleados. Para ello, se fijó un tamaño mínimo de celda de 10 nm y se repitió el análisis de la distancia borde-esfera con
+% --- JAUA ---
+% $h = 950$, o bien $h = $~950
+% Por qué eres poco consistente con esta notación? jaja
+% También acá me parece raro que no eres consistente con la coma y los tres dígitos.
+% De forma consistente, te olvidaste de celdas/lambda. sólo lo usaste donde lo sugerí por priera vez entonces se ve mal toda esat sección.
+%
+valores de $h$=950, 1000 y 1050 nm y del mallado global con valores de 12, 15 y 17 celdas por longitud de onda. Los resultados obtenidos se compararon con la solución analítica de Mie en tres longitudes de onda representativas: 428, 529 y 563 nm. %
+% --- JAUA ---
+% REvisa bien esta frase: usaste dos veces respectivamente
+%
+Estas longitudes corresponden, respectivamente, al mínimo asociado a la banda de Soret y a los máximos asociados a las bandas $\beta$ y $\alpha$ respectivamente. En la Tabla \ref{table:convergencia} se muestran los valores de $Q_{\text{ext}}$ obtenidos así como el error relativo con respecto a la solución analítica de Mie para distintos valores del mallado global y de $h$. %
+% --- JAUA ---
+% Tabal de izquiere y dereca se ve mal. TE sugiero que mejor hagas dos tabalas: 3.1 y 3.2 y para que no ocupen mucho espacio, las pones juntas en dos columnas (cons dos pies de páginas)
+En la tabla de la izquierda se mantiene fijo un mallado global de 15 celdas por longitud de onda mientras se varía $h$. Por su parte, en la tabla de la derecha se fija el valor de $h=1000$ nm y se modifica el número de celdas por longitud de onda.
+%
+% --- JAUA ---
+% Faltan unidades en las longitudes de onda
+% Acá de nuevo no usaste las unidades de cel/\lambda. Mantenlas consistentes (si quieres quítalas pero que no se vea que es u parche.
+
 %
 \begin{table}[h!]
 	\centering
