@@ -1,19 +1,53 @@
 % !TeX root = ../tesis.tex
-\chapter*{Propiedades ópticas}\addcontentsline{toc}{chapter}{\protect\numberline{}Resultados}
-\label{chapter:result}
+\chapter{\textit{Propiedades ópticas}}
+\label{chapter:Resultados}
 
+\section{Contraste con la literatura}
+\label{section:Res_Esferocito}
 
-\section{Eritrocito sano}
-\label{section:Res_Eritrocito_Sano}
-Make a short summary of the content of the thesis and then your conclusions. Also explain your future steps on this project 
+Con el fin de evaluar la capacidad del modelo para reproducir resultados reportados en la literatura, se compararon las simulaciones realizadas en este trabajo con estudios numéricos y experimentales previamente publicados. En cuanto a la comparación numérica se emplearon los resultados de Tsinopoulos et al. \cite{tsinopoulosLightScatteringAggregated2002}, quienes emplearon el modelo de eritrocito propuesto por Fung \cite{fungBiomechanicsMechanicalProperties1990}, descrito por la ecuación en coordenadas cilíndricas
+%
+\begin{equation}
+	z(\rho)=\left[1-\left(\dfrac{\rho}{a}\right)^2\right]^{1/2}\left[0.72+4.152\left(\dfrac{\rho}{a}\right)^2-3.426\left(\dfrac{\rho}{a}\right)^4\right],
+	\label{eq:Tsang_eri}
+\end{equation}
+%
+donde $a$ es el radio del eritrocito, para el cual se empleó el valor de $3.825\,\mu$m. Esta geometría corresponde a un eritrocito con un grosor mínimo de $1.44\,\mu$m y un grosor máximo de $2.84\,\mu$m, un volumen de $97.91~\mu\text{m}^3$ y un área superficial de $129.95~\mu\text{m}^2$. %
+% --- JAUA ---
+% Área superficies no es un pleaonasmo??
+%
+Cabe señalar que esta parametrización fue desarrollada para describir eritrocitos sanos, por lo que su aplicación se restringe a este tipo de células. En sus simulaciones, Tsinopoulos et al. emplearon el Método de Elementos de Frontera (BEM por sus siglas en inglés)
+% --- JAUA ---
+% Con CST lo pusiste en inglés y lo pusiste en itálicas
+%
+y consideraron un eritrocito orientado con su eje de simetría a lo largo de la dirección $z$, iluminado por una onda plana propagándose en la misma dirección y polarizada en $x$, con una longitud de onda de $632.8~\text{nm}$. En esta longitud de onda consideraron un índice de refracción de 1.402 para el eritrocito y de 1.335 para el plasma, lo que corresponde a un índice de refracción relativo de aproximadamente 1.05. Estas mismas condiciones fueron reproducidas en CST empleando los parámetros de convergencia determinados %
+% --- JAUA ---
+% en la Sección XX
+%
+\sout{previamente}. En la Fig. \ref{fig:Tsinopoulos} se muestran los resultados de la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}/\dd{\Omega}}$ %
+% --- JAUA ---
+%  [Ec. \eqref{eq:XX}]
+%
+en función del ángulo polar $\theta$  obtenidos mediante CST con puntos azules y los obtenidos mediante BEM extraídos de la Ref.~\cite{tsinopoulosLightScatteringAggregated2002}. En la Fig. \ref{subfig:Tsi_par} se muestra el corte de $\varphi=0$, mientras que en la Fig. \ref{subfig:Tsi_perp} se muestra el corte de $\varphi=\pi/2$.
+% --- JAUA ---
+% Más a delante los llamas paralelo y perpendicular, pero no dices respecto a qué (suóngo que al vector de onda incidente)
+%
 
 %
 \begin{figure}[h!]
 	\centering
-	\sidesubfloat[Second image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution440_EriSano.pdf}\label{subfig:FIT_cell_magnetic}}}\hspace{0.1cm}
-	\sidesubfloat[First image]{\hspace{-0.3cm}{
-			\includegraphics[width=7.5cm]{../../Figuras/4-Resultados/polarplot440FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
-	\caption{\textbf{a)} Cara $S_{z,n}$ de la celda $V_{n}$ del complejo $G$ en la que las flechas rojas indican la circulación del campo eléctrico a lo largo de las aristas que conforman el contorno de la cara, mientras que la flecha azul representa el flujo del campo magnético a través de dicha superficie, asociado a $B_{z,n}$. \textbf{b)} Celda $V_{n}$ del complejo $G$ que muestra el flujo de campo magnético que atraviesa cada una de sus superficies. Los subíndices asociados a cada flujo corresponden a la superficie de la cara que atraviesan.}
-	\label{fig:FIT_cell}
+	\sidesubfloat[First image]{\hspace{-0.1cm}{
+			\includegraphics[width=0.45\textwidth]{../Figuras/4-Resultados/comparacionpaper0.pdf}\label{subfig:Tsi_par}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.1cm}{	\includegraphics[width=0.45\textwidth]{../Figuras/4-resultados/comparacionpaper90.pdf}\label{subfig:Tsi_perp}}}
+	
+	
+	\caption{Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}/\dd{\Omega}}$ en función del ángulo polar $\theta$ para un eritrocito con geometría descrita por Fung \cite{fungBiomechanicsMechanicalProperties1990} y con radio igual a 3.825 $\mu$m. El eritrocito fue iluminado por una onda plana propagándose en la dirección $z$ y polarizada en $x$, con una longitud de onda de $632.8~\text{nm}$. Se consideró un índice de refracción relativo de 1.05. Los puntos azules muestran los resultados obtenidos mediante el método FIT y los naranjas mediante BEM en la Ref.  \cite{tsinopoulosLightScatteringAggregated2002}}
+	\label{fig:Tsinopoulos}
 \end{figure}
 %
+A pesar de las diferencias observadas en la amplitud de $\dd{C_{\text{sca}}/\dd{\Omega}}$, ambos métodos reproducen la misma estructura angular general del patrón de esparcimiento. En particular, en el plano paralelo ($\varphi=0$), la diferencia entre en la posición angular de los máximos locales obtenida en la Ref.~\cite{tsinopoulosLightScatteringAggregated2002} y la obtenida en CST es de $0.63^\circ$. De manera similar, en el plano perpendicular ($\varphi=\pi/2$), la diferencia promedio en la localización de los máximos locales es de  $0.46^\circ$. Estos resultados indican que el modelo implementado en CST reproduce adecuadamente el patrón angular de esparcimiento reportado por Tsinopoulos et al., proporcionando una validación adicional de la metodología numérica empleada en este trabajo.
+
+
+
+
+
