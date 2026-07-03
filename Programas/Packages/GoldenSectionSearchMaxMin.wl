@@ -8,10 +8,10 @@ GoldenSearchLowUppIterMin::usage = "GoldenSearchLowUppIterMin[lower, upper, iter
 							width is less than tolRes or the maximum number of iterations is reached. 
 							It prints the iteration history and returns the x-value of the estimated minimum.";
 						
-GoldenSearchMin::usage = "GoldenSearchMin[f, lower, upper,tolRes] computes the local minimum of the function f within the interval [lower, upper] 
+GoldenSectionSearchMin::usage = "GoldenSearchMin[f, lower, upper,tolRes] computes the local minimum of the function f within the interval [lower, upper] 
 						using the Golden Section Search algorithm. It relies on a resolution 'tolRes' for its stopping criterion and prints the estimated x-value.";
 
-GoldenSearchMax::usage = "GoldenSearchMax[f, lower, upper,tolRes] computes the local maximum of the function f within the interval [lower, upper] 
+GoldenSectionSearchMax::usage = "GoldenSearchMax[f, lower, upper,tolRes] computes the local maximum of the function f within the interval [lower, upper] 
 						using the Golden Section Search algorithm. It relies on aresolution 'tolRes' for its stopping criterion and returns the estimated x-value.";
 
 
@@ -52,7 +52,7 @@ GoldenSearchLowUppIterMin[f_,lower_, upper_, iterations_, tolRes_] :=
  
  
  
- GoldenSearchMin[f_, lower_, upper_, tolRes_] := Module[{a = N[lower], b = N[upper], c, d},
+ GoldenSectionSearchMin[f_, lower_, upper_, tolRes_] := Module[{a = N[lower], b = N[upper], c, d},
   While[
    Abs[(b - (b - a)/GoldenRatio) - (a + (b - a)/GoldenRatio)] > tolRes,
    
@@ -67,7 +67,7 @@ GoldenSearchLowUppIterMin[f_,lower_, upper_, iterations_, tolRes_] :=
   Return[(b + a)/2];
 ]
 
-GoldenSearchMax[f_, lower_, upper_, tolRes_] := Module[{a = N[lower], b = N[upper], c, d},
+GoldenSectionSearchMax[f_, lower_, upper_, tolRes_] := Module[{a = N[lower], b = N[upper], c, d},
   While[
    Abs[(b - (b - a)/GoldenRatio) - (a + (b - a)/GoldenRatio)] > tolRes,
    
