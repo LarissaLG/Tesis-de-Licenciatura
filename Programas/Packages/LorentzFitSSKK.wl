@@ -12,6 +12,9 @@ ajustePico::usage =
 ajusteTotal::usage =
 "ajusteTotal[...] performs the complete Lorentzian fit using the results of ajusteSinPico and ajustePico as initial parameters.";
 
+parteReSSKK::usage =
+"ajusteTotal[...] performs the complete Lorentzian fit using the results of ajusteSinPico and ajustePico as initial parameters.";
+
 
 Begin["Private`"];
 
@@ -65,25 +68,42 @@ ajustePico[epsIm_]:=Module[{epsData3,fitPico,fitPicoValues},
 									
 
 
-ajusteTotal[epsIm_,intervalos_,tolRes_,xmin_,xmax_]:=Module[{epsData,sinPico,pico,fitTotal},
+ajusteTotal[epsIm_,intervalos_,tolRes_,xmin_,xmax_,sinPico3_,pico3_]:=Module[{epsData,fitTotal},
 															epsData=Table[{x,epsIm[x]},{x,xmin,xmax,0.01}];
-															sinPico=ajusteSinPico[epsIm,intervalos,tolRes,xmin,xmax][[3]];
-															
-															pico=ajustePico[epsIm][[3]];
-																		
-															
+														
 															fitTotal=NonlinearModelFit[epsData,
 															{lorentzSumIm[omega, {A1, A2, A3, A4, A5,A6}, {omega01,omega02,omega03,omega04,omega05,omega06}, 
 																										{gamma1, gamma2, gamma3, gamma4, gamma5,gamma6} ], 
 											                         A2>0 && 0.002>A6>0 && 0.2>gamma6>0 && 2.77>omega06>2.66}, 
-											                         {{A1,sinPico[[1]]},{omega01,sinPico[[2]]},{gamma1,sinPico[[3]]},
-											                         {A2,sinPico[[4]]},{omega02,sinPico[[5]]},{gamma2,sinPico[[6]]},
-											                         {A3,sinPico[[7]]},{omega03,sinPico[[8]]},{gamma3,sinPico[[9]]},
-											                         {A4,sinPico[[10]]},{omega04,sinPico[[11]]},{gamma4,sinPico[[12]]},
-											                         {A5,sinPico[[13]]},{omega05,sinPico[[14]]},{gamma5,sinPico[[15]]},
-											                         {A6,pico[[1]]},{omega06,pico[[2]]},{gamma6,pico[[3]]}},
+											                         {{A1,sinPico3[[1]]},{omega01,sinPico3[[2]]},{gamma1,sinPico3[[3]]},
+											                         {A2,sinPico3[[4]]},{omega02,sinPico3[[5]]},{gamma2,sinPico3[[6]]},
+											                         {A3,sinPico3[[7]]},{omega03,sinPico3[[8]]},{gamma3,sinPico3[[9]]},
+											                         {A4,sinPico3[[10]]},{omega04,sinPico3[[11]]},{gamma4,sinPico3[[12]]},
+											                         {A5,sinPico3[[13]]},{omega05,sinPico3[[14]]},{gamma5,sinPico3[[15]]},
+											                         {A6,pico3[[1]]},{omega06,pico3[[2]]},{gamma6,pico3[[3]]}},
 											                         omega, Weights->(If[2.8<#<3.1,100,2]&/@(epsData[[All,1]]))];
 											                  {epsData,fitTotal, Values[fitTotal["BestFitParameters"]]}]
+
+
+parteReSSKK[epsRe_,fit_,xmin_,xmax_,omegalist_]:=Module[{parteIm0,parteIm1,omegaprueba,datosRealObjetivo,funcionError,error},
+				parteIm0=Table[fit[x],{x,xmin,xmax,0.01}];
+				parteIm1=Table[fit[x],{x,omegalist}];
+				omegaprueba=Range[xmin,xmax,0.01];
+
+				datosRealObjetivo=epsRe/@omegaprueba;
+				                  funcionError[w_?NumericQ]:=Module[{epsAnchor,espectro,dif},(*valor de epsReal en el ancla*)
+				                  epsAnchor=epsRe[w];
+				                    (*ejecutar modelo*)espectro=sskkrebook[omegaprueba,parteIm0,w,epsAnchor];
+				                      (*error cuadr\[AAcute]tico total*)dif=espectro-datosRealObjetivo;
+				                    Sqrt[Total[dif^2]/Length[datosRealObjetivo]]];
+				                    
+					error=Table[{w,funcionError[w]},{w,2.05,3.1,0.01}];
+					MinimalBy[error,Last];
+				
+					parteIm010=Table[fit[x],{x,omegalist}];
+					parteReSSKK=sskkrebook[omegalist,parteIm010,2.85,eps28Re[2.85]];
+					partere2=Interpolation[Transpose[{omega10,parteReSSKK28}]];{partere2}]
+					
 
 
 End[];
