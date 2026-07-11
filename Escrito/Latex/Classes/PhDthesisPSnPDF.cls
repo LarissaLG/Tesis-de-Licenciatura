@@ -47,7 +47,7 @@
 \definecolor{myTurquoise}{HTML}{12B3C5} 
 \definecolor{UNAMblue0}{RGB}{6,151,213}		% Blue pantone  541 (C)
 \usepackage{booktabs}
-
+%\usepackage{ulem}
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
 

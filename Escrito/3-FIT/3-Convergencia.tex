@@ -1,54 +1,20 @@
 \section{Convergencia}
 \label{section:convergence}
 
-Las simulaciones se realizaron empleando el software \textit{Computer Simulation Technology} (CST, versión 2025) en una computadora de escritorio equipada con un procesador Intel Core i7 de $13^a$ generación (16 núcleos, 24 hilos) y 64 GB de memoria RAM, bajo el sistema operativo Windows 11 Home. El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera, descrita por la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}, y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2,680 nm, cuya función dieléctrica corresponde a la de un eritrocito con una CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=~1.823$. La esfera se iluminó con una onda plana propagándose en la dirección $z$ y polarizada en $x$, considerando longitudes de onda en el rango de 400 a 600 nm. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional ---definido por la distancia entre la partícula y la caja de simulación (\textit{bounding box})---, el nivel de reflexión estimado (\textit{estimated reflection level}) ---relacionado con la capa absorbente Perfect Matching Layer (PML)---, así como el mallado global y el mallado local (tanto en volumen como en superficie). A partir de una variación paramétrica se minimizó el error %
-	% --- JAUA --- Voy a poner un espacio para que lo puedas leer mejor
-	% No se compiló la suma. Es con minúscula, creo
-	\footnote{Se considera al error absoluto a una longitud de onda dada como
-	$$\text{Error}(\lambda)=|Q_{\text{CST}}(\lambda)-Q_{\text{Mie}}(\lambda)|,$$
-	mientras que el error absoluto promedio se consudera como 
-	$$\text{Error promedio}=\frac{1}{N}\sum_i|Q_{\text{CST}}(\lambda_i)-Q_{\text{Mie}}(\lambda_i)|,$$
-	donde $N$ es el número total de datos promediados.} %
-	%
-entre la solución analítica de Mie y lo obtenido mediante CST. En la Fig.~\ref{subfig:CST_matriz} se muestra la geometría del problema, donde la esfera se encuentra inmersa en el dominio delimitado por la caja de simulación. Por otro lado, en la Fig.~\ref{subfig:CST_mesh} se muestran algunos de los parámetros de discretización considerados. El mallado global corresponde a la discretización de todo el dominio (matriz y partícula), mientras que, en caso de emplearse un refinamiento local, este se aplica exclusivamente a la partícula. Asimismo, se define la distancia $h$ como la separación mínima entre la superficie de la partícula y la caja de simulación.
+Las simulaciones se realizaron empleando el software \textit{Computer Simulation Technology} (CST, versión 2025) en una computadora de escritorio equipada con un procesador Intel Core i7 de $13^a$ generación (16 núcleos, 24 hilos) y 64 GB de memoria RAM, bajo el sistema operativo Windows 11 Home. El análisis de convergencia se llevó a cabo mediante la comparación entre la solución analítica para una esfera, descrita por la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}, y los resultados numéricos obtenidos con CST. Para este propósito, se consideró una esfera de radio 2,680 nm, cuya función dieléctrica corresponde a la de un eritrocito con una CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=~1.839$. La esfera se iluminó con una onda plana propagándose en la dirección $z$ y polarizada en $x$, considerando longitudes de onda en el rango de 400 a 600 nm. En CST se evaluó la influencia de distintos parámetros numéricos sobre la convergencia de la solución, entre ellos: el tamaño del dominio computacional ---definido por la distancia entre la partícula y la caja de simulación (\textit{bounding box})---, el nivel de reflexión estimado (\textit{estimated reflection level}) ---relacionado con la capa absorbente Perfect Matching Layer (PML)---, así como el mallado global y el mallado local (tanto en volumen como en superficie). Con este propósito, se realizó un estudio paramétrico para identificar la combinación de parámetros que proporcionara la mejor concordancia con la solución analítica de la teoría de Mie. En la Fig.~\ref{subfig:CST_matriz} se muestra la geometría del problema, donde la esfera se encuentra inmersa en el dominio delimitado por la caja de simulación. Por otro lado, en la Fig.~\ref{subfig:CST_mesh} se muestran algunos de los parámetros de discretización considerados. El mallado global corresponde a la discretización de todo el dominio (matriz y partícula), mientras que, en caso de emplearse un refinamiento local, este se aplica exclusivamente a la partícula. Asimismo, se define la distancia $h$ como la separación mínima entre la superficie de la partícula y la caja de simulación.
 
 \begin{figure}[h]
 	\centering
 	\sidesubfloat[First image]{{
 			\includegraphics[width=5cm]{../../Figuras/3-FIT/Matriz.pdf}\label{subfig:CST_matriz}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{{	\includegraphics[width=4.55cm]{../../Figuras/3-FIT/Mesh.pdf}\label{subfig:CST_mesh}}}\vspace{-0.1cm}
-	\caption{\textbf{a)} Vista tridimensional del dominio computacional en CST.  \textbf{b)} Corte transversal del dominio computacional mostrando el mallado en el plano $x=0$. Se indica %
-	%
-	% ---JAUA ---
-	% indica -> identifica
-	%
+	\caption{\textbf{a)} Vista tridimensional del dominio computacional en CST.  \textbf{b)} Corte transversal del dominio computacional mostrando el mallado en el plano $x=0$. Se identifica
 	el mallado global como todo lo que rodea a la esfera, el mallado local como lo que compone a la esfera y la distancia $h$ entre el borde de la esfera y el borde de la caja de simulación.}
 	\label{fig:CST}
 \end{figure}
-%
-%	--- JAUA ---
-%
-%	Te propongo que expliques que el parámetro $h$ es el primero que se analiza pues tiene un
-%	impacto en el tamaño de la geometría y por tanto en los recursos computacionales a emplear.
-%
-%	En un punto y a parte, describe la geometría de lesfera y demás detalles y luego los parámetros
-%	que se dejaron fijos
-%
 
-Dado que el parámetro $h$ define el tamaño del dominio de simulación, el número total de celdas empleado en la discretización depende directamente de su valor, tanto a través del mallado global, como del refinamiento local. Por esta razón, se analiza en primer lugar su influencia sobre $Q_{\text{ext}}$ y %
-% --- JAUA ---
-% obre la discrepancia respecto a la solución analítica de la teoría de Mie -> el error para identificar el valor de $h$ que no incurra en un tiempo de cómputo excesivo....
-% no sobre compliques el texto
-%
-\sout{obre la discrepancia respecto a la solución analítica de la teoría de Mie, con el fin de identificar un valor que proporcione el menor error con respecto a la solución analítica sin incurrir en un costo computacional excesivo que limite el} análisis posterior de los demás parámetros.
 
-% --- JAUA ---
-% Repites toda a primera parte de este párrafo en la parte de arriba. Reescribe y considera retomar lo qeu ya pusiste arriba
-\sout{Para este análisis se consideró una esfera de radio 2680 nm, con una función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL, inmersa en plasma con $\varepsilon_{\text{Plasma}}=1.823$}. Se emplearon los parámetros predeterminados de CST: un mallado global de 15 celdas por longitud de onda, sin refinamiento local, y un nivel de reflexión de $10^{-5}$. En la Fig.~\ref{fig:ajusteMatriz} se presenta $Q_{\text{ext}}$ en función de la longitud de onda incidente $\lambda$ para distintos valores de $h$:
-% --- JAUA ---
-% Pones comas a los número de más de tres cifra ($1,470) por ejemplo
-%
-500, 1000, 1230, 1470, 1720 y 2300 nm. Los resultados se identifican mediante puntos de color negro, morado, vino, naranja oscuro, naranja claro y amarillo, respectivamente, mientras que la línea continua que los une se incluye únicamente como guía visual. Asimismo, se muestra la solución analítica obtenida mediante teoría de Mie como una línea continua verde. En la solución analítica se observan tres mínimos espectrales asociados a los centros de las principales bandas de absorción descritas por la función dieléctrica: la banda de Soret, centrada alrededor de 428 nm, y las bandas $\beta$ y $\alpha$, centradas aproximadamente en 541 nm y 575 nm, respectivamente. El espectro completo de 400 a 600 nm se presenta en la Fig.~\ref{subfig:ajusteMatrizGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMatrizSoret}, \ref{subfig:ajusteMatrizBeta} y \ref{subfig:ajusteMatrizAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$.
+Dado que el parámetro $h$ define el tamaño del dominio de simulación, el número total de celdas empleado en la discretización depende directamente de su valor, tanto a través del mallado global, como del refinamiento local. Por esta razón, se analiza en primer lugar su influencia sobre $Q_{\text{ext}}$ y sobre la discrepancia respecto a la solución analítica de la teoría de Mie, con el fin de disminuir el error y así identificar el valor de $h$ que no incurra en un tiempo de cómputo excesivo en el análisis posterior de los demás parámetros. Para este análisis se mantuvieron fijos los parámetros predeterminados de CST: un mallado global de 15 celdas por longitud de onda (cel./$\lambda$), sin refinamiento local y un nivel de reflexión estimado de $10^{-5}$, variando únicamente el valor de $h$. En la Fig.~\ref{fig:ajusteMatriz} se presenta $Q_{\text{ext}}$ en función de la longitud de onda incidente $\lambda$ para distintos valores de $h$: 500, 1,000, 1,230, 1,470, 1,720 y 2,300 nm. Los resultados se identifican mediante puntos de color negro, morado, vino, naranja oscuro, naranja claro y amarillo, respectivamente, mientras que la línea continua que los une se incluye únicamente como guía visual. Asimismo, se muestra la solución analítica obtenida mediante teoría de Mie como una línea continua verde. En la solución analítica se observan tres mínimos espectrales asociados a los centros de las principales bandas de absorción descritas por la función dieléctrica: la banda de Soret, centrada alrededor de 428 nm, y las bandas $\beta$ y $\alpha$, centradas aproximadamente en 541 nm y 575 nm, respectivamente. El espectro completo de 400 a 600 nm se presenta en la Fig.~\ref{subfig:ajusteMatrizGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMatrizSoret}, \ref{subfig:ajusteMatrizBeta} y \ref{subfig:ajusteMatrizAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$.
 %
 \begin{figure}[h!]
 	\centering
@@ -62,17 +28,19 @@ Dado que el parámetro $h$ define el tamaño del dominio de simulación, el núm
 	\sidesubfloat[Fourth image]{\hspace{-0.1cm}{	\includegraphics[width=0.45\textwidth]{../Figuras/3-FIT/ajusteMatrizAlpha.pdf}\label{subfig:ajusteMatrizAlpha}}}
 	
 	
-	\caption{Eficiencias de extinción $Q_{\text{ext}}$ para una esfera de radio de 2,680 nm con función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL iluminada con una onda plana en función de la longitud de onda $\lambda$. Se comparan los datos obtenidos mediante CST con  valores de $h$ de 500, 1000, 1230, 1570, 1720 y 2300 nm que se identifican mediante puntos de color negro, morado, vino, naranja oscuro, marajna claro y amarillo, respectivamente. La línea continua que une los puntos es una guía visual. Se incluye también la solución analitíca de teoría de Mie (línea verde continutua)  \textbf{a)} Espectro de 400 a 600 nm. \textbf{b)} Región asociada a la banda de Soret \textbf{c)} Región asociada a la banda $\beta$. \textbf{d)} Región asociada a la banda $\alpha$.  }
+	\caption{Eficiencias de extinción $Q_{\text{ext}}$ para una esfera de radio de 2,680 nm con función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL iluminada con una onda plana en función de la longitud de onda $\lambda$. Se comparan los datos obtenidos mediante CST con  valores de $h$ de 500, 1,000, 1,230, 1,570, 1,720 y 2,300 nm que se identifican mediante puntos de color negro, morado, vino, naranja oscuro, marajna claro y amarillo, respectivamente. La línea continua que une los puntos es una guía visual. Se incluye también la solución analitíca de teoría de Mie (línea verde continutua)  \textbf{a)} Espectro de 400 a 600 nm. \textbf{b)} Región asociada a la banda de Soret \textbf{c)} Región asociada a la banda $\beta$. \textbf{d)} Región asociada a la banda $\alpha$.  }
 	\label{fig:ajusteMatriz}
 \end{figure}
 %
 
-A partir de estos resultados, se observa un corrimiento al rojo en el mínimo global entre la solución numérica y la analítica, así como \sout{la presencia de} oscilaciones en todo el espectro. Dado que estas oscilaciones no se observan en la solución analítica, se espera que no correspondan a un comportamiento físico del sistema. Asimismo, se observa una mayor frecuencia de oscilación a menores longitudes de onda por ejemplo, en la región de la banda de Soret las oscilaciones tienen un \textit{Full Width Half Maximum} (FWHM) de 8 nm, mientras que en la región de las bandas $\beta$ y $\alpha$ de aproximadamente 10 nm y 11 nm, respectivamente. En cuanto a la influencia de la distancia $h$, se observa que en la región de la banda de Soret el error entre la solución de Mie con la solución analítica disminuye al incrementar $h$ alcanzando valores de hasta 0.022. En contraste, en las bandas $\beta$ y $\alpha$ el error aumenta para valores menores de $h$ alcanzando valores de 0.64. Considerando el comportamiento global en todo el rango espectral, así como el costo computacional asociado (82 minutos), se seleccionó $h$=1000~nm como un valor conveniente para las simulaciones posteriores, dado que el ajuste de otros parámetros podría incrementar significativamente el tiempo de cómputo.
+A partir de estos resultados, se observa un corrimiento al rojo en el mínimo global entre la solución numérica y la analítica, así como oscilaciones en todo el espectro. Dado que estas oscilaciones no se observan en la solución analítica, se espera que no correspondan a un comportamiento físico del sistema. Asimismo, se observa una mayor frecuencia de oscilación a menores longitudes de onda por ejemplo, en la región de la banda de Soret las oscilaciones tienen un \textit{Full Width Half Maximum} (FWHM) de 8 nm, mientras que en la región de las bandas $\beta$ y $\alpha$ de aproximadamente 10 nm y 11 nm, respectivamente. En cuanto a la influencia de la distancia $h$, se observa que en la región de la banda de Soret el error\footnote{Se considera al error absoluto a una longitud de onda dada como
+	$$\text{Error}(\lambda)=|Q_{\text{CST}}(\lambda)-Q_{\text{Mie}}(\lambda)|,$$
+	mientras que el error absoluto promedio se consudera como 
+	$$\text{Error promedio}=\frac{1}{N}\sum_i|Q_{\text{CST}}(\lambda_i)-Q_{\text{Mie}}(\lambda_i)|,$$
+	donde $N$ es el número total de datos promediados.} entre la solución de Mie con la solución analítica disminuye al incrementar $h$ alcanzando valores de hasta 0.022. En contraste, en las bandas $\beta$ y $\alpha$ el error aumenta para valores menores de $h$ alcanzando valores de 0.64. Considerando el comportamiento global en todo el rango espectral, así como el costo computacional asociado (82 minutos), se seleccionó $h=1,000$~nm como un valor conveniente para las simulaciones posteriores, dado que el ajuste de otros parámetros podría incrementar significativamente el tiempo de cómputo.
 
 
-El análisis de la influencia del mallado global se realizó mediante la variación del número de celdas por longitud de onda (celdas/$\lambda$). Para este estudio no se consideró refinamiento local y se fijó el nivel de reflexión en $10^{-5}$. En la Fig.~\ref{fig:ajusteMesh} se muestra la $Q_{\text{ext}}$ en función de la longitud de onda de la luz incidente, comparando los resultados obtenidos mediante CST con la solución analítica de Mie. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMeshBeta} y \ref{subfig:ajusteMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$. El número de
-% Aquí no son unidades, sino la cantidad, entonces aqí si va completo. Yo proponia cel. en lugar de celda para evitar confundir las unidades con la cantidad. Lo podemos hablar
-\sout{celdas/$\lambda$} de celdas por unidad de longitud determina directamente el tamaño mínimo de celda en la discretización. En este caso, se consideraron valores de 7, 10, 12, 15 y 17 celdas/$\lambda$, correspondientes a tamaños de celda de 40.0, 28.2, 23.5, 18.7 y 16.5 nm, respectivamente. Estos puntos se representan mediante un gradiente de color rosa, que va de tonos más oscuros para los valores menores (7 celdas/$\lambda$) a tonos más claros para los valores mayores (17 celdas/$\lambda$).  También se muestra la solución analítica de Mie como referencia como una línea continua verde. Se observa que en las regiones de la banda de Soret, $\beta$ y $\alpha$ conforme aumenta el tamaño mínimo de celda, las desviaciones respecto a la solución analítica aumentan. Estas discrepancias se manifiestan como oscilaciones espurias y un corrimiento al rojo en la posición del mínimo global, lo que indica que la discretización es insuficiente para describir adecuadamente la respuesta electromagnética de la partícula. A medida que se refina el mallado la discrepancia entre los resultados de CST y la solución de Mie disminuye. En particular, para el mallado más fino considerado se obtiene el menor error absoluto promedio, igual a 0.49. No obstante, incluso en este caso persiste un corrimiento al rojo del mínimo global de 37 nm. Considerando el compromiso entre precisión y costo computacional, se seleccionó un mallado de 15 celdas/$\lambda$, ya que la mejora obtenida al incrementar a 17 celdas es poco significativa (del orden de $10^{-3}$ en error absoluto promedio), mientras que el tiempo de simulación aumenta 50 minutos adicionales.
+El análisis de la influencia del mallado global se realizó mediante la variación del número de celdas por longitud de onda. Para este estudio no se consideró refinamiento local y se fijó el nivel de reflexión en $10^{-5}$. En la Fig.~\ref{fig:ajusteMesh} se muestra la $Q_{\text{ext}}$ en función de la longitud de onda de la luz incidente, comparando los resultados obtenidos mediante CST con la solución analítica de Mie. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs.~\ref{subfig:ajusteMeshBeta} y \ref{subfig:ajusteMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas $\beta$ y $\alpha$. El número de celdas por unidad de longitud determina directamente el tamaño mínimo de celda en la discretización. En este caso, se consideraron valores de 7, 10, 12, 15 y 17~cel./$\lambda$, correspondientes a tamaños de celda de 40.0, 28.2, 23.5, 18.7 y 16.5 nm, respectivamente. Estos puntos se representan mediante un gradiente de color rosa, que va de tonos más oscuros para los valores menores (7 cel./$\lambda$) a tonos más claros para los valores mayores (17 cel./$\lambda$).  También se muestra la solución analítica de Mie como referencia como una línea continua verde. Se observa que en las regiones de la banda de Soret, $\beta$ y $\alpha$ conforme aumenta el tamaño mínimo de celda, las desviaciones respecto a la solución analítica aumentan. Estas discrepancias se manifiestan como oscilaciones espurias y un corrimiento al rojo en la posición del mínimo global, lo que indica que la discretización es insuficiente para describir adecuadamente la respuesta electromagnética de la partícula. A medida que se refina el mallado la discrepancia entre los resultados de CST y la solución de Mie disminuye. En particular, para el mallado más fino considerado se obtiene el menor error absoluto promedio, igual a 0.49. No obstante, incluso en este caso persiste un corrimiento al rojo del mínimo global de 37 nm. Considerando el compromiso entre precisión y costo computacional, se seleccionó un mallado de 15 cel./$\lambda$, ya que la mejora obtenida al incrementar a 17 celdas es poco significativa (del orden de $10^{-3}$ en error absoluto promedio), mientras que el tiempo de simulación aumenta 50 minutos adicionales.
 %
 \begin{figure}[tb]
 	\centering	\sidesubfloat[First image]{\hspace{-0.1cm}{
@@ -85,35 +53,12 @@ El análisis de la influencia del mallado global se realizó mediante la variaci
 	\sidesubfloat[Fourth image]{\hspace{-0.1cm}{	\includegraphics[width=0.45\textwidth]{../Figuras/3-FIT/ajusteMeshAlpha.pdf}\label{subfig:ajusteMeshAlpha}}}
 	
 	
-	\caption{Eficiencias de extinción $Q_{\text{ext}}$ para una esfera de radio de 2,680 nm
-	% coma pra facil lectura
-	con función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL iluminada con una onda plana en función de la longitud de onda $\lambda$. Se comparan los datos obtenidos mediante CST con tamaños mínimos de celda iguales a 40, 28.2, 23.5, 18.7 y 16.5 nm que se identifican mediante un gradiente de color rosa que va desde tonos más oscuros a tonos más claros. La línea continua que une los puntos es una guía visual. Se incluye también la solución analitíca de teoría de Mie (línea verde continua)  \textbf{a)} Espectro de 400 a 600 nm. \textbf{b)} Región asociada a la banda de Soret. \textbf{c)} Región asociada a la banda $\beta$. \textbf{d)} Región asociada a la banda $\alpha$. }
+	\caption{Eficiencias de extinción $Q_{\text{ext}}$ para una esfera de radio de 2,680 nm con función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL iluminada con una onda plana en función de la longitud de onda $\lambda$. Se comparan los datos obtenidos mediante CST con tamaños mínimos de celda iguales a 40, 28.2, 23.5, 18.7 y 16.5 nm que se identifican mediante un gradiente de color rosa que va desde tonos más oscuros a tonos más claros. La línea continua que une los puntos es una guía visual. Se incluye también la solución analitíca de teoría de Mie (línea verde continua)  \textbf{a)} Espectro de 400 a 600 nm. \textbf{b)} Región asociada a la banda de Soret. \textbf{c)} Región asociada a la banda $\beta$. \textbf{d)} Región asociada a la banda $\alpha$. }
 	\label{fig:ajusteMesh}
 \end{figure}
 %
 
-% ---JAUA ---
-% No me convence este párrafo. Creo que ya lo habíamos dicho pero a lo mejor es más conveniente tener esto en un piéd e página.
-%
-Dado que en CST se implementa la técnica de \textit{Perfect Boundary Approximation} (PBA), la cual permite representar con alta precisión %
-% Qué significa alta preisicón??
-superficies curvas sin necesidad de refinamientos adicionales en la discretización geométrica \cite{dassaultsystemesUnderstandingTimeDomain2010}, no se observaron variaciones en $Q_{\text{ext}}$ ni en el tiempo de
-%
-% ni en Q, ni en el.....
-%
-simulación al realizar el refinamiento del mallado en la superficie, por lo que no se incluyen los resultados correspondientes.
-
-
-% --- JAUA ---
-%	Creo que podemos cambiar el orden de la segunda parte.
-%	PRopuesta:
-%	Dado que en CST se implementa \textit{Perfect Boundary Approximation} (PBA), la cual permite...., no se observaron variaciones significativas en el refiniamineto del mallado en la superficie. En particular, el error en la banda de Soret para un refinamiento de XX fue de YY, mientas que para XX2, de YY2, es decir, un cambio de 1\times-8 ( o algo así).
-%	REcuerda que apesar de que no mostremos las gráficas, sí tienes los resulados, entonces hay que reportarlos. para dar fidelidad al trabajo.
-%
-%	Corrígeme si estoy mal, pero también habíamos considerado que incluirías una tabla de estos valores, no?? Si ese es el caso, lo puedes juntar con los valores de abajo de la reflectividada (para los cntros de tus tres bandas) y hacer referencia a la misma tabla en abos párrafos.
-%
-
-Para evaluar el efecto del mallado local en el volumen de la esfera se fijaron los parámetros previamente optimizados: $h=1000$ nm, un mallado global de 15 celdas por longitud de onda y un nivel de reflexión de $10^{-5}$, variando únicamente el tamaño mínimo absoluto de celda dentro de la partícula. En la Fig.~\ref{fig:ajusteLocalMesh} se muestran los resultados obtenidos de $Q_{\text{ext}}$ para tamaños de celda de 20, 16, 15, 12 y 10 nm, los cuales corresponden a tamaños efectivos mínimos dentro de la esfera de 16.17, 15.95, 14.83, 11.96 y 9.93 nm, respectivamente. Los resultados se representan mediante un gradiente de color morado, que varía desde tonos más oscuros para 16.17 nm hasta tonos más claros para 9.93 nm.  Adicionalmente, se incluye la solución analítica de la teoría de Mie como una línea continua de color verde. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs. \ref{subfig:ajusteLocalMeshSoret}, \ref{subfig:ajusteLocalMeshBeta} y \ref{subfig:ajusteLocalMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas Q ($\beta$ y $\alpha$). Se observa que, al disminuir el tamaño de celda, los resultados numéricos convergen progresivamente hacia la solución analítica. Asimismo, la inclusión del mallado local en el volumen de la partícula elimina las oscilaciones espurias observadas previamente, confirmando su origen numérico asociado a una discretización insuficiente de la geometría. Con base en estos resultados, se seleccionó un tamaño mínimo de celda de 10 nm, al representar un equilibrio entre precisión y costo computacional. Cabe señalar que refinamientos adicionales no fueron considerados debido a limitaciones de memoria RAM del equipo de cómputo empleado.
+Para evaluar el efecto del mallado local se analizó el refinamiento en la superficie\footnote{Dado que en CST se implementa la técnica de \textit{Perfect Boundary Approximation} (PBA), la cual permite representar superficies curvas sin necesidad de refinamientos adicionales en la discretización geométrica \cite{dassaultsystemesUnderstandingTimeDomain2010}, no se observaron variaciones ni en $Q_{\text{ext}}$ ni en el tiempo de simulación al realizar el refinamiento del mallado en la superficie, por lo que no se incluyen los resultados correspondientes.} y en el volumen. Para el volumen de la esfera se fijaron los parámetros previamente optimizados: $h=1,000$ nm, un mallado global de 15 cel./$\lambda$cel./$\lambda$ y un nivel de reflexión de $10^{-5}$, variando únicamente el tamaño mínimo absoluto de celda dentro de la partícula. En la Fig.~\ref{fig:ajusteLocalMesh} se muestran los resultados obtenidos de $Q_{\text{ext}}$ para tamaños de celda de 20, 16, 15, 12 y 10 nm, los cuales corresponden a tamaños efectivos mínimos dentro de la esfera de 16.17, 15.95, 14.83, 11.96 y 9.93 nm, respectivamente. Los resultados se representan mediante un gradiente de color morado, que varía desde tonos más oscuros para 16.17 nm hasta tonos más claros para 9.93 nm.  Adicionalmente, se incluye la solución analítica de la teoría de Mie como una línea continua de color verde. El espectro completo se presenta en la Fig. \ref{subfig:ajusteMeshGlobal}, mientras que en las Figs. \ref{subfig:ajusteLocalMeshSoret}, \ref{subfig:ajusteLocalMeshBeta} y \ref{subfig:ajusteLocalMeshAlpha} se muestran ampliaciones en las regiones correspondientes a la banda de Soret y a las bandas Q ($\beta$ y $\alpha$). Se observa que, al disminuir el tamaño de celda, los resultados numéricos convergen progresivamente hacia la solución analítica. Asimismo, la inclusión del mallado local en el volumen de la partícula elimina las oscilaciones espurias observadas previamente, confirmando su origen numérico asociado a una discretización insuficiente de la geometría. Con base en estos resultados, se seleccionó un tamaño mínimo de celda de 10 nm, al representar un equilibrio entre precisión y costo computacional. Cabe señalar que refinamientos adicionales no fueron considerados debido a limitaciones de memoria RAM del equipo de cómputo empleado.
 %
 \begin{figure}[tb]
 	\centering
@@ -127,25 +72,14 @@ Para evaluar el efecto del mallado local en el volumen de la esfera se fijaron l
 	\sidesubfloat[Fourth image]{\hspace{-0.1cm}{	\includegraphics[width=0.45\textwidth]{../Figuras/3-FIT/ajusteMeshLocalAlpha.pdf}\label{subfig:ajusteLocalMeshAlpha}}}
 	
 	
-	\caption{Eficiencias de extinción $Q_{\text{ext}}$ para una esfera de radio de 2680 nm con función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL iluminada con una onda plana en función de la longitud de onda $\lambda$. Se comparan los datos obtenidos mediante CST con tamaños mínimos de celda iguales a 16.17, 15.95, 14.83, 11.96 y 9.93 nm que se identifican mediante un gradiente de color morado que va desde tonos más oscuros a tonos más claros. La línea continua que une los puntos es una guía visual. Se incluye también la solución analitíca de teoría de Mie (línea verde continua)  \textbf{a)} Espectro de 400 a 600 nm. \textbf{b)} Región asociada a la banda de Soret. \textbf{c)} Región asociada a la banda $\beta$. \textbf{d)} Región asociada a la banda $\alpha$. }
+	\caption{Eficiencias de extinción $Q_{\text{ext}}$ para una esfera de radio de 2,680 nm con función dieléctrica correspondiente a un eritrocito con CHCM de 30.6 g/dL iluminada con una onda plana en función de la longitud de onda $\lambda$. Se comparan los datos obtenidos mediante CST con tamaños mínimos de celda iguales a 16.17, 15.95, 14.83, 11.96 y 9.93 nm que se identifican mediante un gradiente de color morado que va desde tonos más oscuros a tonos más claros. La línea continua que une los puntos es una guía visual. Se incluye también la solución analitíca de teoría de Mie (línea verde continua)  \textbf{a)} Espectro de 400 a 600 nm. \textbf{b)} Región asociada a la banda de Soret. \textbf{c)} Región asociada a la banda $\beta$. \textbf{d)} Región asociada a la banda $\alpha$. }
 	\label{fig:ajusteLocalMesh}
 \end{figure}
 %
 
-% --- JAUA ---
-%	Mismo comentario que arriba: reporta los valores para los casos límites y menciona qué tanto cambiaron. Está bien lo de poner el tiempo de cómputo pero rambién danos un estimado.
-%
-%	Te recomiendo iniciar el párrafo diciendo que es el último parámetro que cambiaste para que, com lectores, nos demos una idea que ya terminaste de hacer el análisis.
-% Recuerda que mínimo qieremos tres oraciones por +párrafo: intro, desarrollo, conlusión
-%
+El último parámetro analizado fue el nivel de reflexión estimado del PML, por lo que se consideraron valores $10^{-4}$, $10^{-6}$, $10^{-8}$ y $10^{-10}$, manteniendo fijos los valores de los otros parámetros previamente seleccionados. En CST estos niveles de reflexión corresponden, respectivamente, a PML constituidos por 4, 6, 8 y 10 capas, cuyos espesores resultantes fueron de 68.26, 85.32, 102.39 y 136.51 nm. Como resultado, no se observaron diferencias significativas en los valores de $Q_{\text{ext}}$ obtenidos; en particular, para la banda de Soret se obtuvo un error absoluto de 0.43150 al emplear un nivel de reflexión de $10^{-4}$, mientras que para $10^{-6}$, $10^{-8}$ y $10^{-10}$ se obtuvieron errores de 0.43134, 0.43139 y 0.43134, respectivamente es decir, cambios del orden de $10^{-4}$ y $10^{-5}$. Dado que la reducción del nivel de reflexión no produce mejoras significativas en la convergencia de los resultados, pero sí incrementa el tiempo de simulación, se seleccionó finalmente un valor de $10^{-4}$ para las simulaciones posteriores.
 
-% --- JAUA ---
-% Muy bien la información, solo que al inciio tienes puras oraciones simples y reetititvas (ChatGPT??) da mejor redacción a estas ideas.
-El último parámetro analizado fue el nivel de reflexión estimado del PML. Empleando los parámetros previamente seleccionados, se evaluó su influencia considerando valores de $10^{-4}$, $10^{-6}$, $10^{-8}$ y $10^{-10}$. Para cada uno de estos valores, CST ajusta automáticamente las características del PML, dando lugar a grosores de 68.26, 85.32, 102.39 y 136.51 nm, respectivamente. No se observaron diferencias significativas en los valores de $Q_{\text{ext}}$ obtenidos. En particular, para la banda de Soret se obtuvo un error absoluto de 0.43150 al emplear un nivel de reflexión de $10^{-4}$, mientras que para $10^{-6}$, $10^{-8}$ y $10^{-10}$ se obtuvieron errores de 0.43134, 0.43139 y 0.43134, respectivamente es decir, cambios del orden de $10^{-4}$ y $10^{-5}$. Dado que la reducción del nivel de reflexión no produce mejoras significativas en la convergencia de los resultados, pero sí incrementa el tiempo de simulación, se seleccionó finalmente un valor de $10^{-4}$ para las simulaciones posteriores.
-
-A continuación, se sintetizan los resultados del análisis de convergencia, en términos del tiempo de simulación, con el objetivo de evaluar el equilibrio alcanzado entre precisión numérica y costo computacional. En la Fig.~\ref{fig:tiempos} se muestran los tiempos de simulación (en minutos) en función de las distintas variaciones de parámetros consideradas. Se presentan los resultados conforme se realizó la variación de parámetros, es decir, de izquierda a derecha se muestran los resultados correspondientes a la variación de la distancia $h$, el mallado global, el mallado local en volumen y el nivel de reflexión asociado a la capa absorbente (PML). Cada punto está identificado mediante el mismo código de color empleado en las figuras anteriores, mientras que en color verde se indica el valor seleccionado como óptimo en cada caso. Con base en el análisis conjunto de la convergencia y el costo computacional, los parámetros finales seleccionados son: $h=1000$ nm, mallado global con 15 celdas por longitud de onda, mallado local con un tamaño mínimo de celda de 10 nm y nivel de reflexión estimado de $10^{-4}$. Esta configuración produce un error absoluto promedio de aproximadamente 0.05 respecto a la solución analítica de Mie, con un tiempo total de simulación de alrededor de 770 minutos.
-% --- JAUA ---
-% En qué ventana espectra? Con qué valores de lamda? cuántos puntos?
+A continuación, se sintetizan los resultados del análisis de convergencia, en términos del tiempo de simulación, con el objetivo de evaluar el equilibrio alcanzado entre precisión numérica y costo computacional. En la Fig.~\ref{fig:tiempos} se muestran los tiempos de simulación (en minutos) para cada una de las variaciones de parámetros consideradas, correspondientes a un barrido espectral de 400 a 600 nm. Este barrido espectral comprende un total de 136 longitudes de onda: de 400 a 450 nm con incrementos de 1 nm, de 455 a 530 nm con incrementos de 5 nm y de 530 a 600 nm nuevamente con incrementos de 1 nm. Se presentan los resultados conforme se realizó la variación de parámetros, es decir, de izquierda a derecha se muestran los resultados correspondientes a la variación de la distancia $h$, el mallado global, el mallado local en volumen y el nivel de reflexión asociado a la capa absorbente (PML). Cada punto está identificado mediante el mismo código de color empleado en las figuras anteriores, mientras que en color verde se indica el valor seleccionado como óptimo en cada caso. Con base en el análisis conjunto de la convergencia y el costo computacional, los parámetros finales seleccionados son: $h=1,000$ nm, mallado global con 15 cel./$\lambda$ de onda, mallado local con un tamaño mínimo de celda de 10 nm y nivel de reflexión estimado de $10^{-4}$. Esta configuración produce un error absoluto promedio de aproximadamente 0.05 respecto a la solución analítica de Mie, con un tiempo total de simulación de alrededor de 770 minutos.
 %
 \begin{figure}[tb]
 	\centering
@@ -159,39 +93,19 @@ A continuación, se sintetizan los resultados del análisis de convergencia, en 
 
 %%% AQuí empieza lo nuevo
 
-Con los parámetros previamente seleccionados, se realizó una verificación adicional de los criterios de convergencia empleados. Para ello, se fijó un tamaño mínimo de celda de 10 nm y se repitió el análisis de la distancia borde-esfera con
-% --- JAUA ---
-% $h = 950$, o bien $h = $~950
-% Por qué eres poco consistente con esta notación? jaja
-% También acá me parece raro que no eres consistente con la coma y los tres dígitos.
-% De forma consistente, te olvidaste de celdas/lambda. sólo lo usaste donde lo sugerí por priera vez entonces se ve mal toda esat sección.
+Con los parámetros previamente seleccionados, se realizó una verificación adicional de los criterios de convergencia empleados. Para ello, se fijó un tamaño mínimo de celda de 10 nm y se repitió el análisis de la distancia borde-esfera con valores de $h=950$, 1,000 y 1,050 nm y del mallado global con valores de 12, 15 y 17 cel./$\lambda$. Los resultados obtenidos se compararon con la solución analítica de Mie en tres longitudes de onda representativas: 428, 529 y 563 nm. Estas longitudes corresponden, respectivamente, al mínimo asociado a la banda de Soret y a los máximos asociados a las bandas $\beta$ y $\alpha$. En la Tabla \ref{table:convergencia_h} se muestran los valores de $Q_{\text{ext}}$ obtenidos así como el error relativo con respecto a la solución analítica de Mie con un mallado global de 15~cel./$\lambda$ y valores de $h=950, 1,000$ y 1500 nm; mientras que en la Tabla \ref{table:convergencia_malla} se fija el valor de $h=1,000$ nm y se modifica el mallado global con 12, 15 y 17 cel./$\lambda$.
 %
-valores de $h$=950, 1000 y 1050 nm y del mallado global con valores de 12, 15 y 17 celdas por longitud de onda. Los resultados obtenidos se compararon con la solución analítica de Mie en tres longitudes de onda representativas: 428, 529 y 563 nm. %
-% --- JAUA ---
-% REvisa bien esta frase: usaste dos veces respectivamente
-%
-Estas longitudes corresponden, respectivamente, al mínimo asociado a la banda de Soret y a los máximos asociados a las bandas $\beta$ y $\alpha$ respectivamente. En la Tabla \ref{table:convergencia} se muestran los valores de $Q_{\text{ext}}$ obtenidos así como el error relativo con respecto a la solución analítica de Mie para distintos valores del mallado global y de $h$. %
-% --- JAUA ---
-% Tabal de izquiere y dereca se ve mal. TE sugiero que mejor hagas dos tabalas: 3.1 y 3.2 y para que no ocupen mucho espacio, las pones juntas en dos columnas (cons dos pies de páginas)
-En la tabla de la izquierda se mantiene fijo un mallado global de 15 celdas por longitud de onda mientras se varía $h$. Por su parte, en la tabla de la derecha se fija el valor de $h=1000$ nm y se modifica el número de celdas por longitud de onda.
-%
-% --- JAUA ---
-% Faltan unidades en las longitudes de onda
-% Acá de nuevo no usaste las unidades de cel/\lambda. Mantenlas consistentes (si quieres quítalas pero que no se vea que es u parche.
-
-%
-\begin{table}[h!]
-	\centering
-	
-	\begin{tabular}{cc}
-		% -------- BLOQUE 1 --------
-		\begin{minipage}{0.45\textwidth}
+\begin{center} 
+		
+		% -------- BLOQUE 1 (Izquierda) --------
+		\begin{minipage}[t]{0.48\textwidth}
 			\centering
+				
 			\begin{tabular}{ccc}
 				\hline
-				\multicolumn{3}{c}{15 celdas por longitud de onda}\\ 
+				\multicolumn{3}{c}{15 cel./$\lambda$}\\ 
 				\hline
-				$\lambda$ & $Q_{\text{ext}}$ & Error relativo\\
+				$\lambda$ [nm] & $Q_{\text{ext}}$ & Error relativo\\
 				\hline
 				\multicolumn{3}{c}{$h=950$ nm} \\
 				\hline
@@ -199,58 +113,64 @@ En la tabla de la izquierda se mantiene fijo un mallado global de 15 celdas por 
 				529 & 3.07943 & 0.994313 \\
 				563 & 3.17225 & 0.670544 \\
 				\hline
-				\multicolumn{3}{c}{$h=1000$ nm} \\
+				\multicolumn{3}{c}{$h=1,000$ nm} \\
 				\hline
 				428 & 2.06953 & 4.57459 \\
-				529 & 3.07902 & 1.0078 \\
+				529 & 3.07902 & 1.00780 \\
 				563 & 3.17233 & 0.668147 \\
 				\hline
-				\multicolumn{3}{c}{$h=1050$ nm} \\
+				\multicolumn{3}{c}{$h=1,050$ nm} \\
 				\hline
 				428 & 2.06824 & 4.64005 \\
-				529 & 3.07854 & 1.0235 \\
+				529 & 3.07854 & 1.02350 \\
 				563 & 3.17232 & 0.668147 \\
 				\hline
 			\end{tabular}
+			\captionof{table}{Valores de $Q_{\text{ext}}$ y errores relativos respecto a la solución analítica de Mie para un mallado de 15 cel./$\lambda$ con valores de $h=950, 1,000$ y 1,500 nm.}
+			\label{table:convergencia_h}
+			\vspace{0.2cm} 
 		\end{minipage}
-		&
-		% -------- BLOQUE 2 --------
-		\begin{minipage}{0.45\textwidth}
+		\hfill 
+		% -------- BLOQUE 2 (Derecha) --------
+		\begin{minipage}[t]{0.48\textwidth}
 			\centering
-		\begin{tabular}{ccc}
-			\hline
-			\multicolumn{3}{c}{$h=1000$ nm}\\ 
-			\hline
-			$\lambda$ & $Q_{\text{ext}}$ & Error relativo\\
-			\hline
-			\multicolumn{3}{c}{12 celdas por longitud de onda} \\
-			\hline
-			428 & 2.04120 & 6.02605 \\
-			529 & 3.06460 & 1.48286 \\
-			563 & 3.16445 & 0.918616 \\
-			\hline
-			\multicolumn{3}{c}{15 celdas por longitud de onda} \\
-			\hline
-			428 & 2.06953 & 4.57459 \\
-			529 & 3.07902 & 1.00780 \\
-			563 & 3.17233 & 0.66814 \\
-			\hline
-			\multicolumn{3}{c}{17 celdas por longitud de onda} \\
-			\hline
-			428 & 2.07888 & 4.10444 \\
-			529 & 3.08384 & 0.84972 \\
-			563 & 3.17484 & 0.58853 \\
-			\hline
-		\end{tabular}
+					
+			\begin{tabular}{ccc}
+				\hline
+				\multicolumn{3}{c}{$h=1,000$ nm}\\ 
+				\hline
+				$\lambda$ [nm] & $Q_{\text{ext}}$ & Error relativo\\
+				\hline
+				\multicolumn{3}{c}{12 cel./$\lambda$} \\
+				\hline
+				428 & 2.04120 & 6.02605 \\
+				529 & 3.06460 & 1.48286 \\
+				563 & 3.16445 & 0.918616 \\
+				\hline
+				\multicolumn{3}{c}{15 cel./$\lambda$} \\
+				\hline
+				428 & 2.06953 & 4.57459 \\
+				529 & 3.07902 & 1.00780 \\
+				563 & 3.17233 & 0.668140 \\
+				\hline
+				\multicolumn{3}{c}{17 cel./$\lambda$} \\
+				\hline
+				428 & 2.07888 & 4.10444 \\
+				529 & 3.08384 & 0.849720 \\
+				563 & 3.17484 & 0.588530 \\
+				\hline
+			\end{tabular}
+			\captionof{table}{Valores de $Q_{\text{ext}}$ y errores relativos respecto a la solución analítica de Mie para $h=~1,000$~nm, variando el mallado global con 12, 15 y 17 cel./$\lambda$.}
+			\label{table:convergencia_malla}
+			\vspace{0.2cm}
 		\end{minipage}
-	\end{tabular}
-	
-	\caption{Valores de $Q_{\text{ext}}$ y errores relativos respecto a la solución analítica de Mie, considerando un refinamiento local con tamaño mínimo de celda de 10 nm. En la tabla izquierda se muestran los resultados obtenidos para un mallado global de 15 celdas por longitud de onda y valores de $h=950, 1000$ y 1500 nm. En la tabla derecha se presentan los resultados para $h=1000$ nm y mallados globales de 12, 15 y 17 celdas por longitud de onda.}
-	\label{table:convergencia}
-\end{table}
-%
+		
+	\end{center}
+	\vspace{0.4cm} % Espacio después de las tablas
 
-Se observa que en la longitud de onda de 428 nm las diferencias en $Q_{\text{ext}}$ son del orden de $10^{-2}$ o menores, mientras que para 529 y 563 nm las diferencias son del orden de $10^{-3}$ o menores. Los errores relativos muestran que las tendencias observadas en los análisis iniciales se conservan tras la incorporación del mallado local. Por otra parte, el mallado de 17 celdas por longitud de onda presenta la mejor concordancia con la solución analítica de Mie en las tres longitudes de onda consideradas, alcanzando errores relativos inferiores al 4.2\%. Con base en estos resultados, se adoptó finalmente la combinación $h=1000$ nm y un mallado global de 17 celdas por longitud de onda para las simulaciones posteriores.
+
+
+Se observa que en la longitud de onda de 428 nm las diferencias en $Q_{\text{ext}}$ son del orden de $10^{-2}$ o menores, mientras que para 529 y 563 nm las diferencias son del orden de $10^{-3}$ o menores. Los errores relativos muestran que las tendencias observadas en los análisis iniciales se conservan tras la incorporación del mallado local. Por otra parte, el mallado de 17 cel./$\lambda$ presenta la mejor concordancia con la solución analítica de Mie en las tres longitudes de onda consideradas, alcanzando errores relativos inferiores al 4.2\%. Con base en estos resultados, se adoptó finalmente la combinación $h=1,000$ nm y un mallado global de 17 cel./$\lambda$ para las simulaciones posteriores.
 
 
 

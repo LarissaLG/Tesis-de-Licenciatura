@@ -2,37 +2,102 @@
 
 \section{Eritrocito sano}
 \label{section:Res_Eritrocito_Sano}
-Se consideró como modelo de un eritrocito sano a un óvalo de Cassini con valores de , como el mostrado en la Fig. Se consideró como material la función dieléctrica correspondiente a una concentración de 30.6 g/dL e inmersa en plasma con una epsilon de 1.823. En la Fig. se muestra la distribución del patrón de esparcimiento en el égimen de campo lejano, donde se emplea el valor del esparcimiento en escala logarítmica con unidades de decibelios. que indica el color y la forma del patrón indica la distribución. Se observa que el esparcimiento frontal posee la mayor intensidad, seguido del lateral y finalmente el retroesparcimiento. En la Fig. se muestra la gráfica polar del patrón de esparcimiento en donde se empleó la simetría alrededor del eje x para graficarlo y en la Fig. se muestra la gráfica cartesiana 
+Para identificar las propiedades ópticas de los eritrocitos en las bandas 
+representativas de la hemoglobina, se consideró el rango espectral de 400  a 600 nm. Se empleó como modelo de un eritrocito sano un óvalo de Cassini con valores de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y 
+$c=0.812\,\mu\text{m}$, que corresponde a un radio equivalente de 3.75 $\mu$m y un volumen de 80.63 $\mu\text{m}^3$, como el modelo propuesto en la Ref.~\cite{ergulComputationalStudyScattering2010}. En la Fig.~\ref{subfig:Shape_health} se muestra el modelo empleado con los valores de los parámetros de Cassini, así como las medidas correspondientes al grosor mínimo ($1.18\,\mu\text{m}$) y el grosor máximo ($2.28\,\mu\text{m}$). Para la función dieléctrica del eritrocito se consideró la correspondiente a una CHCM de 30.6 g/dL y para el medio circundante, de acuerdo con los resultados de la Sección~\ref{section:optical_properties}, dado que en el plasma la parte imaginaria de la función dieléctrica es despreciable y la parte real varía en la cuarta cifra decimal en el rango espectral de interés, se aproximó el medio como $\varepsilon_{\text{Plasma}} = 1.839$. El eritrocito se orientó con su eje de simetría a lo largo de la dirección $z$ y se iluminó con una onda plana 
+que se propaga en la misma dirección, polarizada en $x$.
+
+En la Fig. \ref{subfig:Qext_health} se muestra la eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente; se resaltan en gris las bandas que 
+rodean los mínimos asociados a la banda de Soret y a las bandas Q localizados en 431 nm, 541 nm y 573 nm, respectivamente. Se observa que la respuesta espectral del eritrocito sigue la dependencia espectral de su función dieléctrica, reflejando la influencia de las transiciones ópticas de la hemoglobina como mínimos en $Q_{\text{ext}}$.
 %
-\begin{figure}[h!]
+\begin{figure}[t]
 	\centering
-		\sidesubfloat[Second image]{\hspace{-0.3cm}{
-			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_corte.pdf}\label{subfig:FIT_cell_electric}}}\hspace{0.1cm}
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Qext_EriSano.pdf}\label{subfig:FIT_cell_magnetic}}}
-\vspace{-0.1cm}
-	\caption{}
-	\label{fig:FIT_cell}
+	\sidesubfloat[Second image]{\hspace{-0.3cm}{
+			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_corte.pdf}\label{subfig:Shape_health}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Qext_EriSano.pdf}\label{subfig:Qext_health}}}
+	\vspace{-0.1cm}
+	\caption{\textbf{a)} Modelo de eritrocito sano basado en óvalos de Cassini con parámetros de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y 
+		$c=0.812\,\mu\text{m}$, que corresponden a un radio de $3.75\,\mu$m. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito orientado con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. Se resaltan en gris las bandas que 
+		rodean los mínimos asociados a la banda de Soret y a las bandas Q.}
+	\label{fig:Shape_Qext_health}
 \end{figure}
 %
 
+Dado que las longitudes de onda de  431 nm, 541 nm y 573 nm son las representativas de las bandas, son los valores para los cuáles se analizarán los patrones de esparcimiento. En la Fig.~\ref{subfig:FF_431_health} se muestra la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en el régimen de campo lejano para una longitud de onda $\lambda=431$ nm. La magnitud de $\dd{C_{\text{sca}}}/\dd{\Omega}$ se encuentra normalizada respecto a su valor máximo, de modo que tanto el color (que varía desde blanco, correspondiente a la máxima intensidad, hasta azul oscuro, correspondiente a la menor intensidad) como la distancia al origen representan su magnitud relativa. Se observa que $\dd{C_{\text{sca}}}/\dd{\Omega}$ es mayor en la dirección frontal de propagación\footnote{En este trabajo, una \textit{dirección} corresponde a un ángulo específico ($\theta=0^\circ$ para el esparcimiento frontal, $\theta=90^\circ$ para el lateral y $\theta=180^\circ$ para el retroesparcimiento), mientras que una \textit{región} corresponde a un intervalo angular ($0^\circ\leq\theta<60^\circ$ para el esparcimiento frontal, $60^\circ\leq\theta<120^\circ$ para el lateral y $120^\circ\leq\theta\leq180^\circ$ para el retroesparcimiento).}, lo cual se refleja en un factor de anisotropía\footnote{El factor de anisotropía $g$ se define como
+$$g=\dfrac{1}{C_{\text{sca}}}\int_{4 \pi}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}\cos\theta\dd{\Omega}.$$
+Para una partícula que esparce la luz de forma isótropa o si su esparcimiento es simétrico respecto a un ángulo de esparcimiento $\theta=90^{\circ}$, $g$ se anula. Si la partícula esparce más luz hacia la dirección frontal ($\theta=0^{\circ}$), $g>0$; si el esparcimiento se dirige más hacia la dirección posterior ($\theta=180^{\circ}$), $g<0$.} $g$ igual a 0.97.
 
+
+En la Fig. \ref{subfig:FF_polar_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función del ángulo de esparcimiento $\theta$ para dos cortes correspondientes a los planos $\varphi=0$ y $\varphi=\pi/2$, correspondientes a los planos paralelo y perpendicular a la polarización de la onda incidente, respectivamente. Se observa que aunque el eritrocito posee simetría de revolución, la diferencia de los patrones muestra una dependencia con la polarización de la onda incidente, particularmente en la región del esparcimiento lateral. Finalmente, en la Fig. \ref{subfig:FF_cartesian_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función del ángulo de esparcimiento para ambos cortes. En las regiones de esparcimiento frontal y de retroesparcimiento se observa una correlación de 1 y 0.99, respectivamente, mientras que las mayores diferencias se presentan en la región de epsarcimiento lateral donde la correlación es de 0.67. Para cuantificar la contribución de cada región al esparcimiento total, se integró $\dd{C_{\text{sca}}}/\dd{\Omega}$ en los intervalos  definidos como frontal, lateral y de retroesparcimiento y se obtuvieron contribuciones de $8.028\times 10^{6}\,\text{nm}^2$, $5.174\times 10^{4}\,\text{nm}^2$ y $8881.92\times 10^{3}\,\text{nm}^2$ para el corte $\varphi=0$, y de $8.03\times 10^{6}\,\text{nm}^2$, $5.179\times 10^{4}\,\text{nm}^2$ y $8887.03\times 10^{3}\,\text{nm}^2$ para $\varphi=\pi/2$, lo que confirma que la mayor parte del esparcimiento se concentra en la región frontal, mientras que las diferencias entre ambos planos se originan principalmente en la región lateral.
+
+%
+\begin{figure}[tb]
+	\centering
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_EriSano.pdf}\label{subfig:FF_431_health}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.5cm}{
+			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FF_EriSano.pdf}\label{subfig:FF_polar_431_health}}}\vspace{-0.1cm}
+	\
+	\vspace{0.1cm}
+	
+	\sidesubfloat[Third image]{\hspace{0.3cm}{
+			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FF_EriSano.pdf}\label{subfig:FF_cartesian_431_health}}}\vspace{-0.1cm}
+	\caption{\textbf{a)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ normalizada respecto a su valor máximo para una longitud de onda $\lambda=431$ nm en función del ángulo de esparcimiento $\theta$ y del ángulo $\varphi$ para un eritrocito sano. Se identifican dos planos $\varphi=0^{\circ}$ en azul claro y $\varphi=90^{\circ}$ en azul oscuro. \textbf{b)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro). \textbf{c)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro).}
+	\label{fig:FF_431_health}
+\end{figure}
+%
+
+Dado que el patrón de esparcimiento conserva la misma estructura general en las tres longitudes de onda analizadas, únicamente se presenta en detalle el correspondiente a $\lambda=431$~nm. Las gráficas para $\lambda=541$ y $573$ nm se incluyen en el Apéndice. En la Tabla~\ref{table:431_val_health} se resumen, para las tres longitudes de onda representativas, los valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$, así como las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para ambos cortes.
+%
+\begin{table}
+		\begin{tabular}{ccccccccc}
+		\hline
+		\multirow{3}{*}{$\lambda$ [nm]} & \multirow{3}{*}{$g$} & \multirow{3}{5em}{Correlación lateral} & \multicolumn{6}{c}{$C_{\text{sca}}\times 10^{4}\,[\text{nm}^2]$ } \\
+		\cline{4-9}
+		& &  &   \multicolumn{2}{c}{Frontal} & \multicolumn{2}{c}{Lateral} & \multicolumn{2}{c}{Posterior}\\
+		\cline{4-9}
+		&  &  &  $\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ \\ \hline
+		431 & 0.97  & 0.67 & 802.8000 & 803.0006 & 5.1736 & 5.1785 & 0.8881 & 0.8887  \\
+		541 & 0.98 & 0.49 & 1910.3700 & 1910.4700 & 6.6659 & 6.6615 & 4.7648 & 4.7643\\
+		573 & 0.99  & 0.71 & 2054.3300 & 2054.2200 & 5.6327 & 5.6211 & 1.0872 & 1.0872\\
+		\hline
+	\end{tabular}
+	\caption{Valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$ y las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$ para $\lambda=431,541$ y 573 nm. }
+	\label{table:431_val_health}
+	\vspace{0.2cm} 
+\end{table}
+%
 
 %
 \begin{figure}[h!]
 	\centering
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_EriSano.pdf}\label{subfig:FIT_cell_magnetic}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution541_EriSano.pdf}\label{subfig:FIT_cell_magnetic}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.5cm}{
-			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
+			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot541FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
 	\\
-	\vspace{0.1cm}
+	\vspace{0.7cm}
 	
 	\sidesubfloat[Third image]{\hspace{0.3cm}{
-			\includegraphics[width=14.8cm]{../../Figuras/4-Resultados/linearplot431FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
+			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot541FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
 	\caption{\textbf{a)} }
 	\label{fig:FIT_cell}
 \end{figure}
 %
 
 
+%
+\begin{figure}[h!]
+	\centering
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution573_EriSano.pdf}\label{subfig:FIT_cell_magnetic}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.5cm}{
+			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot573FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
+	\\
+	\vspace{0.7cm}
+	
+	\sidesubfloat[Third image]{\hspace{0.3cm}{
+			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot573FF_EriSano.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
+	\caption{\textbf{a)} }
+	\label{fig:FIT_cell}
+\end{figure}
+%
 
 

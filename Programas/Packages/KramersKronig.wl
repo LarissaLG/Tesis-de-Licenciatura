@@ -103,9 +103,9 @@ selfconsbook[omega_List,nreal_List,kimag_List,N_Integer,mu_?NumericQ]:=Module[{c
 
 sskkrebook[omega_List,kimag_List,omega1_,nreal1_]:=Module[{nreal,k},
 									(*Encontrar \[IAcute]ndice m\[AAcute]s cercano a omega1*)
-									k=First@FirstPosition[omega,_?(Abs[#-omega1]<10^-6&),Missing["NotFound"]];
-									If[MissingQ[k],Return[$Failed,Module]];
-									
+									(*k=First@FirstPosition[omega,_?(Abs[#-omega1]<10^-6&),Missing["NotFound"]];
+									If[MissingQ[k],Return[$Failed,Module]]*)
+									k = First@Ordering[Abs[omega - omega1], 1];
 									(*Calcular la parte real con KK normal*)
 									nreal=kkrebook[omega,kimag];
 									(*Valor en omega1*)

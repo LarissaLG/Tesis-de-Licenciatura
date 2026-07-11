@@ -85,7 +85,8 @@ ajusteTotal[epsIm_,intervalos_,tolRes_,xmin_,xmax_,sinPico3_,pico3_]:=Module[{ep
 											                  {epsData,fitTotal, Values[fitTotal["BestFitParameters"]]}]
 
 
-parteReSSKK[epsRe_,fit_,xmin_,xmax_,omegalist_]:=Module[{parteIm0,parteIm1,omegaprueba,datosRealObjetivo,funcionError,error},
+parteReSSKK[epsRe_,fit_,xmin_,xmax_,omegalist_]:=Module[{parteIm0,parteIm1,omegaprueba,datosRealObjetivo,funcionError,error,
+				parteIm010,parteReSSKK,partere2,freq,val},
 				parteIm0=Table[fit[x],{x,xmin,xmax,0.01}];
 				parteIm1=Table[fit[x],{x,omegalist}];
 				omegaprueba=Range[xmin,xmax,0.01];
@@ -94,15 +95,15 @@ parteReSSKK[epsRe_,fit_,xmin_,xmax_,omegalist_]:=Module[{parteIm0,parteIm1,omega
 				                  funcionError[w_?NumericQ]:=Module[{epsAnchor,espectro,dif},(*valor de epsReal en el ancla*)
 				                  epsAnchor=epsRe[w];
 				                    (*ejecutar modelo*)espectro=sskkrebook[omegaprueba,parteIm0,w,epsAnchor];
-				                      (*error cuadr\[AAcute]tico total*)dif=espectro-datosRealObjetivo;
+				                    (*error cuadr\[AAcute]tico total*)dif=espectro-datosRealObjetivo;
 				                    Sqrt[Total[dif^2]/Length[datosRealObjetivo]]];
 				                    
 					error=Table[{w,funcionError[w]},{w,2.05,3.1,0.01}];
-					MinimalBy[error,Last];
+					{{freq,val}}=MinimalBy[error,Last];
 				
 					parteIm010=Table[fit[x],{x,omegalist}];
-					parteReSSKK=sskkrebook[omegalist,parteIm010,2.85,eps28Re[2.85]];
-					partere2=Interpolation[Transpose[{omega10,parteReSSKK28}]];{partere2}]
+					parteReSSKK=sskkrebook[omegalist,parteIm010,freq,epsRe[freq]];
+					partere2=Interpolation[Transpose[{omegalist,parteReSSKK}]];{freq,vahl,partere2}]
 					
 
 
