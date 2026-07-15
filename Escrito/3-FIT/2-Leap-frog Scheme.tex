@@ -9,11 +9,5 @@ Para resolver las MGE en el dominio del tiempo, se emplea el esquema de avance t
 	\Delta t\leq \frac{1}{u_{\text{max}}}\left[\frac{1}{\Delta x^2}+\frac{1}{\Delta y^2}+\frac{1}{\Delta z^2}\right]^{(-1/2)}
 \end{equation}
 %
-% --- JAUA ---
-% velocidad máxima de fase  -> velocidad de fase máxima
 donde $u_{\text{max}}$ es la velocidad de fase máxima de la onda dentro del modelo (determinada por las propiedades del material). Esta condición establece una relación entre el paso temporal y la discretización espacial de la malla, preservando causalidad y garantizando la obtención de resultados físicamente posibles. En particular, impone que durante un paso de tiempo la onda electromagnética no recorra una distancia superior a la dimensión característica de la celda más pequeña del mallado \cite{dassaultsystemesUnderstandingTimeDomain2010}.
-%
-% creo que vale a pena mencionar que es para mantener causalidad y reproducir resultados físicamente posibles.
-%
-
 
