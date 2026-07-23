@@ -2,25 +2,9 @@
 
 \section{Eritrocito sano}
 \label{section:Res_Eritrocito_Sano}
-Para identificar las propiedades ópticas de los eritrocitos en las bandas representativas de la hemoglobina,
-% --- JAUA ---
-% en las bandas de soret, \alpha y beta,
-%
-se consideró el rango espectral de 400  a 600 nm. 
-% --- JAUA ---p
-% REt ecomiendo invertir el orden de la siguiente oración: retomando los valres deRef [xxx], se consideraron los parámetros de ovalo de cassini de....
-%
-Se empleó como modelo de un eritrocito sano un óvalo de Cassini con valores de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$, que corresponde a un radio equivalente de 3.75 $\mu$m y un volumen de 80.63 $\mu\text{m}^3$, como el modelo propuesto en la Ref.~\cite{ergulComputationalStudyScattering2010}. En la Fig.~\ref{subfig:Shape_health} se muestra el modelo empleado con los valores de los parámetros de Cassini, así como las medidas correspondientes al grosor mínimo ($1.18\,\mu\text{m}$) y el grosor máximo ($2.28\,\mu\text{m}$). 
-% --- JAUA ---
-% Quitar 'la correspondiente'
-% La sgunda parte de la oración está muy enredade. Sipmlificala comenzando con el valor de la epsilon: $\varepsilon_{\text{Plasma}} = 1.839$ y luego argumentando por qué usaste esta sin tantas vueltas. O al revés, pero no con losa rgumentos a media oraciíón.
-% De nuevo, ten cuidado con los tiempos verbales de favor.
-%
-Para la función dieléctrica del eritrocito se consideró la correspondiente a una CHCM de 30.6 g/dL y para el medio circundante, de acuerdo con los resultados de la Sección~\ref{section:optical_properties}, dado que en el plasma la parte imaginaria de la función dieléctrica es despreciable y la parte real varía en la cuarta cifra decimal en el rango espectral de interés, se aproximó el medio como $\varepsilon_{\text{Plasma}} = 1.839$. El eritrocito se orientó con su eje de simetría a lo largo de la dirección $z$ y se iluminó con una onda plana 
-que se propaga en la misma dirección, polarizada en $x$.
+Para identificar las propiedades ópticas de los eritrocitos en las bandas de Soret, $\beta$ y $\alpha$ se consideró el rango espectral de 400  a 600 nm. A lo largo de esta sección, se adopta la convención de que una \textit{dirección} corresponde a un ángulo de esparcimiento específico ($\theta=0^\circ$ para el esparcimiento frontal, $\theta=90^\circ$ para el lateral y $\theta=180^\circ$ para el retroesparcimiento), mientras que una \textit{región} corresponde a un intervalo angular ($0^\circ\leq\theta<60^\circ$ para el esparcimiento frontal, $60^\circ\leq\theta<120^\circ$ para el lateral y $120^\circ\leq\theta\leq180^\circ$ para el retroesparcimiento). Para modelar un eritrocito sano, se empleó un óvalo de Cassini como el de la Fig. \ref{subfig:Shape_health} con parámetros de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$, los cuales resproducen el radio equivalente de 3.75 $\mu$m y el volumen de 80.63~$\mu\text{m}^3$ reportados por Ergül et al. en la Ref.~\cite{ergulComputationalStudyScattering2010}. De acuerdo con los resultados obtenidos en la Sección~\ref{section:optical_properties}, para el plasma se consideró una función dieléctrica constante de $\varepsilon_{\text{Plasma}}=1.839$, ya que su parte imaginaria resulta despreciable y la parte real presenta variaciones únicamente en la cuarta cifra decimal dentro del rango espectral de interés. Por su parte, para el eritrocito se empleó la función dieléctrica de una CHCM de 30.6~g/dL. El eritrocito se orientó con su eje de simetría a lo largo de la dirección $z$ y se iluminó con una onda plana que se propaga en la misma dirección, polarizada en $x$.
 
-En la Fig. \ref{subfig:Qext_health} se muestra la eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente; se resaltan en gris las bandas que 
-rodean los mínimos asociados a la banda de Soret y a las bandas Q localizados en 431 nm, 541 nm y 573 nm, respectivamente. Se observa que la respuesta espectral del eritrocito sigue la dependencia espectral de su función dieléctrica, reflejando la influencia de las transiciones ópticas de la hemoglobina como mínimos en $Q_{\text{ext}}$.
+En la Fig. \ref{subfig:Qext_health} se muestra la eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente; se resaltan en gris las bandas que rodean los mínimos asociados a la banda de Soret y a las bandas $\beta$ y $\alpha$ localizados en 431 nm, 541 nm y 573 nm, respectivamente, los cuales se consideran longitudes de onda representativas para el análisis de los patrones de esparcimiento. Se observa que la respuesta espectral del eritrocito sigue la dependencia espectral de su función dieléctrica, reflejando la influencia de las transiciones ópticas de la hemoglobina como mínimos en $Q_{\text{ext}}$.
 %
 \begin{figure}[t]
 	\centering
@@ -29,87 +13,50 @@ rodean los mínimos asociados a la banda de Soret y a las bandas Q localizados e
 	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Qext_EriSano.pdf}\label{subfig:Qext_health}}}
 	\vspace{-0.1cm}
 	\caption{\textbf{a)} Modelo de eritrocito sano basado en óvalos de Cassini con parámetros de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y 
-		$c=0.812\,\mu\text{m}$, que corresponden a un radio de $3.75\,\mu$m. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito orientado con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. Se resaltan en gris las bandas que 
+		$c=0.812\,\mu\text{m}$, que corresponden a un radio de $3.75\,\mu$m. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito orientado con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. La línea continua que une los puntos es una guía visual. Se resaltan en gris las bandas que 
 		rodean los mínimos asociados a la banda de Soret y a las bandas Q.}
 	\label{fig:Shape_Qext_health}
 \end{figure}
 %
 
-Dado que las longitudes de onda de  431 nm, 541 nm y 573 nm son las representativas de las bandas, son los valores para los cuáles se analizarán los patrones de esparcimiento. En la Fig.~\ref{subfig:FF_431_health} se muestra la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en el régimen de campo lejano para una longitud de onda $\lambda=431$ nm. La magnitud de $\dd{C_{\text{sca}}}/\dd{\Omega}$ se encuentra normalizada respecto a su valor máximo, de modo que tanto el color (que varía desde blanco, correspondiente a la máxima intensidad, hasta azul oscuro, correspondiente a la menor intensidad) como la distancia al origen representan su magnitud relativa. Se observa que $\dd{C_{\text{sca}}}/\dd{\Omega}$ es mayor en la dirección frontal de propagación\footnote{En este trabajo, una \textit{dirección} corresponde a un ángulo específico ($\theta=0^\circ$ para el esparcimiento frontal, $\theta=90^\circ$ para el lateral y $\theta=180^\circ$ para el retroesparcimiento), mientras que una \textit{región} corresponde a un intervalo angular ($0^\circ\leq\theta<60^\circ$ para el esparcimiento frontal, $60^\circ\leq\theta<120^\circ$ para el lateral y $120^\circ\leq\theta\leq180^\circ$ para el retroesparcimiento).}, lo cual se refleja en un factor de anisotropía\footnote{El factor de anisotropía $g$ se define como \cite{bohrenAbsorptionScatteringLight2008}
-$$g=\dfrac{1}{C_{\text{sca}}}\int_{4 \pi}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}\cos\theta\dd{\Omega}.$$
-Para una partícula que esparce la luz de forma isótropa o si su esparcimiento es simétrico respecto a un ángulo de esparcimiento $\theta=90^{\circ}$, $g$ se anula. Si la partícula esparce más luz hacia la dirección frontal ($\theta=0^{\circ}$), $g>0$; si el esparcimiento se dirige más hacia la dirección posterior ($\theta=180^{\circ}$), $g<0$ \cite{bohrenAbsorptionScatteringLight2008}.} $g$ igual a 0.97.
+En esta sección se discute únicamente el patrón de esparcimiento de $\lambda=431$~nm asociado a la banda de Soret, mientras que los de $\lambda=541$ y $573$ nm se incluyen en el Apéndice \ref{section:apendix3}. En la Fig.~\ref{subfig:FF_431_health} se muestra la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ para $\lambda=431$ nm. La magnitud de $\dd{C_{\text{sca}}}/\dd{\Omega}$ se encuentra normalizada respecto a su valor máximo, que corresponde al valor más saturado. Se observa que $\dd{C_{\text{sca}}}/\dd{\Omega}$ es mayor en la dirección frontal de propagación, lo cual se refleja en un factor de anisotropía\footnote{El factor de anisotropía $g$ describe la direccionalidad de la luz esparcida por una partícula y corresponde al promedio ponderado de la intensidad de esparcimiento normalizada con el coseno del ángulo de esparcimiento \cite{videenAsymmetryParameterAggregate1998}. Se define como \cite{bohrenAbsorptionScatteringLight2008}
+$$g=\dfrac{1}{C_{\text{sca}}}\int_{4 \pi}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}\cos\theta\dd{\Omega},$$
+por lo que $g$ varía entre $-1$ y 1. En particular, para una partícula que esparce la luz de forma isótropa o si su esparcimiento es simétrico respecto a un ángulo de esparcimiento $\theta=90^{\circ}$, $g$ se anula. Si la partícula esparce más luz hacia la dirección frontal ($\theta=0^{\circ}$), $g>0$; si el esparcimiento se dirige más hacia la dirección posterior ($\theta=180^{\circ}$), $g<0$ \cite{bohrenAbsorptionScatteringLight2008}.} $g$ igual a 0.97.
 
-% --- JAUA ---
-% La información de la primera oración tiene que ir arriba cuando describes las bandas. Si la escribes arriba, ya no tienes que poner nada y puedes ir directo al contenido de la siguiente figura.
-%
-Dado que las longitudes de onda de  431 nm, 541 nm y 573 nm son las representativas de las bandas, son los valores para los cuáles se analizarán los patrones de esparcimiento.
-% --- JAUA ---
-En la Fig.~\ref{subfig:FF_431_health} se muestra la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en el régimen de campo lejano para %
-% --- JAUA ---
-% La sección transversal diferencial ya es una cantidad del campo lejan por como la construiste: partite de la radiación de un dipolo en esa región. Además, creo que puedes resumir la siguiente frase mencioanando que estás normalizando respecto al máximo y que este valor corresponde al valor más saturado.
-\sout{una longitud de onda} $\lambda=431$ nm. La magnitud de $\dd{C_{\text{sca}}}/\dd{\Omega}$ se encuentra normalizada respecto a su valor máximo, de modo que tanto el color (que varía desde blanco, correspondiente a la máxima intensidad, hasta azul oscuro, correspondiente a la menor intensidad) como la distancia al origen representan su magnitud relativa. Se observa que $\dd{C_{\text{sca}}}/\dd{\Omega}$ es mayor en la dirección frontal de propagación%
-% --- JAUA ---
-% Creo que las definciones de esta nota al pie son primordiales para tu trabajo y por tanto, creo que vale la pena inlcuirlas en el texto principal al inicio de esta sección. Piénsalo y avanzamos como tú creas más conveniente. 
-% Igual es conveniente, cuando definas estas cantidades, qué indica cada valor de g
-%
-	\footnote{En este trabajo, una \textit{dirección} corresponde a un ángulo específico ($\theta=0^\circ$ para el esparcimiento frontal, $\theta=90^\circ$ para el lateral y $\theta=180^\circ$ para el retroesparcimiento), mientras que una \textit{región} corresponde a un intervalo angular ($0^\circ\leq\theta<60^\circ$ para el esparcimiento frontal, $60^\circ\leq\theta<120^\circ$ para el lateral y $120^\circ\leq\theta\leq180^\circ$ para el retroesparcimiento).}%
-, lo cual se refleja en un factor de anisotropía% 
-	\footnote{El factor de anisotropía $g$ se define como 
-		$$g=\dfrac{1}{C_{\text{sca}}}\int_{4 \pi}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}\cos\theta\dd{\Omega}.$$
-	Para una partícula que esparce la luz de forma isótropa o si su esparcimiento es simétrico respecto a un ángulo de esparcimiento $\theta=90^{\circ}$, $g$ se anula. Si la partícula esparce más luz hacia la dirección frontal ($\theta=0^{\circ}$), $g>0$; si el esparcimiento se dirige más hacia la dirección posterior ($\theta=180^{\circ}$), $g<0$.}
-$g$ igual a 0.97.
-
-En la Fig. \ref{subfig:FF_polar_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función del ángulo de esparcimiento $\theta$ para dos cortes correspondientes a los planos $\varphi=0$ y $\varphi=\pi/2$,%
-% --- JAUA ---
-% En todo el texto anterior cambiaste a grados y ahora está en radianes de nuevo.
-%
- correspondientes a los planos paralelo y perpendicular a la polarización de la onda incidente, respectivamente. %
- % --- JAUA ---
- % A pesar de la simetría cilíndrica del eritrocito, la diferencia entre los patrones de esparcimientos muestran una dependencia con la polarización de la onda incidente, particularmente en la región del esparcimiento lateral.
- % 
- %
-Se observa que aunque el eritrocito posee simetría de revolución, la diferencia de los patrones muestra una dependencia con la polarización de la onda incidente, particularmente en la región del esparcimiento lateral. Finalmente, en la Fig. \ref{subfig:FF_cartesian_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función del ángulo de esparcimiento para ambos cortes. En las regiones de esparcimiento frontal y de retroesparcimiento se observa una correlación de 1 y 0.99, respectivamente, mientras que las mayores diferencias se presentan en la región de epsarcimiento lateral donde la correlación es de 0.67. %
-% --- JAUA ---
-% Una correlación de 1 es mucho. Estás totalmente segura de esa valor?? ¿Cómo lo calculaste? ¿Qué significa que la correlación sea 1? ¿Qué significa que sea 0.67? ¿Cómo se interpreta eso en términos de la física del esparcimiento?
-% También es importante que menciones qué tipo de correlación estás usando. Es la standar de r 2??
-% La lectura de los datos es un poco complicada. Será posible que normalicemos respecto al área del eritrocito en esa dirección (es un círculo en todos los casos).
-%
- Para cuantificar la contribución de cada región al esparcimiento total, se integró $\dd{C_{\text{sca}}}/\dd{\Omega}$ en los intervalos  definidos como frontal, lateral y de retroesparcimiento y se obtuvieron contribuciones de $8.028\times 10^{6}\,\text{nm}^2$, $5.174\times 10^{4}\,\text{nm}^2$ y $8881.92\times 10^{3}\,\text{nm}^2$ para el corte $\varphi=0$, y de $8.03\times 10^{6}\,\text{nm}^2$, $5.179\times 10^{4}\,\text{nm}^2$ y $8887.03\times 10^{3}\,\text{nm}^2$ para $\varphi=\pi/2$, lo que confirma que la mayor parte del esparcimiento se concentra en la región frontal, mientras que las diferencias entre ambos planos se originan principalmente en la región lateral.
-
-%
-\begin{figure}[tb]
-	\centering
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_EriSano.pdf}\label{subfig:FF_431_health}}}\hspace{0.1cm}
-	\sidesubfloat[Second image]{\hspace{-0.5cm}{
-			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FF_EriSano.pdf}\label{subfig:FF_polar_431_health}}}\vspace{-0.1cm}
-	\
-	\vspace{0.1cm}
+En la Fig. \ref{subfig:FF_polar_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función del ángulo de esparcimiento $\theta$ para dos cortes correspondientes a los planos $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$, correspondientes a los planos paralelo y perpendicular a la polarización de la onda incidente, respectivamente. A pesar de la simetría cilíndrica del eritrocito, la diferencia entre los patrones de esparcimiento muestra una dependencia con la polarización de la onda incidente, particularmente en la región del esparcimiento lateral. Finalmente, en la Fig. \ref{subfig:FF_cartesian_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función del ángulo de esparcimiento para ambos cortes. En las regiones de esparcimiento frontal y de retroesparcimiento se obtienen coeficientes de correlación de Pearson\footnote{El coeficiente de correlación de Pearson entre dos conjuntos de datos $x$ y $y$ se define como \cite{rossIntroductionProbabilityStatistics2014}
+	$$r=\dfrac{\sum_{i}{(x_i-\overline{x})(y_i-\overline{y})}}{\sqrt{\sum_{i}{(x_i-\overline{x})^2 (y_i-\overline{y})^2}}},$$
+	donde $\overline{x}$ indica el promedio del conjunto de datos. Por definición, $r$ es un valor entre $-1$ y 1, donde su valor absoluto es una medida de la fuerza de la relación lineal entre los dos pares de datos, mientras que su signo indica la dirección de la relación lineal \cite{rossIntroductionProbabilityStatistics2014}.} $r=1$ y $r=0.99$, respectivamente, lo que indica que la dependencia angular de $\dd{C_{\text{sca}}}/\dd{\Omega}$ es prácticamente la misma en ambos planos de observación. En contraste, en la región de esparcimiento lateral $r= 0.67$, lo que muestra que la polarización de la onda incidente modifica principalmente la forma del patrón de esparcimiento en esta región.
+	%
+	\begin{figure}[t]
+		\centering
+		\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_EriSano.pdf}\label{subfig:FF_431_health}}}\hspace{0.1cm}
+		\sidesubfloat[Second image]{\hspace{-0.5cm}{
+				\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FF_EriSano.pdf}\label{subfig:FF_polar_431_health}}}\vspace{-0.1cm}
+		\
+		\vspace{0.1cm}
+		
+		\sidesubfloat[Third image]{\hspace{0.3cm}{
+				\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FF_EriSano.pdf}\label{subfig:FF_cartesian_431_health}}}\vspace{-0.1cm}
+		\caption{\textbf{a)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ normalizada respecto a su valor máximo para una longitud de onda $\lambda=431$ nm en función del ángulo de esparcimiento $\theta$ y del ángulo $\varphi$ para un eritrocito sano. Se identifican dos planos $\varphi=0^{\circ}$ en azul claro y $\varphi=90^{\circ}$ en azul oscuro. \textbf{b)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro). \textbf{c)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro). La línea continua que une los puntos es una guía visual.}
+		\label{fig:FF_431_health}
+	\end{figure}
+	%
 	
-	\sidesubfloat[Third image]{\hspace{0.3cm}{
-			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FF_EriSano.pdf}\label{subfig:FF_cartesian_431_health}}}\vspace{-0.1cm}
-	\caption{\textbf{a)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ normalizada respecto a su valor máximo para una longitud de onda $\lambda=431$ nm en función del ángulo de esparcimiento $\theta$ y del ángulo $\varphi$ para un eritrocito sano. Se identifican dos planos $\varphi=0^{\circ}$ en azul claro y $\varphi=90^{\circ}$ en azul oscuro. \textbf{b)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro). \textbf{c)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro).}
-	\label{fig:FF_431_health}
-\end{figure}
+ Para cuantificar la contribución de cada región al esparcimiento total, se integró $\dd{C_{\text{sca}}}/\dd{\Omega}$ en los intervalos  definidos como frontal, lateral y de retroesparcimiento y se obtuvieron contribuciones normalizadas por el área $S$ ($4.41\times 10^{7}\,\text{nm}^2$) de $1817.17\times 10^{-4}$, $11.71\times 10^{-4}$ y $2.01\times 10^{-4}$ para el corte $\varphi=0^{\circ}$, y de $1788.52\times 10^{-4}$, $21.70\times 10^{-4}$ y $2.97\times 10^{-4}$ para $\varphi=90^{\circ}$. En ambos cortes, la mayor parte de la energía esparcida se concentra en la región frontal, seguida por el esparcimiento lateral y, finalmente, el retroesparcimiento. En la región frontal, la polarización de la onda incidente tiene poca influencia, ya que la distribución angular permanece prácticamente invariante ($r=1$) y la contribución integrada difiere en menos del 2\% entre ambos cortes, lo que indica una baja dependencia con el plano de observación. En contraste, aunque en la región de retroesparcimiento la distribución angular es similar ($r=0.99$), la contribución integrada presenta una diferencia del 47.65\%. Por su parte, la región de esparcimiento lateral es la más sensible a la polarización, pues además de presentar la menor correlación entre ambos cortes ($r=0.67$), la contribución integrada difiere en un 85.33\%. En conjunto, estos resultados indican que las diferencias entre los planos de observación son prácticamente despreciables en el esparcimiento frontal, aumentan en el retroesparcimiento y alcanzan su máximo en la región de esparcimiento lateral, donde la polarización de la onda incidente ejerce la mayor influencia.
 
-Dado que el patrón de esparcimiento conserva la misma estructura general en las tres longitudes de onda analizadas, únicamente se presenta en detalle el correspondiente a $\lambda=431$~nm. Las gráficas para $\lambda=541$ y $573$ nm se incluyen en el Apéndice. En la Tabla~\ref{table:431_val_health} se resumen, para las tres longitudes de onda representativas, los valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$, así como las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para ambos cortes. La correlación se presenta únicamente para la región lateral debido a que, en las regiones frontal y de retroesparcimiento, los patrones permanecen invariantes entre ambos cortes, con coeficientes de correlación de 1 y 0.99, respectivamente. Se observa que para todas las longitudes de onda dado que el factor de anistropía es muy cercano a 1, se reafirma que el esparcimiento frontal es el predominante. Por otra parte, la correlación entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$ en la región lateral es inferior a la observada en las regiones frontal y de retroesparcimiento, lo que indica que es en esta región donde la distribución angular presenta una mayor dependencia con la polarización de la onda incidente. Sin embargo, al integrar la sección transversal de esparcimiento en cada una de las tres regiones, la menor diferencia entre ambos cortes se obtiene en el retroesparcimiento, seguida de la región lateral y, finalmente, de la región frontal. Esto indica que, aunque la forma del patrón lateral cambia de manera apreciable con la polarización, la energía total dispersada en dicha región permanece relativamente similar para ambos estados de polarización.
-
-% --- JAUA ---
-% Entonces sí presentas tosas. Cambia diciendo que las de Sores se discute aquó pero el resto de bandas en Apéndice XX
-% De nuevo, esta inforación toene que ir antes cuando discutes la gráfica, no después.
+En la Tabla~\ref{table:431_val_health} se resumen, para las tres longitudes de onda representativas, los valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$, así como las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para ambos cortes. La correlación se presenta únicamente para la región lateral debido a que, en las regiones frontal y de retroesparcimiento, los patrones permanecen invariantes entre ambos cortes, con coeficientes de correlación de 1 y 0.99, respectivamente. Se observa que el factor de anisotropía aumenta de 0.97 a 0.99 al pasar de la banda de Soret a la banda $\alpha$, lo que confirma el predominio del esparcimiento frontal en todo el intervalo espectral analizado. Asimismo, la contribución integrada en la región frontal aumenta con la longitud de onda, mientras que las regiones lateral y de retroesparcimiento continúan aportando una fracción menor al esparcimiento total. Por otra parte, la correlación en la región lateral no presenta una tendencia creciente con la longitud de onda, alcanzando su valor mínimo en la banda $\beta$ ($r=0.49$), lo que indica que en esta región espectral la distribución angular del esparcimiento es la más sensible a la polarización de la onda incidente. Sin embargo, la diferencia entre las contribuciones integradas es inferior (38.86 \%) para esta misma longitud de onda que para $\lambda=431$~nm (85.33 \%) y $\lambda=573$~nm (98.35 \%). Esto evidencia que una menor correlación entre dos planos de observación no implica necesariamente una mayor diferencia en su contribución en $C_{\text{sca}}$.
 %
-Dado que el patrón de esparcimiento conserva la misma estructura general en las tres longitudes de onda analizadas, únicamente se presenta en detalle el correspondiente a $\lambda=431$~nm. Las gráficas para $\lambda=541$ y $573$ nm se incluyen en el Apéndice. En la Tabla~\ref{table:431_val_health} se resumen, para las tres longitudes de onda representativas, los valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$, así como las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para ambos cortes.
-%
-\begin{table}
+\begin{table}[h!]
 		\begin{tabular}{ccccccccc}
 		\hline
-		\multirow{3}{*}{$\lambda$ [nm]} & \multirow{3}{*}{$g$} & \multirow{3}{5em}{Correlación lateral} & \multicolumn{6}{c}{$C_{\text{sca}}\times 10^{4}\,[\text{nm}^2]$ } \\
+		\multirow{3}{*}{$\lambda$ [nm]} & \multirow{3}{*}{$g$} & \multirow{3}{5em}{Correlación lateral} & \multicolumn{6}{c}{$C_{\text{sca}}/S\times 10^{-4}$ } \\
 		\cline{4-9}
 		& &  &   \multicolumn{2}{c}{Frontal} & \multicolumn{2}{c}{Lateral} & \multicolumn{2}{c}{Posterior}\\
 		\cline{4-9}
 		&  &  &  $\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ \\ \hline
-		431 & 0.97  & 0.67 & 802.8000 & 803.0006 & 5.1736 & 5.1785 & 0.8881 & 0.8887  \\
-		541 & 0.98 & 0.49 & 1910.3700 & 1910.4700 & 6.6659 & 6.6615 & 4.7648 & 4.7643\\
-		573 & 0.99  & 0.71 & 2054.3300 & 2054.2200 & 5.6327 & 5.6211 & 1.0872 & 1.0872\\
+		431 (Soret) & 0.97  & 0.67 & 1817.17 & 1788.52 & 11.17 & 21.70 & 2.01 & 2.97  \\
+		541 ($\beta$) & 0.98 & 0.49 & 4324.20 & 4296.07 & 15.08 & 20.95 & 10.78 & 13.77\\
+		573 ($\alpha$) & 0.99 & 0.71 & 4650.05 & 4626.42 & 12.75 & 25.29 & 2.46 & 3.41\\
 		\hline
 	\end{tabular}
 	\caption{Valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$ y las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$ para $\lambda=431,541$ y 573 nm. }

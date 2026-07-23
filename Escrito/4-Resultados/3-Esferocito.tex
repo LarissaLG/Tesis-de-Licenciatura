@@ -3,32 +3,42 @@
 \section{Esferocito}
 \label{section:Res_Esferocito}
 
-En el caso del esferocito, se empleó como modelo una esfera de radio igual a 2.68 
 
+Para identificar las propiedades ópticas de los esferocitos en las bandas de Soret, $\beta$ y $\alpha$ se consideró el rango espectral de 400  a 600 nm. Para modelar el esferocito se empleó como modelo una esfera de radio igual a $2.68\,\mu\text{m}$ y volumen igual a 80.63~$\mu\text{m}^3$, que correspondería a un óvalo de Cassini con valores de $a=0\,\mu\text{m}$, $b=2.68\,\mu\text{m}$ y $c=1\,\mu\text{m}$ como el de la Fig. \ref{subfig:Esferocito_Shape} en rojo, donde además se muestra la comparación de la sección transversal con la de un eritrocito sano con el mismo volumen en color azul analizado en la Sección \ref{section:Res_Eritrocito_Sano}. De la misma forma que en el caso del eritrocito sano, se consideró al plasma con una función dieléctrica constante de $\varepsilon_{\text{Plasma}}=1.839$ como el medio circundante, mientras que para el esferocito se empleó la función dieléctrica correspondiente a una CHCM de 34~g/dL. El esferocito se iluminó con una onda plana que se propagada en el eje $z$ y polarizada en $x$.
+
+En la Fig. \ref{subfig:Qext_esf} se muestra la eficiencia de extinción $Q_{\text{ext}}$  en función de la longitud de onda $\lambda$ de la onda incidente para el esferocito (puntos azules) y del eritrocito sano (puntos rojos), donde la línea continua que los une es una guía visual. Se resaltan en gris las bandas que rodean los mínimos asociados a la banda de Soret y a las bandas $\beta$ y $\alpha$ del eritrocito sano, cuyos mínimos se localizan en 431 nm, 541 nm y 573 nm, respectivamente. Se observa que la respuesta espectral del esferocito conserva la misma estructura general, pero los mínimos de $Q_{\text{ext}}$ presentan un corrimiento hacia el rojo con respecto a los del eritrocito sano, localizándose en 438 nm, 542 nm y 577 nm. Asimismo, se observa que en el rango espectral de 400 nm a 561 nm el esferocito presenta valores de $Q_{\text{ext}}$ superiores al eritrocito sano, lo que se puede explicar debido al incremento de la CHCM en el esferocito, que aumenta la componente imaginaria del índice de refracción, favoreciendo la absorción de la onda incidente. Al mismo tiempo, una mayor concentración produce una mayor atenuación del campo electromagnético dentro de la célula, lo que reduce la amplitud de la onda esparcida por el eritrocito. Como resultado, mientras la contribución de absorción aumenta, la de esparcimiento disminuye, de modo que la respuesta espectral observada en $Q_{\text{ext}}$ refleja el balance entre ambos mecanismos y el área transversal proyectada.
 %
-\begin{figure}[h!]
+\begin{figure}[t]
 	\centering
 	\sidesubfloat[Second image]{\hspace{-0.3cm}{
-			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_esferocito_corte.pdf}\label{subfig:FIT_cell_electric}}}\hspace{0.1cm}
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{../../Figuras/4-Resultados/Qext_Esf.pdf}\label{subfig:FIT_cell_magnetic}}}
+			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_esferocito_corte.pdf}\label{subfig:Esferocito_Shape}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{../../Figuras/4-Resultados/Qext_Esf.pdf}\label{subfig:Qext_esf}}}
 	\vspace{-0.1cm}
-	\caption{}
-	\label{fig:FIT_cell}
+	\caption{\textbf{a)} Comparación entre el modelo del eritrocito sano (azul) con valores de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$ y el modelo de esferocito con radio igual a $2.68\,\mu\text{m}$, que es equivalente a un óvalo de Cassini con valores de  $a=0\,\mu\text{m}$, $b=2.68\,\mu\text{m}$ y 
+		$c=1\,\mu\text{m}$. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito (puntos azules) y un esferocito (puntos rojos) orientados con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. La línea continua que une los puntos es una guía visual. Se resaltan en gris las bandas que 
+		rodean los mínimos asociados a la banda de Soret y a las bandas Q.}
+	\label{fig:Shape_Qext_esf}
 \end{figure}
 %
 
+En la Fig.~\ref{subfig:FF_431_esf} se muestra la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ para $\lambda=431$ nm. La magnitud de $\dd{C_{\text{sca}}}/\dd{\Omega}$ se encuentra normalizada respecto a su valor máximo, que corresponde al valor más saturado. Al igual que en el eritrocito sano, el esparcimiento se concentra principalmente en la dirección frontal de propagación. Sin embargo, el esferocito presenta un factor de anisotropía $g=0.98$, ligeramente superior al obtenido para el eritrocito sano ($g=0.97$). Este resultado indica que la distribución angular del esparcimiento no está determinada únicamente por el radio de la partícula, sino también por su geometría.
+
+En la Fig. \ref{subfig:FF_polar_431_esf} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función del ángulo de esparcimiento $\theta$ para los cortes $\varphi=0^{\circ}$ (puntos azul claro) y $\varphi=90^{\circ}$ de la esfera (puntos azul oscuro), comparados con los del eritrocito sano (puntos rojo claro y puntos rojo escuro para $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$, respectivamente). Al igual que lo observado con el eritrocito, el patrón de esparcimiento depende de la polarización de la onda incidente; sin embargo, dicha dependencia se modifica con el cambio de geometría. En particular, la correlación entre ambos cortes en la región lateral aumenta de $r=0.67$ para el eritrocito sano a $r=0.78$ para el esferocito, lo que indica que la distribución angular del esparcimiento lateral es menos sensible a la polarización. En contraste, en la región de retroesparcimiento la correlación disminuye de $r=0.99$ a $r=0.95$, evidenciando una mayor influencia de la polarización en dicha región. 
 %
-\begin{figure}[h!]
+\begin{figure}[t]
 	\centering
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_Esf.pdf}\label{subfig:FIT_cell_magnetic}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_Esf.pdf}\label{subfig:FF_431_esf}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.5cm}{
-			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FFComEsfEri.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
+			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FFComEsfEri.pdf}\label{subfig:FF_polar_431_esf}}}\vspace{-0.1cm}
 	\\
 	\vspace{0.7cm}
 	
 	\sidesubfloat[Third image]{\hspace{0.3cm}{
-			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FFEsf.pdf}\label{subfig:FIT_cell_electric}}}\vspace{-0.1cm}
-	\caption{\textbf{a)} }
-	\label{fig:FIT_cell}
+			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FFEsf.pdf}\label{subfig:FF_cartesian_431_esf}}}\vspace{-0.1cm}
+	\caption{\textbf{a)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ normalizada respecto a su valor máximo para una longitud de onda $\lambda=431$ nm en función del ángulo de esparcimiento $\theta$ y del ángulo $\varphi$ para un esferocito. Se identifican dos planos $\varphi=0^{\circ}$ en rojo claro y $\varphi=90^{\circ}$ en rojo oscuro. \textbf{b)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función de $\theta$ para un esferocito (en rojo) y un eritrocito sano (azul) para dos cortes: $\varphi=0^{\circ}$ (puntos color claro) y $\varphi=90^{\circ}$ (puntos color oscuro). \textbf{c)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función de $\theta$ para un esferocito (en rojo) y un eritrocito sano (azul) para dos cortes: $\varphi=0^{\circ}$ (puntos color claro) y $\varphi=90^{\circ}$ (puntos color oscuro). }
+	\label{}
 \end{figure}
 %
+
+Para cuantificar estas diferencias, se integró $\dd{C_{\text{sca}}}/\dd{\Omega}$ en las regiones frontal, lateral y de retroesparcimiento, obteniéndose contribuciones normalizadas por el área $S$ de $2030.46\times 10^{-4}$, $7.61\times 10^{-4}$ y $0.47\times 10^{-4}$ para el corte $\varphi=0^{\circ}$, y de $2019.00\times 10^{-4}$, $14.45\times 10^{-4}$ y $0.90\times 10^{-4}$ para $\varphi=90^{\circ}$. En comparación con el eritrocito sano, las contribuciones lateral y de retroesparcimiento disminuyen, en promedio, por un factor de 0.59 y 0.24, respectivamente, mientras que la contribución frontal permanece prácticamente inalterada. Esto indica que el incremento del factor de anisotropía no se debe a un aumento significativo del esparcimiento frontal, sino a una reducción relativa del esparcimiento hacia ángulos laterales y posteriores. Asimismo, en la región frontal se observa un desfase de $1.15^{\circ}$ y $1.12^{\circ}$ entre los patrones del eritrocito sano y del esferocito para los cortes de $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$, respectivamente. En la región entre $\varphi=93.5^{\circ}$ y $\varphi=120^{\circ}$, el patrón de esparcimiento del eritrocito sano presenta una envolvente sobre la que se superponen pequeñas oscilaciones, mientras que en el esferocito dicha envolvente disminuye y las oscilaciones se atenúan. Finalmente, en la región de retroesparcimiento el desfase aumenta hasta $2.64^{\circ}$ y $1.64^{\circ}$ para los cortes de $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$, respectivamente. En conjunto, estos resultados muestran que la transición de un eritrocito bicóncavo a un esferocito modifica la distribución angular y la intensidad del patrón de esparcimiento. En particular, se reduce la contribución relativa de las regiones lateral y de retroesparcimiento, mientras que el esparcimiento frontal permanece prácticamente inalterado, lo que explica el incremento observado en el factor de anisotropía.
+
