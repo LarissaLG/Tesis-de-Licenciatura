@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tesis.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: 0-1-Acknowledgments/1-Acknowledgments.aux
+A level-1 auxiliary file: 0-2-Declaration/1-Declaration.aux
+A level-1 auxiliary file: 0-3-Quote/1-Quote.aux
+A level-1 auxiliary file: 0-4-Resumen/1-Resumen.aux
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated field_info (elt_size=8) to 12420 items from 5000.
+Database file #1: tesis-blx.bib
+Database file #2: 6-References/references.bib
+Biblatex version: 3.21
+Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+You've used 53 entries,
+            6402 wiz_defined-function locations,
+            1642 strings with 31081 characters,
+and the built_in function-call counts, 579548 in all, are:
+= -- 38014
+> -- 32384
+< -- 2439
++ -- 37149
+- -- 26544
+* -- 33332
+:= -- 77545
+add.period$ -- 0
+call.type$ -- 53
+change.case$ -- 846
+chr.to.int$ -- 1430
+cite$ -- 104
+duplicate$ -- 50301
+empty$ -- 42283
+format.name$ -- 4512
+if$ -- 97384
+int.to.chr$ -- 0
+int.to.str$ -- 132
+missing$ -- 0
+newline$ -- 1923
+num.names$ -- 2502
+pop$ -- 19787
+preamble$ -- 1
+purify$ -- 1244
+quote$ -- 0
+skip$ -- 12268
+stack$ -- 0
+substring$ -- 75067
+swap$ -- 9594
+text.length$ -- 2011
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1782
+warning$ -- 0
+while$ -- 7045
+width$ -- 0
+write$ -- 1871
