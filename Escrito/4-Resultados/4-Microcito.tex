@@ -1,35 +1,70 @@
 % !TeX root = ../tesis.tex
-
+\newpage
 \section{Microcito}
 \label{section:Res_Microcito}
-Make a short summary of the content of the thesis and then your conclusions. Also explain your future steps on this project 
 
-%
-%
+Para modelar el microcito se empleó un óvalo de Cassini con parámetros de $a=2.418\,\mu\text{m}$, $b=2.511\,\mu\text{m}$ y $c=0.756\,\mu\text{m}$, los cuales están escalados 0.98 veces en comparación con los del eritrocito sano. La geometría resultante presenta un radio equivalente de 3.45 $\mu$m, un volumen de 70.47~$\mu\text{m}^3$ y una sección transversal como la de la Fig. \ref{subfig:Esferocito_Shape} (verde), donde además se muestra su comparación con la sección transversal del eritrocito sano (azul) analizado en la Sección \ref{section:Res_Eritrocito_Sano} y con la del esferocito (rojo) analizado en la Sección \ref{section:Res_Esferocito}. Al igual que en los casos anteriores, se consideró al plasma como medio circundante con una función dieléctrica constante $\varepsilon_{\text{Plasma}}=1.839$ como el medio circundante, mientras que al microcito se le asignó la función dieléctrica correspondiente a una CHCM de 28.7~g/dL. El microcito se orientó con su eje de simetría a lo largo del eje $z$ y se iluminó con una onda plana que propagada en la misma dirección y polarizada en $x$.
+
+En la Fig. \ref{subfig:Qext_micro} se muestra la eficiencia de extinción $Q_{\text{ext}}$  en función de la longitud de onda $\lambda$ de la onda incidente para el microcito (puntos verdes), el esferocito (puntos rojos) y el eritrocito sano (puntos azules); donde la línea continua es una guía visual. También se indican en gris las bandas que rodean los mínimos asociados a la banda de Soret y a las bandas $\beta$ y $\alpha$ del eritrocito sano, cuyos mínimos se localizan en 431 nm, 541 nm y 573 nm, respectivamente. Se observa que el mínimo asociado a la banda de Soret tiene un corrimiento hacia el azul, localizándose en 418 nm, mientras que los asociados a las bandas $\beta$ y $\alpha$ presentan un corrimiento hacia el rojo, localizándose en 547 nm y 580 nm, respectivamente. Asimismo, la dependencia espectral de $Q_{\text{ext}}$ conserva la forma general observada para el eritrocito sano, aunque desplazada hacia valores mayores de $Q_{\text{ext}}$. Además, se observa que los mínimos asociados a las bandas $\beta$ y $\alpha$ son menos profundos.
 %
 \begin{figure}[h!]
 	\centering
 	\sidesubfloat[Second image]{\hspace{-0.3cm}{
-			\includegraphics[width=0.48\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_esferocito_microcito_corte.pdf}\label{}}}\hspace{0.1cm}
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Qext_Micro.pdf}\label{}}}
+			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_esferocito_microcito_corte.pdf}\label{subfig:Microcito_Shape}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{../../Figuras/4-Resultados/Qext_Micro.pdf}\label{subfig:Qext_micro}}}
 	\vspace{-0.1cm}
-	\caption{}
-	\label{}
+	\caption{\textbf{a)} Comparación entre el modelo del eritrocito sano (azul) con valores de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$ y el modelo de esferocito con radio igual a $2.68\,\mu\text{m}$, que es equivalente a un óvalo de Cassini con valores de  $a=0\,\mu\text{m}$, $b=2.68\,\mu\text{m}$ y 
+		$c=1\,\mu\text{m}$. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito (puntos azules), un esferocito (puntos rojos) y un microcito (puntos verdes) orientados con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. La línea continua que une los puntos es una guía visual. Se resaltan en gris las bandas que 
+		rodean los mínimos asociados a la banda de Soret y a las bandas Q.}
+	\label{fig:Shape_Qext_micro}
 \end{figure}
 %
 
+Como se observa en la Fig.~\ref{subfig:Cext_micro}, el microcito también presenta la mayor sección transversal de extinción $C_{\text{ext}}$, lo que indica que el incremento de $Q_{\text{ext}}$ no puede atribuirse únicamente a la normalización respecto al área proyectada. Para comprender este comportamiento, en la Figs.~\ref{subfig:Csca_micro} y \ref{subfig:Cabs_micro} se muestran las secciones transversales de esparcimiento $C_{\text{sca}}$ y de absorción $C_{\text{abs}}$ en función de la longitud de onda de la luz incidente para el eritrocito sano (azul), el esferocito (rojo) y el microcito (azul). Se observa que en el intervalo de 400 a 566 nm el microcito presenta los mayores valores de $C_{\text{sca}}$, mientras que $C_{\text{abs}}$ es menor en todo el intervalo espectral. Este comportamiento se explica por la disminución de la CHCM, que reduce la componente imaginaria del índice de refracción y, por tanto, la atenuación que experimenta la onda electromagnética al propagarse dentro de la célula. Como consecuencia, una mayor fracción del campo atraviesa el eritrocito y contribuye al esparcimiento, incrementando $C_{\text{sca}}$. En contraste, el incremento de la CHCM favorece la absorción de energía por la hemoglobina, dando lugar a un aumento de $C_{\text{abs}}$. En el caso del microcito, el aumento del esparcimiento supera 62.15 veces en promedio la disminución de la absorción, lo que explica que presente la mayor sección transversal de extinción $C_{\text{ext}}$ y que al normalizar por el área proyectada $Q_{\text{ext}}$ sea mayor.
+
 %
-\begin{figure}[h!]
+\begin{figure}[t]
 	\centering
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_Micro.pdf}\label{}}}\hspace{0.1cm}
-	\sidesubfloat[Second image]{\hspace{-0.5cm}{
-			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FFComEsfMicro.pdf}\label{}}}\vspace{-0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.3cm}{
+			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Cext_micro.pdf}\label{subfig:Cext_micro}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{../../Figuras/4-Resultados/Cscamicro.pdf}\label{subfig:Csca_micro}}}
+	\vspace{-0.1cm}
 	\\
 	\vspace{0.7cm}
 	
 	\sidesubfloat[Third image]{\hspace{0.3cm}{
-			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FFMicro.pdf}\label{}}}\vspace{-0.1cm}
-	\caption{\textbf{a)} }
-	\label{}
+			\includegraphics[width=0.47\textwidth]{../../Figuras/4-Resultados/Cabs_micro.pdf}\label{subfig:Cabs_micro}}}\vspace{-0.1cm}
+	\caption{\textbf{a)} Comparación entre el modelo del eritrocito sano (azul) con valores de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$ y el modelo de esferocito con radio igual a $2.68\,\mu\text{m}$, que es equivalente a un óvalo de Cassini con valores de  $a=0\,\mu\text{m}$, $b=2.68\,\mu\text{m}$ y 
+		$c=1\,\mu\text{m}$. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito (puntos azules) y un esferocito (puntos rojos) orientados con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. La línea continua que une los puntos es una guía visual. Se resaltan en gris las bandas que 
+		rodean los mínimos asociados a la banda de Soret y a las bandas Q.}
+	\label{fig:ST_micro}
 \end{figure}
 %
+
+En la Fig.~\ref{subfig:FF_431_micro} se muestra la sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ para $\lambda=431$ nm normalizada respecto a su valor máximo, que corresponde al valor más saturado. Al igual que en el eritrocito sano y el esferocito, el esparcimiento se concentra predominantemente en la dirección frontal de propagación. No obstante, el microcito exhibe el mayor factor de anisotropía ($g=0.99$), lo que indica que el campo esparcido se concentra aún más alrededor de la dirección de propagación. Este resultado sugiere que las modificaciones simultáneas en la geometría y en las propiedades ópticas del microcito favorecen una redistribución angular del esparcimiento más direccional que la observada para las otras morfologías.
+
+En la Fig. \ref{subfig:FF_polar_431_micro} se muestra $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función del ángulo de esparcimiento $\theta$ para los cortes $\varphi=0^{\circ}$ (puntos verde claro) y $\varphi=90^{\circ}$ de la esfera (puntos verde oscuro), comparados con los del eritrocito sano (puntos azul claro y puntos azul escuro para $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$, respectivamente). A diferencia del esferocito, el microcito presenta una mayor dependencia del patrón de esparcimiento con la polarización de la onda incidente. En la región lateral, la correlación entre ambos cortes disminuye hasta $r=0.56$, lo que indica que las distribuciones angulares correspondientes a ambas polarizaciones son menos similares que en el eritrocito sano. Esta diferencia es aún más evidente en la región de retroesparcimiento, donde la correlación se reduce de $r=0.99$ a $r=0.76$, evidenciando que la respuesta angular del microcito es significativamente más sensible a la polarización.
+%
+\begin{figure}[h!]
+	\centering
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_Micro.pdf}\label{subfig:FF_431_micro}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.5cm}{
+			\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FFComEsfMicro.pdf}\label{subfig:FF_polar_431_micro}}}\vspace{-0.1cm}
+	\\
+	\vspace{0.7cm}
+	
+	\sidesubfloat[Third image]{\hspace{0.3cm}{
+			\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FFMicro.pdf}\label{subfig:FF_cartesian_431_micro}}}\vspace{-0.1cm}
+	\caption{\textbf{a)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ normalizada respecto a su valor máximo para una longitud de onda $\lambda=431$ nm en función del ángulo de esparcimiento $\theta$ y del ángulo $\varphi$ para un microcito. Se identifican dos planos $\varphi=0^{\circ}$ en verde claro y $\varphi=90^{\circ}$ en verde oscuro. \textbf{b)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función de $\theta$ para un microcito (en verde) y un eritrocito sano (azul) para dos cortes: $\varphi=0^{\circ}$ (puntos color claro) y $\varphi=90^{\circ}$ (puntos color oscuro). \textbf{c)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función de $\theta$ para un microcito (en verde) y un eritrocito sano (azul) para dos cortes: $\varphi=0^{\circ}$ (puntos color claro) y $\varphi=90^{\circ}$ (puntos color oscuro). }
+	\label{fig:FF_431_micro}
+\end{figure}
+%
+
+Para cuantificar estas diferencias, se integró $\dd{C_{\text{sca}}}/\dd{\Omega}$ en las regiones frontal, lateral y de retroesparcimiento, obteniéndose contribuciones normalizadas por el área $S$ de $3557.07\times 10^{-4}$, $11.56\times 10^{-4}$ y $3.57\times 10^{-4}$ para el corte $\varphi=0^{\circ}$, y de $3542.14\times 10^{-4}$, $19.21\times 10^{-4}$ y $5.99\times 10^{-4}$ para $\varphi=90^{\circ}$. En comparación con el eritrocito sano, la contribución lateral disminuye, en promedio, por un factor de 0.38, mientras que las contribuciones frontal y de retroesparcimiento aumentan por factores de 1.67 y 1.61, respectivamente. En consecuencia, el incremento del factor de anisotropía del microcito se asocia principalmente con un aumento del campo esparcido en la dirección frontal, acompañado de una reducción del esparcimiento lateral. Asimismo, en la región frontal se observa un desfase de $1.35^{\circ}$ y $1.27^{\circ}$ entre los patrones del eritrocito sano y del esferocito para los cortes de $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$, respectivamente. En conjunto, estos resultados indican que el microcito presenta una redistribución angular del esparcimiento distinta a la observada en el esferocito, caracterizada por un reforzamiento simultáneo del esparcimiento frontal y del retroesparcimiento, acompañado de una disminución de la contribución lateral.
+
+
+A continuación se muestra una gráfica que resume las contribuciones en las regiones de para $\lambda=431$ nm, que corresponde a la banda de Soret.
+
+
+
+The laser beam is scattered by the cells and their contents, and the light scattered along the axis of the projected laser is called forward scatter, which depends on the size and surface area of the cell. The light scattered at approximately 90°, which depends on the cell granularity, nucleus, and internal complexity of the cell, is called side scatter or orthogonal light scatter.
