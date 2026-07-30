@@ -1,0 +1,1 @@
+Los directorios vacios no se compian en git y aunque nunca usaste para nada esta carpeta, en tu tex busca apartir de aquí (de ahí tus direcciones con ../../). No me parece buena práctica porque, justamente, no podrías coiar tus archivos si los tienes que jalar de nuevo pero al menos ya se arregló este problema.
