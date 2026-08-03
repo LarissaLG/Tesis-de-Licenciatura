@@ -26,17 +26,17 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showguides="true"
-     inkscape:zoom="1.6994681"
-     inkscape:cx="296.56338"
-     inkscape:cy="-5.5899843"
+     inkscape:zoom="0.84973404"
+     inkscape:cx="-12.945227"
+     inkscape:cy="-101.79656"
      inkscape:window-width="2400"
      inkscape:window-height="1261"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
+     inkscape:window-x="-32000"
+     inkscape:window-y="-32000"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg528">
     <sodipodi:guide
-       position="249.99627,167.29799"
+       position="244.18422,168.00012"
        orientation="1,0"
        id="guide528"
        inkscape:locked="false" />
@@ -846,6 +846,16 @@
        x="255.03864"
        y="56.29921"
        id="use84" />
+  </g>
+  <g
+     style="fill:#87a800;fill-opacity:1"
+     id="g357-3"
+     transform="translate(-6.6717916,-20.924468)">
+    <use
+       xlink:href="#glyph0-1"
+       x="249.16109"
+       y="46.074306"
+       id="use357-9" />
   </g>
   <g
      style="fill:#5497fd;fill-opacity:1"

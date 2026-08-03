@@ -57,7 +57,6 @@
 	%---------------------- Figurbackref change legend latex bibtexes ----------------------------
 		\usepackage[margin=10pt,font=footnotesize,labelfont=bf, ]{caption}  
 %		\usepackage[labelformat=simple]{subcaption} % labelformat=simple   O brace
-		\usepackage{caption}
 		\usepackage{floatrow}
 		\usepackage{float}
 

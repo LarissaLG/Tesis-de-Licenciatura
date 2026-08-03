@@ -2,22 +2,15 @@
 
 \section{Eritrocito sano}
 \label{section:Res_Eritrocito_Sano}
-Para identificar las propiedades ópticas de los eritrocitos en las bandas de Soret, $\beta$ y $\alpha$,%
-% --- JAUA ---
-% coma  de inversión (ya la puse)
-%
-se consideró el rango espectral de 400  a 600 nm.%
-% --- JAUA ---
-% eN lugar de convención sólo pon las definiciones. Algo como 'En este trabajo se define....' o 'Por comodidad, se define...'
- A lo largo de esta sección, se adopta la convención de que una \textit{dirección} corresponde a un ángulo de esparcimiento específico ($\theta=0^\circ$ para el esparcimiento frontal, $\theta=90^\circ$ para el lateral y $\theta=180^\circ$ para el retroesparcimiento), mientras que una \textit{región} corresponde a un intervalo angular ($0^\circ\leq\theta<60^\circ$ para el esparcimiento frontal, $60^\circ\leq\theta<120^\circ$ para el lateral y $120^\circ\leq\theta\leq180^\circ$ para el retroesparcimiento). Para modelar un eritrocito sano, se empleó un óvalo de Cassini como el de la Fig. \ref{subfig:Shape_health} con parámetros de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$, los cuales resproducen el radio equivalente de 3.75 $\mu$m y el volumen de 80.63~$\mu\text{m}^3$ reportados por Ergül et al. en la Ref.~\cite{ergulComputationalStudyScattering2010}. De acuerdo con los resultados obtenidos en la Sección~\ref{section:optical_properties}, para el plasma se consideró una función dieléctrica constante de $\varepsilon_{\text{Plasma}}=1.839$, ya que su parte imaginaria resulta despreciable y la parte real presenta variaciones únicamente en la cuarta cifra decimal dentro del rango espectral de interés. Por su parte, para el eritrocito se empleó la función dieléctrica de una CHCM de 30.6~g/dL. El eritrocito se orientó con su eje de simetría a lo largo de la dirección $z$ y se iluminó con una onda plana que se propaga en la misma dirección, polarizada en $x$.
+Para identificar las propiedades ópticas de los eritrocitos en las bandas de Soret, $\beta$ y $\alpha$, se consideró el rango espectral de 400  a 600 nm.  A lo largo de esta sección, por comodidad se define a una \textit{dirección} como un ángulo de esparcimiento específico ($\theta=0^\circ$ para el esparcimiento frontal, $\theta=90^\circ$ para el lateral y $\theta=180^\circ$ para el retroesparcimiento), mientras que una \textit{región} corresponde a un intervalo angular ($0^\circ\leq\theta<60^\circ$ para el esparcimiento frontal, $60^\circ\leq\theta<120^\circ$ para el lateral y $120^\circ\leq\theta\leq180^\circ$ para el retroesparcimiento). Para modelar un eritrocito sano, se empleó un óvalo de Cassini como el de la Fig. \ref{subfig:Shape_health} con parámetros de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$, los cuales resproducen el radio equivalente de 3.75 $\mu$m y el volumen de 80.63~$\mu\text{m}^3$ reportados por Ergül et al. en la Ref.~\cite{ergulComputationalStudyScattering2010}. De acuerdo con los resultados obtenidos en la Sección~\ref{section:optical_properties}, para el plasma se consideró una función dieléctrica constante de $\varepsilon_{\text{Plasma}}=1.839$, ya que su parte imaginaria resulta despreciable y la parte real presenta variaciones únicamente en la cuarta cifra decimal dentro del rango espectral de interés. Por su parte, para el eritrocito se empleó la función dieléctrica de una CHCM de 30.6~g/dL. El eritrocito se orientó con su eje de simetría a lo largo de la dirección $z$ y se iluminó con una onda plana que se propaga en la misma dirección, polarizada en $x$.
 
 En la Fig. \ref{subfig:Qext_health} se muestra la eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente; se resaltan en gris las bandas que rodean los mínimos asociados a la banda de Soret y a las bandas $\beta$ y $\alpha$ localizados en 431 nm, 541 nm y 573 nm, respectivamente, los cuales se consideran longitudes de onda representativas para el análisis de los patrones de esparcimiento. Se observa que la respuesta espectral del eritrocito sigue la dependencia espectral de su función dieléctrica, reflejando la influencia de las transiciones ópticas de la hemoglobina como mínimos en $Q_{\text{ext}}$.
 %
-\begin{figure}[t]
+\begin{figure}[h!]
 	\centering
-	\sidesubfloat[Second image]{\hspace{-0.3cm}{
-			\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Eritrocito_sano_corte.pdf}\label{subfig:Shape_health}}}\hspace{0.1cm}
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.45\textwidth]{../../Figuras/4-Resultados/Qext_EriSano.pdf}\label{subfig:Qext_health}}}
+	\sidesubfloat[First image]{\hspace{-0.3cm}{
+			\includegraphics[width=0.45\textwidth]{4-Resultados/Eritrocito_sano_corte.pdf}\label{subfig:Shape_health}}}\hspace{0.1cm}
+	\sidesubfloat[Second image]{\hspace{-0.5cm}{	\includegraphics[width=0.45\textwidth]{4-Resultados/Qext_EriSano.pdf}\label{subfig:Qext_health}}}
 	\vspace{-0.1cm}
 	\caption{\textbf{a)} Modelo de eritrocito sano basado en óvalos de Cassini con parámetros de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y 
 		$c=0.812\,\mu\text{m}$, que corresponden a un radio de $3.75\,\mu$m. \textbf{b)} Eficiencia de extinción $Q_{\text{ext}}$ en función de la longitud de onda $\lambda$ de la onda incidente para un eritrocito orientado con su eje de simetría en el eje $z$ iluminado con una onda en dirección del eje $z$ y polarizada en $x$. La línea continua que une los puntos es una guía visual. Se resaltan en gris las bandas que 
@@ -36,14 +29,14 @@ En la Fig. \ref{subfig:FF_polar_431_health} se muestra $\dd{C_{\text{sca}}}/\dd{
 	%
 	\begin{figure}[t]
 		\centering
-		\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{../../Figuras/4-Resultados/FFdistribution431_EriSano.pdf}\label{subfig:FF_431_health}}}\hspace{0.1cm}
+		\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=7.3cm]{4-Resultados/FFdistribution431_EriSano.pdf}\label{subfig:FF_431_health}}}\hspace{0.1cm}
 		\sidesubfloat[Second image]{\hspace{-0.5cm}{
-				\includegraphics[width=8cm]{../../Figuras/4-Resultados/polarplot431FF_EriSano.pdf}\label{subfig:FF_polar_431_health}}}\vspace{-0.1cm}
+				\includegraphics[width=8cm]{4-Resultados/polarplot431FF_EriSano.pdf}\label{subfig:FF_polar_431_health}}}\vspace{-0.1cm}
 		\
 		\vspace{0.1cm}
 		
 		\sidesubfloat[Third image]{\hspace{0.3cm}{
-				\includegraphics[width=14cm]{../../Figuras/4-Resultados/linearplot431FF_EriSano.pdf}\label{subfig:FF_cartesian_431_health}}}\vspace{-0.1cm}
+				\includegraphics[width=14cm]{4-Resultados/linearplot431FF_EriSano.pdf}\label{subfig:FF_cartesian_431_health}}}\vspace{-0.1cm}
 		\caption{\textbf{a)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ normalizada respecto a su valor máximo para una longitud de onda $\lambda=431$ nm en función del ángulo de esparcimiento $\theta$ y del ángulo $\varphi$ para un eritrocito sano. Se identifican dos planos $\varphi=0^{\circ}$ en azul claro y $\varphi=90^{\circ}$ en azul oscuro. \textbf{b)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en decibeles en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro). \textbf{c)} Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}}/\dd{\Omega}$ en función de $\theta$ para dos cortes: $\varphi=0^{\circ}$ (puntos azules claro) y $\varphi=90^{\circ}$ (puntos azules oscuro). La línea continua que une los puntos es una guía visual.}
 		\label{fig:FF_431_health}
 	\end{figure}
