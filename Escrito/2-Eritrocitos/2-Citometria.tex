@@ -8,20 +8,53 @@
 %
 % Todo este párrafo parecen ideas que no hilaste entre sí. De hecho, lo que tendría más sentrido es  hacer una primer párrado un pooco más largo donde digas para qué se usa el citómetro y  que funciona con esparcimiento. Luego mencioar que para realizar dicho análisis se emplea el arreglo mostrado en XX figura. Y finalmente decir que eso te permite determinar YY y ZZ propiedades de esparcimiento y rematar con l propuesta de las ventanas angulares.
 
-La citometría de flujo es una técnica experimental que permite analizar y diferenciar grandes poblaciones celulares, particularmente eritrocitos, a partir de señales ópticas, como la luz esparcida por las células al atravesar un láser \cite{bectondickinsonIntroductionFlowCytometry2000}. La información obtenida mediante esta técnica proviene de la distribución angular de la luz esparcida por cada célula, la cual depende de propiedades como su volumen, forma, orientación e índice de refracción \cite{bectondickinsonIntroductionFlowCytometry2000}. En los citómetros convencionales se registran dos señales de esparcimiento: el esparcimiento frontal (\textit{Forward Scattering}, FSC), medido en un intervalo angular pequeño alrededor de la dirección de propagación del haz incidente ($\theta=0^{\circ}$) y asociado principalmente con el tamaño celular, y el esparcimiento lateral (\textit{Side Scattering}, SSC), medido aproximadamente a $\theta=90^\circ$ respecto al haz incidente y relacionado con la complejidad interna o granularidad de la célula \cite{mckinnonFlowCytometryOverview2018}. 
+La citometría de flujo es una técnica experimental que permite analizar y diferenciar grandes poblaciones %
+% --- JAUA ---
+% Tienes el número de la tasa con la que fluyen las células?? Si en el trabajo mencionas que pudes pasar una por una, debe haber datos para muestras menos diluidas, cierto?
+%
+ celulares, particularmente eritrocitos, a partir de señales ópticas, como la luz esparcida por las células al atravesar un láser \cite{bectondickinsonIntroductionFlowCytometry2000}. La información obtenida mediante esta técnica proviene de la distribución angular de la luz esparcida por cada célula, la cual depende de propiedades como su volumen, forma, orientación e índice de refracción \cite{bectondickinsonIntroductionFlowCytometry2000}. En los citómetros convencionales se registran dos señales de esparcimiento: el esparcimiento frontal (\textit{Forward Scattering}, FSC), %
+% --- JAUA ---
+% Cambiaste de nuevo la estructura de las abreviaciones. En otros puntos sólo ponias 'por sus siglas en inglés'. Esta vez las pusiste explícitamente. Además Fowrard Svatterins es FS. De dóde sale la C??
+%
+ medido en un intervalo angular pequeño %
+ % --- JAUA ---
+ % mismo comentario que antes: qué tanto es pequeño. Tienes el valor de la ventana angular de 6 grados, pudes poner ese valor, o mencioanr que son de menor a 10 grados y poner una cita. % T
+ % Tenemos que ser espec+ificos. O en caso contrario, omitir la informaicón
+ %
+  alrededor de la dirección de propagación del haz incidente ($\theta=0^{\circ}$) y asociado principalmente con el tamaño celular, y el esparcimiento lateral (\textit{Side Scattering}, SSC), %
+  % --- JAUA ---
+  % mismo comentario que arriba. 
+  %
+   medido aproximadamente a $\theta=90^\circ$ respecto al haz incidente y relacionado con la complejidad interna o granularidad de la célula \cite{mckinnonFlowCytometryOverview2018}. 
 
-Para registrar estas señales se emplea un arreglo óptico como el mostrado en la Fig.~\ref{fig:flow_cyt}, en el que las células son transportadas en una solución buffer hasta el punto de intersección con el láser, en su mayoría polarizado \cite{asburyPolarizationScatterFluorescence2000}, controlando que las células atraviesen el láser de forma individual y sean analizadas una a una \cite{mckinnonFlowCytometryOverview2018}. En años recientes, se han desarrollado citómetros con enfoque acústico, que permiten mejorar la alineación y orientación de las células durante su paso por la región de análisis \cite{giengerAssessmentDeformationHuman2019}. Esta capacidad resulta especialmente relevante en el estudio de eritrocitos, ya que su respuesta de esparcimiento depende de la orientación de la célula respecto al campo incidente. 
+Para registrar estas señales se emplea un arreglo óptico como el mostrado en la Fig.~\ref{fig:flow_cyt},%
+% --- JAUA ---
+% En la Fig. XX se muestraun arreglo  experimental característico empleado en la citometría de flujo.
+%
+  en el que las células son transportadas en una solución buffer %
+  % --- JAUA ---
+  % en español sería búfer. Yo lo pondría en itálicas y dejaría como lo tienes. Aunque no creo que nadie sepa ben qué es buffer. Qué tal si solo dies que es una suspención de células y te quitas de problemas. 
+  %  Te propongo que mejor digas que con un sistema de microifiodica (poner referencia) se puede controlar la cantidad de céluloas que  fluyen, pudiwndo seleccionar flujos de celulas individuales (refernca) como se esquematiza con bla bla bla. Luego, mencionar que este flujo se ilumina con un láser polarizado; eso de en su mayoría no va en la esqumatización. unque así ocurren en el lab, lo ideal es totalmente polarizado; además de que invitas a prguntar qué tan polarizado, que sí se puede responder
+  %
+   hasta el punto de intersección con el láser, en su mayoría polarizado \cite{asburyPolarizationScatterFluorescence2000}, controlando que las células atraviesen el láser de forma individual y sean analizadas una a una \cite{mckinnonFlowCytometryOverview2018}. En años recientes, se han desarrollado citómetros con enfoque acústico, que permiten mejorar la alineación y orientación de las células durante su paso por la región de análisis \cite{giengerAssessmentDeformationHuman2019} Esta capacidad resulta especialmente relevante en el estudio de eritrocitos, ya que su respuesta de esparcimiento depende de la orientación de la célula respecto al campo incidente. 
 
-La luz esparcida por las células se colecta mediante sistemas de lentes y se dirige hacia detectores, como fotodiodos o tubos fotomultiplicadores \cite{mckinnonFlowCytometryOverview2018}. En la detección de FSC, el haz incidente directo debe bloquearse para evitar que alcance el detector y lo sature \cite{arkesteijnImprovedFlowCytometric2020}. Para ello, se emplea una barra de bloqueo de luz (\textit{obscuration bar} o \textit{beam stop}) colocada en el sistema óptico de detección frontal, que bloquea la contribución directa del láser, mientras que la luz esparcida por la célula a ángulos pequeños puede pasar alrededor de la barra y ser recolectada por la lente hacia el detector de FSC \cite{arkesteijnImprovedFlowCytometric2020}. Para bloquear la luz que llega con otros ángulos (esparcimiento de partículas en la solución buffer) se coloca una pequeña abertura  (\textit{pinhole}) \cite{arkesteijnImprovedFlowCytometric2020}. Para la señal SSC, la contribución directa del láser no incide sobre el detector, por lo que únicamente se coloca un \textit{pinhole} para que la luz esparcida pueda colectarse \cite{arkesteijnImprovedFlowCytometric2020}.
+La luz esparcida por las células se colecta mediante sistemas de lentes y se dirige hacia detectores, como fotodiodos o tubos fotomultiplicadores \cite{mckinnonFlowCytometryOverview2018}. En la detección de FSC, el haz incidente directo debe bloquearse para evitar que alcance el detector y lo sature \cite{arkesteijnImprovedFlowCytometric2020}. Para ello, se emplea una barra de bloqueo de luz (\textit{obscuration bar} o \textit{beam stop}) colocada en el sistema óptico de detección frontal, que bloquea la contribución directa del láser, mientras que la luz esparcida por la célula a ángulos pequeños puede pasar alrededor de la barra y ser recolectada por la lente hacia el detector de FSC \cite{arkesteijnImprovedFlowCytometric2020}. Para bloquear la luz que llega con otros ángulos (esparcimiento de partículas en la solución buffer) se coloca una pequeña abertura  (\textit{pinhole}) \cite{arkesteijnImprovedFlowCytometric2020}. Para la señal SSC, la contribución directa del láser no incide sobre el detector, por lo que únicamente se coloca un \textit{pinhole} para que la luz esparcida pueda colectarse \cite{arkesteijnImprovedFlowCytometric2020}. %
+% --- JAUA ---
+% Si está en el diagrama lo tines que describir: Habla sobre que la luz se colecta con lentes que luego van a detectores y en particular de la barra de bloqueo. Pregunta: para qué son los 'pinholes'? (yo los traduciría como diafragmas)
+%
 
-El arreglo experimental de los citómetros convencionales implica que registren únicamente ciertas regiones de la distribución angular del esparcimiento. Por ello, resulta de interés estudiar intervalos distintos de los asociados a FSC y SSC, con el fin de identificar ventanas angulares en las que las diferencias entre eritrocitos sanos y enfermos sean mayores. Con este objetivo, se propone analizar numéricamente la respuesta óptica de los eritrocitos en distintas ventanas angulares y evaluar la influencia de parámetros como la geometría, el volumen y el índice de refracción. Este análisis requiere la implementación de modelos que contemplen con fidelidad la morfología y la composición interna de los eritrocitos sanos y enfermos.
+El arreglo experimental de los citómetros convencionales implica que registren únicamente ciertas regiones de la distribución angular del esparcimiento. Por ello, resulta de interés estudiar intervalos distintos de los asociados a FSC y SSC, con el fin de identificar ventanas angulares en las que las diferencias entre eritrocitos sanos y enfermos sean mayores. Con este objetivo, se %propone analizar numéricamente la respuesta óptica de los eritrocitos en distintas ventanas angulares y evaluar la influencia de parámetros como la geometría, el volumen y el índice de refracción. Este análisis 
+requiere la implementación de modelos que contemplen con fidelidad la morfología y la composición interna de los eritrocitos sanos y enfermos.
 
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[width=9cm]{2-Eritrocitos/Flow_cytometry.pdf}
 	
-	\caption{Esquema de un citómetro de flujo convencional. Las células a analizar viajan a través de una solución buffer hasta intersectar con el láser, usualmente polarizado. La luz es colectada por lentes para ser detectada por fotodiodos o tubos multiplicadores. En FSC, se coloca una barra de bloqueo de luz para bloquear el haz incidente.}
+	\caption{Esquema de un citómetro de flujo convencional. Las células a analizar viajan a través de una solución buffer hasta intersectar con el láser, usualmente polarizado. La luz es colectada por lentes para ser detectada por fotodiodos o tubos multiplicadores. En FSC, se coloca una barra de bloqueo de luz para bloquear el haz incidente.} %
+	% --- JAUA ---
+	% mismos comentarios, aunque aquí desarrolalste algunas ideas mejor. 
+	%
 	\label{fig:flow_cyt}
 \end{figure}
 %
