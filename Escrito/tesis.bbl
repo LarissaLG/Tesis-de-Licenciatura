@@ -116,24 +116,13 @@
          giveni={L\bibinitperiod},
       }}%
     }
-    \keyw{Abnormal, Animals, Cardiovascular, Computer Simulation, Erythrocytes,
-  Humans, Light, Models, Nephelometry and Turbidimetry, Radiation,
-  Refractometry, Scattering}
+    \keyw{Abnormal, Animals, Cardiovascular, Computer Simulation, Erythrocytes, Humans, Light, Models, Nephelometry and Turbidimetry, Radiation, Refractometry, Scattering}
     \strng{namehash}{EOAEAGL1}
     \strng{fullhash}{EOAEAGL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    We present a comparative study of scattering from healthy red blood cells
-  ({RBCs}) and diseased {RBCs} with deformed shapes. Scattering problems
-  involving three-dimensional {RBCs} are formulated accurately with the
-  electric and magnetic current combined-field integral equation and solved
-  efficiently by the multilevel fast multipole algorithm. We compare scattering
-  cross section values obtained for different {RBC} shapes and different
-  orientations. In this way, we determine strict guidelines to distinguish
-  deformed {RBCs} from healthy {RBCs} and to diagnose various diseases using
-  scattering cross section values. The results may be useful for designing new
-  and improved flow cytometry procedures.%
+    We present a comparative study of scattering from healthy red blood cells ({RBCs}) and diseased {RBCs} with deformed shapes. Scattering problems involving three-dimensional {RBCs} are formulated accurately with the electric and magnetic current combined-field integral equation and solved efficiently by the multilevel fast multipole algorithm. We compare scattering cross section values obtained for different {RBC} shapes and different orientations. In this way, we determine strict guidelines to distinguish deformed {RBCs} from healthy {RBCs} and to diagnose various diseases using scattering cross section values. The results may be useful for designing new and improved flow cytometry procedures.%
     }
     \verb{doi}
     \verb 10.1117/1.3467493
@@ -141,8 +130,7 @@
     \field{issn}{1560-2281}
     \field{number}{4}
     \field{pages}{045004}
-    \field{title}{Computational study of scattering from healthy and diseased
-  red blood cells}
+    \field{title}{Computational study of scattering from healthy and diseased red blood cells}
     \field{volume}{15}
     \field{journaltitle}{J. Biomed. Opt.}
     \field{year}{2010}
@@ -191,8 +179,7 @@
          family={Aalders},
          familyi={A\bibinitperiod},
          given={Maurice C.\bibnamedelima G.},
-         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
-  G\bibinitperiod},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
       {{hash=vLTG}{%
          prefix={van},
@@ -209,44 +196,17 @@
          giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \keyw{Erythrocytes, Humans, Radiation, Scattering, Anisotropy, Blood
-  Physiological Phenomena, Hematocrit, Optics and Photonics}
+    \keyw{Erythrocytes, Humans, Radiation, Scattering, Anisotropy, Blood Physiological Phenomena, Hematocrit, Optics and Photonics}
     \strng{namehash}{BNEGJAMCGvLTGFDJ1}
     \strng{fullhash}{BNEGJAMCGvLTGFDJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Optical property measurements on blood are influenced by a large variety of
-  factors of both physical and methodological origin. The aim of this review is
-  to list these factors of influence and to provide the reader with optical
-  property spectra (250–2,500 nm) for whole blood that can be used in the
-  practice of biomedical optics (tabulated in the appendix). Hereto, we perform
-  a critical examination and selection of the available optical property
-  spectra of blood in literature, from which we compile average spectra for the
-  absorption coefficient (μ(a)), scattering coefficient (μ(s)) and scattering
-  anisotropy (g). From this, we calculate the reduced scattering coefficient
-  (μ(s)′) and the effective attenuation coefficient (μ(eff)). In the
-  compilation of μ(a) and μ(s), we incorporate the influences of absorption
-  flattening and dependent scattering (i.e. spatial correlations between
-  positions of red blood cells), respectively. For the influence of dependent
-  scattering on μ(s), we present a novel, theoretically derived formula that
-  can be used for practical rescaling of μ(s) to other haematocrits. Since the
-  measurement of the scattering properties of blood has been proven to be
-  challenging, we apply an alternative, theoretical approach to calculate
-  spectra for μ(s) and g. Hereto, we combine Kramers–Kronig analysis with
-  analytical scattering theory, extended with Percus–Yevick structure factors
-  that take into account the effect of dependent scattering in whole blood. We
-  argue that our calculated spectra may provide a better estimation for μ(s)
-  and g (and hence μ(s)′ and μ(eff)) than the compiled spectra from
-  literature for wavelengths between 300 and 600 nm.%
-    }
     \verb{doi}
     \verb 10.1007/s10103-013-1446-7
     \endverb
     \field{number}{2}
     \field{pages}{453\bibrangedash 479}
-    \field{title}{A literature review and novel theoretical approach on the
-  optical properties of whole blood}
+    \field{title}{A literature review and novel theoretical approach on the optical properties of whole blood}
     \field{volume}{29}
     \field{journaltitle}{Lasers Med. Sci.}
     \field{year}{2014}
@@ -284,8 +244,7 @@
     \field{number}{4}
     \field{pages}{473\bibrangedash 479}
     \field{shorttitle}{Band Assignment in Hemoglobin Porphyrin Ring Spectrum}
-    \field{title}{Band Assignment in Hemoglobin Porphyrin Ring Spectrum: Using
-  Four-Orbital Model of Gouterman}
+    \field{title}{Band Assignment in Hemoglobin Porphyrin Ring Spectrum: Using Four-Orbital Model of Gouterman}
     \verb{url}
     \verb http://www.eurekaselect.com/openurl/content.php?genre=article&issn=09
     \verb 29-8665&volume=17&issue=4&spage=473
@@ -371,8 +330,7 @@
     \endverb
     \field{number}{5}
     \field{pages}{1281\bibrangedash 1292}
-    \field{title}{Single-cell analysis and isolation for microbiology and
-  biotechnology: methods and applications}
+    \field{title}{Single-cell analysis and isolation for microbiology and biotechnology: methods and applications}
     \field{volume}{86}
     \field{journaltitle}{Appl. Microbiol. Biotechnol.}
     \field{year}{2010}
@@ -415,8 +373,7 @@
     \field{number}{1}
     \field{pages}{3\bibrangedash 10}
     \field{shorttitle}{Different shape models for erythrocyte}
-    \field{title}{Different shape models for erythrocyte: Light scattering
-  analysis based on the discrete sources method}
+    \field{title}{Different shape models for erythrocyte: Light scattering analysis based on the discrete sources method}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/S0022407306000719?c
     \verb asa_token=RHOr51i-pzYAAAAA:pkoh2zBi6TSQcsWO9RvoHu9bwNhsq8xPd3QhjgoIcx
@@ -457,8 +414,7 @@
     \endverb
     \field{number}{2}
     \field{pages}{024022\bibrangedash 024022}
-    \field{title}{Simulations of light scattering from a biconcave red blood
-  cell using the finite-difference time-domain method}
+    \field{title}{Simulations of light scattering from a biconcave red blood cell using the finite-difference time-domain method}
     \verb{url}
     \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-opt
     \verb ics/volume-10/issue-2/024022/Simulations-of-light-scattering-from-a-b
@@ -561,9 +517,7 @@
     \list{publisher}{1}{%
       {Springer}%
     }
-    \keyw{entropy, Linear optics, Nonlinear optics, Optical materials research
-  and development, Optical spectroscopy, optics, Physical chemistry,
-  spectroscopy}
+    \keyw{entropy, Linear optics, Nonlinear optics, Optical materials research and development, Optical spectroscopy, optics, Physical chemistry, spectroscopy}
     \strng{namehash}{LVPKESJVE1}
     \strng{fullhash}{LVPKESJVE1}
     \field{labelnamesource}{author}
@@ -755,8 +709,7 @@
     \endverb
     \field{number}{7}
     \field{pages}{1803\bibrangedash 14}
-    \field{title}{Effect of the size and shape of a red blood cell on elastic
-  light scattering properties at the single-cell level}
+    \field{title}{Effect of the size and shape of a red blood cell on elastic light scattering properties at the single-cell level}
     \field{volume}{2}
     \field{journaltitle}{Biomed. Opt. Express}
     \field{year}{2011}
@@ -806,23 +759,18 @@
     \list{publisher}{1}{%
       {Optica Publishing Group}%
     }
-    \keyw{Digital holography, Extinction, Forward scattering, Holographic
-  microscopy, Holographic techniques, Mie scattering}
+    \keyw{Digital holography, Extinction, Forward scattering, Holographic microscopy, Holographic techniques, Mie scattering}
     \strng{namehash}{SNAPBM1}
     \strng{fullhash}{SNAPBM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A method to measure the extinction cross section of a single
-  wavelength-sized particle is described. This method is based on a measurement
-  of interference amplitude in the forward scattering direction using digital
-  holographic microscopy technique.%
+    A method to measure the extinction cross section of a single wavelength-sized particle is described. This method is based on a measurement of interference amplitude in the forward scattering direction using digital holographic microscopy technique.%
     }
     \verb{doi}
     \verb 10.1364/DH.2014.DTh4B.4
     \endverb
-    \field{title}{Measurement of the extinction cross section of a single
-  wavelength-sized particle}
+    \field{title}{Measurement of the extinction cross section of a single wavelength-sized particle}
     \verb{url}
     \verb https://opg.optica.org/abstract.cfm?uri=DH-2014-DTh4B.4
     \endverb
@@ -866,24 +814,13 @@
          giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \keyw{Henrici algorithm, Hilbert Transform, Hilbert–Noda,
-  Kramers–Kronig}
+    \keyw{Henrici algorithm, Hilbert Transform, Hilbert–Noda, Kramers–Kronig}
     \strng{namehash}{RIG1}
     \strng{fullhash}{RIG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    This article is pedagogical. It briefly outlines the historical background
-  of the Hilbert transform and then elaborates on some of its attributes,
-  including the convolution and spectral characteristics associated with an
-  analytic function having a compact support. The article covers three
-  algorithms: (1) the Fourier spectral method, (2) the method of algebraic
-  convolution, and (3) the quadrature method to estimate the Hilbert transform
-  of a discrete data set. An important transform that is closely related to the
-  Hilbert transform, namely the Kramers–Kronig transform ({KKT}), is also
-  discussed. Examples of some Hilbert transform applications are mentioned, and
-  the results of numerical experiments on three specific algorithms are
-  presented.%
+    This article is pedagogical. It briefly outlines the historical background of the Hilbert transform and then elaborates on some of its attributes, including the convolution and spectral characteristics associated with an analytic function having a compact support. The article covers three algorithms: (1) the Fourier spectral method, (2) the method of algebraic convolution, and (3) the quadrature method to estimate the Hilbert transform of a discrete data set. An important transform that is closely related to the Hilbert transform, namely the Kramers–Kronig transform ({KKT}), is also discussed. Examples of some Hilbert transform applications are mentioned, and the results of numerical experiments on three specific algorithms are presented.%
     }
     \verb{doi}
     \verb 10.1007/s12045-024-0671-7
@@ -935,8 +872,7 @@
     \verb 10.1007/s13198-022-01804-0
     \endverb
     \field{pages}{1\bibrangedash 7}
-    \field{title}{An intensity-modulated optical fiber sensor with agarose
-  coating for measurement of refractive index}
+    \field{title}{An intensity-modulated optical fiber sensor with agarose coating for measurement of refractive index}
     \verb{url}
     \verb https://idp.springer.com/authorize/casa?redirect_uri=https://link.spr
     \verb inger.com/article/10.1007/s13198-022-01804-0&casa_token=Imb8sLOXPVoAA
@@ -1031,8 +967,7 @@
     \endverb
     \field{number}{19}
     \field{pages}{6046\bibrangedash 6052}
-    \field{title}{Real part of refractive index measurement approach for
-  absorbing liquid}
+    \field{title}{Real part of refractive index measurement approach for absorbing liquid}
     \field{volume}{54}
     \field{journaltitle}{Appl. Opt.}
     \field{year}{2015}
@@ -1113,8 +1048,7 @@
          giveni={F\bibinitperiod},
       }}%
     }
-    \keyw{Extinction coefficient, Kramers–Kronig relations, Multiply
-  subtractive, Numerical evaluation, Refractive index}
+    \keyw{Extinction coefficient, Kramers–Kronig relations, Multiply subtractive, Numerical evaluation, Refractive index}
     \strng{namehash}{NSSEMF1}
     \strng{fullhash}{NSSEMF1}
     \field{labelnamesource}{author}
@@ -1124,9 +1058,7 @@
     \endverb
     \field{issn}{1386-1425}
     \field{pages}{122157}
-    \field{title}{A unified framework for the numerical evaluation of the
-  Q-subtractive Kramers-Kronig relations and application to the reconstruction
-  of optical constants of quartz}
+    \field{title}{A unified framework for the numerical evaluation of the Q-subtractive Kramers-Kronig relations and application to the reconstruction of optical constants of quartz}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/S1386142522013051
     \endverb
@@ -1167,8 +1099,7 @@
     \field{number}{16}
     \field{pages}{3062\bibrangedash 3065}
     \field{shorttitle}{Finite Frequency Range Kramers-Kronig Relations}
-    \field{title}{Finite Frequency Range Kramers-Kronig Relations: Bounds on
-  the Dispersion}
+    \field{title}{Finite Frequency Range Kramers-Kronig Relations: Bounds on the Dispersion}
     \verb{url}
     \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.3062
     \endverb
@@ -1239,9 +1170,7 @@
     \endverb
     \field{number}{12}
     \field{pages}{2838\bibrangedash 2842}
-    \field{title}{Model function to calculate the refractive index of native
-  hemoglobin in the wavelength range of 250–1100 nm dependent on
-  concentration}
+    \field{title}{Model function to calculate the refractive index of native hemoglobin in the wavelength range of 250–1100 nm dependent on concentration}
     \verb{url}
     \verb https://opg.optica.org/abstract.cfm?uri=ao-45-12-2838
     \endverb
@@ -1301,30 +1230,13 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{Cardiovascular, Computer Simulation, Humans, Models, Refractometry,
-  Blood Physiological Phenomena, Blood Platelets, Infrared, Monte Carlo Method,
-  Plasma, Spectrophotometry, Statistical}
+    \keyw{Cardiovascular, Computer Simulation, Humans, Models, Refractometry, Blood Physiological Phenomena, Blood Platelets, Infrared, Monte Carlo Method, Plasma, Spectrophotometry, Statistical}
     \strng{namehash}{MMMGHJFM1}
     \strng{fullhash}{MMMGHJFM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The optical parameters absorption coefficient, scattering coefficient, and
-  the anisotropy factor of platelets ({PLTs}) suspended in plasma and cell-free
-  blood plasma are determined by measuring the diffuse reflectance, total and
-  diffuse transmission, and subsequently by inverse Monte Carlo simulation.
-  Furthermore, the optical behavior of {PLTs} and red blood cells suspended in
-  plasma are compared with those suspended in saline solution. Cell-free plasma
-  shows a higher scattering coefficient and anisotropy factor than expected for
-  Rayleigh scattering by plasma proteins. The scattering coefficient of {PLTs}
-  increases linearly with the {PLT} concentration. The existence of
-  physiological concentrations of leukocytes has no measurable influence on the
-  absorption and scattering properties of whole blood. In summary, red blood
-  cells predominate over the other blood components by two to three orders of
-  magnitude with regard to absorption and effective scattering. However,
-  substituting saline solution for plasma leads to a significant increase in
-  the effective scattering coefficient and therefore should be taken into
-  consideration.%
+    The optical parameters absorption coefficient, scattering coefficient, and the anisotropy factor of platelets ({PLTs}) suspended in plasma and cell-free blood plasma are determined by measuring the diffuse reflectance, total and diffuse transmission, and subsequently by inverse Monte Carlo simulation. Furthermore, the optical behavior of {PLTs} and red blood cells suspended in plasma are compared with those suspended in saline solution. Cell-free plasma shows a higher scattering coefficient and anisotropy factor than expected for Rayleigh scattering by plasma proteins. The scattering coefficient of {PLTs} increases linearly with the {PLT} concentration. The existence of physiological concentrations of leukocytes has no measurable influence on the absorption and scattering properties of whole blood. In summary, red blood cells predominate over the other blood components by two to three orders of magnitude with regard to absorption and effective scattering. However, substituting saline solution for plasma leads to a significant increase in the effective scattering coefficient and therefore should be taken into consideration.%
     }
     \verb{doi}
     \verb 10.1117/1.2435177
@@ -1332,9 +1244,7 @@
     \field{issn}{1083-3668}
     \field{number}{1}
     \field{pages}{014024}
-    \field{title}{Optical properties of platelets and blood plasma and their
-  influence on the optical behavior of whole blood in the visible to near
-  infrared wavelength range}
+    \field{title}{Optical properties of platelets and blood plasma and their influence on the optical behavior of whole blood in the visible to near infrared wavelength range}
     \field{volume}{12}
     \field{journaltitle}{J. Biomed. Opt.}
     \field{year}{2007}
@@ -1356,8 +1266,7 @@
     \strng{fullhash}{CM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Reactivation of the Cell Cycle in Terminally Differentiated
-  Cells}
+    \field{title}{Reactivation of the Cell Cycle in Terminally Differentiated Cells}
     \verb{url}
     \verb https://library.stipjakarta.ac.id/index.php?p=fstream-pdf&fid=227&bid
     \verb =5800#page=54
@@ -1409,8 +1318,7 @@
     \endverb
     \field{number}{1}
     \field{pages}{90\bibrangedash 99}
-    \field{title}{Scanning electron and atomic force microscopic analysis of
-  erythrocytes in a cohort of atopic asthma patients—a pilot study}
+    \field{title}{Scanning electron and atomic force microscopic analysis of erythrocytes in a cohort of atopic asthma patients—a pilot study}
     \verb{url}
     \verb https://www.mdpi.com/2673-6357/4/1/9
     \endverb
@@ -1539,8 +1447,7 @@
     \field{number}{1}
     \field{pages}{69\bibrangedash 80}
     \field{shorttitle}{Esferocitosis hereditaria}
-    \field{title}{Esferocitosis hereditaria: Revisión. Parte I. Historia,
-  demografía, etiopatogenia y diagnóstico}
+    \field{title}{Esferocitosis hereditaria: Revisión. Parte I. Historia, demografía, etiopatogenia y diagnóstico}
     \verb{url}
     \verb https://pesquisa.bvsalud.org/portal/resource/frgovbrrevistarialpdf/bi
     \verb blio-1159661
@@ -1582,8 +1489,7 @@
     \endverb
     \field{number}{2}
     \field{pages}{88\bibrangedash 101}
-    \field{title}{Polarization of scatter and fluorescence signals in flow
-  cytometry}
+    \field{title}{Polarization of scatter and fluorescence signals in flow cytometry}
     \field{volume}{40}
     \field{journaltitle}{Cytometry}
     \field{year}{2000}
@@ -1630,9 +1536,7 @@
     \verb 10.1364/BOE.10.004531
     \endverb
     \field{number}{9}
-    \field{title}{Assessment of deformation of human red blood cells in flow
-  cytometry: measurement and simulation of bimodal forward scatter
-  distributions}
+    \field{title}{Assessment of deformation of human red blood cells in flow cytometry: measurement and simulation of bimodal forward scatter distributions}
     \field{volume}{10}
     \field{journaltitle}{Biomed. Opt. Express}
     \field{year}{2019}
@@ -1644,8 +1548,7 @@
          family={Arkesteijn},
          familyi={A\bibinitperiod},
          given={G.\bibnamedelima J.\bibnamedelima A.},
-         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
       {{hash=LAE}{%
          family={Lozano-Andrés},
@@ -1657,15 +1560,13 @@
          family={Libregts},
          familyi={L\bibinitperiod},
          given={S.\bibnamedelima F. W.\bibnamedelima M.},
-         giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
-  W\bibinitperiod\bibinitdelim M\bibinitperiod},
+         giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
       {{hash=WMHM}{%
          family={Wauben},
          familyi={W\bibinitperiod},
          given={M.\bibnamedelima H.\bibnamedelima M.},
-         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
     \strng{namehash}{AGJALAELSFWMWMHM1}
@@ -1677,8 +1578,7 @@
     \endverb
     \field{number}{6}
     \field{pages}{610\bibrangedash 619}
-    \field{title}{Improved Flow Cytometric Light Scatter Detectionof
-  Submicron-Sized Particles by Reduction of {OpticalBackground} Signals}
+    \field{title}{Improved Flow Cytometric Light Scatter Detectionof Submicron-Sized Particles by Reduction of {OpticalBackground} Signals}
     \field{volume}{97}
     \field{journaltitle}{Cytometry A}
     \field{year}{2020}
@@ -1796,22 +1696,13 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \keyw{Discrete dipole approximation, Discrete sources method,
-  Electromagnetic scattering, Erythrocyte, Finite integration technique,
-  Multiple multipole program, T-matrix}
+    \keyw{Discrete dipole approximation, Discrete sources method, Electromagnetic scattering, Erythrocyte, Finite integration technique, Multiple multipole program, T-matrix}
     \strng{namehash}{WTHJEESR1}
     \strng{fullhash}{WTHJEESR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    In this paper we investigate the capabilities of different light scattering
-  programs for light scattering simulation of the single human red blood cell,
-  also known as erythrocyte. Knowledge of the scattering properties can help to
-  solve the inverse problem of classifying erythrocytes according to size and
-  shape using measured scattering diagrams. We compare the different programs
-  by presenting the corresponding scattering diagrams. Then we give an overview
-  of computation times and point out the different characteristics of the
-  methods.%
+    In this paper we investigate the capabilities of different light scattering programs for light scattering simulation of the single human red blood cell, also known as erythrocyte. Knowledge of the scattering properties can help to solve the inverse problem of classifying erythrocytes according to size and shape using measured scattering diagrams. We compare the different programs by presenting the corresponding scattering diagrams. Then we give an overview of computation times and point out the different characteristics of the methods.%
     }
     \verb{doi}
     \verb 10.1016/j.jqsrt.2005.11.057
@@ -1819,8 +1710,7 @@
     \field{number}{1}
     \field{pages}{444\bibrangedash 456}
     \field{shorttitle}{Light scattering by single erythrocyte}
-    \field{title}{Light scattering by single erythrocyte: Comparison of
-  different methods}
+    \field{title}{Light scattering by single erythrocyte: Comparison of different methods}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/S0022407305004073
     \endverb
@@ -1845,21 +1735,13 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{Erythrocytes, Humans, Nephelometry and Turbidimetry, Refractometry,
-  Blood Chemical Analysis, Complex Mixtures, Hemoglobins, Photometry,
-  Reproducibility of Results, Sensitivity and Specificity, Solutions}
+    \keyw{Erythrocytes, Humans, Nephelometry and Turbidimetry, Refractometry, Blood Chemical Analysis, Complex Mixtures, Hemoglobins, Photometry, Reproducibility of Results, Sensitivity and Specificity, Solutions}
     \strng{namehash}{FMMM1}
     \strng{fullhash}{FMMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The complex refractive index of highly concentrated hemoglobin solutions as
-  they appear in red blood cells are determined in the wavelength range of 250
-  to 1100 nm using transmittance and Fresnel reflectance measurements. The
-  determined real parts of the refractive indices are on average 0.02 units
-  higher than the values found in the literature. The wavelength dependence of
-  the measured data in the {UV} region differs from the calculated data using
-  the Kramers-Kronig relation.%
+    The complex refractive index of highly concentrated hemoglobin solutions as they appear in red blood cells are determined in the wavelength range of 250 to 1100 nm using transmittance and Fresnel reflectance measurements. The determined real parts of the refractive indices are on average 0.02 units higher than the values found in the literature. The wavelength dependence of the measured data in the {UV} region differs from the calculated data using the Kramers-Kronig relation.%
     }
     \verb{doi}
     \verb 10.1117/1.2138027
@@ -1867,9 +1749,7 @@
     \field{issn}{1083-3668}
     \field{number}{6}
     \field{pages}{064019}
-    \field{title}{Determination of the complex refractive index of highly
-  concentrated hemoglobin solutions using transmittance and reflectance
-  measurements}
+    \field{title}{Determination of the complex refractive index of highly concentrated hemoglobin solutions using transmittance and reflectance measurements}
     \field{volume}{10}
     \field{journaltitle}{J. Biomed. Opt.}
     \field{year}{2005}
@@ -1947,8 +1827,7 @@
     \endverb
     \field{number}{3}
     \field{pages}{1\bibrangedash 5}
-    \field{title}{Measurement of the refractive index of whole blood and its
-  components for a continuous spectral region}
+    \field{title}{Measurement of the refractive index of whole blood and its components for a continuous spectral region}
     \verb{url}
     \verb https://www.spiedigitallibrary.org/journals/Journal-of-Biomedical-Opt
     \verb ics/volume-24/issue-3/035003/Measurement-of-the-refractive-index-of-w
@@ -1977,23 +1856,11 @@
     \list{publisher}{1}{%
       {Optica Publishing Group}%
     }
-    \keyw{Refractive index, Absorption coefficient, Extinction coefficients,
-  Optical computing, Optical constants, Optical properties}
+    \keyw{Refractive index, Absorption coefficient, Extinction coefficients, Optical computing, Optical constants, Optical properties}
     \strng{namehash}{HGMQMR1}
     \strng{fullhash}{HGMQMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Extinction coefficients k(λ) for water at 25°C were determined through a
-  broad spectral region by manually smoothing a point by point graph of k(λ)
-  vs wavelength λ that was plotted for data obtained from a review of the
-  scientific literature on the optical constants of water. Absorption bands
-  representing k(λ) were postulated where data were not available in the
-  vacuum uv and soft x-ray regions. A subtractive Kramers-Kronig analysis of
-  the combined postulated and smoothed portions of the k(λ) spectrum provided
-  the index of refraction n(λ) for the spectral region 200 nm ≤ λ ≤ 200
-  μm.%
-    }
     \verb{doi}
     \verb 10.1364/AO.12.000555
     \endverb
@@ -2001,17 +1868,11 @@
     \field{number}{3}
     \field{pages}{555\bibrangedash 563}
     \field{shortjournal}{Appl. Opt., {AO}}
-    \field{title}{Optical Constants of Water in the 200-nm to 200-μm
-  Wavelength Region}
+    \field{title}{Optical Constants of Water in the 200-nm to 200-$\mu$ Wavelength Region}
     \verb{url}
     \verb https://opg.optica.org/ao/abstract.cfm?uri=ao-12-3-555
     \endverb
     \field{volume}{12}
-    \verb{file}
-    \verb Full Text PDF:C\:\\Users\\danal\\Zotero\\storage\\J6MJ5KZ4\\Hale y Qu
-    \verb erry - 1973 - Optical Constants of Water in the 200-nm to 200-μm Wav
-    \verb elength Region.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Appl. Opt.}
     \field{day}{01}
     \field{month}{03}
@@ -2073,8 +1934,7 @@
     \endverb
     \field{number}{13}
     \field{pages}{2660\bibrangedash 2673}
-    \field{title}{Multiply subtractive Kramers–Kronig analysis of optical
-  data}
+    \field{title}{Multiply subtractive Kramers–Kronig analysis of optical data}
     \verb{url}
     \verb https://opg.optica.org/abstract.cfm?uri=ao-37-13-2660
     \endverb
@@ -2107,8 +1967,7 @@
     \endverb
     \field{number}{1}
     \field{pages}{79\bibrangedash 80}
-    \field{title}{Discrete Electromagnetism With the Finite Integration
-  Technique}
+    \field{title}{Discrete Electromagnetism With the Finite Integration Technique}
     \verb{url}
     \verb http://www.mweda.com/html/img/smqh/rf/rf-856axbgqiblbrl.pdf
     \endverb
@@ -2153,8 +2012,7 @@
     \endverb
     \field{number}{3}
     \field{pages}{302\bibrangedash 307}
-    \field{title}{Numerical solution of initial boundary value problems
-  involving Maxwell's equations in isotropic media}
+    \field{title}{Numerical solution of initial boundary value problems involving Maxwell's equations in isotropic media}
     \field{volume}{14}
     \field{journaltitle}{{IEEE} Transactions on Antennas and Propagation}
     \field{year}{1966}
@@ -2196,8 +2054,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{17}
-    \field{title}{Understanding Time Domain Meshing in {CST} {MICROWAVE}
-  {STUDIO}}
+    \field{title}{Understanding Time Domain Meshing in {CST} {MICROWAVE} {STUDIO}}
     \field{year}{2010}
   \endentry
 
@@ -2257,8 +2114,7 @@
     \endverb
     \field{number}{22}
     \field{pages}{26760\bibrangedash 26780}
-    \field{title}{Benchmarking of software tools for the characterization of
-  nanoparticles}
+    \field{title}{Benchmarking of software tools for the characterization of nanoparticles}
     \field{volume}{25}
     \field{journaltitle}{Opt. Express}
     \field{year}{2017}
@@ -2300,8 +2156,7 @@
     \endverb
     \field{number}{3}
     \field{pages}{1095\bibrangedash 1106}
-    \field{title}{Finite and Boundary Element Methods for Simulating Optical
-  Properties of Plasmonic Nanostructures}
+    \field{title}{Finite and Boundary Element Methods for Simulating Optical Properties of Plasmonic Nanostructures}
     \field{volume}{17}
     \field{journaltitle}{Plasmonics}
   \endentry
@@ -2364,8 +2219,7 @@
     \strng{fullhash}{RSM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Introduction to Probability and Statistics for Engineers and
-  Scientists}
+    \field{title}{Introduction to Probability and Statistics for Engineers and Scientists}
     \list{location}{1}{%
       {Academic press}%
     }
