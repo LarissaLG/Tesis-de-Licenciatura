@@ -215,31 +215,6 @@
     \strng{fullhash}{BNEGJAMCGvLTGFDJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Optical property measurements on blood are influenced by a large variety of
-  factors of both physical and methodological origin. The aim of this review is
-  to list these factors of influence and to provide the reader with optical
-  property spectra (250–2,500 nm) for whole blood that can be used in the
-  practice of biomedical optics (tabulated in the appendix). Hereto, we perform
-  a critical examination and selection of the available optical property
-  spectra of blood in literature, from which we compile average spectra for the
-  absorption coefficient (μ(a)), scattering coefficient (μ(s)) and scattering
-  anisotropy (g). From this, we calculate the reduced scattering coefficient
-  (μ(s)′) and the effective attenuation coefficient (μ(eff)). In the
-  compilation of μ(a) and μ(s), we incorporate the influences of absorption
-  flattening and dependent scattering (i.e. spatial correlations between
-  positions of red blood cells), respectively. For the influence of dependent
-  scattering on μ(s), we present a novel, theoretically derived formula that
-  can be used for practical rescaling of μ(s) to other haematocrits. Since the
-  measurement of the scattering properties of blood has been proven to be
-  challenging, we apply an alternative, theoretical approach to calculate
-  spectra for μ(s) and g. Hereto, we combine Kramers–Kronig analysis with
-  analytical scattering theory, extended with Percus–Yevick structure factors
-  that take into account the effect of dependent scattering in whole blood. We
-  argue that our calculated spectra may provide a better estimation for μ(s)
-  and g (and hence μ(s)′ and μ(eff)) than the compiled spectra from
-  literature for wavelengths between 300 and 600 nm.%
-    }
     \verb{doi}
     \verb 10.1007/s10103-013-1446-7
     \endverb
@@ -1983,17 +1958,6 @@
     \strng{fullhash}{HGMQMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Extinction coefficients k(λ) for water at 25°C were determined through a
-  broad spectral region by manually smoothing a point by point graph of k(λ)
-  vs wavelength λ that was plotted for data obtained from a review of the
-  scientific literature on the optical constants of water. Absorption bands
-  representing k(λ) were postulated where data were not available in the
-  vacuum uv and soft x-ray regions. A subtractive Kramers-Kronig analysis of
-  the combined postulated and smoothed portions of the k(λ) spectrum provided
-  the index of refraction n(λ) for the spectral region 200 nm ≤ λ ≤ 200
-  μm.%
-    }
     \verb{doi}
     \verb 10.1364/AO.12.000555
     \endverb
@@ -2001,17 +1965,12 @@
     \field{number}{3}
     \field{pages}{555\bibrangedash 563}
     \field{shortjournal}{Appl. Opt., {AO}}
-    \field{title}{Optical Constants of Water in the 200-nm to 200-μm
+    \field{title}{Optical Constants of Water in the 200-nm to 200-$\mu$
   Wavelength Region}
     \verb{url}
     \verb https://opg.optica.org/ao/abstract.cfm?uri=ao-12-3-555
     \endverb
     \field{volume}{12}
-    \verb{file}
-    \verb Full Text PDF:C\:\\Users\\danal\\Zotero\\storage\\J6MJ5KZ4\\Hale y Qu
-    \verb erry - 1973 - Optical Constants of Water in the 200-nm to 200-μm Wav
-    \verb elength Region.pdf:application/pdf
-    \endverb
     \field{journaltitle}{Appl. Opt.}
     \field{day}{01}
     \field{month}{03}
