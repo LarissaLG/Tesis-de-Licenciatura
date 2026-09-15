@@ -316,41 +316,115 @@
     \field{year}{2018}
   \endentry
 
-  \entry{ishiiSinglecellAnalysisIsolation2010}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=IS}{%
-         family={Ishii},
-         familyi={I\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
+  \entry{vivescorronsRareAnemiasAdolescents2021}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=VCJ}{%
+         family={Vives-Corrons},
+         familyi={V\bibinithyphendelim C\bibinitperiod},
+         given={JL.},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=TK}{%
-         family={Tago},
-         familyi={T\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=SK}{%
-         family={Senoo},
-         familyi={S\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
+      {{hash=KE}{%
+         family={Krishnevskaya},
+         familyi={K\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ISTKSK1}
-    \strng{fullhash}{ISTKSK1}
+    \strng{namehash}{VCJKE1}
+    \strng{fullhash}{VCJKE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
-    \verb 10.1007/s00253-010-2524-4
+    \verb 10.23750/abm.v92i1.11345.
     \endverb
-    \field{number}{5}
-    \field{pages}{1281\bibrangedash 1292}
-    \field{title}{Single-cell analysis and isolation for microbiology and
-  biotechnology: methods and applications}
-    \field{volume}{86}
-    \field{journaltitle}{Appl. Microbiol. Biotechnol.}
-    \field{year}{2010}
+    \field{number}{1}
+    \field{pages}{e2021169}
+    \field{title}{Rare anemias in adolescents}
+    \field{volume}{92}
+    \field{journaltitle}{Acta Biomed}
+    \field{year}{2021}
+  \endentry
+
+  \entry{proserpioFlowCytometryBeginners2022}{incollection}{}{}
+    \name{author}{3}{}{%
+      {{hash=PV}{%
+         family={Proserpio},
+         familyi={P\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Conti},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SO}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Oliviero},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Methods Mol Biol}%
+    }
+    \strng{namehash}{PVCLSO1}
+    \strng{fullhash}{PVCLSO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Single-Cell Protein Analysis}
+    \verb{doi}
+    \verb 10.1007/978-1-0716-1771-7_3
+    \endverb
+    \field{pages}{27\bibrangedash 41}
+    \field{title}{Flow Cytometry for Beginners: Hints and Tips for Approaching
+  the Very First Single-Cell Technique.}
+    \field{volume}{2386}
+    \field{year}{2022}
+  \endentry
+
+  \entry{luSimulationsLightScattering2005}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=LJQ}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Jun\bibnamedelima Q.},
+         giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=YP}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HXH}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Xin-Hua},
+         giveni={X\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJQYPHXH1}
+    \strng{fullhash}{LJQYPHXH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1117/1.1897397
+    \endverb
+    \field{number}{2}
+    \field{pages}{024022\bibrangedash 024022}
+    \field{title}{Simulations of light scattering from a biconcave red blood
+  cell using the finite-difference time-domain method}
+    \verb{url}
+    \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-opt
+    \verb ics/volume-10/issue-2/024022/Simulations-of-light-scattering-from-a-b
+    \verb iconcave-red-blood-cell/10.1117/1.1897397.short
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{J. Biomed. Opt.}
+    \field{year}{2005}
   \endentry
 
   \entry{ereminaDifferentShapeModels2006}{article}{}{}
@@ -400,48 +474,6 @@
     \field{volume}{102}
     \field{journaltitle}{J. Quant. Spectrosc. Radiat. Transf.}
     \field{year}{2006}
-  \endentry
-
-  \entry{luSimulationsLightScattering2005}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=LJQ}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Jun\bibnamedelima Q.},
-         giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod},
-      }}%
-      {{hash=YP}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=HXH}{%
-         family={Hu},
-         familyi={H\bibinitperiod},
-         given={Xin-Hua},
-         giveni={X\bibinithyphendelim H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LJQYPHXH1}
-    \strng{fullhash}{LJQYPHXH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1117/1.1897397
-    \endverb
-    \field{number}{2}
-    \field{pages}{024022\bibrangedash 024022}
-    \field{title}{Simulations of light scattering from a biconcave red blood
-  cell using the finite-difference time-domain method}
-    \verb{url}
-    \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-opt
-    \verb ics/volume-10/issue-2/024022/Simulations-of-light-scattering-from-a-b
-    \verb iconcave-red-blood-cell/10.1117/1.1897397.short
-    \endverb
-    \field{volume}{10}
-    \field{journaltitle}{J. Biomed. Opt.}
-    \field{year}{2005}
   \endentry
 
   \entry{tsinopoulosLightScatteringAggregated2002}{article}{}{}
