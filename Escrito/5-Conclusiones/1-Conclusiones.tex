@@ -2,13 +2,66 @@
 \chapter*{Conclusiones}\addcontentsline{toc}{chapter}{\protect\numberline{}Conclusiones}
 \label{chapter:concl}
 
-En este trabajo se estudiaron numéricamente las propiedades ópticas de eritrocitos sanos y enfermos mediante el método de \textit{Finite Integration Technique} implementado en CST Studio Suite. Para ello, se modelaron eritrocitos sanos, esferocitos y microcitos considerando tanto sus diferencias morfológicas como las variaciones en la concentración de hemoglobina, incorporadas mediante funciones dieléctricas dependientes de la longitud de onda. Estas funciones se obtuvieron a partir de datos experimentales reportados en la literatura para distintas concentraciones de hemoglobina, empleando relaciones de Kramers-Kronig sustractivas con el fin de obtener la respuesta óptica en el rango espectral de 400 a 600 nm. La geometría de los eritrocitos se describió mediante óvalos de Cassini y los sólidos de revolución correspondientes se construyeron en SolidWorks.
+%
+% --- JAUA ---
+% Hay que ser más concisos y resatltar las cosas que hicste tú y que sobresalen de tu trabajo. Tamvién una crítica general a tu texto es que en mucha revisiones abusabas de "con la finalidad", "para ello", etc.
+%
+% Te propongo que hagas una lista de puntos de las conclusiones, como si fuese un poster, y desarrolles los párrafo a partir de ahí. Hay que ser muy resumidos. De hecho, ya tienes las conclusiones en tu presentación. Trabaja con base en ellos!!
+%
+% Cada parrado tiene un "en particlar". 
 
-Para implementar el modelo en CST Studio, primero se verificó la capacidad del modelo numérico para reproducir resultados con solución analítica. Para ello se realizó un análisis de los principales parámetros de simulación con el fin de identificar la configuración 	que proporcionara la mejor concordancia con la solución analítica de teoría Mie para una esfera. Como resultado, se obtuvieron errores relativos inferiores al 5\%. Posteriormente, se comparó el patrón de esparcimiento de un eritrocito con resultados numéricos reportados en la literatura, encontrando que el modelo implementado en CST reproduce el patrón angular de esparcimiento. Los resultados del análisis de variación paramétrica permitieron establecer una configuración numérica adecuada de los parámetros principales del método computacional para el estudio de las propiedades ópticas de las distintas morfologías.
+En este trabajo se estudiaron numéricamente las propiedades ópticas de eritrocitos sanos y enfermos mediante el método de \textit{Finite Integration Technique} implementado en CST Studio Suite. Para ello, se modelaron eritrocitos sanos, esferocitos y microcitos %
+% --- JAUA ---
+%  propuestya: considerando la geometría y concentración de hemoglobina (codificada en la función dielectrirca) específica para cada uno de ellos.
+%
+ considerando tanto sus diferencias morfológicas como las variaciones en la concentración de hemoglobina, incorporadas mediante funciones dieléctricas %
+ % --- JAUA ---
+ % el dependiente.... creo que sobra.
+ %
+   dependientes de la longitud de onda. Estas funciones se obtuvieron a partir de datos experimentales reportados en la literatura para distintas concentraciones de hemoglobina, empleando relaciones de Kramers-Kronig sustractivas %
+   % --- JAUA ---
+   %  Hay que destcar que construiste una funciń dieléctrica consistente para todos los casos y que tienes mejoras respecto a lo reportado en la luteratura para algunos casos.
+   %
+   con el fin de obtener la respuesta óptica en el rango espectral de 400 a 600 nm. %
+   % --- JAUA ---
+   % la siguiente frase es mejor pegarla en el sifuiente párrafo para tener uno de eritrocitos, uno de simulaciones, y luefo lo de lso resultados.
+   %
+    La geometría de los eritrocitos se describió mediante óvalos de Cassini y los sólidos de revolución correspondientes se construyeron en SolidWorks. 
 
-Al implementar los modelos y las funciones dieléctricas propuestas en CST, el análisis espectral mostró que la respuesta óptica de los eritrocitos está fuertemente modulada por las respuesta óptica de la hemoglobina, particularmente por tres bandas representativas: la banda de Soret, situada alrededor de 431 nm, la banda $\beta$ alrededor de 541 nm y la banda $\alpha$ alrededor de 573 nm. En particular, la región asociada a la banda de Soret presenta las mayores diferencias en la eficiencia de extinción entre las morfologías consideradas, mientras que las bandas $\beta$ y $\alpha$ conservan la estructura espectral general pero con variaciones menores. Por otro lado, los patrones de esparcimiento mostraron que, para las tres morfologías, la mayor parte de la luz esparcida se concentra en la dirección frontal. Sin embargo, las diferencias relativas entre células sanas y enfermas se vuelven más pronunciadas en las regiones lateral y posterior. En el caso del esferocito, se observó una reducción del esparcimiento lateral y de retroesparcimiento respecto al eritrocito sano. Por su parte, el microcito conserva en mayor medida la estructura angular característica de la geometría bicóncava, aunque presenta variaciones locales en la amplitud y posición de máximos y mínimos.
+%
+% --- JAUA ---
+% no nos cuentes otra vx que hiciste, sino los resultadoS. Ejemplo: Los geometria de los eritocitos se describió con ovalos de cassini. Con esta geometría,  los cálculo en CST convergieron con errores menores al 5% con la soluci+n analítica de Mie, y con los mismos paraḿetros para la onvergncia se reproducieron cáculos reportados en laliteratura con XX% error ncluso considerando otras goemtrías. 
+% O algo así. TAmbién más al grano.
+%
+Para implementar el modelo en CST Studio, primero se verificó la capacidad del modelo numérico para reproducir resultados con solución analítica. Para ello se realizó un análisis de los principales parámetros de simulación con el fin de identificar la configuración 	que proporcionara la mejor concordancia con la solución analítica de teoría Mie para una esfera. Como resultado, se obtuvieron errores relativos inferiores al 5\%. Posteriormente, se comparó el patrón de esparcimiento de un eritrocito con resultados numéricos reportados en la literatura, encontrando que el modelo implementado en CST reproduce el patrón angular de esparcimiento. %
+% --- JAUA ---
+% Esta última frase está muy complicada y rebuscada: muchos verbos. Además, es necesaria esta ultima frase? no nos dice ni aporta nada, o sí? 
+%
+ Los resultados del análisis de variación paramétrica permitieron establecer una configuración numérica adecuada de los parámetros principales del método computacional para el estudio de las propiedades ópticas de las distintas morfologías.
+
+Al implementar los modelos y las funciones dieléctricas propuestas en CST, el análisis espectral mostró que la respuesta óptica de los eritrocitos está fuertemente %
+% --- JAUA ---
+% "fuertemente". Qué habiamo dicho de los adjetivos calificativos? A menos que estés comparando o dando n+umeros, no hay que usarlos. No es lenguaje coloquial.
+%
+modulada por las respuesta óptica de la hemoglobina, particularmente por tres bandas representativas: la banda de Soret, %
+% --- JAUA ---
+% camiar 'situada alrededor de 431 nm' por '(\sim 431 nm) en todo los casoa
+%
+ situada alrededor de 431 nm, la banda $\beta$ alrededor de 541 nm y la banda $\alpha$ alrededor de 573 nm. En particular, %la región asociada a 
+ la banda de Soret presenta las mayores diferencias en la eficiencia de extinción entre las morfologías consideradas, mientras que las bandas $\beta$ y $\alpha$ conservan la estructura espectral general %pero con variaciones menores. 
+ Por otro lado, los patrones de esparcimiento mostraron que, para las tres morfologías, la mayor parte de la luz esparcida se concentra en la dirección frontal. %
+ % --- JAUA ---
+ % por qué un punto? nPAsaste de oraciones complejas a simples de la nada. Cambia el punto antes del sin embargo por una coma.
+ %
+  Sin embargo, las diferencias relativas entre células sanas y enfermas se vuelven más pronunciadas en las regiones lateral y posterior. En el caso del esferocito, se observó una reducción del esparcimiento lateral y de retroesparcimiento respecto al eritrocito sano. Por su parte, el microcito conserva en mayor medida la estructura angular característica de la geometría bicóncava, aunque presenta variaciones locales en la amplitud y posición de máximos y mínimos.
+%
+% --- JAUA ---
+% unir estdos dos párrafos. y hay que ser más contundendtes y lapidarios con tus hallazgos!!
+%
 
 El análisis mediante ventanas angulares permitió identificar regiones en las que la diferencia en el esparcimiento entre las morfologías de eritrocitos enfermos y el eritrocito sano aumenta de manera significativa. En particular, se encontró una región alrededor de $\theta\approx130^\circ$ que aparece de forma consistente para las tres longitudes de onda analizadas. Al extender el análisis a ventanas finitas tanto en $\theta$ como en $\varphi$, se observó que las bandas de Soret y $\alpha$ presentan regiones de alto contraste más amplias que la banda $\beta$, lo que proporciona una mayor tolerancia en la selección de los ángulos de detección.
+
+% la primera frase s algo que se sabe desde el planteamiento general  del esparcimiento. Más bien hay que retomar y rescatar el traslape de las bandas, la diferencia entre ellos debido al efecto combinado y cómo podemos mejorar la citometría. No es un trabajo de fśica básica. 
 
 Como resultados de este trabajo de tesis, se encontró que la respuesta óptica de los eritrocitos depende del efecto combinado de su geometría y de sus propiedades dieléctricas, y que las diferencias entre morfologías pueden intensificarse mediante una selección adecuada de la longitud de onda y del intervalo angular de detección. En particular, la banda de Soret y la región angular cercana a $\theta\approx130^\circ$ constituyen condiciones potencialmente relevantes para futuros esquemas de discriminación óptica entre eritrocitos sanos y patológicos en citometría de flujo.
 
