@@ -362,15 +362,8 @@
     \verb{doi}
     \verb 10.1007/978-1-0716-1771-7_3
     \endverb
-    \field{number}{5}
-    \field{pages}{1281\bibrangedash 1292}
-    \field{title}{Single-cell analysis and isolation for microbiology and biotechnology: methods and applications}
-    \field{volume}{86}
-    \field{journaltitle}{Appl. Microbiol. Biotechnol.}
-    \field{year}{2010}
     \field{pages}{27\bibrangedash 41}
-    \field{title}{Flow Cytometry for Beginners: Hints and Tips for Approaching
-  the Very First Single-Cell Technique.}
+    \field{title}{Flow Cytometry for Beginners: Hints and Tips for Approaching the Very First Single-Cell Technique.}
     \field{volume}{2386}
     \field{year}{2022}
   \endentry
@@ -405,8 +398,7 @@
     \endverb
     \field{number}{2}
     \field{pages}{024022\bibrangedash 024022}
-    \field{title}{Simulations of light scattering from a biconcave red blood
-  cell using the finite-difference time-domain method}
+    \field{title}{Simulations of light scattering from a biconcave red blood cell using the finite-difference time-domain method}
     \verb{url}
     \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-opt
     \verb ics/volume-10/issue-2/024022/Simulations-of-light-scattering-from-a-b
@@ -463,47 +455,6 @@
     \field{volume}{102}
     \field{journaltitle}{J. Quant. Spectrosc. Radiat. Transf.}
     \field{year}{2006}
-  \endentry
-
-  \entry{luSimulationsLightScattering2005}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=LJQ}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Jun\bibnamedelima Q.},
-         giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod},
-      }}%
-      {{hash=YP}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=HXH}{%
-         family={Hu},
-         familyi={H\bibinitperiod},
-         given={Xin-Hua},
-         giveni={X\bibinithyphendelim H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LJQYPHXH1}
-    \strng{fullhash}{LJQYPHXH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1117/1.1897397
-    \endverb
-    \field{number}{2}
-    \field{pages}{024022\bibrangedash 024022}
-    \field{title}{Simulations of light scattering from a biconcave red blood cell using the finite-difference time-domain method}
-    \verb{url}
-    \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-opt
-    \verb ics/volume-10/issue-2/024022/Simulations-of-light-scattering-from-a-b
-    \verb iconcave-red-blood-cell/10.1117/1.1897397.short
-    \endverb
-    \field{volume}{10}
-    \field{journaltitle}{J. Biomed. Opt.}
-    \field{year}{2005}
   \endentry
 
   \entry{tsinopoulosLightScatteringAggregated2002}{article}{}{}
