@@ -1,22 +1,3 @@
 % !TeX root = ../tesis.tex
 
 
-\chapter{Trabajo a futuro}
-
-\label{section:trabajo_futuro}
-
-
-
-Como una primera aproximación hacia una validación experimental del modelo implementado en este trabajo, se realizó una comparación preliminar con los resultados reportados por Gienger et al. \cite{giengerAssessmentDeformationHuman2019} et al. quienes realizaron mediciones experimentales de la sección transversal de esparcimiento en la dirección frontal (FSC por sus siglas en inglés) de una población de eritrocitos sanos mediante citometría de flujo. Las mediciones se realizaron para una muestra con una CHCM de 34.4 g/dL de CHCM, empleando una longitud de onda $\lambda=632.8$ nm y considerando dos orientaciones de incidencia respecto al eritrocito, asociadas a las direcciones $\mathbf{k_1}$ y $\mathbf{k_2}$. Como se muestra en la Fig. , la dirección en $\mathbf{k_1}$ representa incidencia en la cara circular del eritrocito ($\mathbf{k_1}$), mientras que $\mathbf{k_2}$ representa una incidencia lateral. En la Fig.~\ref{fig:STLF} se muestra la señal FSC obtenida para la incidencia correspondiente a $\mathbf{k}_2$ en función de la obtenida para $\mathbf{k}_1$. Cada punto representa la medición de un eritrocito individual, mientras que las regiones amarillas corresponden a una mayor densidad de células dentro de la distribución experimental. Sobre esta distribución se incluye, en azul claro, el resultado obtenido numéricamente con CST para el modelo de eritrocito sano empleado en este trabajo, con una CHCM de 34 g/dL.
-%
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.43\textwidth]{4-Resultados/FSCpaper.pdf}\label{subfig:STLFPi2}
-	\vspace{-0.1cm}
-	\caption{Comparación entre las señales de esparcimiento frontal (FSC) obtenidas experimentalmente por Gienger et al. \cite{giengerAssessmentDeformationHuman2019} para una población de eritrocitos sanos y el resultado numérico obtenido en este trabajo. Cada punto corresponde a un eritrocito individual y el color representa la densidad de mediciones. El punto azul claro indica el resultado calculado con CST para el modelo de eritrocito sano con CHCM de 34 g/dL, integrando el patrón de esparcimiento sobre la apertura angular empleada experimentalmente.}
-	\label{fig:STLF}
-\end{figure}
-%
-
-  Para reproducir las condiciones geométricas de detección del experimento, la sección transversal diferencial de esparcimiento se integró en el intervalo $2.2^\circ\leq\theta\leq8.2^\circ$ y sobre los valores de $\varphi$ que satisfacen la condición $|\sin\varphi|\geq 2.2^\circ/\theta$. Se observa que el punto obtenido numéricamente se encuentra dentro de la distribución de mediciones experimentales, lo que muestra que el modelo reproduce valores compatibles con los observados experimentalmente bajo una geometría de detección equivalente. No obstante, esta comparación debe considerarse preliminar, pues se necesitarían simulaciones con parámetros morfológicos y ópticos equivalentes a los de la población experimental y extender esta comparación a eritrocitos enfermos. Como continuación de este trabajo, se propone realizar simulaciones con parámetros morfológicos y ópticos equivalentes a los de poblaciones experimentales específicas y extender la comparación a eritrocitos enfermos. Esto permitiría evaluar de manera más directa la utilidad de los intervalos espectrales y angulares identificados en esta tesis para el desarrollo de esquemas de diferenciación celular mediante citometría de flujo.
-

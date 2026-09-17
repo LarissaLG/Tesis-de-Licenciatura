@@ -55,15 +55,13 @@
 
 % ----------------------------- Datos del jurado
 %
-% --- JAUA ---
-% Ya tienes esta info. Hay que ponerla
 %
 \student{Luna\\ González\\ Dana Larissa\\ 776 101 4262\\ Universidad Nacional Autónoma de México\\ Facultad de Ciencias\\ Física Biomédica\\ 421122680}
 \secretario{M. en C. \\ Jonathan A. \\ Urrutia \\ Anguiano}
-\presidente{Dr \\ President \\ Last name \\ Last name}
-\vocal{Dr \\ Vocal \\ Last name \\ Last name}
-\supuno{Dr \\ substitute 1 \\ Last name \\ Last name}
-\supdos{Dr \\ Substitute 2 \\ Last name \\ Last name}
+\presidente{Dr. \\ Víctor Manuel \\ Velázquez \\ Aguilar}
+\vocal{Dr. \\ Alejandro \\ Vásquez  \\ Arzola}
+\supuno{Dra. \\ Argelia \\ Pérez \\ Pacheco}
+\supdos{Dr. \\ Neil Charles \\ Bruce \\ Davidson}
 \pags{pages}
 
 \keywords{tesis,autor,tutor,etc}            % For metadata 
@@ -83,12 +81,8 @@
 \frontmatter
 
 \include{0-1-Acknowledgments/1-Acknowledgments}       %
-% --- JAUA ---
-% Inventate unos agradecimientos chafones y genéricos al grupo y pregúntale a taata  cómo procedemos con PAPIIT porque técniamente tuviste agradecimentos aunque no se presentre el trabajo coo suyo.
-% Taambién quitamos la declaración que no usamos en ciencias y el quote luego te sacas uno chido :)
-%   
 % \include{0-2-Declaration/1-Declaration}
-% \include{0-3-Quote/1-Quote}                  
+\include{0-3-Quote/1-Quote}                  
 \include{0-4-Resumen/1-Resumen}       
 
 %-------------------------------------------------------------------------------
@@ -103,7 +97,7 @@
 \setcounter{secnumdepth}{3} % organisational level that receives a numbers
 \setcounter{tocdepth}{3}    % print table of contents for level 3
 
-\tableofcontents            % Print main index
+%\tableofcontents            % Print main index
 
 %: ----------------------- list of figures/tables ------------------------
 %\listoffigures              % Genera el ínidce de figuras, comentar línea si no se usa
@@ -115,7 +109,13 @@
 % the main text starts here with the introduction, 1st chapter,...
 \mainmatter
 
-\def\baselinestretch{1}                   % Line spacing
+%\def\baselinestretch{1}                   % Line spacing
+
+{
+	\renewcommand{\baselinestretch}{0.9}\selectfont
+	\tableofcontents
+}
+
 
 \input{0-5-Introduccion/1-Motivation-Structure}            
 \input{1-Esparcimiento/1-Fundamentos}
@@ -128,29 +128,12 @@
 \input{3-FIT/1-Fundamentos_FIT}
 \input{3-FIT/2-Leap-frog Scheme}
 \input{3-FIT/3-Convergencia}
-
-%
-% --- JAUA ---
-% Te propongo que cambies esta parte como:
-   % Capítulo: Propiedades ópticas de eritrocitos sanos y con patologías
-   % Sección: Cotejo con resultados publicados
-   % Sección: Eritrocito sano
-   % Sección: Mucrocito y Esfercito
-   % Sección: Dirección preferencial esl esparcimiento por eritrocitos
-%
 \input{4-Resultados/1-Resultados}      
 \input{4-Resultados/2-Eritrocito sano}       
 \input{4-Resultados/3-Esferocito}
-\input{4-Resultados/4-Microcito}
+%\input{4-Resultados/4-Microcito}
 \input{4-Resultados/5-Intervalos_angulares}
-
-%
-% --- JAUA ---
-% Te recomiendo que sea un solo capítulo que se llame Trabajo a futuro y conclusiones.  y que las conlcusiones sean una sección. Para este caso que no aparezcan numerados en el TOC con númeor (como mi tesis de maestría.)
-%
-
-\input{5-Conclusiones/1-Conclusiones}   
-\input{6-Trabajo a futuro/1-Comparacion_experimental}            
+\input{5-Conclusiones/1-Conclusiones}     
 %-------------------------------------------------------------------------------
 %                               References                                   |
 %-------------------------------------------------------------------------------
@@ -168,10 +151,7 @@
    \input{7-Apéndices/5-Res_Microcito.tex} 
 
 
-%
-% --- JAUA ---
-% ¿Por qué cambiaste el formato de las referencias? Todo lo que estaba en itálicas ahora está subrayado (y la verdad no me gsta jaja). Otra, es que el mismo subrayado obliga al texto a salirse del margen y eso sí no lo podemos hacer. 
-%
+
 \setlength\bibitemsep{.1\itemsep}
 \printbibliography
 

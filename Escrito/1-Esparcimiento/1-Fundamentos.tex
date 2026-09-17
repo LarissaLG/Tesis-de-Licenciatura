@@ -4,21 +4,8 @@
 \label{chapter:theory}
 
 \vspace*{7em}
-%
-% --- JAUA ---
-% Ya que tenemos una idea del texto final, vsmos a cambiar iun poco las estrucutras del primer párrafo de cada sección. La idea es irlos ligando entre sí. La propuesta es; Primera oración enunciando el tema general; ssegunda: para qué es util con nuestro propópsito de la tesis. A partir de la tercera oración ya comienzas con los contenidos de este capítlo. Hay que revisar esto en todo inicio de sección/subsección, etc.
-%
 
-El esparcimiento de la luz por partículas depende de propiedades como el volumen, la geometría, la composición, la estructura interna y %
-% --- JAUA ---
-% disposición = orientaciín??  Suena muy ChatGPTesco
-%
- la disposición del sistema considerado~\cite{baldiniShiningLightFuture2025}. Esta dependencia permite relacionar las variaciones en las propiedades morfológicas y ópticas de los eritrocitos con cambios en su respuesta óptica %
- % --- JAUA ---
- % y, a partir de ello, definir las magnitudes que se emplearán posteriormente para comparar distintas morfologías. 
- % Yo solo busca un nexo para estas dos oraciones
- %
- En este capítulo se estudia la interacción electromagnética entre la luz y la materia mediante una formulación basada en la función dieléctrica dependiente de la frecuencia de la luz considerada. En la primera parte se presentan las ecuaciones de Maxwell y las relaciones constitutivas para sistemas lineales, homogéneos e isótropos y se analiza la solución de ondas planas, la cual se emplea para describir el flujo de energía transportado por una onda electromagnética mediante el vector de Poynting y su promedio temporal. En la segunda parte se derivan las secciones transversales de absorción, esparcimiento y extinción, que permiten cuantificar la interacción entre una onda incidente y una partícula \cite{bohrenAbsorptionScatteringLight2008}. Adicionalmente, en la Sección \ref{section:rKK} se estudian las relaciones de Kramers–Kronig aplicadas a la función dieléctrica. Estas relaciones permiten vincular las partes real e imaginaria de cualquier función óptica lineal compleja, condicionada a pruebas de causalidad y analiticidad en el contexto de funciones complejas \cite{lucariniKramersKronigRelationsOptical2005}. Finalmente, se discuten las limitaciones de aplicar las relaciones de Kramers-Kronig a datos experimentales con un rango finito de frecuencias y se presenta la derivación de las relaciones de Kramers–Kronig sustractivas. 
+El esparcimiento de la luz por partículas depende de propiedades como el volumen, la geometría, la composición, la estructura interna y la orientación del sistema considerado~\cite{bohrenAbsorptionScatteringLight2008}. Esta dependencia permite relacionar las variaciones en las propiedades morfológicas y ópticas de los eritrocitos con cambios en su respuesta óptica y, a partir de ello, definir las magnitudes que se emplearán posteriormente para comparar distintas morfologías. Para describir cuantitativamente esta respuesta, es necesario establecer primero el formalismo que describe la interacción entre la luz y la materia. En este capítulo se estudia dicha interacción mediante una formulación basada en la función dieléctrica dependiente de la frecuencia de la luz considerada. En la primera parte se presentan las ecuaciones de Maxwell y las relaciones constitutivas para sistemas lineales, homogéneos e isótropos y se analiza la solución de ondas planas, la cual se emplea para describir el flujo de energía transportado por una onda electromagnética mediante el vector de Poynting y su promedio temporal. En la segunda parte se derivan las secciones transversales de absorción, esparcimiento y extinción, que permiten cuantificar la interacción entre una onda incidente y una partícula \cite{bohrenAbsorptionScatteringLight2008}. Adicionalmente, en la Sección \ref{section:rKK} se estudian las relaciones de Kramers–Kronig aplicadas a la función dieléctrica. Estas relaciones permiten vincular las partes real e imaginaria de cualquier función óptica lineal compleja, condicionada a pruebas de causalidad y analiticidad en el contexto de funciones complejas \cite{lucariniKramersKronigRelationsOptical2005}. Finalmente, se discuten las limitaciones de aplicar las relaciones de Kramers-Kronig a datos experimentales con un rango finito de frecuencias y se presenta la derivación de las relaciones de Kramers–Kronig sustractivas. 
 
 
 \section{Formalismo}
@@ -55,7 +42,7 @@ donde $\vb{P}$ es la polarización y $\vb{M}$ es la magnetización de un materia
 	\label{eq:d} 
 \end{tcolorbox}
 %	
-\noindent donde $\stackrel{\leftrightarrow}{\varepsilon}$ es un tensor de rango dos y representa una función de respuesta\footnote{Las funciones de respuesta proporcionan información sobre el efecto de las interacciones electromagnéticas con el medio y sobre la estructura y propiedades del propio medio \cite{kirzhnitsGeneralPropertiesElectromagnetic1987}.} del material en el espacio y el tiempo \cite{jacksonClassicalElectrodynamics2021} y $V'$ es el volumen donde se encuentra el material. La Ec. \eqref{eq:d} muestra que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. Adicionalmente, el campo de desplazamiento eléctrico en un punto $\vb{r}$ depende de los valores del campo eléctrico en puntos vecinos $\vb{r}'$ \cite{jacksonClassicalElectrodynamics2021}. A estas características, se les conoce como la no localidad temporal y espacial, respectivamente, entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021}.
+\noindent donde $\stackrel{\leftrightarrow}{\varepsilon}$ es un tensor de rango dos y representa una función de respuesta\footnote{Las funciones de respuesta proporcionan información sobre el efecto de las interacciones electromagnéticas con el medio y sobre la estructura y propiedades del propio medio \cite{kirzhnitsGeneralPropertiesElectromagnetic1987}.} del material en el espacio y el tiempo \cite{jacksonClassicalElectrodynamics2021} y $V'$ es el volumen donde se encuentra el material. La Ec. \eqref{eq:d} muestra que el campo de desplazamiento eléctrico al tiempo $t$ depende del campo eléctrico en todos los demás tiempos $t'$. Adicionalmente, el campo de desplazamiento eléctrico en  un punto $\vb{r}$ depende de los valores del campo eléctrico en puntos vecinos $\vb{r}'$ \cite{jacksonClassicalElectrodynamics2021}. A estas características, se les conoce como la no localidad temporal y espacial, respectivamente, entre $\vb{D}$ y $\vb{E}$ \cite{jacksonClassicalElectrodynamics2021}.
 
 En un medio isótropo y homogéneo, se cumple que $\stackrel{\leftrightarrow}{\varepsilon} = \varepsilon\; \text{diag}(1,1,1)$ donde $\varepsilon$ es una función escalar~\cite{jacksonClassicalElectrodynamics2021} y $\text{diag}(1,1,1)$ es la matriz identidad; en este caso, tanto $\varepsilon$ como $\vb{E}$ son independientes de $\vb{r}'$ y dependen únicamente de la diferencia temporal, es decir \cite{jacksonClassicalElectrodynamics2021}
 %
@@ -63,10 +50,6 @@ En un medio isótropo y homogéneo, se cumple que $\stackrel{\leftrightarrow}{\v
 	\vb{D}(\vb{r},t)=\int_{-\infty}^{\infty}\varepsilon(t-t')\vb{E}(\vb{r},t')\dd{t'},
 	\label{eq:d1} 
 \end{tcolorbox}
-%	
-%
-% --- JAUA ---
-% Tu pie de página queda cortado. Habría que definir primero la tranformada de fuourier como simnolo, y luego el teorema de la convolución. Te recomiendo poner un $\omega$ luego de escribir frecuencias en el texrto principal.
 %
 \noindent de modo que la Ec. \eqref{eq:d1} es una convolución\footnote{La convolución de dos funciones $f(t), g(t)$ está dada por $f\ast g=\int_{-\infty}^{\infty}f(t-t')g(t')\dd{t'}$ \cite{arfkenMathematicalMethodsPhysicists2011}.} en el tiempo. Al aplicar la transformada de Fourier\footnote{En este trabajo se considera la convención de la transformada de Fourier como \cite{arfkenMathematicalMethodsPhysicists2011}
 	\begin{equation*}
@@ -115,6 +98,7 @@ con $k$ una constante denominada número de onda. Una solución a la ecuación d
 	\label{eq:indice} 
 \end{tcolorbox}
 %	
+
 \noindent con lo que se obtiene
 %
 \begin{equation}
@@ -135,11 +119,6 @@ El flujo de energía que transporta una onda electromagnética en la dirección 
 	\label{eq:vect_Poynting_prom_arm} 
 \end{tcolorbox}
 \noindent donde $	\langle\vb{S}\rangle_t$ denota el promedio temporal, $\Re{\cdot}$ la parte real de un número complejo y $*$ la operación complejo conjugado. 
-
-%
-% --- JAUA ---
-% Por qué noescribimos esto en términos de H?? Me parece más directo con la seción anterior y como son medios bien comportados da iugal un poco. 
-%
 
 
 

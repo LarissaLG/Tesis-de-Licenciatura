@@ -5,13 +5,7 @@
 
 \vspace*{7em}
 
-%
-% --- JAUA ---
-% Es un capítulo nuevo. No puedes empezarlo así como así como si fuese un párrafo nada más-
-%  Qué tal algo como: Las propiedades de ópticas de los eritocidos dependen de su mofología y su finción dieléxtrca. DAdo que estos cuentan con una.....
-%
-
-Debido a la geometría bicóncava de los eritrocitos, su respuesta electromagnética no puede describirse mediante una solución analítica, por lo que se aborda de manera numérica. En este capítulo se presenta la formulación del método de \textit{Finite Integration Technique} (FIT) y su aplicación al estudio del esparcimiento de luz por una esfera. En primer lugar, se describe el método a partir de las ecuaciones de Maxwell en su forma integral y su discretización sobre mallas duales. Se introducen las ecuaciones de malla de Maxwell, junto con las relaciones constitutivas discretas que fundamentan el esquema numérico, así como su formulación en el dominio del tiempo. Posteriormente, se analiza la convergencia de las simulaciones realizadas en \textit{Computer Simulation Technology} (CST) mediante la comparación con la solución analítica de la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}. Este análisis se lleva a cabo evaluando la influencia de los principales parámetros numéricos —como el tamaño del dominio computacional, el mallado y las condiciones de frontera— sobre la precisión y el costo computacional. A partir de estos resultados, se establecen los criterios de discretización que se emplean como base en las simulaciones presentadas en los capítulos siguientes.
+Las propiedades ópticas de los eritrocitos dependen de su morfología y función dieléctrica. Dado que estos presentan una geometría bicóncava, su respuesta electromagnética no puede describirse mediante una solución analítica, por lo que se aborda de manera numérica. En este capítulo se presenta la formulación del método de \textit{Finite Integration Technique} y su aplicación al estudio del esparcimiento de luz por una esfera. En primer lugar, se describe el método a partir de las ecuaciones de Maxwell en su forma integral y su discretización sobre mallas duales. Se introducen las ecuaciones de malla de Maxwell, junto con las relaciones constitutivas discretas que fundamentan el esquema numérico, así como su formulación en el dominio del tiempo. Posteriormente, se analiza la convergencia de las simulaciones realizadas en \textit{Computer Simulation Technology} (CST, por sus siglas en inglés) mediante la comparación con la solución analítica de la teoría de Mie \cite{bohrenAbsorptionScatteringLight2008}. Este análisis se lleva a cabo evaluando la influencia de los principales parámetros numéricos —como el tamaño del dominio computacional, el mallado y las condiciones de frontera— sobre la precisión y el costo computacional. A partir de estos resultados, se establecen los criterios de discretización que se emplean como base en las simulaciones presentadas en los capítulos siguientes.
 
 
 
@@ -19,7 +13,7 @@ Debido a la geometría bicóncava de los eritrocitos, su respuesta electromagné
 \section{Ecuaciones de malla de Maxwell}
 \label{section:MGE}
 
-El método \textit{Finite Integration Technique} (FIT) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las Ecuaciones de malla de Maxwell \cite{clemensDiscreteElectromagnetismFinite2001}. En este método las magnitudes electromagnéticas se asocian a los objetos geométricos de la malla sobre los cuales se definen dichas integrales \cite{dassaultsystemesCSTMicrowaveStudio2003}.
+El método \textit{Finite Integration Technique} (FIT, por sus siglas en inglés) se basa en la discretización espacial de las ecuaciones de Maxwell a partir de su forma integral, obteniendo así las Ecuaciones de malla de Maxwell \cite{clemensDiscreteElectromagnetismFinite2001}. En este método las magnitudes electromagnéticas se asocian a los objetos geométricos de la malla sobre los cuales se definen dichas integrales \cite{dassaultsystemesCSTMicrowaveStudio2003}.
 
 El primer paso del proceso de discretización empleado en FIT consiste en definir el mallado de integración. Para ello, se emplea una discretización tipo Yee \cite{yeeNumericalSolutionInitial1966}. En este contexto, el problema electromagnético ---generalmente formulado en una región con frontera abierta---  se restringe a un dominio computacional finito $\Omega\in\mathbb{R}^3$. Posteriormente, dicho dominio se descompone en un número finito de subregiones $V_i$, tales como tetraedros o hexaedros, que encajan exactamente entre sí. Esto implica que la intersección entre dos celdas distintas  es vacía o corresponde a un elemento geométrico compartido de menor dimensión (una cara, una arista o un vértice). Esta descomposición da lugar a un sistema coordenado ortogonal $G$, que constituye la malla computacional del problema~\cite{clemensDiscreteElectromagnetismFinite2001}. Para simplificar el desarrollo del método, se asume que $\Omega$ tiene forma paralelepipédica y que su discretización se realiza mediante una malla cartesiana obtenida como producto tensorial de subdivisiones unidimensionales, de modo que \cite{hadabSolutionMaxwellsEquation2023}
 %
@@ -256,7 +250,7 @@ De forma similar, la matriz de áreas de la malla dual $\tilde{\mathbb{D}}_S$ es
  	\tilde{\mathbb{S}}&=(P_x^T,P_y^T,P_z^T).
  \end{align}
  %
- De esta forma, para el par de sistemas $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Maxwell Grid Equations} (MGE)— se escribe como \cite{hadabSolutionMaxwellsEquation2023}
+ De esta forma, para el par de sistemas $\{G,\tilde{G}\}$, el conjunto completo de ecuaciones matriciales discretas —conocidas como \textit{Maxwell Grid Equations} (MGE, por sus siglas en inglés)— se escribe como \cite{hadabSolutionMaxwellsEquation2023}
 %
 \begin{subequations} \label{eqs:MGE}
 	\begin{tcolorbox}[

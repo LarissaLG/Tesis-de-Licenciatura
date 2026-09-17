@@ -4,18 +4,7 @@
 \section{Secciones transversales}
 \label{section:SC}
 
-El problema de interacción de la luz con la materia se puede estudiar al considerar una onda plana [Ec. \eqref{eqs:ondas_planas}] interactuando con una partícula de un material descrito por su índice refracción. %
-% --- JAUA ---
-% mejor función dieléctrica porque es lo que manejas más adelante. Yo inlcuso escribiría que consideras un material no magnético y listo.
-% Une las dos oraciones! Te recomiendo lo siguente:
-% 1) poner una referencia arriba.
-% 2) Asimismo, en una descripción clásica de esta interacción suren dos procesos distintos: la absoción y el es.... O algo así.
-%
- La respuesta electromagnética de la partícula puede describirse clásicamente mediante dos procesos fundamentales: la absorción y el esparcimiento, cuyo efecto conjunto se denomina extinción \cite{bohrenAbsorptionScatteringLight2008}. Experimentalmente, estos fenómenos se evidencian al comparar la potencia medida por un detector con y sin %
- % --- JAUA ---
- % muy coloquial.
- %
-  la presencia de una partícula iluminada por un campo electromagnético incidente  ($\vb{E}_{\text{inc}}, \vb{H}_{\text{inc}}$) la cual genera un campo electromagnético esparcido ($\vb{E}_{\text{sca}}, \vb{H}_{\text{sca}}$) como se ejemplifica en la Fig. \ref{scattering}, donde se muestra una partícula de geometría arbitraria iluminada por un campo $(\mathbf{E}_{\text{inc}},  \mathbf{H}_{\text{inc}})$ representado por vectores en rojo paralelos. La interacción del campo con la partícula genera un campo electromagnético esparcido $(\mathbf{E}_{\text{sca}}, \mathbf{H}_{\text{sca}})$ representado por los vectores en rojo que surgen de la partícula y se propagan en distintas direcciones. Este campo puede ser medido con un detector~\cite{bohrenAbsorptionScatteringLight2008}.
+El problema de interacción de la luz con la materia se puede estudiar al considerar una onda plana [Ec. \eqref{eqs:ondas_planas}] interactuando con una partícula de un material descrito por su función dieléctrica \cite{bohrenAbsorptionScatteringLight2008}. En una descripción clásica de esta interacción surgen dos procesos distintos:  la absorción y el esparcimiento, cuyo efecto conjunto se denomina extinción \cite{bohrenAbsorptionScatteringLight2008}. Experimentalmente, estos fenómenos se manifiestan mediante cambios en el flujo de energía  medido por un detector como consecuencia de la interacción del campo electromagnético incidente  ($\vb{E}_{\text{inc}}, \vb{H}_{\text{inc}}$) con la partícula, la cual genera un campo electromagnético esparcido ($\vb{E}_{\text{sca}}, \vb{H}_{\text{sca}}$) como se ejemplifica en la Fig. \ref{scattering}, donde se muestra una partícula de geometría arbitraria iluminada por un campo $(\mathbf{E}_{\text{inc}},  \mathbf{H}_{\text{inc}})$ representado por vectores en rojo paralelos. La interacción del campo con la partícula genera un campo electromagnético esparcido $(\mathbf{E}_{\text{sca}}, \mathbf{H}_{\text{sca}})$ representado por los vectores en rojo que surgen de la partícula y se propagan en distintas direcciones. Este campo puede ser medido con un detector~\cite{bohrenAbsorptionScatteringLight2008}.
 %
 \begin{figure}[t]
 	\centering
@@ -59,11 +48,8 @@ Para cuantificar la extinción, absorción y el esparcimiento de manera macrosc�
 	\label{WA}
 \end{figure}
 %
-Los signos de las Ecs. \eqref{eqs:W} se eligen de forma que sean cantidades positivas considerando las direcciones de los vectores de Poynting y de $\vu{e}_r$. Como la energía del campo incidente que cruza la esfera es la misma que la que entra, $W_{\text{inc}}$ se anula, entonces %
-% --- JAUA ---
-% No vi que mencionaramos que el medio donde stá la partícula es no-absorbente
-%
-% Está al inicio del párrafo
+Los signos de las Ecs. \eqref{eqs:W} se eligen de forma que sean cantidades positivas considerando las direcciones de los vectores de Poynting y de $\vu{e}_r$. Como la energía del campo incidente que cruza la esfera es la misma que la que entra, $W_{\text{inc}}$ se anula, entonces 
+% 
 \begin{equation}
 	W_{\text{ext}}=W_{\text{abs}}+W_{\text{sca}}.
 	\label{Wext_tot}
@@ -139,14 +125,10 @@ que es la sección transversal de extinción y que posee dimensiones de área.
 	\label{C_sca_general}
 \end{equation}
 %%
-donde el integrando corresponde a la sección transversal diferencial de esparcimiento, una magnitud que puede determinarse experimentalmente \cite{kinnunenEffectSizeShape2011} y que se denota por $\dd{C_{\text{sca}}}/\dd{\Omega}$ \cite{bohrenAbsorptionScatteringLight2008}. La variable $\Omega$ es el ángulo sólido subtendido por superficie de la partícula, que representa el área de la superficie $\Omega$ de una esfera unitaria cubierta por la proyección de la superficie sobre la esfera~\cite{weissteinAnguloSolido}. %
-% --- JAUA ---
-% ángulo sólido no es una varable: esta siguen siendo separas y sn theta y phi. Más bien solo mencionar que asi se le conoce a la integración y no creo que sea neceariauna referencia además del bohren o cualquier libro de óptica. Además, así no se citan los portales de internet (ni URL pusiste.) Adempas en tu mismo texto dices que Omega esuna variable y el nombre de la sperficoe: es confiso.
-% Escribir explicitamente d\omega = \sin\ŧheta\dtheta\d\phi 
-%
+donde el integrando corresponde a la sección transversal diferencial de esparcimiento, una magnitud que puede determinarse experimentalmente \cite{kinnunenEffectSizeShape2011} y que se denota por $\dd{C_{\text{sca}}}/\dd{\Omega}$, con $\dd{\Omega}=\sin\theta\: \text{d}\theta\:\text{d}\phi$ \cite{bohrenAbsorptionScatteringLight2008}. 
 
 %
-Finalmente, la Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
+\noindent Finalmente, la Ec. (\ref{Wext_tot}) puede ser reescrita como \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{tcolorbox}[ams align]
 	C_{\text{ext}}=C_{\text{abs}}+C_{\text{sca}},

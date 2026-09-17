@@ -2,11 +2,7 @@
 \label{section:SSKK}
 \vspace{-0.4cm}
 
-A pesar de que las relaciones de Kramers–Kronig se han aplicado ampliamente en el análisis de datos experimentales \cite{nakovUnifiedFrameworkNumerical2023}, su implementación práctica enfrenta dos limitaciones fundamentales: los errores experimentales y el intervalo finito de frecuencias en el que suelen obtenerse los datos~\cite{nakovUnifiedFrameworkNumerical2023}. De hecho, cuando las relaciones de KK se evalúan sobre un rango espectral limitado, el error en la reconstrucción de la parte real o imaginaria de la función óptica tiende a incrementarse monótonamente con la frecuencia \cite{miltonFiniteFrequencyRange1997}. Para mitigar este problema, Bachrach y Brown \cite{bachrachExcitonOpticalPropertiesTlBr1970} propusieron las relaciones de Kramers–Kronig sustractivas (SSKK, por sus siglas en inglés), %
-% --- JAUA ---
-% Substractive KK tiene una S, no dos. 
-%
-las cuales incorporan un punto de anclaje experimental es decir, el valor conocido de la función óptica en una frecuencia particular, con el fin de mejorar significativamente la precisión del análisis vía KK \cite{lucariniKramersKronigRelationsOptical2005}. En esta sección se desarrollan las relaciones SSKK para la función dieléctrica considerando un punto de referencia en una frecuencia $\omega_1$, cuyo valor experimental se asume conocido. Para ello, se evalúa $\omega_1$ en las Ecs. \eqref{seq:ReKK} y \eqref{seq:ImKK}, dando como resultado
+A pesar de que las relaciones de Kramers–Kronig se han aplicado ampliamente en el análisis de datos experimentales \cite{nakovUnifiedFrameworkNumerical2023}, su implementación práctica enfrenta dos limitaciones fundamentales: los errores experimentales y el intervalo finito de frecuencias en el que suelen obtenerse los datos~\cite{nakovUnifiedFrameworkNumerical2023}. De hecho, cuando las relaciones de KK se evalúan sobre un rango espectral limitado, el error en la reconstrucción de la parte real o imaginaria de la función óptica tiende a incrementarse monótonamente con la frecuencia \cite{miltonFiniteFrequencyRange1997}. Para mitigar este problema, Bachrach y Brown \cite{bachrachExcitonOpticalPropertiesTlBr1970} propusieron las relaciones de Kramers–Kronig sustractivas (SKK, por sus siglas en inglés), las cuales incorporan un punto de anclaje experimental es decir, el valor conocido de la función óptica en una frecuencia particular, con el fin de mejorar significativamente la precisión del análisis vía KK \cite{lucariniKramersKronigRelationsOptical2005}. En esta sección se desarrollan las relaciones SKK para la función dieléctrica considerando un punto de referencia en una frecuencia $\omega_1$, cuyo valor experimental se asume conocido. Para ello, se evalúa $\omega_1$ en las Ecs. \eqref{seq:ReKK} y \eqref{seq:ImKK}, dando como resultado
 %
 \begin{align}
 		\frac{\text{Re}\{\varepsilon(\omega_1)\}}{\varepsilon_0}&=1+\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{\text{Im}\{\varepsilon(\omega')\}/\varepsilon_0}{\omega'-\omega_1}\dd{\omega'}}, \label{seq:omega1_re}\\
@@ -30,7 +26,7 @@ Al restar la Ec. \eqref{seq:omega1_re} de \eqref{seq:ReKK} se tiene %
 		&=-\frac{2}{\pi}\,\PV{\int_{0}^{\infty}\frac{(\omega-\omega_1)(\omega'^2+\omega\,\omega_1)(\text{Re}\{\varepsilon(\omega')\}-1)/\varepsilon_0}{(\omega'^2-\omega^2)(\omega'^2-\omega_1^2)}\dd{\omega'}}.\label{seq:SSKKIm0}
 \end{align}
 %
-Así, al simplificar las Ecs. \eqref{seq:SSKKRe0} y \eqref{seq:SSKKIm0}, se obtienen las relaciones SSKK \cite{lucariniKramersKronigRelationsOptical2005}
+Así, al simplificar las Ecs. \eqref{seq:SSKKRe0} y \eqref{seq:SSKKIm0}, se obtienen las relaciones SKK \cite{lucariniKramersKronigRelationsOptical2005}
 %
 \begin{subequations}%
 	\begin{tcolorbox}[
@@ -41,4 +37,4 @@ Así, al simplificar las Ecs. \eqref{seq:SSKKRe0} y \eqref{seq:SSKKIm0}, se obti
 	\end{tcolorbox}
 \end{subequations}\vspace*{1em}
 
-Las relaciones SSKK permiten mitigar los errores asociados al truncamiento espectral al incorporar, mediante puntos de anclaje, contribuciones provenientes de frecuencias fuera de la ventana de medición \cite{lucariniKramersKronigRelationsOptical2005}. Debido a la propiedad de causalidad de las relaciones KK, las relaciones SSKK preservan las propiedades de analiticidad en el semiplano superior complejo y constituyen un resultado exacto \cite{nussenzveigCausalityDispersionRelations1972}.
+Las relaciones SKK permiten mitigar los errores asociados al truncamiento espectral al incorporar, mediante puntos de anclaje, contribuciones provenientes de frecuencias fuera de la ventana de medición \cite{lucariniKramersKronigRelationsOptical2005}. Debido a la propiedad de causalidad de las relaciones KK, las relaciones SKK preservan las propiedades de analiticidad en el semiplano superior complejo y constituyen un resultado exacto \cite{nussenzveigCausalityDispersionRelations1972}.
