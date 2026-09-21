@@ -1,77 +1,71 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tesis.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: 0-1-Acknowledgments/1-Acknowledgments.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: 0-3-Quote/1-Quote.aux
-Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: 0-4-Resumen/1-Resumen.aux
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 14240 items.
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated field_info (elt_size=8) to 14100 items from 5000.
 Database file #1: tesis-blx.bib
 Database file #2: 8-References/references.bib
-Warning--I didn't find a database entry for "kageFlowCytometry2021"
+Warning--I didn't find a database entry for "kageFlowCytometryMicrofluidic2018"
 Biblatex version: 3.21
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 65 entries,
+Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+You've used 64 entries,
             6402 wiz_defined-function locations,
-            1730 strings with 33498 characters,
-and the built_in function-call counts, 753568 in all, are:
-= -- 51079
-> -- 39678
-< -- 2961
-+ -- 46731
-- -- 32442
-* -- 44920
-:= -- 101065
+            1723 strings with 33166 characters,
+and the built_in function-call counts, 729924 in all, are:
+= -- 49091
+> -- 38951
+< -- 2907
++ -- 45633
+- -- 31863
+* -- 43136
+:= -- 97871
 add.period$ -- 0
-call.type$ -- 65
-change.case$ -- 969
-chr.to.int$ -- 1694
-cite$ -- 128
-duplicate$ -- 65239
-empty$ -- 55308
-format.name$ -- 5942
-if$ -- 127845
+call.type$ -- 64
+change.case$ -- 962
+chr.to.int$ -- 1670
+cite$ -- 126
+duplicate$ -- 63374
+empty$ -- 53483
+format.name$ -- 5756
+if$ -- 123539
 int.to.chr$ -- 0
-int.to.str$ -- 158
+int.to.str$ -- 156
 missing$ -- 0
-newline$ -- 2423
-num.names$ -- 2994
-pop$ -- 24771
+newline$ -- 2363
+num.names$ -- 2956
+pop$ -- 24287
 preamble$ -- 1
-purify$ -- 1506
+purify$ -- 1478
 quote$ -- 0
-skip$ -- 15100
+skip$ -- 14819
 stack$ -- 0
-substring$ -- 102275
-swap$ -- 11948
-text.length$ -- 2532
+substring$ -- 97857
+swap$ -- 11696
+text.length$ -- 2473
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2190
+type$ -- 2156
 warning$ -- 0
-while$ -- 9244
+while$ -- 8955
 width$ -- 0
-write$ -- 2359
+write$ -- 2300
 (There was 1 warning)
