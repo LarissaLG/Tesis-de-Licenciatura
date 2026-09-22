@@ -658,7 +658,7 @@
 			\pagestyle{empty}
 			 \begin{center}
 		  		\vspace*{1.5cm}
-				{\chapter*{Resumen/Abstract}}
+				{\chapter*{Resumen}}
 			  \end{center}
 			  \vspace{0.5cm}
 		}
