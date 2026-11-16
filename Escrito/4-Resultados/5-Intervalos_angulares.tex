@@ -7,7 +7,7 @@
 Con el fin de determinar si existen otras ventanas angulares además de las empleados en citometría de flujo convencional que permitan incrementar la diferencia entre el eritrocito sano y los eritrocitos enfermos, se analizan los patrones de esparcimiento obtenidos en las Secciones \ref{section:Res_Eritrocito_Sano} y \ref{section:Res_Esferocito}. Para ello, se integra $\dd{C_{\text{sca}}}/\dd{\Omega}$  alrededor de $\theta$ en $\pm 3^{\circ}$ como se reporta en la Ref. \cite{giengerAssessmentDeformationHuman2019}, manteniendo fijos los planos de observación $\varphi=0^\circ$ y $\varphi=90^\circ$, es decir
 %
 \begin{equation}
-	C_{\text{sca}}(\theta,\varphi_0)=\int_{\theta-3^{\circ}}^{\theta+3^{\circ}}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}(\theta,\varphi_0)\sin\theta\dd{\theta},\quad \text{con}\quad \varphi_0=\{0^{\circ},90^{\circ}\}.
+	C_{\text{sca}}(\theta,\varphi_0)=\int_{\theta-3^{\circ}}^{\theta+3^{\circ}}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}(\theta',\varphi_0)\sin\theta'\dd{\theta'},\quad \text{con}\quad \varphi_0=\{0^{\circ},90^{\circ}\}.
 \end{equation}
 %
 Para cuantificar las diferencias entre los eritrocitos enfermos y el eritrocito sano, se calculó el cociente entre sus respectivas contribuciones angulares integradas. Este cociente se define mediante el parámetro $\xi_j$
@@ -16,9 +16,9 @@ Para cuantificar las diferencias entre los eritrocitos enfermos y el eritrocito 
 	\xi_j(\theta,\varphi_0)=\dfrac{C_{\text{sca}}^j(\theta,\varphi_0)}{	C_{\text{sca}}^{\text{sano}}(\theta,\varphi_0)},\quad \text{con}\quad j=\{\text{esferocito, microcito}\}.
 	\label{eq:parametro_xi}
 \end{equation}
-De esta forma, $\xi_j=1$ indica que el eritrocito enfermo presenta la misma contribuición de esparcimiento que el eritrocito sano, mientras que valores de $\xi_j$ alejados de la unidad indican una mayor diferencia entre el eritrocito sano y los enfermos. 
+De esta forma, $\xi_j=1$ indica que el eritrocito enfermo presenta la misma contribución de esparcimiento que el eritrocito sano, mientras que valores de $\xi_j$ alejados de la unidad indican una mayor diferencia entre el eritrocito sano y los enfermos. 
 
-En la Fig.~\ref{subfig:int_theta} se muestra el diagrama de integración para un valor de $\theta$ arbitrario considerando $\varphi=0^\circ$ y $\varphi=90^\circ$. En las Figs. \ref{subfig:theta_esf_micro_431}, \ref{subfig:theta_esf_micro_541}, \ref{subfig:theta_esf_micro_573} se muestran los valores de $\xi_j$ obtenidos para el esferocito (rojo) y el microcito (verde) en los planos $\varphi=0^\circ$ y $\varphi=90^\circ$ en las bandas de Soret, $\beta$ y $\alpha$, respectivamente. Como criterio para identificar las regiones que permiten diferenciar entre un eritrocito enfermo y uno sano,  se resaltan en rojo los intervalos angulares para los que $\xi_{\text{esferocito}}<1/2$ y en verde para los que $\xi_{\text{microcito}}>2$.
+En la Fig.~\ref{subfig:int_theta} se muestra el diagrama de integración para un valor de $\theta$ arbitrario considerando $\varphi=0^\circ$ y $\varphi=90^\circ$. En las Figs. \ref{subfig:theta_esf_micro_431}, \ref{subfig:theta_esf_micro_541}, \ref{subfig:theta_esf_micro_573} se muestran los valores de $\xi_j$ obtenidos para el esferocito (rojo) y el microcito (verde) en los planos $\varphi=0^\circ$ y $\varphi=90^\circ$ en las bandas de Soret, $\beta$ y $\alpha$, respectivamente. Como criterio para identificar las regiones que permiten diferenciar entre un eritrocito enfermo y uno sano,  se resaltan en rojo los intervalos angulares para los que $\xi_{\text{esferocito}}<1/2$ y en verde para los que $\xi_{\text{microcito}}>2$ y se incluye una línea punteada azul en $\xi_j=1$.
 %
 \begin{figure}[h!]
 	\centering
@@ -32,7 +32,7 @@ En la Fig.~\ref{subfig:int_theta} se muestra el diagrama de integración para un
 	\sidesubfloat[Fourth image]{\hspace{-0.5cm}{
 			\includegraphics[width=0.44\textwidth]{4-Resultados/contriInt573.pdf}\label{subfig:theta_esf_micro_573}}}\vspace{-0.1cm}
 	\caption{\textbf{a)} Diagrama de integración sobre $\theta$. Cociente $\xi_j$ entre la contribución angular de esparcimiento de los eritrocitos enfermos y la del eritrocito sano, obtenida a partir de la integración en $\theta$ alrededor de $\pm 3^{\circ}$, manteniendo fijos los planos de observación $\varphi=0^\circ$ y $\varphi=90^\circ$. Se muestran los resultados para el esferocito (rojo) y el microcito (verde) para las bandas de \textbf{b)} Soret, \textbf{c)} $\beta$ y \textbf{d)} $\alpha$. Las regiones sombreadas en rojo indican los intervalos para los que $\xi_{\text{esferocito}}<1/2$, mientras que las regiones sombreadas en verde corresponden a
-		$\xi_{\text{microcito}}>2$}%
+		$\xi_{\text{microcito}}>2$. La línea punteada azul sobre $\xi_j=1$ indica que el eritrocito enfermo presenta la misma contribución de esparcimiento que el eritrocito sano. }%
 
 	\label{fig:theta_esf_micro}
 \end{figure}
@@ -44,7 +44,7 @@ Para la banda de Soret se identifica una región entre $130^{\circ}$ y $153^{\ci
 A partir del análisis anterior se identificaron regiones del ángulo de esparcimiento $\theta$ en las que la diferencia entre el eritrocito sano y los eritrocitos enfermos es mayor o menor a un factor de 2. Sin embargo, una configuración de detección real presenta una apertura angular no solo en el ángulo de esparcimiento, sino también en el azimutal $\varphi$. Por ello, se extendió el análisis considerando la integración alrededor de $\theta$ y $\varphi$ de $\pm 3^{\circ}$ simultáneamente, es decir
 %
 \begin{equation}
-	C_{\text{sca}}(\theta,\varphi)=\int_{\theta+3^{\circ}}^{\theta+3^{\circ}}\int_{\varphi+3^{\circ}}^{\varphi+3^{\circ}}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}(\theta,\varphi)\sin\theta\dd{\theta}\dd{\varphi}.
+	C_{\text{sca}}(\theta,\varphi)=\int_{\theta+3^{\circ}}^{\theta+3^{\circ}}\int_{\varphi+3^{\circ}}^{\varphi+3^{\circ}}\dfrac{\dd{C_{\text{sca}}}}{\dd{\Omega}}(\theta',\varphi')\sin\theta'\dd{\theta'}\dd{\varphi'}.
 \end{equation}
 %
 Para cada intervalo angular se calculó nuevamente el parámetro $\xi_j$, definido en la Ec. \eqref{eq:parametro_xi} definido como el cociente entre la contribución de esparcimiento de cada morfología patológica y la correspondiente al eritrocito sano. De esta forma, se identificaron regiones del espacio ($\theta,\varphi$) en las que se satisfacen simultáneamente los criterios $\xi_{\text{esferocito}}<1/2$ y $\xi_{\text{microcito}}>2$. En la Fig.~\ref{fig:diagrama_int_theta_phi} se muestra el diagrama de integración para valores de $\theta$ y $\varphi$ arbitrarios integrados en ventanas de $\pm 3^{\circ}$. 
@@ -52,7 +52,7 @@ Para cada intervalo angular se calculó nuevamente el parámetro $\xi_j$, defini
 \begin{figure}[h!]
 	\includegraphics[width=0.35\textwidth]{4-Resultados/diagrama_int_theta_phi.pdf}
 	\vspace{-0.3cm}
-	\caption{Diagrama de integración sobre $\theta$ y $\varphi$ alrededor de $\pm 3^{\circ}$.}
+	\caption{Diagrama de integración sobre $\theta$ y $\varphi$ alrededor de $\pm 3^{\circ}$. Se indica en azul la dirección del campo incidente $\vb{E}_{\text{inc}}$ y en gris la polarización del campo incidente $\vb{k}_{\text{inc}}$.}
 	\label{fig:diagrama_int_theta_phi}
 \end{figure}
 %
@@ -61,9 +61,9 @@ En la Fig. \ref{fig:theta_phi_esf_micro_431} se muestran los valores de $\xi_j$ 
 %
 \begin{figure}[h!]
 	\centering
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{4-Resultados/plot3DContourEsfSoret.pdf}\label{subfig:theta__phi_esf_micro_431}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{4-Resultados/plot3DContourEsfSoret.png}\label{subfig:theta__phi_esf_micro_431}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.2cm}{
-			\includegraphics[width=0.47\textwidth]{4-Resultados/plot3DContourMicroSoret.pdf}\label{subfig:theta_phi_esf_micro_431}}}\vspace{-0.2cm}
+			\includegraphics[width=0.47\textwidth]{4-Resultados/plot3DContourMicroSoret.png}\label{subfig:theta_phi_esf_micro_431}}}\vspace{-0.2cm}
 	\caption{Cociente $\xi_j$ entre la contribución angular de esparcimiento de los eritrocitos enfermos y la del eritrocito sano, obtenida a partir de la integración en $\theta$ y $\varphi$ alrededor de $\pm 3^{\circ}$ para $\lambda=431$ nm, correspondiente a la banda de Soret.}
 	\label{fig:theta_phi_esf_micro_431}
 \end{figure}
@@ -73,9 +73,9 @@ En la Fig. \ref{fig:theta_phi_esf_micro_541} se muestra el cociente calculado pa
 
 \begin{figure}[h!]
 	\centering
-	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{4-Resultados/plot3DContourEsfBeta.pdf}\label{subfig:theta__phi_esf_micro_541}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.5cm}{	\includegraphics[width=0.47\textwidth]{4-Resultados/plot3DContourEsfBeta.png}\label{subfig:theta__phi_esf_micro_541}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.2cm}{
-			\includegraphics[width=0.455\textwidth]{4-Resultados/plot3DContourMicroBeta.pdf}\label{subfig:theta_phi_esf_micro_541}}}\vspace{-0.1cm}
+			\includegraphics[width=0.455\textwidth]{4-Resultados/plot3DContourMicroBeta.png}\label{subfig:theta_phi_esf_micro_541}}}\vspace{-0.1cm}
 	\caption{Cociente $\xi_j$ entre la contribución angular de esparcimiento de los eritrocitos enfermos y la del eritrocito sano, obtenida a partir de la integración en $\theta$ y $\varphi$ alrededor de $\pm 3^{\circ}$ para $\lambda=541$ nm, correspondiente a la banda $\beta$.}%
 	\label{fig:theta_phi_esf_micro_541}
 \end{figure}
@@ -84,9 +84,9 @@ En la Fig. \ref{fig:theta_phi_esf_micro_541} se muestra el cociente calculado pa
 %
 \begin{figure}[h!]
 	\centering
-	\sidesubfloat[First image]{\hspace{-0.2cm}{	\includegraphics[width=0.46\textwidth]{4-Resultados/plot3DContourEsfAlfa.pdf}\label{subfig:theta__phi_esf_micro_573}}}\hspace{0.1cm}
+	\sidesubfloat[First image]{\hspace{-0.2cm}{	\includegraphics[width=0.46\textwidth]{4-Resultados/plot3DContourEsfAlfa.png}\label{subfig:theta__phi_esf_micro_573}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.2cm}{
-			\includegraphics[width=0.46\textwidth]{4-Resultados/plot3DContourMicroAlfa.pdf}\label{subfig:theta_phi_esf_micro_573}}}\vspace{-0.1cm}
+			\includegraphics[width=0.46\textwidth]{4-Resultados/plot3DContourMicroAlfa.png}\label{subfig:theta_phi_esf_micro_573}}}\vspace{-0.1cm}
 	\caption{Cociente $\xi_j$ entre la contribución angular de esparcimiento de los eritrocitos enfermos y la del eritrocito sano, obtenida a partir de la integración en $\theta$ y $\varphi$ alrededor de $\pm 3^{\circ}$ para $\lambda=573$ nm, correspondiente a la banda $\alpha$.}%
 	\label{fig:theta_phi_esf_micro_573}
 \end{figure}

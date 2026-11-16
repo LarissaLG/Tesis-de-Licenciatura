@@ -56,7 +56,7 @@ Los signos de las Ecs. \eqref{eqs:W} se eligen de forma que sean cantidades posi
 \end{equation}
 %%
 
-Al asumir que la contribución dominante del campo esparcido es la dipolar, una partícula iluminada por una onda plana $\vb{E}_{\text{inc}} = E_0\,\vu{e}_x$, con $\vb{H}_{\text{inc}} = (k/\mu\omega)\,\vu{e}_z\times\vb{E}_{\text{inc}}$, puede describirse mediante un momento dipolar inducido $\vb{p}$ caracterizado por una polarizabilidad $\alpha$. Por lo tanto, el campo esparcido se describe como una onda esférica de frecuencia angular $\omega$ dada por \cite{bohrenAbsorptionScatteringLight2008}
+Al asumir que se está en el régimen de campo lejano, el campo esparcido por una partícula iluminada por una onda plana $\vb{E}_{\text{inc}} = E_0\,\vu{e}_x$, con $\vb{H}_{\text{inc}} = (k/\mu\omega)\,\vu{e}_z\times\vb{E}_{\text{inc}}$ se describe como una onda esférica de frecuencia angular $\omega$ dada por \cite{bohrenAbsorptionScatteringLight2008}
 %
 \begin{align}
 	\vb{E}_{\text{sca}}&=\frac{e^{ik(r-z)}}{-ikr}\vb{X}\:E_0 \qquad\text{y}\qquad
@@ -64,14 +64,7 @@ Al asumir que la contribución dominante del campo esparcido es la dipolar, una 
 	\label{eq:EH_s}
 \end{align}
 %
-donde $\vb{X}$ es el vector de amplitud de esparcimiento
-%
-\begin{equation}
-	\vb{X}=\frac{ik^3}{4\pi}\alpha \left[ \vu{e}_r\times(\vu{e}_r\times \vu{e}_x)\right].
-	\label{eq:Xvec}
-\end{equation}
-%
-A partir de las Ecs.~\eqref{eq:EH_s} y de las ecuaciones del campo electromagnético incidente ($\vb{E}_{\text{inc}} , \vb{H}_{\text{inc}} $), es posible determinar $W_{\text{ext}}$, que se obtiene a partir de $\langle\vb{S}_{\text{ext}}\rangle_t$, definido en la Ec.~\eqref{eq:S}. Para ello se considera\footnote{En donde de empleó la identidad del triple producto vectorial dada por $\vb{A}\times(\vb{B}\times\vb{C})=\vb{B}(\vb{A}\cdot\vb{C})-\vb{C}(\vb{A}\cdot\vb{B})$~\cite{griffithsIntroductionElectrodynamics2023}.}
+donde $\vb{X}$ es el vector de amplitud de esparcimiento \cite{bohrenAbsorptionScatteringLight2008}. A partir de las Ecs.~\eqref{eq:EH_s} y de las ecuaciones del campo electromagnético incidente ($\vb{E}_{\text{inc}} , \vb{H}_{\text{inc}} $), es posible determinar $W_{\text{ext}}$, que se obtiene a partir de $\langle\vb{S}_{\text{ext}}\rangle_t$, definido en la Ec.~\eqref{eq:S}. Para ello se considera\footnote{En donde de empleó la identidad del triple producto vectorial dada por $\vb{A}\times(\vb{B}\times\vb{C})=\vb{B}(\vb{A}\cdot\vb{C})-\vb{C}(\vb{A}\cdot\vb{B})$~\cite{griffithsIntroductionElectrodynamics2023}.}
 %
 \begin{align*}
 	\vb{E}_{\text{inc}}\times\vb{H}_{\text{sca}}^*&=E_0\vu{e}_x\times\left(\frac{k}{\omega\mu}\vu{e}_r\times \vb{E}_{\text{sca}}\right)^*\\

@@ -5,11 +5,11 @@
    viewBox="0 0 431.01144 605.43066"
    version="1.1"
    id="svg96"
-   sodipodi:docname="plot3DContourMicroAlfa.svg"
+   sodipodi:docname="plot3DContourEsfAlfa.svg"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   inkscape:export-filename="plot3DContourEsfAlfa.pdf"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="plot3DContourEsfAlfa.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showguides="true"
-     inkscape:zoom="2.0562613"
-     inkscape:cx="321.21405"
-     inkscape:cy="255.07459"
+     inkscape:zoom="1.4539963"
+     inkscape:cx="282.32534"
+     inkscape:cy="421.25279"
      inkscape:window-width="2400"
      inkscape:window-height="1261"
      inkscape:window-x="-9"
@@ -75141,7 +75141,7 @@
      ns4:inkscapeversion="1.4.3"
      transform="matrix(1.72624 0 0 1.72624 30.4341 22.1697)"
      ns4:jacobian_sqrt="1.72624"
-     style="fill:#ffffff;stroke-width:0">
+     style="fill:#ffffff;stroke-width:0.53642599;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none">
     <defs
        id="defs184"
        style="fill:#ffffff;stroke-width:0">
@@ -75162,15 +75162,15 @@
        fill-opacity="1"
        id="g7223"
        transform="translate(-149.118, -130.359)"
-       style="fill:#ffffff;stroke-width:0">
+       style="fill:#ffffff;stroke-width:0.53642599;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none">
       <g
          transform="translate(148.712, 134.765)"
          id="g2521"
-         style="fill:#ffffff;stroke-width:0">
+         style="fill:#ffffff;stroke-width:0.53642599;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none">
         <path
            d="m 4.75,-2.359375 c 0,-1.5625 -0.921875,-2.046875 -1.65625,-2.046875 -1.375,0 -2.6875,1.421875 -2.6875,2.828125 0,0.9375 0.59375,1.6875 1.625,1.6875 0.625,0 1.34375,-0.234375 2.09375,-0.84375 0.125,0.53125 0.453125,0.84375 0.90625,0.84375 0.53125,0 0.84375,-0.546875 0.84375,-0.703125 0,-0.078125 -0.0625,-0.109375 -0.125,-0.109375 -0.0625,0 -0.09375,0.03125 -0.125,0.109375 -0.1875,0.484375 -0.546875,0.484375 -0.5625,0.484375 -0.3125,0 -0.3125,-0.78125 -0.3125,-1.015625 0,-0.203125 0,-0.234375 0.109375,-0.34375 C 5.796875,-2.65625 6,-3.8125 6,-3.8125 6,-3.84375 5.984375,-3.921875 5.875,-3.921875 c -0.09375,0 -0.09375,0.03125 -0.140625,0.21875 -0.1875,0.625 -0.515625,1.375 -0.984375,1.96875 z m -0.65625,1.375 c -0.890625,0.765625 -1.65625,0.875 -2.046875,0.875 -0.59375,0 -0.90625,-0.453125 -0.90625,-1.09375 0,-0.484375 0.265625,-1.5625 0.578125,-2.0625 C 2.1875,-4 2.734375,-4.1875 3.078125,-4.1875 c 0.984375,0 0.984375,1.3125 0.984375,2.078125 0,0.375 0,0.953125 0.03125,1.125 z m 0,0"
            id="path13819"
-           style="fill:#ffffff;stroke-width:0" />
+           style="fill:#ffffff;stroke-width:0.53642599;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none" />
       </g>
     </g>
   </g>

@@ -51,6 +51,9 @@
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
 
+
+
+
 %\interfootnotelinepenalty=10000
 \setlength\cftparskip{.6em}
 \setlength\cftbeforechapskip{0pt}
@@ -126,11 +129,14 @@
 		\addto\captionsspanish{\renewcommand{\figurename}{Fig.}}
 
 	%------------------------- Maths --------------------------------------
+
 		\usepackage{amssymb, amsmath, amsbsy, amsfonts}	% Math symbols and so on
+	
 		\usepackage{mathrsfs}						
 		\usepackage{mathdots}                    			%  \iddots
 		\usepackage{mathtools}
 		\usepackage{physics}
+		\counterwithin{equation}{chapter}
 
 
 %---------------------------------------------------------------------------------

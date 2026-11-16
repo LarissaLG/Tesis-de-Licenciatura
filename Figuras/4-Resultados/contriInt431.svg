@@ -27,11 +27,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showguides="true"
-     inkscape:zoom="1.0931871"
-     inkscape:cx="411.18304"
-     inkscape:cy="207.19235"
-     inkscape:window-width="1920"
-     inkscape:window-height="991"
+     inkscape:zoom="2.1863742"
+     inkscape:cx="411.86911"
+     inkscape:cy="185.92426"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -54,6 +54,18 @@
   </sodipodi:namedview>
   <defs
      id="defs15">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect21"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
     <g
        id="g7">
       <symbol
@@ -10345,4 +10357,12 @@
       </g>
     </g>
   </g>
+  <path
+     style="fill:#003380;stroke:#003380;stroke-width:0.72681042;stroke-dasharray:1.45362079,1.45362079;stroke-dashoffset:0"
+     d="m 97.07853,101.53797 c 156.62379,-0.0572 313.24759,-0.11433 469.87138,-0.17149"
+     id="path21"
+     inkscape:path-effect="#path-effect21"
+     inkscape:original-d="m 97.07853,101.53797 c 156.62379,-0.0572 313.24759,-0.11433 469.87138,-0.17149"
+     transform="matrix(1.0116792,0,0,0.99988407,-5.9363342,-0.50279959)"
+     sodipodi:nodetypes="cc" />
 </svg>

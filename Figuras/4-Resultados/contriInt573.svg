@@ -27,12 +27,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showguides="true"
-     inkscape:zoom="0.73751237"
-     inkscape:cx="181.01391"
-     inkscape:cy="213.55574"
-     inkscape:window-width="1920"
-     inkscape:window-height="991"
-     inkscape:window-x="2391"
+     inkscape:zoom="2.086"
+     inkscape:cx="470.27805"
+     inkscape:cy="239.93289"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg943">
@@ -42,7 +42,7 @@
        id="guide943"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="229.74592,241.57692"
+       position="611.93671,217.19786"
        orientation="0,-1"
        id="guide944"
        inkscape:locked="false" />
@@ -1473,6 +1473,18 @@
            id="path8437" />
       </g>
     </g>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect21"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
   </defs>
   <g
      id="surface30"
@@ -11130,4 +11142,12 @@
       </g>
     </g>
   </g>
+  <path
+     style="fill:#003380;stroke:#003380;stroke-width:0.72681;stroke-dasharray:1.45362, 1.45362;stroke-dashoffset:0"
+     d="m 97.07853,101.53797 c 156.62379,-0.0572 313.24759,-0.11433 469.87138,-0.17149"
+     id="path21-1"
+     inkscape:path-effect="#path-effect21"
+     inkscape:original-d="m 97.07853,101.53797 c 156.62379,-0.0572 313.24759,-0.11433 469.87138,-0.17149"
+     transform="matrix(1.0116792,0,0,0.99988407,-7.7131526,15.927174)"
+     sodipodi:nodetypes="cc" />
 </svg>

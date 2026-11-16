@@ -1,69 +1,172 @@
-This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: 0-1-Acknowledgments/1-Acknowledgments.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: 0-3-Quote/1-Quote.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: 0-4-Resumen/1-Resumen.aux
-Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=8) to 20 items from 10.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 15080 items from 5000.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 15220 items.
 Database file #1: tesis-blx.bib
 Database file #2: 8-References/references.bib
 Biblatex version: 3.21
-Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 72 entries,
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2700 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2704 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2704 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2704 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2704 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2710 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2710 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2714 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2714 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2714 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2714 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2718 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2718 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2718 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2718 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2724 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2724 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2728 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2728 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2728 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2728 of file biblatex.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Name 1 in "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." has a comma at the end for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos, D." for entry lightAggregatedRBCS2002
+while executing---line 2816 of file biblatex.bst
+You've used 73 entries,
             6402 wiz_defined-function locations,
-            1774 strings with 35170 characters,
-and the built_in function-call counts, 859254 in all, are:
-= -- 58761
-> -- 44411
-< -- 3287
-+ -- 53202
-- -- 36282
-* -- 51611
-:= -- 115901
+            1768 strings with 33984 characters,
+and the built_in function-call counts, 871359 in all, are:
+= -- 59661
+> -- 44996
+< -- 3321
++ -- 53884
+- -- 36756
+* -- 52386
+:= -- 117526
 add.period$ -- 0
-call.type$ -- 72
-change.case$ -- 1018
-chr.to.int$ -- 1862
-cite$ -- 142
-duplicate$ -- 75499
-empty$ -- 62624
-format.name$ -- 6945
-if$ -- 145704
+call.type$ -- 73
+change.case$ -- 1025
+chr.to.int$ -- 1886
+cite$ -- 144
+duplicate$ -- 76357
+empty$ -- 63579
+format.name$ -- 7017
+if$ -- 147822
 int.to.chr$ -- 0
-int.to.str$ -- 172
+int.to.str$ -- 174
 missing$ -- 0
-newline$ -- 2765
-num.names$ -- 3260
-pop$ -- 27847
+newline$ -- 2774
+num.names$ -- 3298
+pop$ -- 28229
 preamble$ -- 1
-purify$ -- 1663
+purify$ -- 1676
 quote$ -- 0
-skip$ -- 16846
+skip$ -- 17045
 stack$ -- 0
-substring$ -- 117103
-swap$ -- 13478
-text.length$ -- 2880
+substring$ -- 119120
+swap$ -- 13613
+text.length$ -- 2914
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2428
+type$ -- 2462
 warning$ -- 0
-while$ -- 10795
+while$ -- 10917
 width$ -- 0
-write$ -- 2694
+write$ -- 2702
+(There were 48 error messages)
