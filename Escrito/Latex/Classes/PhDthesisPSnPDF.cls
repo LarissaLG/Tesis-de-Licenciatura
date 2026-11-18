@@ -46,9 +46,14 @@
 \usepackage{xcolor}
 \definecolor{myTurquoise}{HTML}{12B3C5} 
 \definecolor{UNAMblue0}{RGB}{6,151,213}		% Blue pantone  541 (C)
+\definecolor{UNAMverde0}{RGB}{135,158,43}	
+\definecolor{UNAMrojo0}{RGB}{253,40,40}	
 \usepackage{booktabs}
 %\usepackage{ulem}
 \usepackage{chngcntr}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{array}
 \counterwithout{footnote}{chapter}
 
 
@@ -96,6 +101,9 @@
 			fonttitle=\bfseries , standard jigsaw,  opacityback=0.95, opacitybacktitle = .5,center}% sharp corners = downhill, boxrule = .75mm }
 
 \newcommand{\coloredeq}[2]{\begin{empheq}[box= \fcolorbox{myTurquoise!90!blue}{myTurquoise!20!white},{\fboxsep=15pt\fbox}]{align}\label{#1}#2\end{empheq}}
+
+
+ 
 				
 	%----------------------- Language and references ------------------------------
 		\usepackage[spanish,mexico]{babel}			% Comment for english
@@ -136,7 +144,7 @@
 		\usepackage{mathdots}                    			%  \iddots
 		\usepackage{mathtools}
 		\usepackage{physics}
-		\counterwithin{equation}{chapter}
+	
 
 
 %---------------------------------------------------------------------------------

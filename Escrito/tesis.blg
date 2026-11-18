@@ -130,24 +130,24 @@ Too many commas in name 1 of "Tsinopoulos, S. V., Sellountos, E. J., and Polyzos
 while executing---line 2816 of file biblatex.bst
 You've used 73 entries,
             6402 wiz_defined-function locations,
-            1768 strings with 33984 characters,
-and the built_in function-call counts, 871359 in all, are:
-= -- 59661
+            1768 strings with 33981 characters,
+and the built_in function-call counts, 871332 in all, are:
+= -- 59658
 > -- 44996
 < -- 3321
 + -- 53884
 - -- 36756
-* -- 52386
-:= -- 117526
+* -- 52383
+:= -- 117523
 add.period$ -- 0
 call.type$ -- 73
 change.case$ -- 1025
 chr.to.int$ -- 1886
 cite$ -- 144
 duplicate$ -- 76357
-empty$ -- 63579
+empty$ -- 63576
 format.name$ -- 7017
-if$ -- 147822
+if$ -- 147816
 int.to.chr$ -- 0
 int.to.str$ -- 174
 missing$ -- 0
@@ -159,7 +159,7 @@ purify$ -- 1676
 quote$ -- 0
 skip$ -- 17045
 stack$ -- 0
-substring$ -- 119120
+substring$ -- 119111
 swap$ -- 13613
 text.length$ -- 2914
 text.prefix$ -- 0

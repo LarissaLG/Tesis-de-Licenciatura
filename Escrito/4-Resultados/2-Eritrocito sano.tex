@@ -2,6 +2,7 @@
 
 \section{Eritrocito sano}
 \label{section:Res_Eritrocito_Sano}
+\vspace{-0.3cm}
 
 Para identificar las propiedades ópticas de los eritrocitos en las bandas de Soret, $\beta$ y $\alpha$, se consideró el rango espectral de 400  a 600 nm.  A lo largo de esta sección, por comodidad, se define la dirección frontal como el ángulo de esparcimiento $\theta=0^\circ$, la dirección lateral con $\theta=90^\circ$ y la dirección de retroesparcimiento con $\theta=180^\circ$. Por otro lado, se define también la región de esparcimiento frontal como el intervalo angular comprendido entre $0^\circ\leq\theta<60^\circ$, la región de esparcimiento lateral comprendida entre $60^\circ\leq\theta<120^\circ$ y la región de retroesparcimiento comprendida entre $120^\circ\leq\theta\leq180^\circ$. Para modelar un eritrocito sano, se empleó un óvalo de Cassini con los parámetros mostrados en la Fig. \ref{subfig:Shape_health} con valores de $a=2.6\,\mu\text{m}$, $b=2.7\,\mu\text{m}$ y $c=0.812\,\mu\text{m}$, los cuales resproducen el radio equivalente de 3.75 $\mu$m y el volumen de 80.63~$\mu\text{m}^3$ reportados por Ergül et al. en la Ref.~\cite{ergulComputationalStudyScattering2010}. De acuerdo con los resultados obtenidos en la Sección~\ref{section:optical_properties}, para el plasma se consideró una función dieléctrica constante de $\varepsilon_{\text{Plasma}}=1.84$, ya que su parte imaginaria resulta despreciable. Por su parte, para el eritrocito se empleó la función dieléctrica de una CHCM de 30.6~g/dL correspondiente al caso de una célula sana, como se discutió en la Sección \ref{section:morphology}. El eritrocito se orientó con su eje de simetría a lo largo de la dirección $z$ y se iluminó con una onda plana que se propaga en la misma dirección, polarizada en $x$.
 
@@ -51,24 +52,77 @@ Para cuantificar tanto la distribución angular como la magnitud de esparcimient
 
 En la Tabla~\ref{table:val_eri} se resumen, para las tres longitudes de onda representativas, los valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$, así como las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para ambos cortes. La correlación se presenta únicamente para la región lateral debido a que, en las regiones frontal y de retroesparcimiento, los patrones permanecen invariantes entre ambos cortes, con coeficientes de correlación de 1 y 0.99, respectivamente. Se observa que el factor de anisotropía aumenta de 0.97 a 0.99 al pasar de la banda de Soret a la banda $\alpha$, lo que es consistente con el predominio del esparcimiento frontal en todo el intervalo espectral analizado. Asimismo, la contribución integrada en la región frontal aumenta con la longitud de onda, mientras que las regiones lateral y de retroesparcimiento continúan aportando una fracción menor al esparcimiento total. Por otra parte, la correlación en la región lateral no presenta una tendencia creciente con la longitud de onda, alcanzando su valor mínimo en la banda $\beta$ ($r=0.49$), lo que indica que en esta región espectral la distribución angular del esparcimiento es la más sensible al plano de observación. Sin embargo, la diferencia entre las contribuciones integradas entre los dos planos es inferior (38.93 \%) para esta misma longitud de onda que para $\lambda=431$~nm (85.31 \%) y $\lambda=573$~nm (98.35 \%). Esto evidencia que una menor correlación entre dos planos de observación no implica necesariamente una mayor diferencia en su contribución en $C_{\text{sca}}$.
 
-%
-\begin{table}[h!]
-	\begin{tabular}{ccccccccc}
-		\hline
-		\multirow{3}{*}{$\lambda$ [nm]} & \multirow{3}{*}{$g$} & \multirow{3}{5em}{Correlación lateral} & \multicolumn{6}{c}{$C_{\text{sca}}/S\times 10^{-4}$ } \\
-		\cline{4-9}
-		& &  &   \multicolumn{2}{c}{Frontal} & \multicolumn{2}{c}{Lateral} & \multicolumn{2}{c}{Posterior}\\
-		\cline{4-9}
-		&  &  &  $\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ \\ \hline
-		431 (Soret) & 0.97  & 0.67 & 1,817.17 & 1,788.52 & 11.71 & 21.70 & 2.01 & 2.97  \\
-		541 ($\beta$) & 0.98 & 0.49 & 4,324.20 & 4,296.07 & 15.08 & 20.95 & 10.78 & 13.77\\
-		573 ($\alpha$) & 0.99 & 0.71 & 4,650.05 & 4,626.42 & 12.75 & 25.29 & 2.46 & 3.41\\
-		\hline
-	\end{tabular}
-	\caption{Valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$ y las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$ para $\lambda=431,541$ y 573 nm. }
+\begin{table}[htbp]
+	\centering
+	{
+		\arrayrulecolor{UNAMblue0!80!blue}
+		%\setlength{\arrayrulewidth}{0.6pt}
+		\renewcommand{\arraystretch}{1.1}
+		\setlength{\tabcolsep}{4pt}
+		
+		\begin{tabular}{ccccccccc}
+			\hline
+			\rowcolor{UNAMblue0!35!white}
+			& & &
+			\multicolumn{6}{c}{$C_{\text{sca}}/S\times 10^{-4}$}\\
+			
+			\rowcolor{UNAMblue0!35!white}
+			$\lambda$ [nm] &
+			$g$ &
+			\shortstack[c]{Correlación\\lateral} &
+			\multicolumn{2}{c}{\raisebox{0.6ex}{Frontal}} &
+			\multicolumn{2}{c}{\raisebox{0.6ex}{Lateral}} &
+			\multicolumn{2}{c}{\raisebox{0.6ex}{Posterior}}\\
+			
+			\rowcolor{UNAMblue0!35!white}
+			& & &
+			$\varphi=0^\circ$ & $\varphi=90^\circ$ &
+			$\varphi=0^\circ$ & $\varphi=90^\circ$ &
+			$\varphi=0^\circ$ & $\varphi=90^\circ$\\
+			\hline
+			
+			\rowcolor{UNAMblue0!15!white}
+			431 (Soret) & 0.97 & 0.67 &
+			1,817.17 & 1,788.52 &
+			11.71 & 21.70 & 2.01 & 2.97\\
+			
+			\rowcolor{UNAMblue0!5!white}
+			541 ($\beta$) & 0.98 & 0.49 &
+			4,324.20 & 4,296.07 &
+			15.08 & 20.95 & 10.78 & 13.77\\
+			
+			\rowcolor{UNAMblue0!15!white}
+			573 ($\alpha$) & 0.99 & 0.71 &
+			4,650.05 & 4,626.42 &
+			12.75 & 25.29 & 2.46 & 3.41\\
+			\hline
+		\end{tabular}
+	}
+	
+	\caption{Valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$ y las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para $\varphi=0^\circ$ y $\varphi=90^\circ$ para $\lambda=431,541$ y 573 nm.}
+	
 	\label{table:val_eri}
-	\vspace{0.2cm} 
 \end{table}
+
+
+%
+%\begin{table}[h!]
+%	\begin{tabular}{ccccccccc}
+%		\hline 
+%		\multirow{3}{*}{$\lambda$ [nm]} & \multirow{3}{*}{$g$} & \multirow{3}{5em}{Correlación lateral} & \multicolumn{6}{c}{$C_{\text{sca}}/S\times 10^{-4}$ } \\
+%		\cline{4-9}
+%		& &  &   \multicolumn{2}{c}{Frontal} & \multicolumn{2}{c}{Lateral} & \multicolumn{2}{c}{Posterior}\\
+%		\cline{4-9}
+%		&  &  &  $\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ &$\varphi=0^{\circ}$ & $\varphi=90^{\circ}$ \\ \hline
+%		431 (Soret) & 0.97  & 0.67 & 1,817.17 & 1,788.52 & 11.71 & 21.70 & 2.01 & 2.97  \\
+%		541 ($\beta$) & 0.98 & 0.49 & 4,324.20 & 4,296.07 & 15.08 & 20.95 & 10.78 & 13.77\\
+%		573 ($\alpha$) & 0.99 & 0.71 & 4,650.05 & 4,626.42 & 12.75 & 25.29 & 2.46 & 3.41\\
+%		\hline
+%	\end{tabular}
+%	\caption{Valores del factor de anisotropía $g$, la correlación en la región de esparcimiento lateral entre los cortes $\varphi=0^\circ$ y $\varphi=90^\circ$ y las contribuciones de la sección transversal de esparcimiento integradas en las regiones frontal, lateral y de retroesparcimiento para $\varphi=0^{\circ}$ y $\varphi=90^{\circ}$ para $\lambda=431,541$ y 573 nm. }
+%	\label{table:val_eri}
+%	\vspace{0.2cm} 
+%\end{table}
 %
 
 

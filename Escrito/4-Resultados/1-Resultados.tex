@@ -6,6 +6,7 @@
 
 \section{Cotejo con resultados publicados}
 \label{section:Res_literatura}
+\vspace{-0.3cm}
 
 Con el fin de evaluar la capacidad del modelo para reproducir resultados reportados en la literatura, se compararon las simulaciones realizadas en este trabajo con los resultados de Tsinopoulos et al. \cite{tsinopoulosLightScatteringAggregated2002}, quienes emplearon el modelo de eritrocito propuesto por Fung \cite{fungBiomechanicsMechanicalProperties1990}, descrito por la ecuación en coordenadas cilíndricas
 %
@@ -21,12 +22,13 @@ donde $\rho^2=x^2+y^2$ y $a$ es el radio del eritrocito, para el cual se empleó
 	\sidesubfloat[First image]{\hspace{-0.1cm}{
 			\includegraphics[width=0.45\textwidth]{4-Resultados/comparacionpaper0.pdf}\label{subfig:Tsi_par}}}\hspace{0.1cm}
 	\sidesubfloat[Second image]{\hspace{-0.1cm}{	\includegraphics[width=0.45\textwidth]{4-Resultados/comparacionpaper90.pdf}\label{subfig:Tsi_perp}}}
-	
+	\vspace{-0.1cm}
 	
 	\caption{Sección transversal diferencial de esparcimiento $\dd{C_{\text{sca}}/\dd{\Omega}}$ en función del ángulo de esparcimiento $\theta$ para un eritrocito con geometría descrita por Fung \cite{fungBiomechanicsMechanicalProperties1990} y con radio igual a 3.825 $\mu$m. El eritrocito fue iluminado por una onda plana propagándose en la dirección $z$ y polarizada en $x$, con una longitud de onda de $632.8~\text{nm}$. Se consideró un índice de refracción relativo de 1.05. Los puntos azules muestran los resultados obtenidos mediante el método FIT y los naranjas mediante BEM en la Ref.  \cite{tsinopoulosLightScatteringAggregated2002}}
 	\label{fig:Tsinopoulos}
 \end{figure}
 %
+\vspace{-0.3cm}
 
 Los resultados mostrados en la Fig. \ref{fig:Tsinopoulos} presentan un comportamiento semejante en el patrón de esparcimiento aunque hay algunas diferencias identificables. En particular, en el plano paralelo  ($\varphi=0^{\circ}$), la diferencia entre la posición angular de los máximos locales obtenida en la Ref.~\cite{tsinopoulosLightScatteringAggregated2002} y la calculada en CST es de $0.63^\circ$. De manera similar, en el plano perpendicular ($\varphi=90^{\circ}$), la diferencia promedio en la localización de los máximos locales es de  $0.46^\circ$. Por otro lado, se encuentran diferencias en la amplitud de $\dd{C_{\text{sca}}/\dd{\Omega}}$ con un error relativo promedio\footnote{En este trabajo se considera el error relativo promedio como 
 	$$\text{Error relativo promedio}=\frac{1}{N}\sum_i|\dd{C_{\text{sca}}/\dd{\Omega}}_{\text{CST}}(\theta_i)-\dd{C_{\text{sca}}/\dd{\Omega}}_{\text{Mie}}(\theta_i)|,$$
