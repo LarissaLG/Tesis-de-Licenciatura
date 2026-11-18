@@ -23,6 +23,7 @@ respectivamente y donde $A_i$ es la fuerza del oscilador asociada a la $i$-ésim
 En la Tabla \ref{table:lorentz15} se enlistan los parámetros que mejor ajustan la Ec. \ref{seq:lorentz_imag} a los datos reportados para eritrocitos con concentraciones de 28.7, 30.6 y 34~g/dL y para el plasma. Para la hemoglobina se ajustaron seis osciladores, mientras que para el plasma, cuatro. Para la hemoglobina, en el espectro visible el oscilador centrado alrededor de $\hbar\omega_{0}\approx 3$~eV (correspondiente a la banda de Soret, $\lambda\approx 413$~nm) presenta la mayor fuerza de oscilador, describiendo la dominancia de esta transición en el espectro de absorción de la hemoglobina en ese rango~\cite{bosschaartLiteratureReviewNovel2014}. Asimismo, se observa que la amplitud de dicha banda, así como la de las bandas Q en el visible, aumenta con la CHCM. Por otra parte, los parámetros muestran ligeros desplazamientos espectrales de las resonancias: en la concentración de 28.7~g/dL, las bandas $\alpha$ y $\beta$, asociadas a los osciladores con $\hbar\omega_{0}= 2.14$~eV $(\lambda=579$ nm) y $\hbar\omega_{0}=2.27$~eV ($\lambda= 546$ nm), presentan un corrimiento hacia el rojo con respecto a los casos de 30.6~g/dL y 34.0 g/dL, mientras que las resonancias correspondientes a la banda de Soret y al oscilador en la región de $\hbar\omega_{0}\approx 3.58$--3.59~eV ($\lambda\approx 345$--346 nm) muestran un desplazamiento hacia el azul. Los valores más altos de $\gamma_i$ asociados a la banda de Soret indican que esta transición presenta un ensanchamiento más pronunciado. Para todas las concentraciones, la banda $\alpha$ exhibe constantes de amortiguamiento menores que la banda $\beta$, lo que sugiere tiempos de vida efectivos más largos y resonancias más estrechas para la primera. De manera análoga, en el caso del plasma, los osciladores correspondientes a las resonancias alrededor de 1.27~eV ($\lambda\approx 976$ nm) y 2.37~eV ($\lambda\approx 523$ nm) presentan valores de $\gamma_i$ inferiores a los de las otras transiciones, lo que se traduce en características espectrales más definidas.
 %
 \vspace{1cm}
+	
 
 \begin{table}[h!]
 	\centering
@@ -31,6 +32,9 @@ En la Tabla \ref{table:lorentz15} se enlistan los parámetros que mejor ajustan 
 		% -------- BLOQUE 1 --------
 		\begin{minipage}{0.45\textwidth}
 			\centering
+			{
+			
+				\arrayrulecolor{black}
 			\begin{tabular}{cccc}
 			\hline
 				$i$ & $A_i$ [eV$^2$] & $\hbar\omega_i$ [eV] & $\hbar\gamma_i$ [eV] \\
@@ -54,6 +58,7 @@ En la Tabla \ref{table:lorentz15} se enlistan los parámetros que mejor ajustan 
 				6 & $2.11 \times 10^{-7}$ & 2.7 & $5.37 \times 10^{-2}$ \\
 				\hline
 			\end{tabular}
+		}
 		\end{minipage}
 		&
 		% -------- BLOQUE 2 --------
@@ -84,7 +89,7 @@ En la Tabla \ref{table:lorentz15} se enlistan los parámetros que mejor ajustan 
 			\end{tabular}
 		\end{minipage}
 	\end{tabular}
-	
+
 	\caption{Parámetros del modelo de Lorentz que mejor ajustan la Ec. \ref{seq:lorentz_imag} a los datos experimentales reportados para eritrocitos con CHCM de 28.7, 30.6 y 34~g/dL y para el plasma.}
 	\label{table:lorentz15}
 \end{table}
